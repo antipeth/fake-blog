@@ -1,9 +1,11 @@
 +++
 title = "基于Arch Linux搭建hugo博客"
-date = 2023-12-17
+date = 2023-11-17
 +++
 
 # 基于Arch Linux搭建hugo博客
+
+2023-11-17
 
 # 1.本地搭建hugo
 
