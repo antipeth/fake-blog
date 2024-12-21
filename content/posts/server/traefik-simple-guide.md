@@ -11,6 +11,7 @@ date = 2024-12-20
 3. https://blog.eleven-labs.com/en/using-traefik-as-a-reverse-proxy/
 4. https://github.com/korridor/reverse-proxy-docker-traefik
 5. https://wiki.nixos.org/wiki/Traefik
+6. https://blog.outv.im/2022/traefik/#traefik-%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F
 
 ## Docker
 
