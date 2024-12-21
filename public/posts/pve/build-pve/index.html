@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATP</title>
+     <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js" integrity="sha256-WCzAhd2P6gRJF9Hv3oOOd+hFJi/QJbv+Azn4CGB8gfY=" crossorigin="anonymous"></script>
+     <script src="/js/index.js"></script>
+     <script src="/js/prompt.js"></script>
+     <script src="/js/keyboard.js"></script>
+     <script src="/js/tab.js"></script>
+     <script src="/js/commands.js"></script>
+     <script src="/js/config.js"></script><link rel="stylesheet" href="/css/base.css"><link rel="stylesheet" href="/css/page.css"></head>
+<body onkeydown='exec(event)'>
+  <header>
+      <h1>ATP</h1>
+  </header>
+  <main>
+    <div class="files" id="files" tabindex="0">
+<ul><li class="file">
+    <span><a href='https://blog.0pt.icu/readme/'
+      tabindex="-2">  README</a></span>
+  </li><li class="file">
+    <span><a href='https://blog.0pt.icu/rss/'
+      tabindex="-3">  RSS</a></span>
+  </li><li class="folder"><span>
+      
+      <a href='https://blog.0pt.icu/posts/'
+        tabindex="-4">  Posts
+      </a>
+    </span>
+
+    <ul>
+      
+        
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/think/'
+    tabindex="-5">  Think
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/think/unhappy-newyear/'
+        tabindex="-6">  祝你春节不快乐</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/think/1st-anniversary-of-listening-to-tayu-lo/'
+        tabindex="-7">  纪念听罗大佑一周年</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/think/music-history/'
+        tabindex="-8">  记我的听歌历程</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/think/my-first-post/'
+        tabindex="-9">  My first post</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/server/'
+    tabindex="-10">  server
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/traefik-simple-guide/'
+        tabindex="-11">  Docker/NixOS使用traefik实现简单反代</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/caddy-simple-guide/'
+        tabindex="-12">  Debian/NixOS使用caddy实现简单反代</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/use-tebi-build-nixos-cache-server/'
+        tabindex="-13">  使用tebi作为s3,搭建nix缓存服务器</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/cloudfront-cdn-acme/'
+        tabindex="-14">  cloudfront配置小鸡cdn并使用acme.sh自动获取证书</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/build-terraria-tshock/'
+        tabindex="-15">  搭建泰拉瑞亚Tshock服务器(强制开荒)</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/build-hugo/'
+        tabindex="-16">  基于Arch Linux搭建hugo博客</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/hackintosh/'
+    tabindex="-17">  Hackintosh
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/hackintosh/x79/'
+        tabindex="-18">  记录一次杂牌x79黑苹果</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/pve/'
+    tabindex="-19">  PVE
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/pve/pve-hackintosh/'
+        tabindex="-20">  x79上pve黑苹果</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a class="selected"href='https://blog.0pt.icu/posts/pve/build-pve/'
+        tabindex="-21">  x79搭建pve并开启硬件直通</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/k3s/'
+    tabindex="-22">  K3S
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/k3s/develop-rancher/'
+        tabindex="-23">  k3s部署rancher</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/k3s/kubevirt-manager/'
+        tabindex="-24">  k3s部署kubevirt-manager</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/linux-trip/'
+    tabindex="-25">  Linux Trip
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/7/'
+        tabindex="-26">  第七回，探FreeBSD路途远，坎坷荆棘勇前行</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/6/'
+        tabindex="-27">  第六回，弃Linux投FreeBSD，稳如磐石路更宽</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/5/'
+        tabindex="-28">  第五回，渐觉Arch无力持，转投NixOS获新生</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/4/'
+        tabindex="-29">  第四回，舍KDE抱Hyprland，新境界追求更添</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/3/'
+        tabindex="-30">  第三回，探幽寻秘APPS新，解CONFIG奇趣入眼前</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/2/'
+        tabindex="-31">  第二回，初入KDE虚界间，安装APPS耀目光</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/1/'
+        tabindex="-32">  第一回，弃window渐入轻盈境，装Arch走入坑深底</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+    </ul>
+  </li><li class="folder"><span>
+      
+      <a href='https://blog.0pt.icu/about/'
+        tabindex="-33">  ABOUT
+      </a>
+    </span>
+
+    <ul>
+      <li class="file">
+        <span>└──
+          <a href='https://blog.0pt.icu/about/about2/'
+            tabindex="-34">  ABOUT2</a>
+        </span>
+      </li><li class="file">
+        <span>└──
+          <a href='https://blog.0pt.icu/about/about1/'
+            tabindex="-35">  ABOUT1</a>
+        </span>
+      </li>
+        
+    </ul>
+  </li><li class="folder"><span>
+      
+      <a href='https://blog.0pt.icu/links/'
+        tabindex="-36">  LINKS
+      </a>
+    </span>
+
+    <ul>
+      <li class="file">
+        <span>└──
+          <a href='https://blog.0pt.icu/links/link/'
+            tabindex="-37">  LINKS</a>
+        </span>
+      </li>
+        
+    </ul>
+  </li>
+</ul>
+</div>
+    <div class="viewer page" id="viewer" tabindex="0">
+      <div class="tab">
+<ul id="tabs">
+</ul>
+
+
+</div>
+      <div class="content" id="content"><h1 id="x79da-jian-pvebing-kai-qi-ying-jian-zhi-tong">x79搭建pve并开启硬件直通</h1>
+<p>2024-09-17</p>
+<p>从去年就买了一个服务器主板和相关配件学习装机，一直都没用起来。开学后想着利用起来，开个pve玩玩。</p>
+<h2 id="ying-jian-pei-zhi">硬件配置</h2>
+<table><thead><tr><th>Item</th><th>name</th><th>price</th></tr></thead><tbody>
+<tr><td>主板</td><td>x79浪潮m2220(2011针)</td><td>152￥</td></tr>
+<tr><td>cpu</td><td>至强e5-2651v2 x 2</td><td>26x2=52￥</td></tr>
+<tr><td>内存</td><td>1866Mhz镁光16G ddr3服务器内存条 x 2</td><td>27x2=54￥</td></tr>
+<tr><td>散热器</td><td>杂牌塔式散热 x 2</td><td>29x2=58￥</td></tr>
+<tr><td>显卡</td><td>盈通游戏高手R9 270</td><td>120￥</td></tr>
+<tr><td>硬盘</td><td>梵想ssd固态128G</td><td>79￥</td></tr>
+<tr><td>电源</td><td>华为服务器电源750w+电源转接板+模组线</td><td>41+71+65=177￥</td></tr>
+<tr><td>机箱</td><td>开放式机箱</td><td>39￥</td></tr>
+<tr><td>总计</td><td></td><td>731￥</td></tr>
+</tbody></table>
+<h2 id="zhu-ban-jie-shao">主板介绍</h2>
+<table><thead><tr><th>Item</th><th>name</th></tr></thead><tbody>
+<tr><td>主板尺寸</td><td>E-ATX 30.5cm x 33.2cm</td></tr>
+<tr><td>内存</td><td>4通道 20个ddr3</td></tr>
+<tr><td>sata</td><td>2个sata3 8个sata2</td></tr>
+<tr><td>pcie</td><td>3个pci-e 16x 3个pci-e 8x</td></tr>
+<tr><td>usb</td><td>3个usb2</td></tr>
+<tr><td>vga</td><td>板载显卡，有1个vga口</td></tr>
+<tr><td>网口</td><td>2个千兆网口(intel i350芯片) 1个远程口(IPMI)</td></tr>
+</tbody></table>
+<h2 id="zhu-yi-shi-xiang">注意事项</h2>
+<h3 id="xian-qia">显卡</h3>
+<p>显卡别看pci-e 16x 有3个，能支持的显卡长度必须小于18.5cm，不然会顶到内存插槽，且如果显卡宽度大于1.5cm,则会把旁边的那个pcie口一起占用。
+板载显卡在某些情况（非正常情况）下可能会有冲突。</p>
+<h3 id="san-re-qi">散热器</h3>
+<p>注意买标准的长方形2011针，不是正方形。</p>
+<h2 id="biosshe-zhi">BIOS设置</h2>
+<p>按<code>Del</code>进bios</p>
+<h3 id="cpu">cpu</h3>
+<p>vt-d开启，虚拟化开启
+cpu的几个增强设置全部打开</p>
+<h3 id="ying-pan">硬盘</h3>
+<p><code>Advanced</code>-&gt;<code>SATA Configuration</code>-&gt;<code>SATA Mode</code> ,把<code>IDE Mode</code>改为<code>AHCI Mode</code></p>
+<h3 id="shi-pin-shu-chu-xin-hao-zou-ban-zai-xian-qia-gai-wei-zou-du-xian">视频输出信号走板载显卡改为走独显</h3>
+<p><code>Chipset</code>-&gt;<code>CPU Advanced Settings</code>-&gt;<code>IOH Configuration</code>-&gt;<code>VGA Priority</code>,把<code>Onboard</code>改为<code>Offboard</code></p>
+<h2 id="an-zhuang-pve">安装pve</h2>
+<p>没什么好说的，直接安装即可</p>
+<h2 id="pvezhu-yi-shi-xiang">pve注意事项</h2>
+<h3 id="shi-yong-wu-xian-wang-qia-lian-wang">使用无线网卡联网</h3>
+<p>无线网卡连接手机热点，并使用nat配置给虚拟机联网，我使用这种方法有问题，虚拟机内无网络(我看别人的相关文章，无线网卡连接的是路由器wifi，成功配置网络。)</p>
+<h3 id="shi-yong-usblian-wang">使用usb联网</h3>
+<p>usb网路共享也有问题，每次需要手动配置网络接口。使用以下脚本
+通过手机 rndis 自动联网配置
+效果是：手机线连接 pve 开启 USB 网络共享后，5秒左右自动配置好 rndis 网络</p>
+<p>代码部分：</p>
+<p>/etc/systemd/system/rndis.service</p>
+<pre style="background-color:#212733;color:#ccc9c2;"><code><span>[Unit]
+</span><span>Description=Run RNDIS script every 5 seconds
+</span><span>After=network.target
+</span><span>
+</span><span>[Service]
+</span><span>ExecStart=bash /root/rndis.sh
+</span><span>Restart=always
+</span><span>RestartSec=5
+</span><span>
+</span><span>[Install]
+</span><span>WantedBy=multi-user.target
+</span></code></pre>
+<p>/root/rndis.sh</p>
+<pre style="background-color:#212733;color:#ccc9c2;"><code><span>#!/bin/bash
+</span><span>
+</span><span>ANDROID_USB_IP=&quot;192.168.42.100&quot;
+</span><span>ANDROID_USB_GATEWAY=&quot;192.168.42.1&quot;
+</span><span>ANDROID_USB_SUBNET=&quot;255.255.255.0&quot;
+</span><span>PVE_DEFAULT_GATEWAY=&quot;192.168.100.1&quot;
+</span><span>
+</span><span># 获取 enx 开头的网卡设备名称
+</span><span>enx_interface=$(ip a | grep &quot;enx[0-9a-f:]*:&quot; | awk &#39;{print $2}&#39; | head -n 1 | sed &#39;s/:$//&#39;)
+</span><span>
+</span><span># 检查是否获取到网卡名称
+</span><span>if [ -z &quot;$enx_interface&quot; ]; then
+</span><span>  echo &quot;Error: Could not find enx interface.&quot;
+</span><span>  exit 1
+</span><span>fi
+</span><span>
+</span><span># 打印输出网卡名称
+</span><span>echo &quot;Detected enx interface: $enx_interface&quot;
+</span><span>
+</span><span># 备份 /etc/network/interfaces
+</span><span>if [ -f /etc/network/interfaces.bak ]; then
+</span><span>  rm /etc/network/interfaces.bak
+</span><span>  echo &quot;Delete original backup.&quot;
+</span><span>fi
+</span><span>cp /etc/network/interfaces /etc/network/interfaces.bak
+</span><span>echo &quot;Backup /etc/network/interfaces&quot;
+</span><span>
+</span><span># 检查 /etc/network/interfaces 是否包含 enx[mac] 字段
+</span><span>if grep -q &quot;enx[0-9a-f]*&quot; /etc/network/interfaces; then
+</span><span>  # 检查是否与新获取的网卡名称相同
+</span><span>  if grep -q &quot;$enx_interface&quot; /etc/network/interfaces; then
+</span><span>    echo &quot;Network interface name already matches, no changes made.&quot;
+</span><span>  else
+</span><span>    # 替换 /etc/network/interfaces 中的网卡名称
+</span><span>    sed -i &quot;s/enx[0-9a-f]*/$enx_interface/g&quot; /etc/network/interfaces
+</span><span>    echo &quot;Network interface name updated in /etc/network/interfaces.&quot;
+</span><span>  fi
+</span><span>else
+</span><span>  # 追加新的网卡配置
+</span><span>  cat &gt;&gt; /etc/network/interfaces &lt;&lt;EOF
+</span><span>
+</span><span>auto $enx_interface
+</span><span>iface $enx_interface inet static
+</span><span>        address $ANDROID_USB_IP
+</span><span>        netmask $ANDROID_USB_SUBNET
+</span><span>        gateway $ANDROID_USB_GATEWAY
+</span><span>EOF
+</span><span>  echo &quot;New network interface configuration appended to /etc/network/interfaces.&quot;
+</span><span>fi
+</span><span>
+</span><span># 删除旧路由并添加新路由
+</span><span>ip route delete default via $PVE_DEFAULT_GATEWAY
+</span><span>ip route add default via $ANDROID_USB_GATEWAY
+</span><span>
+</span><span>echo &quot;Network configuration updated successfully.&quot;
+</span><span>
+</span><span># 检查网络连接
+</span><span>if ! ping -c 1 1.1.1.1 &gt; /dev/null 2&gt;&amp;1; then
+</span><span>    echo &quot;Network is down, restarting networking service...&quot;
+</span><span>    # 仅当网络不可用时重启网络服务
+</span><span>    systemctl restart networking.service
+</span><span>else
+</span><span>    echo &quot;Network is up.&quot;
+</span><span>fi
+</span><span>    echo &quot;Done.&quot;
+</span></code></pre>
+<h2 id="kai-qi-zhi-tong">开启直通</h2>
+<p>参考<a href="https://pve.sqlsec.com/4/2/">国光的教程</a>
+以下是自己配的</p>
+<h3 id="kai-qi-iommu">开启IOMMU</h3>
+<pre style="background-color:#212733;color:#ccc9c2;"><code><span>nano /etc/default/grub
+</span></code></pre>
+<p>将</p>
+<pre style="background-color:#212733;color:#ccc9c2;"><code><span>GRUB_CMDLINE_LINUX_DEFAULT=&quot;quiet&quot;
+</span></code></pre>
+<p>改为(包含直通优化，关闭显卡以节能的相关参数)</p>
+<pre style="background-color:#212733;color:#ccc9c2;"><code><span>GRUB_CMDLINE_LINUX_DEFAULT=&quot;quiet intel_iommu=on iommu=pt textonly nomodeset nofb pci=noaer pcie_acs_override=downstream,multifunction video=vesafb:off video=efifb:off video=simplefb:off initcall_blacklist=sysfb_init&quot;
+</span></code></pre>
+<p>然后使用</p>
+<pre style="background-color:#212733;color:#ccc9c2;"><code><span>update-grub
+</span></code></pre>
+<p>验证IOMMU是否开启</p>
+<pre style="background-color:#212733;color:#ccc9c2;"><code><span>dmesg | grep -e DMAR -e IOMMU
+</span></code></pre>
+<p>出现<code>DMAR: IOMMU enabled</code>则说明开启成功，还不行重启后再看一下。</p>
+<h3 id="tian-jia-vfio-mo-kuai">添加 VFIO 模块</h3>
+<p>为了我们的显卡顺利直通，需要添加 VFIO 模块到 /etc/modules 文件中：</p>
+<pre data-lang="Bash" style="background-color:#212733;color:#ccc9c2;" class="language-Bash "><code class="language-Bash" data-lang="Bash"><span style="color:#f28779;">echo </span><span style="color:#bae67e;">&quot;vfio&quot; </span><span style="color:#f29e74;">&gt;</span><span> /etc/modules
+</span><span style="color:#f28779;">echo </span><span style="color:#bae67e;">&quot;vfio_iommu_type1s&quot; </span><span style="color:#f29e74;">&gt;&gt;</span><span> /etc/modules
+</span><span style="color:#f28779;">echo </span><span style="color:#bae67e;">&quot;vfio_pci&quot; </span><span style="color:#f29e74;">&gt;&gt;</span><span> /etc/modules
+</span><span style="color:#f28779;">echo </span><span style="color:#bae67e;">&quot;vfio_virqfd&quot; </span><span style="color:#f29e74;">&gt;&gt;</span><span> /etc/modules
+</span></code></pre>
+<p>将常见的驱动程序加入黑名单，即让 GPU 相关设备在下次系统启动之后不使用这些驱动，把设备腾出来给 vfio 驱动用：</p>
+<pre data-lang="Bash" style="background-color:#212733;color:#ccc9c2;" class="language-Bash "><code class="language-Bash" data-lang="Bash"><span style="color:#f28779;">echo </span><span style="color:#bae67e;">&quot;blacklist nvidiafb&quot; </span><span style="color:#f29e74;">&gt;&gt;</span><span> /etc/modprobe.d/blacklist.conf
+</span><span style="color:#f28779;">echo </span><span style="color:#bae67e;">&quot;blacklist nouveau&quot; </span><span style="color:#f29e74;">&gt;&gt;</span><span> /etc/modprobe.d/blacklist.conf
+</span><span style="color:#f28779;">echo </span><span style="color:#bae67e;">&quot;blacklist nvidia&quot; </span><span style="color:#f29e74;">&gt;&gt;</span><span> /etc/modprobe.d/blacklist.conf
+</span><span style="color:#f28779;">echo </span><span style="color:#bae67e;">&quot;blacklist radeon&quot; </span><span style="color:#f29e74;">&gt;&gt;</span><span> /etc/modprobe.d/blacklist.conf
+</span><span style="color:#f28779;">echo </span><span style="color:#bae67e;">&quot;blacklist amdgpu&quot; </span><span style="color:#f29e74;">&gt;&gt;</span><span> /etc/modprobe.d/blacklist.conf
+</span><span style="color:#f28779;">echo </span><span style="color:#bae67e;">&quot;blacklist snd_hda_intel&quot; </span><span style="color:#f29e74;">&gt;&gt;</span><span> /etc/modprobe.d/blacklist.conf
+</span><span style="color:#f28779;">echo </span><span style="color:#bae67e;">&quot;blacklist snd_hda_codec_hdmi&quot; </span><span style="color:#f29e74;">&gt;&gt;</span><span> /etc/modprobe.d/blacklist.conf
+</span><span style="color:#f28779;">echo </span><span style="color:#bae67e;">&quot;blacklist i915&quot; </span><span style="color:#f29e74;">&gt;&gt;</span><span> /etc/modprobe.d/blacklist.conf
+</span></code></pre>
+<p>然后更新内核重启机器：</p>
+<pre data-lang="Bash" style="background-color:#212733;color:#ccc9c2;" class="language-Bash "><code class="language-Bash" data-lang="Bash"><span style="color:#ffd580;">update-initramfs</span><span style="color:#ffcc66;"> -u </span><span style="color:#f29e74;">&amp;&amp; </span><span style="color:#ffd580;">reboot
+</span></code></pre>
+<h3 id="yan-zheng-iommu-zhong-duan-zhong-xin-ying-she-shi-fou-yi-qi-yong">验证 IOMMU 中断重新映射是否已启用</h3>
+<pre style="background-color:#212733;color:#ccc9c2;"><code><span>dmesg | grep &#39;remapping&#39;
+</span></code></pre>
+<p>看到以下行之一：</p>
+<pre style="background-color:#212733;color:#ccc9c2;"><code><span>AMD-Vi: Interrupt remapping enabled
+</span><span>DMAR-IR: Enabled IRQ remapping in x2apic mode
+</span></code></pre>
+<h3 id="bu-zhi-dao-zhe-shi-sha">不知道这是啥</h3>
+<pre style="background-color:#212733;color:#ccc9c2;"><code><span>nano /etc/modprobe.d/pve-blacklist.conf
+</span></code></pre>
+<p>添加</p>
+<pre style="background-color:#212733;color:#ccc9c2;"><code><span>options vfio_iommu_type1 allow_unsafe_interrupts=1
+</span></code></pre>
+<h3 id="sheng-cheng-xian-qia-romfile">生成显卡romfile</h3>
+<p>在window下，使用gpu-z提取。
+把<code>.rom文件</code>（我的是R9-270.rom）放到pve的<code>/usr/share/kvm/</code>目录下面
+在虚拟机配置下添加pcie设备，选择显卡，勾选主<code>gpu</code>和<code>rombar</code>
+编辑虚拟机配置</p>
+<pre style="background-color:#212733;color:#ccc9c2;"><code><span>nano /etc/pve/qemu-server/100.conf
+</span></code></pre>
+<p>修改</p>
+<pre style="background-color:#212733;color:#ccc9c2;"><code><span># hostpci0: 01:00
+</span><span>hostpci0: 01:00,x-vga=1,romfile=R9-270.rom
+</span></code></pre>
+<h3 id="pei-zhi-ying-pan-zhi-tong">配置硬盘直通</h3>
+<p>参考<a href="https://foxi.buduanwang.vip/virtualization/1754.html/">佛西博客</a>
+我们可以通过下面命令，列出当前的硬盘列表</p>
+<pre style="background-color:#212733;color:#ccc9c2;"><code><span>ls -la /dev/disk/by-id/|grep -v dm|grep -v lvm|grep -v part
+</span></code></pre>
+<p>如下面的例子</p>
+<pre style="background-color:#212733;color:#ccc9c2;"><code><span>root@pve:~# ls -la /dev/disk/by-id/|grep -v dm|grep -v lvm|grep -v part
+</span><span>total 0
+</span><span>drwxr-xr-x 2 root root 540 Apr 28 16:39 .
+</span><span>drwxr-xr-x 6 root root 120 Mar  3 15:52 ..
+</span><span>lrwxrwxrwx 1 root root  13 Apr 28 16:39 nvme-eui.01000000010000005cd2e431fee65251 -&gt; ../../nvme2n1
+</span><span>lrwxrwxrwx 1 root root  13 Mar  3 15:52 nvme-eui.334843304aa010020025385800000004 -&gt; ../../nvme1n1
+</span><span>lrwxrwxrwx 1 root root  13 Apr 28 17:36 nvme-eui.334843304ab005400025385800000004 -&gt; ../../nvme0n1
+</span><span>lrwxrwxrwx 1 root root  13 Apr 28 16:39 nvme-INTEL_SSDPE2KX020T8_BTLJ039307142P0BGN -&gt; ../../nvme2n1
+</span><span>lrwxrwxrwx 1 root root  13 Mar  3 15:52 nvme-SAMSUNG_MZWLL800HEHP-00003_S3HCNX0JA01002 -&gt; ../../nvme1n1
+</span><span>lrwxrwxrwx 1 root root  13 Apr 28 17:36 nvme-SAMSUNG_MZWLL800HEHP-00003_S3HCNX0JB00540 -&gt; ../../nvme0n1
+</span><span>lrwxrwxrwx 1 root root   9 Mar  3 15:52 scsi-35000c500474cd7eb -&gt; ../../sda
+</span><span>lrwxrwxrwx 1 root root   9 Mar  3 15:52 wwn-0x5000c500474cd7eb -&gt; ../../sda
+</span></code></pre>
+<p>nvme开头的是nvme硬盘，ata开头是走sata或者ata通道的设备。，scsi是scsi设备-阵列卡raid或者是直通卡上的硬盘。
+我们可以通过<code>qm set &lt;vmid&gt; --scsiX /dev/disk/by-id/xxxxxxx</code> 进行RDM直通</p>
+<pre style="background-color:#212733;color:#ccc9c2;"><code><span>#   虚拟机编号 控制器类型编号 物理磁盘挂载点
+</span><span>qm set 101 --scsi1 /dev/disk/by-id/nvme-INTEL_SSDPE2KX020T8_BTLJ039307142P0BGN
+</span></code></pre>
+<h3 id="jiang-jing-xiang-xie-cheng-ci-pan-ge-shi">将镜像写成磁盘格式</h3>
+<pre style="background-color:#212733;color:#ccc9c2;"><code><span>#                    虚拟机编号           存放镜像的位置                                      储存池
+</span><span>qm disk import 100 /var/lib/vz/template/iso/openwrt.img local-lvm
+</span></code></pre>
+<p>参考连接
+https://pve.proxmox.com/wiki/PCI_Passthrough#Verify_IOMMU_is_enabled
+https://www.bilibili.com/opus/848481909029732376?spm_id_from=333.976.0.0
+https://www.bilibili.com/read/cv34418465/
+https://pve.sqlsec.com/7/4/#_2</p>
+<h2 id="pei-zhi-sheng-dian">配置省电</h2>
+<p>安装<code>cpupower</code></p>
+<pre style="background-color:#212733;color:#ccc9c2;"><code><span>apt install cpupower
+</span><span>
+</span><span># 设置所有CPU为节能模式
+</span><span>cpupower -c all frequency-set -g powersave
+</span><span>
+</span><span># 设置所有CPU为性能模式
+</span><span>cpupower -c all frequency-set -g performance
+</span><span>编辑 root 用户的 crontab:
+</span></code></pre>
+<p>命令重启后设置的会失效，下面持久化这个命令，让其开机自动执行</p>
+<pre data-lang="bash" style="background-color:#212733;color:#ccc9c2;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffd580;">sudo</span><span> crontab</span><span style="color:#ffcc66;"> -e
+</span></code></pre>
+<p>添加以下内容以在启动时运行命令:</p>
+<pre style="background-color:#212733;color:#ccc9c2;"><code><span>@reboot /usr/bin/cpupower -c all frequency-set -g powersave
+</span></code></pre>
+
+      </div>
+    </div>
+    <div class="prompt" id="terminal"><input
+    type="text"
+    id="setter"
+    onkeydown="writeit(this, event);moveIt(this.value.length, event)"
+    onchange="writeit(this, event)"
+    onkeyup="writeit(this, event)"
+    onkeypress="writeit(this, event);"
+    >
+<label for="setter" id="writer"> </label><b class="cursor" id="cursor"></b></div>
+  </main>
+</body>
+</html>

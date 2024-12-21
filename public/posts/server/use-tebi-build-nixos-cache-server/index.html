@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATP</title>
+     <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js" integrity="sha256-WCzAhd2P6gRJF9Hv3oOOd+hFJi/QJbv+Azn4CGB8gfY=" crossorigin="anonymous"></script>
+     <script src="/js/index.js"></script>
+     <script src="/js/prompt.js"></script>
+     <script src="/js/keyboard.js"></script>
+     <script src="/js/tab.js"></script>
+     <script src="/js/commands.js"></script>
+     <script src="/js/config.js"></script><link rel="stylesheet" href="/css/base.css"><link rel="stylesheet" href="/css/page.css"></head>
+<body onkeydown='exec(event)'>
+  <header>
+      <h1>ATP</h1>
+  </header>
+  <main>
+    <div class="files" id="files" tabindex="0">
+<ul><li class="file">
+    <span><a href='https://blog.0pt.icu/readme/'
+      tabindex="-2">  README</a></span>
+  </li><li class="file">
+    <span><a href='https://blog.0pt.icu/rss/'
+      tabindex="-3">  RSS</a></span>
+  </li><li class="folder"><span>
+      
+      <a href='https://blog.0pt.icu/posts/'
+        tabindex="-4">  Posts
+      </a>
+    </span>
+
+    <ul>
+      
+        
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/think/'
+    tabindex="-5">  Think
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/think/unhappy-newyear/'
+        tabindex="-6">  祝你春节不快乐</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/think/1st-anniversary-of-listening-to-tayu-lo/'
+        tabindex="-7">  纪念听罗大佑一周年</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/think/music-history/'
+        tabindex="-8">  记我的听歌历程</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/think/my-first-post/'
+        tabindex="-9">  My first post</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/server/'
+    tabindex="-10">  server
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/traefik-simple-guide/'
+        tabindex="-11">  Docker/NixOS使用traefik实现简单反代</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/caddy-simple-guide/'
+        tabindex="-12">  Debian/NixOS使用caddy实现简单反代</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a class="selected"href='https://blog.0pt.icu/posts/server/use-tebi-build-nixos-cache-server/'
+        tabindex="-13">  使用tebi作为s3,搭建nix缓存服务器</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/cloudfront-cdn-acme/'
+        tabindex="-14">  cloudfront配置小鸡cdn并使用acme.sh自动获取证书</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/build-terraria-tshock/'
+        tabindex="-15">  搭建泰拉瑞亚Tshock服务器(强制开荒)</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/build-hugo/'
+        tabindex="-16">  基于Arch Linux搭建hugo博客</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/hackintosh/'
+    tabindex="-17">  Hackintosh
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/hackintosh/x79/'
+        tabindex="-18">  记录一次杂牌x79黑苹果</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/pve/'
+    tabindex="-19">  PVE
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/pve/pve-hackintosh/'
+        tabindex="-20">  x79上pve黑苹果</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/pve/build-pve/'
+        tabindex="-21">  x79搭建pve并开启硬件直通</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/k3s/'
+    tabindex="-22">  K3S
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/k3s/develop-rancher/'
+        tabindex="-23">  k3s部署rancher</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/k3s/kubevirt-manager/'
+        tabindex="-24">  k3s部署kubevirt-manager</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/linux-trip/'
+    tabindex="-25">  Linux Trip
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/7/'
+        tabindex="-26">  第七回，探FreeBSD路途远，坎坷荆棘勇前行</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/6/'
+        tabindex="-27">  第六回，弃Linux投FreeBSD，稳如磐石路更宽</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/5/'
+        tabindex="-28">  第五回，渐觉Arch无力持，转投NixOS获新生</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/4/'
+        tabindex="-29">  第四回，舍KDE抱Hyprland，新境界追求更添</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/3/'
+        tabindex="-30">  第三回，探幽寻秘APPS新，解CONFIG奇趣入眼前</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/2/'
+        tabindex="-31">  第二回，初入KDE虚界间，安装APPS耀目光</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/1/'
+        tabindex="-32">  第一回，弃window渐入轻盈境，装Arch走入坑深底</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+    </ul>
+  </li><li class="folder"><span>
+      
+      <a href='https://blog.0pt.icu/about/'
+        tabindex="-33">  ABOUT
+      </a>
+    </span>
+
+    <ul>
+      <li class="file">
+        <span>└──
+          <a href='https://blog.0pt.icu/about/about2/'
+            tabindex="-34">  ABOUT2</a>
+        </span>
+      </li><li class="file">
+        <span>└──
+          <a href='https://blog.0pt.icu/about/about1/'
+            tabindex="-35">  ABOUT1</a>
+        </span>
+      </li>
+        
+    </ul>
+  </li><li class="folder"><span>
+      
+      <a href='https://blog.0pt.icu/links/'
+        tabindex="-36">  LINKS
+      </a>
+    </span>
+
+    <ul>
+      <li class="file">
+        <span>└──
+          <a href='https://blog.0pt.icu/links/link/'
+            tabindex="-37">  LINKS</a>
+        </span>
+      </li>
+        
+    </ul>
+  </li>
+</ul>
+</div>
+    <div class="viewer page" id="viewer" tabindex="0">
+      <div class="tab">
+<ul id="tabs">
+</ul>
+
+
+</div>
+      <div class="content" id="content"><h1 id="shi-yong-tebizuo-wei-s3-da-jian-nixhuan-cun-fu-wu-qi">使用tebi作为s3,搭建nix缓存服务器</h1>
+<p>2024-11-12
+参考</p>
+<ol>
+<li>https://nixos-and-flakes.thiscute.world/zh/nix-store/host-your-own-binary-cache-server</li>
+</ol>
+<h2 id="shi-yong-tebizuo-wei-s3-provider">使用tebi作为s3 provider</h2>
+<p>进入s3
+创建桶your-bucket-name
+创建access_key/secret_access_key</p>
+<p>直接上传<code>nix-cache-info</code> 文件到桶的根目录，文件内容如下</p>
+<pre data-lang="nix-cache-info" style="background-color:#212733;color:#ccc9c2;" class="language-nix-cache-info "><code class="language-nix-cache-info" data-lang="nix-cache-info"><span>StoreDir: /nix/store
+</span><span>WantMassQuery: 1
+</span><span>Priority: 40
+</span></code></pre>
+<h2 id="chuang-jian-s3tong-xing-zheng">创建s3通行证</h2>
+<p>转到nixos上,创建<code>~/.aws/credentials</code>,内容如下</p>
+<pre data-lang="credentials" style="background-color:#212733;color:#ccc9c2;" class="language-credentials "><code class="language-credentials" data-lang="credentials"><span>[config-name]
+</span><span>aws_access_key_id=&lt;your_access_key&gt;
+</span><span>aws_secret_access_key=&lt;your_secret_access_key&gt;
+</span></code></pre>
+<p>这里的<code>&lt;your_access_key&gt;</code>和<code>&lt;your_secret_access_key&gt;</code>去tebi后台找</p>
+<h2 id="shang-chuan-huan-cun">上传缓存</h2>
+<h3 id="chuang-jian-mi-yao-dui">创建密钥对</h3>
+<pre data-lang="bash" style="background-color:#212733;color:#ccc9c2;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffd580;">nix</span><span> key generate-secret</span><span style="color:#ffcc66;"> --key-name</span><span> your-want-name-1 </span><span style="color:#f29e74;">&gt; </span><span style="font-style:italic;color:#5ccfe6;">~</span><span>/.config/nix/secret.key
+</span><span style="color:#ffd580;">nix</span><span> key convert-secret-to-public </span><span style="color:#f29e74;">&lt; </span><span style="font-style:italic;color:#5ccfe6;">~</span><span>/.config/nix/secret.key </span><span style="color:#f29e74;">&gt; </span><span style="font-style:italic;color:#5ccfe6;">~</span><span>/.config/nix/public.key
+</span><span style="color:#ffd580;">cat </span><span style="font-style:italic;color:#5ccfe6;">~</span><span>/.config/nix/public.key
+</span><span style="font-style:italic;color:#5c6773;"># =&gt; your-want-name-1:m0J/oDlLEuG6ezc6MzmpLCN2MYjssO3NMIlr9JdxkTs=
+</span></code></pre>
+<blockquote>
+<p>名字是任意的，推荐后面加上版本号</p>
+</blockquote>
+<h3 id="tui-song-cun-chu-lu-jing-dao-er-jin-zhi-huan-cun">推送存储路径到二进制缓存</h3>
+<p>先给本地存储路径签名</p>
+<pre data-lang="bash" style="background-color:#212733;color:#ccc9c2;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffd580;">nix</span><span> store sign</span><span style="color:#ffcc66;"> --recursive --key-file </span><span style="font-style:italic;color:#5ccfe6;">~</span><span>/.config/nix/secret.key /run/current-system
+</span></code></pre>
+<p>将这些路径复制到缓存</p>
+<pre data-lang="bash" style="background-color:#212733;color:#ccc9c2;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffd580;">nix</span><span> copy</span><span style="color:#ffcc66;"> --to </span><span style="color:#bae67e;">&#39;s3://your-bucket-name?profile=config-name&amp;endpoint=s3.tebi.io&#39;</span><span> /run/current-system
+</span></code></pre>
+<h3 id="tian-jia-zhe-ge-huan-cun-yuan">添加这个缓存源</h3>
+<p>将以下内容放入 configuration.nix 或您的任何自定义 NixOS 模块中</p>
+<pre data-lang="bash" style="background-color:#212733;color:#ccc9c2;" class="language-bash "><code class="language-bash" data-lang="bash"><span>{
+</span><span>  </span><span style="color:#ffd580;">nix</span><span> = {
+</span><span>    settings = {
+</span><span>      extra-substituters = [
+</span><span>        </span><span style="color:#bae67e;">&quot;https://s3.tebi.io/your-bucket-name/&quot;
+</span><span>      ];
+</span><span>      extra-trusted-public-keys = [
+</span><span>        </span><span style="color:#bae67e;">&quot;your-want-name-1:m0J/oDlLEuG6ezc6MzmpLCN2MYjssO3NMIlr9JdxkTs=&quot;
+</span><span>      ];
+</span><span>    };
+</span><span>  }</span><span style="color:#f29e74;">;
+</span><span>}
+</span></code></pre>
+<p>参考:
+https://nixos-and-flakes.thiscute.world/zh/nix-store/host-your-own-binary-cache-server
+https://fzakaria.com/2020/07/15/setting-up-a-nix-s3-binary-cache.html</p>
+
+      </div>
+    </div>
+    <div class="prompt" id="terminal"><input
+    type="text"
+    id="setter"
+    onkeydown="writeit(this, event);moveIt(this.value.length, event)"
+    onchange="writeit(this, event)"
+    onkeyup="writeit(this, event)"
+    onkeypress="writeit(this, event);"
+    >
+<label for="setter" id="writer"> </label><b class="cursor" id="cursor"></b></div>
+  </main>
+</body>
+</html>

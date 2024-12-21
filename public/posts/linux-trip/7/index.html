@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATP</title>
+     <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js" integrity="sha256-WCzAhd2P6gRJF9Hv3oOOd+hFJi/QJbv+Azn4CGB8gfY=" crossorigin="anonymous"></script>
+     <script src="/js/index.js"></script>
+     <script src="/js/prompt.js"></script>
+     <script src="/js/keyboard.js"></script>
+     <script src="/js/tab.js"></script>
+     <script src="/js/commands.js"></script>
+     <script src="/js/config.js"></script><link rel="stylesheet" href="/css/base.css"><link rel="stylesheet" href="/css/page.css"></head>
+<body onkeydown='exec(event)'>
+  <header>
+      <h1>ATP</h1>
+  </header>
+  <main>
+    <div class="files" id="files" tabindex="0">
+<ul><li class="file">
+    <span><a href='https://blog.0pt.icu/readme/'
+      tabindex="-2">  README</a></span>
+  </li><li class="file">
+    <span><a href='https://blog.0pt.icu/rss/'
+      tabindex="-3">  RSS</a></span>
+  </li><li class="folder"><span>
+      
+      <a href='https://blog.0pt.icu/posts/'
+        tabindex="-4">  Posts
+      </a>
+    </span>
+
+    <ul>
+      
+        
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/think/'
+    tabindex="-5">  Think
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/think/unhappy-newyear/'
+        tabindex="-6">  祝你春节不快乐</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/think/1st-anniversary-of-listening-to-tayu-lo/'
+        tabindex="-7">  纪念听罗大佑一周年</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/think/music-history/'
+        tabindex="-8">  记我的听歌历程</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/think/my-first-post/'
+        tabindex="-9">  My first post</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/server/'
+    tabindex="-10">  server
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/traefik-simple-guide/'
+        tabindex="-11">  Docker/NixOS使用traefik实现简单反代</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/caddy-simple-guide/'
+        tabindex="-12">  Debian/NixOS使用caddy实现简单反代</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/use-tebi-build-nixos-cache-server/'
+        tabindex="-13">  使用tebi作为s3,搭建nix缓存服务器</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/cloudfront-cdn-acme/'
+        tabindex="-14">  cloudfront配置小鸡cdn并使用acme.sh自动获取证书</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/build-terraria-tshock/'
+        tabindex="-15">  搭建泰拉瑞亚Tshock服务器(强制开荒)</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/build-hugo/'
+        tabindex="-16">  基于Arch Linux搭建hugo博客</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/hackintosh/'
+    tabindex="-17">  Hackintosh
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/hackintosh/x79/'
+        tabindex="-18">  记录一次杂牌x79黑苹果</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/pve/'
+    tabindex="-19">  PVE
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/pve/pve-hackintosh/'
+        tabindex="-20">  x79上pve黑苹果</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/pve/build-pve/'
+        tabindex="-21">  x79搭建pve并开启硬件直通</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/k3s/'
+    tabindex="-22">  K3S
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/k3s/develop-rancher/'
+        tabindex="-23">  k3s部署rancher</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/k3s/kubevirt-manager/'
+        tabindex="-24">  k3s部署kubevirt-manager</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/linux-trip/'
+    tabindex="-25">  Linux Trip
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a class="selected"href='https://blog.0pt.icu/posts/linux-trip/7/'
+        tabindex="-26">  第七回，探FreeBSD路途远，坎坷荆棘勇前行</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/6/'
+        tabindex="-27">  第六回，弃Linux投FreeBSD，稳如磐石路更宽</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/5/'
+        tabindex="-28">  第五回，渐觉Arch无力持，转投NixOS获新生</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/4/'
+        tabindex="-29">  第四回，舍KDE抱Hyprland，新境界追求更添</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/3/'
+        tabindex="-30">  第三回，探幽寻秘APPS新，解CONFIG奇趣入眼前</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/2/'
+        tabindex="-31">  第二回，初入KDE虚界间，安装APPS耀目光</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/1/'
+        tabindex="-32">  第一回，弃window渐入轻盈境，装Arch走入坑深底</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+    </ul>
+  </li><li class="folder"><span>
+      
+      <a href='https://blog.0pt.icu/about/'
+        tabindex="-33">  ABOUT
+      </a>
+    </span>
+
+    <ul>
+      <li class="file">
+        <span>└──
+          <a href='https://blog.0pt.icu/about/about2/'
+            tabindex="-34">  ABOUT2</a>
+        </span>
+      </li><li class="file">
+        <span>└──
+          <a href='https://blog.0pt.icu/about/about1/'
+            tabindex="-35">  ABOUT1</a>
+        </span>
+      </li>
+        
+    </ul>
+  </li><li class="folder"><span>
+      
+      <a href='https://blog.0pt.icu/links/'
+        tabindex="-36">  LINKS
+      </a>
+    </span>
+
+    <ul>
+      <li class="file">
+        <span>└──
+          <a href='https://blog.0pt.icu/links/link/'
+            tabindex="-37">  LINKS</a>
+        </span>
+      </li>
+        
+    </ul>
+  </li>
+</ul>
+</div>
+    <div class="viewer page" id="viewer" tabindex="0">
+      <div class="tab">
+<ul id="tabs">
+</ul>
+
+
+</div>
+      <div class="content" id="content"><h1 id="freebsdde-ji-ben-pei-zhi-yu-hyprlandan-zhuang">FreeBSD的基本配置与hyprland安装</h1>
+<p>2024-10-21</p>
+<h2 id="geng-xin-xi-tong">更新系统</h2>
+<p>先以root身份登陆，因为没有sudo，所以普通用户不能获得管理员权限，后面会安装</p>
+<pre style="background-color:#212733;color:#ccc9c2;"><code><span>pkg update
+</span></code></pre>
+<p>在这一布可能会遇见问题，报错如下</p>
+<pre style="background-color:#212733;color:#ccc9c2;"><code><span>admin@freebsd ~&gt; sudo pkg install inxi
+</span><span>Updating FreeBSD repository catalogue...
+</span><span>pkg: No SRV record found for the repo &#39;FreeBSD&#39;
+</span><span>pkg: packagesite URL error for pkg+http://pkg.FreeBSD.org/FreeBSD:13:amd64/quarterly/packagesite.pkg -- pkg+:// implies SRV mirror type
+</span><span>pkg: packagesite URL error for pkg+http://pkg.FreeBSD.org/FreeBSD:13:amd64/quarterly/packagesite.txz -- pkg+:// implies SRV mirror type
+</span><span>Unable to update repository FreeBSD
+</span><span>Error updating repositories!
+</span><span>
+</span><span>admin@freebsd ~ [3]&gt; pkg search inxi
+</span><span>pkg: Repository FreeBSD missing. &#39;pkg update&#39; required
+</span><span>pkg: Repository FreeBSD cannot be opened. &#39;pkg update&#39; required
+</span><span>
+</span><span>admin@freebsd ~ [1]&gt; sudo pkg update
+</span><span>Updating FreeBSD repository catalogue...
+</span><span>pkg: No SRV record found for the repo &#39;FreeBSD&#39;
+</span><span>Fetching meta.conf: 100%    163 B   0.2kB/s    00:01    
+</span><span>pkg: packagesite URL error for pkg+http://pkg.FreeBSD.org/FreeBSD:13:amd64/quarterly/packagesite.pkg -- pkg+:// implies SRV mirror type
+</span><span>pkg: packagesite URL error for pkg+http://pkg.FreeBSD.org/FreeBSD:13:amd64/quarterly/packagesite.txz -- pkg+:// implies SRV mirror type
+</span><span>Unable to update repository FreeBSD
+</span><span>Error updating repositories!
+</span></code></pre>
+<p>提取报错，就是找不到pkg源的SRV记录</p>
+<pre style="background-color:#212733;color:#ccc9c2;"><code><span>pkg: No SRV record found for the repo &#39;FreeBSD&#39;
+</span></code></pre>
+<p><a href="https://forums.freebsd.org/threads/problems-with-pkg-1-20-8.90655/">problems with pkg 1.20.8 | The FreeBSD Forums</a>
+解决方法如下</p>
+<pre data-lang="sh" style="background-color:#212733;color:#ccc9c2;" class="language-sh "><code class="language-sh" data-lang="sh"><span style="color:#ffd580;">mkdir</span><span style="color:#ffcc66;"> -p</span><span> /usr/local/etc/pkg/repos
+</span><span style="color:#ffd580;">cp</span><span> /etc/pkg/FreeBSD.conf /usr/local/etc/pkg/repos/
+</span><span style="color:#ffd580;">vi</span><span> /usr/local/etc/pkg/repos/FreeBSD.conf
+</span></code></pre>
+<p>将：</p>
+<pre data-lang="FreeBSD.conf" style="background-color:#212733;color:#ccc9c2;" class="language-FreeBSD.conf "><code class="language-FreeBSD.conf" data-lang="FreeBSD.conf"><span># $FreeBSD$
+</span><span>#
+</span><span># To disable this repository, instead of modifying or removing this file,
+</span><span># create a /usr/local/etc/pkg/repos/FreeBSD.conf file:
+</span><span>#
+</span><span>#   mkdir -p /usr/local/etc/pkg/repos
+</span><span>#   echo &quot;FreeBSD: { enabled: no }&quot; &gt; /usr/local/etc/pkg/repos/FreeBSD.conf
+</span><span>#
+</span><span>
+</span><span>FreeBSD: {
+</span><span>  url: &quot;pkg+http://pkg.FreeBSD.org/${ABI}/quarterly&quot;,
+</span><span>  mirror_type: &quot;srv&quot;,
+</span><span>  signature_type: &quot;fingerprints&quot;,
+</span><span>  fingerprints: &quot;/usr/share/keys/pkg&quot;,
+</span><span>  enabled: yes
+</span><span>}
+</span></code></pre>
+<p>改为：</p>
+<pre data-lang="FreeBSD.conf" style="background-color:#212733;color:#ccc9c2;" class="language-FreeBSD.conf "><code class="language-FreeBSD.conf" data-lang="FreeBSD.conf"><span># $FreeBSD$
+</span><span>#
+</span><span># To disable this repository, instead of modifying or removing this file,
+</span><span># create a /usr/local/etc/pkg/repos/FreeBSD.conf file:
+</span><span>#
+</span><span>#   mkdir -p /usr/local/etc/pkg/repos
+</span><span>#   echo &quot;FreeBSD: { enabled: no }&quot; &gt; /usr/local/etc/pkg/repos/FreeBSD.conf
+</span><span>#
+</span><span>
+</span><span>FreeBSD: {
+</span><span>  url: &quot;http://pkg.FreeBSD.org/${ABI}/quarterly&quot;,
+</span><span>  mirror_type: &quot;http&quot;,
+</span><span>  signature_type: &quot;fingerprints&quot;,
+</span><span>  fingerprints: &quot;/usr/share/keys/pkg&quot;,
+</span><span>  enabled: yes
+</span><span>}
+</span></code></pre>
+<p>这是官方管理员给出的解决方案。
+再执行更新</p>
+<pre style="background-color:#212733;color:#ccc9c2;"><code><span>pkg update
+</span></code></pre>
+<p>安装sudo</p>
+<pre data-lang="sh" style="background-color:#212733;color:#ccc9c2;" class="language-sh "><code class="language-sh" data-lang="sh"><span style="color:#ffd580;">pw</span><span> groupmod wheel</span><span style="color:#ffcc66;"> -m</span><span> username
+</span><span style="color:#ffd580;">pkg</span><span> install sudo
+</span><span style="color:#ffd580;">visudo
+</span></code></pre>
+<p>接下来弹出vi编辑器，在其中找到</p>
+<pre data-lang="sh" style="background-color:#212733;color:#ccc9c2;" class="language-sh "><code class="language-sh" data-lang="sh"><span style="font-style:italic;color:#5c6773;">## Same thing without a password
+</span></code></pre>
+<p>把下面那行的注释取消(就是下面那行的#号删掉，使用hjkl移到到那个需要删除的位置，按x，就可以删除光标所在的字符)。然后按<code>ESC</code>,再输入<code>:wq</code>保存并退出。
+然后就可以使用sudo了，这是可以使用</p>
+<pre style="background-color:#212733;color:#ccc9c2;"><code><span>exit # 注销当前用户，重新以之前创建的普通用户身份登录
+</span></code></pre>
+<p>或者</p>
+<pre style="background-color:#212733;color:#ccc9c2;"><code><span>su admin # 切换回之前创建的普通用户admin
+</span></code></pre>
+<p>接下来均以普通用户admin进行操作
+我的成功安装xorg与hyprland且可正常使用的平台</p>
+<ol>
+<li>S410p笔记本</li>
+<li>e5-2651v2+R9 270/HD7750+pve虚拟机(q35机型)</li>
+<li>天选4 i7 13700H + 混合显卡输出模式(实际上仅用核显)</li>
+<li>A520 + R5 5600G核显</li>
+</ol>
+<h2 id="an-zhuang-xorgyu-hyprland">安装xorg与hyprland</h2>
+<h3 id="an-zhuang-dui-ying-qu-dong">安装对应驱动</h3>
+<h4 id="intelxian-qia">intel显卡</h4>
+<pre style="background-color:#212733;color:#ccc9c2;"><code><span>sudo pkg install drm-kmod
+</span><span># sudo pkg install xf86-video-intel # 可选
+</span><span>sudo sysrc kld_list+=i915kms
+</span></code></pre>
+<h4 id="amdhe-xian-du-xian">amd核显/独显</h4>
+<pre style="background-color:#212733;color:#ccc9c2;"><code><span>sudo pkg install drm-kmod
+</span><span># sudo pkg install xf86-video-intel # 可选
+</span><span>sudo sysrc kld_list+=amdgpu # 对于 HD7000 之后或 Tahiti 图形卡
+</span><span>sudo sysrc kld_list+=radeonkms # 对于较旧的显卡（HD7000 之前或 Tahiti 之前）
+</span></code></pre>
+<h4 id="nvidiadu-xian-dui-yu-jiao-xin-de-xian-qia">nvidia独显（对于较新的显卡）</h4>
+<pre style="background-color:#212733;color:#ccc9c2;"><code><span>sudo pkg install nvidia-driver
+</span><span>sudo sysrc kld_list+=nvidia-modeset
+</span></code></pre>
+<h4 id="nvidiadu-xian-dui-yu-jiao-jiu-de-xian-qia">nvidia独显（对于较旧的显卡）</h4>
+<p>https://docs.freebsd.org/en/books/handbook/x11/#x-graphic-card-drivers
+直接看文档吧</p>
+<h3 id="an-zhuang-ruan-jian-bao-bing-qi-yong-xi-tong-fu-wu">安装软件包并启用系统服务</h3>
+<pre style="background-color:#212733;color:#ccc9c2;"><code><span>sudo pw groupmod video -m username
+</span><span>sudo pkg install xorg dbus sddm wayland seatd hyprland xdg-desktop-portal-hyprland # hyprland本体
+</span><span>sudo pkg install alacritty waybar pavucontrol yazi rofi-wayland git neovim wl-clipboard # 常用工具
+</span><span>sudo sysrc dbus_enable=&quot;YES&quot;
+</span><span>sudo sysrc sddm_enable=&quot;YES&quot;
+</span><span>sudo sysrc hald_enable=&quot;YES&quot;
+</span><span>sudo sysrc seatd_enable=&quot;YES&quot;
+</span><span>sudo sysrc jackd_enable=&quot;YES&quot;
+</span><span>sudo sysrc linux_enable=&quot;YES&quot; # 配置linux兼容
+</span></code></pre>
+<p>运行后输入</p>
+<pre style="background-color:#212733;color:#ccc9c2;"><code><span>sudo reboot
+</span></code></pre>
+<p>重启系统，如果运气好，可以直接进入sddm，并且sddm上面的会话会显示Hyprland，这种情况就是非常成功</p>
+<h3 id="bao-cuo-1-xdg-runtime-dir-is-not-set">报错1：<code>XDG_RUNTIME_DIR is not set</code></h3>
+<p>可能会遇见报错<code>XDG_RUNTIME_DIR is not set</code>
+在 shell 的 rc 文件中添加以下内容（例如 .shrc、.bashrc）：</p>
+<pre style="background-color:#212733;color:#ccc9c2;"><code><span>export XDG_RUNTIME_DIR=/var/run/user/`id -u``
+</span></code></pre>
+<p>这个在freebsd14.1中已经解决，会自动帮你设置</p>
+<h3 id="bao-cuo-2-virtulboxxu-ni-ji-kai-bu-qi-lai-hyprlandyu-xorg">报错2：virtulbox虚拟机开不起来hyprland与xorg</h3>
+<p>hyprland貌似解决不了
+<a href="https://wiki.hyprland.org/Getting-Started/Quick-start/">Quick Start | Hyprland Wiki</a>
+官方说hyprland无法运行在虚拟机里面。
+xorg的话
+vbox虚拟机无法启动xorg，提示找不到显示器，那是因为没装显示驱动。
+记得先在vbox设置把显示-显卡控制器改为VBoxSVGA
+然后执行</p>
+<pre style="background-color:#212733;color:#ccc9c2;"><code><span>pkg install virtualbox-ose-additions-6.1.50
+</span><span>
+</span><span>startx # 检验是否可以开启xorg
+</span></code></pre>
+<h3 id="bao-cuo-3-ping-tai-shi-lao-shi-ying-te-er-bi-ji-ben-huan-shi-wu-fa-kai-qi-xorg">报错3：平台是老式英特尔笔记本，还是无法开启xorg</h3>
+<p>如果还不行，运行</p>
+<pre style="background-color:#212733;color:#ccc9c2;"><code><span>Xorg -configure
+</span></code></pre>
+<p>将生成的xorg.conf.new复制走</p>
+<pre style="background-color:#212733;color:#ccc9c2;"><code><span>cp xorg.conf.new /usr/local/etc/X11/xorg.conf.d/xorg.conf
+</span><span>vi /usr/local/etc/X11/xorg.conf.d/xorg.conf
+</span></code></pre>
+<p>将里面Device部分的Driver项改成对应的模块<a href="https://docs.freebsd.org/en/books/handbook/x11/#x-graphic-card-drivers">Chapter 5. The X Window System | FreeBSD Documentation Portal</a>
+几个论坛的例子
+<a href="https://forums.freebsd.org/threads/startx-bad-display-name.8003/">startX bad display name | The FreeBSD Forums</a><a href="https://forums.freebsd.org/threads/startx-bad-display-name.8003/">startX bad display name | The FreeBSD Forums</a>
+<a href="https://forums.freebsd.org/threads/thinkpad-e130-hd-4000-failed-to-load-module-intel.72048/">Solved - Thinkpad E130 - HD 4000 - Failed to load module "intel" | The FreeBSD Forums</a></p>
+<h3 id="bao-cuo-4-ping-tai-13dai-ying-te-er-rtx-4060bi-ji-ben-wu-fa-kai-qi-xorghuo-wayland">报错4：平台13代英特尔+RTX 4060笔记本，无法开启xorg或wayland</h3>
+<p>测试，在bios使用核显独显混合模式，根据官方文档进行配置，无法使用wayland
+需要修改xorg配置文件,才能正常运行xorg
+修改<code>/usr/local/etc/X11/xorg.conf.d/xorg.conf</code>里面的配置文件
+找到如下intel核显驱动的<code>Section</code>部分</p>
+<pre data-lang="xorg.conf" style="background-color:#212733;color:#ccc9c2;" class="language-xorg.conf "><code class="language-xorg.conf" data-lang="xorg.conf"><span>Section &quot;Device&quot;
+</span><span>	Identifier &quot;Card0&quot;
+</span><span>	Driver     &quot;intel&quot;
+</span><span>EndSection
+</span></code></pre>
+<p>将这部分修改为</p>
+<pre data-lang="xorg.conf" style="background-color:#212733;color:#ccc9c2;" class="language-xorg.conf "><code class="language-xorg.conf" data-lang="xorg.conf"><span>Section &quot;Device&quot;
+</span><span>	Identifier &quot;Intel Graphics&quot;
+</span><span>	Driver     &quot;intel&quot;
+</span><span>EndSection
+</span></code></pre>
+<p>重启，xorg正常，能明显感到核显被成功驱动
+wayland也正常</p>
+<p>在bios使用独显模式，无法开启xorg
+这是硬件兼容的问题，无解，最好不要使用笔记本独显的设备</p>
+
+      </div>
+    </div>
+    <div class="prompt" id="terminal"><input
+    type="text"
+    id="setter"
+    onkeydown="writeit(this, event);moveIt(this.value.length, event)"
+    onchange="writeit(this, event)"
+    onkeyup="writeit(this, event)"
+    onkeypress="writeit(this, event);"
+    >
+<label for="setter" id="writer"> </label><b class="cursor" id="cursor"></b></div>
+  </main>
+</body>
+</html>

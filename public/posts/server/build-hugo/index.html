@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATP</title>
+     <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js" integrity="sha256-WCzAhd2P6gRJF9Hv3oOOd+hFJi/QJbv+Azn4CGB8gfY=" crossorigin="anonymous"></script>
+     <script src="/js/index.js"></script>
+     <script src="/js/prompt.js"></script>
+     <script src="/js/keyboard.js"></script>
+     <script src="/js/tab.js"></script>
+     <script src="/js/commands.js"></script>
+     <script src="/js/config.js"></script><link rel="stylesheet" href="/css/base.css"><link rel="stylesheet" href="/css/page.css"></head>
+<body onkeydown='exec(event)'>
+  <header>
+      <h1>ATP</h1>
+  </header>
+  <main>
+    <div class="files" id="files" tabindex="0">
+<ul><li class="file">
+    <span><a href='https://blog.0pt.icu/readme/'
+      tabindex="-2">  README</a></span>
+  </li><li class="file">
+    <span><a href='https://blog.0pt.icu/rss/'
+      tabindex="-3">  RSS</a></span>
+  </li><li class="folder"><span>
+      
+      <a href='https://blog.0pt.icu/posts/'
+        tabindex="-4">  Posts
+      </a>
+    </span>
+
+    <ul>
+      
+        
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/think/'
+    tabindex="-5">  Think
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/think/unhappy-newyear/'
+        tabindex="-6">  祝你春节不快乐</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/think/1st-anniversary-of-listening-to-tayu-lo/'
+        tabindex="-7">  纪念听罗大佑一周年</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/think/music-history/'
+        tabindex="-8">  记我的听歌历程</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/think/my-first-post/'
+        tabindex="-9">  My first post</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/server/'
+    tabindex="-10">  server
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/traefik-simple-guide/'
+        tabindex="-11">  Docker/NixOS使用traefik实现简单反代</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/caddy-simple-guide/'
+        tabindex="-12">  Debian/NixOS使用caddy实现简单反代</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/use-tebi-build-nixos-cache-server/'
+        tabindex="-13">  使用tebi作为s3,搭建nix缓存服务器</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/cloudfront-cdn-acme/'
+        tabindex="-14">  cloudfront配置小鸡cdn并使用acme.sh自动获取证书</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/build-terraria-tshock/'
+        tabindex="-15">  搭建泰拉瑞亚Tshock服务器(强制开荒)</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a class="selected"href='https://blog.0pt.icu/posts/server/build-hugo/'
+        tabindex="-16">  基于Arch Linux搭建hugo博客</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/hackintosh/'
+    tabindex="-17">  Hackintosh
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/hackintosh/x79/'
+        tabindex="-18">  记录一次杂牌x79黑苹果</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/pve/'
+    tabindex="-19">  PVE
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/pve/pve-hackintosh/'
+        tabindex="-20">  x79上pve黑苹果</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/pve/build-pve/'
+        tabindex="-21">  x79搭建pve并开启硬件直通</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/k3s/'
+    tabindex="-22">  K3S
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/k3s/develop-rancher/'
+        tabindex="-23">  k3s部署rancher</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/k3s/kubevirt-manager/'
+        tabindex="-24">  k3s部署kubevirt-manager</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/linux-trip/'
+    tabindex="-25">  Linux Trip
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/7/'
+        tabindex="-26">  第七回，探FreeBSD路途远，坎坷荆棘勇前行</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/6/'
+        tabindex="-27">  第六回，弃Linux投FreeBSD，稳如磐石路更宽</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/5/'
+        tabindex="-28">  第五回，渐觉Arch无力持，转投NixOS获新生</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/4/'
+        tabindex="-29">  第四回，舍KDE抱Hyprland，新境界追求更添</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/3/'
+        tabindex="-30">  第三回，探幽寻秘APPS新，解CONFIG奇趣入眼前</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/2/'
+        tabindex="-31">  第二回，初入KDE虚界间，安装APPS耀目光</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/1/'
+        tabindex="-32">  第一回，弃window渐入轻盈境，装Arch走入坑深底</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+    </ul>
+  </li><li class="folder"><span>
+      
+      <a href='https://blog.0pt.icu/about/'
+        tabindex="-33">  ABOUT
+      </a>
+    </span>
+
+    <ul>
+      <li class="file">
+        <span>└──
+          <a href='https://blog.0pt.icu/about/about2/'
+            tabindex="-34">  ABOUT2</a>
+        </span>
+      </li><li class="file">
+        <span>└──
+          <a href='https://blog.0pt.icu/about/about1/'
+            tabindex="-35">  ABOUT1</a>
+        </span>
+      </li>
+        
+    </ul>
+  </li><li class="folder"><span>
+      
+      <a href='https://blog.0pt.icu/links/'
+        tabindex="-36">  LINKS
+      </a>
+    </span>
+
+    <ul>
+      <li class="file">
+        <span>└──
+          <a href='https://blog.0pt.icu/links/link/'
+            tabindex="-37">  LINKS</a>
+        </span>
+      </li>
+        
+    </ul>
+  </li>
+</ul>
+</div>
+    <div class="viewer page" id="viewer" tabindex="0">
+      <div class="tab">
+<ul id="tabs">
+</ul>
+
+
+</div>
+      <div class="content" id="content"><h1 id="ji-yu-arch-linuxda-jian-hugobo-ke">基于Arch Linux搭建hugo博客</h1>
+<p>2023-11-17</p>
+<h1 id="1-ben-di-da-jian-hugo">1.本地搭建hugo</h1>
+<p>本篇基于的环境是arch linux。</p>
+<p>没有安装git可以先用包管理器安装git。</p>
+<pre data-lang="bash" style="background-color:#212733;color:#ccc9c2;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffd580;">yay</span><span style="color:#ffcc66;"> -S</span><span> git
+</span></code></pre>
+<p>安装go语言：</p>
+<pre data-lang="bash" style="background-color:#212733;color:#ccc9c2;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffd580;">yay</span><span style="color:#ffcc66;"> -S</span><span> go
+</span></code></pre>
+<p>安装hugo：</p>
+<pre data-lang="bash" style="background-color:#212733;color:#ccc9c2;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffd580;">yay</span><span style="color:#ffcc66;"> -S</span><span> gohugo-extended-bin
+</span></code></pre>
+<p>创建博客文件：</p>
+<pre data-lang="bash" style="background-color:#212733;color:#ccc9c2;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffd580;">hugo</span><span> new site myblog
+</span></code></pre>
+<p>该操作会创建一个博客文件夹，并在里面生成博客文件</p>
+<p><code>myblog</code> 可以替换成你想要的博客文件夹的名字。</p>
+<p>进入<strong>博客文件夹的根目录</strong>里面。</p>
+<pre data-lang="bash" style="background-color:#212733;color:#ccc9c2;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#f28779;">cd</span><span> myblog
+</span></code></pre>
+<p>下载博客主题，这里选用的是<code>stack</code> 主题。</p>
+<pre data-lang="bash" style="background-color:#212733;color:#ccc9c2;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffd580;">git</span><span> clone https://github.com/CaiJimmy/hugo-theme-stack/ themes/hugo-theme-stack
+</span></code></pre>
+<p>将博客主题中的的<code>exampleSite</code> 复制到博客的根目录。</p>
+<pre data-lang="bash" style="background-color:#212733;color:#ccc9c2;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffd580;">cp</span><span style="color:#ffcc66;"> -r</span><span> themes/hugo-theme-stack/exampleSite/</span><span style="color:#f29e74;">*</span><span> ./
+</span></code></pre>
+<p>将博客原来的配置文件<code>hugo.toml</code>删除。</p>
+<pre data-lang="bash" style="background-color:#212733;color:#ccc9c2;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffd580;">rm</span><span style="color:#ffcc66;"> -r</span><span> hugo.toml
+</span></code></pre>
+<p>主题中的<code>exampleSite</code>已经给我们提供了一个配置文件<code>config.yaml</code>，接下来我们配置config.yaml文件。可以参考官方文档与其他人的教程来配置。</p>
+<p><strong>渲染博客</strong></p>
+<pre data-lang="bash" style="background-color:#212733;color:#ccc9c2;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffd580;">hugo
+</span></code></pre>
+<p>这个命令会将你更新的文章与配置文件，还有修改的前端文件，在public文件夹里面生成相应的网页文件。最后别人看到的博客其实就是public里面的文件。</p>
+<p><strong>预览博客</strong></p>
+<pre data-lang="bash" style="background-color:#212733;color:#ccc9c2;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffd580;">hugo</span><span> server
+</span></code></pre>
+<p><img src="https://img.0pt.icu/learn/build-hugo/1.png" alt="" /></p>
+<p>现在，打开本地浏览器打开<code>http://localhost:1313</code> ，即可看见你的博客。</p>
+<p><img src="https://img.0pt.icu/learn/build-hugo/2.png" alt="" /></p>
+<p>至此本地搭建hugo完成。</p>
+<p>在本地更新的文章与配置文件，还有修改的前端文件，之后查看效果。确认无误后，运行<code>hugo</code> 命令渲染生成网页文件后，我们可以开始把博客推送到托管平台上面。</p>
+<h1 id="2-pei-zhi-git">2.配置git</h1>
+<p>先注册一个<a href="https://github.com">github</a></p>
+<p>生成密钥，在本地运行：</p>
+<pre data-lang="bash" style="background-color:#212733;color:#ccc9c2;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffd580;">ssh-keygen</span><span style="color:#ffcc66;"> -t</span><span> rsa
+</span></code></pre>
+<p>然后一路回车。</p>
+<p><img src="https://img.0pt.icu/learn/build-hugo/5.png" alt="" /></p>
+<p>然后根据他的默认路径（对于我来说是<code>/home/opeth/.shh</code>）,找到<code>id_rsa.pub</code></p>
+<p>文件。</p>
+<p><img src="https://img.0pt.icu/learn/build-hugo/6.png" alt="" /></p>
+<p>打开id_rsa.pub文件，将其中的内容全部复制。</p>
+<p>来到<a href="https://github.com/">github</a>页面登录后。</p>
+<p><img src="https://img.0pt.icu/learn/build-hugo/7.png" alt="" /></p>
+<p>点击头像。</p>
+<p><img src="https://img.0pt.icu/learn/build-hugo/8.png" alt="" /></p>
+<p>点击设置。</p>
+<p><img src="https://img.0pt.icu/learn/build-hugo/9.png" alt="" /></p>
+<p>点击<code>SSH and GPG keys</code> 。</p>
+<p><img src="https://img.0pt.icu/learn/build-hugo/10.png" alt="" /></p>
+<p>点击新增SSH密钥。</p>
+<p><img src="https://img.0pt.icu/learn/build-hugo/11.png" alt="" /></p>
+<p><img src="https://img.0pt.icu/learn/build-hugo/12.png" alt="" /></p>
+<p>依次点击。创建一个新的仓库。</p>
+<p><img src="https://img.0pt.icu/learn/build-hugo/13.png" alt="" /></p>
+<p><img src="https://img.0pt.icu/learn/build-hugo/14.png" alt="" /></p>
+<p>创建成功。</p>
+<p><img src="https://img.0pt.icu/learn/build-hugo/15.png" alt="" /></p>
+<p>点击这里的SSH。</p>
+<p><img src="https://img.0pt.icu/learn/build-hugo/16.png" alt="" /></p>
+<p>这里的这一串链接既为你的<code>ssh连接命令</code> 。先记下来备用。</p>
+<p>现在转战本地。</p>
+<p>打开终端，运行：</p>
+<pre data-lang="bash" style="background-color:#212733;color:#ccc9c2;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffd580;">git</span><span> config</span><span style="color:#ffcc66;"> --global</span><span> user.name yourName
+</span><span style="color:#ffd580;">git</span><span> config</span><span style="color:#ffcc66;"> --global</span><span> user.email yourEmail
+</span></code></pre>
+<p>请将<code>yourName</code>和<code>yourEmail</code> 替换成你自己的github用户名和注册github的邮箱。</p>
+<p>进入你本地的博客文件夹的根目录。</p>
+<p>(不知道博客文件夹的根目录是什么的。请从上文中的 1.本地部署hugo的 创建博客文件 到 进入<strong>博客文件夹的根目录</strong> 部分里面自行理解推断。)</p>
+<p>初始化博客文件夹为git仓库。</p>
+<pre data-lang="bash" style="background-color:#212733;color:#ccc9c2;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffd580;">git</span><span> init
+</span></code></pre>
+<p><img src="https://img.0pt.icu/learn/build-hugo/3.png" alt="" /></p>
+<p>将本地的<code>git</code>分支从<code>master</code>分支转变为<code>main</code>分支。</p>
+<pre data-lang="bash" style="background-color:#212733;color:#ccc9c2;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffd580;">git</span><span> branch</span><span style="color:#ffcc66;"> -m</span><span> master main
+</span></code></pre>
+<p><img src="https://img.0pt.icu/learn/build-hugo/4.png" alt="" /></p>
+<p>将本地的git仓库与我们刚才在github上面创建的那个仓库连接起来。</p>
+<pre data-lang="bash" style="background-color:#212733;color:#ccc9c2;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffd580;">git</span><span> remote add myblog git@github.com:0pt12/myblog.git
+</span></code></pre>
+<p>这里的<code>myblog</code> 是刚才我们在github上面创建的仓库的名字，请替换成你自己创建的仓库名字。</p>
+<p>这里的<code>git@github.com:0pt12/myblog.git</code> 是刚才我们在github上面创建的仓库的<code>ssh连接命令</code>，也请替换成你自己的仓库的<code>ssh连接命令</code>。</p>
+<p>至此，配置git完成。</p>
+<h1 id="3-jiang-ben-di-de-bo-ke-wen-jian-tui-song-dao-githubcang-ku">3.将本地的博客文件推送到github仓库</h1>
+<p>操作都在本地的博客文件夹的根目录下完成。</p>
+<p>一般来说，先在本地对博客进行更改，之后先运行：</p>
+<pre data-lang="bash" style="background-color:#212733;color:#ccc9c2;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffd580;">hugo
+</span></code></pre>
+<p>将博客的更改内容渲染生成网页文件到public文件夹里面。</p>
+<p><img src="https://img.0pt.icu/learn/build-hugo/17.png" alt="" /></p>
+<p>然后执行：</p>
+<pre data-lang="bash" style="background-color:#212733;color:#ccc9c2;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffd580;">git</span><span> add .
+</span><span style="font-style:italic;color:#5c6773;">#注意后面有一个点
+</span><span style="color:#ffd580;">git</span><span> commit</span><span style="color:#ffcc66;"> -m </span><span style="color:#bae67e;">&quot;Your commit message&quot;
+</span><span style="font-style:italic;color:#5c6773;">#这里引号里面的内容相当于注释，可以写这次更新的内容
+</span><span style="color:#ffd580;">git</span><span> push</span><span style="color:#ffcc66;"> -f</span><span> myblog main
+</span><span style="font-style:italic;color:#5c6773;"># myblog 是我的刚才创建的github上面仓库的名字，请自行替换
+</span></code></pre>
+<p><img src="https://img.0pt.icu/learn/build-hugo/18.png" alt="" /></p>
+<p><img src="https://img.0pt.icu/learn/build-hugo/19.png" alt="" /></p>
+<p>推送完成，我们去github上面的这个仓库看看。</p>
+<p><img src="https://img.0pt.icu/learn/build-hugo/20.png" alt="" /></p>
+<p>刚才空空如也的仓库里面出现了我们本地推送上去的东西。</p>
+<h1 id="4-jiang-wo-men-bo-ke-de-githubcang-ku-yu-tuo-guan-ping-tai-lian-jie">4.将我们博客的github仓库与托管平台连接</h1>
+<p>这里，我们选用的托管平台是<a href="https://www.4everland.org/">4everland</a></p>
+<p>点开这个连接<a href="https://www.4everland.org/">4everland</a></p>
+<p><img src="https://img.0pt.icu/learn/build-hugo/21.png" alt="" /></p>
+<p><img src="https://img.0pt.icu/learn/build-hugo/22.png" alt="" /></p>
+<p>这是用你的github账号去注册。</p>
+<p><img src="https://img.0pt.icu/learn/build-hugo/23.png" alt="" /></p>
+<p><img src="https://img.0pt.icu/learn/build-hugo/24.png" alt="" /></p>
+<p>这里刚注册就叫你花钱升级，直接给他放弃。</p>
+<p><img src="https://img.0pt.icu/learn/build-hugo/25.png" alt="" /></p>
+<p><img src="https://img.0pt.icu/learn/build-hugo/26.png" alt="" /></p>
+<p><img src="https://img.0pt.icu/learn/build-hugo/27.png" alt="" /></p>
+<p>然后4everland就可以识别你的github里面的仓库了。选择我们刚才创建的博客的仓库，点击导入。</p>
+<p><img src="https://img.0pt.icu/learn/build-hugo/28.png" alt="" /></p>
+<p><img src="https://img.0pt.icu/learn/build-hugo/29.png" alt="" /></p>
+<p><img src="https://img.0pt.icu/learn/build-hugo/30.png" alt="" /></p>
+<p><img src="https://img.0pt.icu/learn/build-hugo/31.png" alt="" /></p>
+<p><img src="https://img.0pt.icu/learn/build-hugo/32.png" alt="" /></p>
+<p>等待部署完成。</p>
+<p><img src="https://img.0pt.icu/learn/build-hugo/33.png" alt="" /></p>
+<p>这里提示我们部署成功了。</p>
+<p><img src="https://img.0pt.icu/learn/build-hugo/34.png" alt="" /></p>
+<p>点击访问详情页。</p>
+<p><img src="https://img.0pt.icu/learn/build-hugo/35.png" alt="" /></p>
+<h1 id="5-tian-jia-yu-ming-xu-yao-ni-you-yu-ming">5.添加域名（需要你有域名）</h1>
+<p><img src="https://img.0pt.icu/learn/build-hugo/36.png" alt="" /></p>
+<p><img src="https://img.0pt.icu/learn/build-hugo/37.png" alt="" /></p>
+<p><img src="https://img.0pt.icu/learn/build-hugo/38.png" alt="" /></p>
+<p>这里提示我们域名未生效，需要添加一下CNAME记录，目标也给出了。</p>
+<p>转到我们托管直接域名的平台，添加一个CNAME记录。我使用的是Cloudflare，其他平台也同理。</p>
+<p><img src="https://img.0pt.icu/learn/build-hugo/39.png" alt="" /></p>
+<p><img src="https://img.0pt.icu/learn/build-hugo/40.png" alt="" /></p>
+<p>添加完成，返回4everland。</p>
+<p><img src="https://img.0pt.icu/learn/build-hugo/41.png" alt="" /></p>
+<p>等待一会。</p>
+<p><img src="https://img.0pt.icu/learn/build-hugo/42.png" alt="" /></p>
+<p>这里域名也可以了，现在可以通过访问<a href="https://myblog.0pt.icu%E6%9D%A5%E8%AE%BF%E9%97%AE%E5%8D%9A%E5%AE%A2%E4%BA%86%E3%80%82">https://myblog.0pt.icu来访问博客了。</a></p>
+<p><a href="https://blog.0pt.icu/posts/server/build-hugo/%5Bhttps://myblog.0pt.icu%5D(https://myblog.0pt.icu)">myblog</a></p>
+<p><img src="https://img.0pt.icu/learn/build-hugo/43.png" alt="" /></p>
+<p>成功！</p>
+<h1 id="6-hou-xu">6.后续</h1>
+<p>之后你每次更新博客，现在本地更改，通过：</p>
+<pre data-lang="bash" style="background-color:#212733;color:#ccc9c2;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffd580;">hugo</span><span> server</span><span style="color:#ffcc66;"> -D
+</span></code></pre>
+<p>访问 <a href="http://localhost:1313">http://localhost:1313</a> 查看效果。</p>
+<p>然后运行：</p>
+<pre data-lang="bash" style="background-color:#212733;color:#ccc9c2;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffd580;">hugo
+</span></code></pre>
+<p>渲染成网页文件到public文件夹。</p>
+<p>再通过：</p>
+<pre data-lang="bash" style="background-color:#212733;color:#ccc9c2;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffd580;">git</span><span> add .
+</span><span style="color:#ffd580;">git</span><span> commit</span><span style="color:#ffcc66;"> -m </span><span style="color:#bae67e;">&quot;Your commit message&quot;
+</span><span style="color:#ffd580;">git</span><span> push</span><span style="color:#ffcc66;"> -f</span><span> myblog main
+</span></code></pre>
+<p>将本地更新内容推送到github仓库上。</p>
+<p>当github仓库发生变化时，托管平台会自动检测到变化，并自动重新部署，将更新内容同步到网络上，让其他人可以看到。</p>
+<h1 id="7-ming-xie">7.鸣谢</h1>
+<p>感谢<a href="https://yon.im">Yon Zilch</a> 提供的方案。</p>
+<p>感谢<a href="https://purkit.lockey.icu/">Purkit</a> 提供的[教程](<a href="https://purkit.lockey.icu/2022/11/11/hello-hugo/">Ubuntu平台下使用Vercel+Hugo搭建静态博客 | Purkit's Blog</a>) 。</p>
+
+      </div>
+    </div>
+    <div class="prompt" id="terminal"><input
+    type="text"
+    id="setter"
+    onkeydown="writeit(this, event);moveIt(this.value.length, event)"
+    onchange="writeit(this, event)"
+    onkeyup="writeit(this, event)"
+    onkeypress="writeit(this, event);"
+    >
+<label for="setter" id="writer"> </label><b class="cursor" id="cursor"></b></div>
+  </main>
+</body>
+</html>

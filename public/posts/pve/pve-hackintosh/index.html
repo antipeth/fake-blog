@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATP</title>
+     <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js" integrity="sha256-WCzAhd2P6gRJF9Hv3oOOd+hFJi/QJbv+Azn4CGB8gfY=" crossorigin="anonymous"></script>
+     <script src="/js/index.js"></script>
+     <script src="/js/prompt.js"></script>
+     <script src="/js/keyboard.js"></script>
+     <script src="/js/tab.js"></script>
+     <script src="/js/commands.js"></script>
+     <script src="/js/config.js"></script><link rel="stylesheet" href="/css/base.css"><link rel="stylesheet" href="/css/page.css"></head>
+<body onkeydown='exec(event)'>
+  <header>
+      <h1>ATP</h1>
+  </header>
+  <main>
+    <div class="files" id="files" tabindex="0">
+<ul><li class="file">
+    <span><a href='https://blog.0pt.icu/readme/'
+      tabindex="-2">  README</a></span>
+  </li><li class="file">
+    <span><a href='https://blog.0pt.icu/rss/'
+      tabindex="-3">  RSS</a></span>
+  </li><li class="folder"><span>
+      
+      <a href='https://blog.0pt.icu/posts/'
+        tabindex="-4">  Posts
+      </a>
+    </span>
+
+    <ul>
+      
+        
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/think/'
+    tabindex="-5">  Think
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/think/unhappy-newyear/'
+        tabindex="-6">  祝你春节不快乐</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/think/1st-anniversary-of-listening-to-tayu-lo/'
+        tabindex="-7">  纪念听罗大佑一周年</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/think/music-history/'
+        tabindex="-8">  记我的听歌历程</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/think/my-first-post/'
+        tabindex="-9">  My first post</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/server/'
+    tabindex="-10">  server
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/traefik-simple-guide/'
+        tabindex="-11">  Docker/NixOS使用traefik实现简单反代</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/caddy-simple-guide/'
+        tabindex="-12">  Debian/NixOS使用caddy实现简单反代</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/use-tebi-build-nixos-cache-server/'
+        tabindex="-13">  使用tebi作为s3,搭建nix缓存服务器</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/cloudfront-cdn-acme/'
+        tabindex="-14">  cloudfront配置小鸡cdn并使用acme.sh自动获取证书</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/build-terraria-tshock/'
+        tabindex="-15">  搭建泰拉瑞亚Tshock服务器(强制开荒)</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/build-hugo/'
+        tabindex="-16">  基于Arch Linux搭建hugo博客</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/hackintosh/'
+    tabindex="-17">  Hackintosh
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/hackintosh/x79/'
+        tabindex="-18">  记录一次杂牌x79黑苹果</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/pve/'
+    tabindex="-19">  PVE
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a class="selected"href='https://blog.0pt.icu/posts/pve/pve-hackintosh/'
+        tabindex="-20">  x79上pve黑苹果</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/pve/build-pve/'
+        tabindex="-21">  x79搭建pve并开启硬件直通</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/k3s/'
+    tabindex="-22">  K3S
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/k3s/develop-rancher/'
+        tabindex="-23">  k3s部署rancher</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/k3s/kubevirt-manager/'
+        tabindex="-24">  k3s部署kubevirt-manager</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/linux-trip/'
+    tabindex="-25">  Linux Trip
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/7/'
+        tabindex="-26">  第七回，探FreeBSD路途远，坎坷荆棘勇前行</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/6/'
+        tabindex="-27">  第六回，弃Linux投FreeBSD，稳如磐石路更宽</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/5/'
+        tabindex="-28">  第五回，渐觉Arch无力持，转投NixOS获新生</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/4/'
+        tabindex="-29">  第四回，舍KDE抱Hyprland，新境界追求更添</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/3/'
+        tabindex="-30">  第三回，探幽寻秘APPS新，解CONFIG奇趣入眼前</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/2/'
+        tabindex="-31">  第二回，初入KDE虚界间，安装APPS耀目光</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/1/'
+        tabindex="-32">  第一回，弃window渐入轻盈境，装Arch走入坑深底</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+    </ul>
+  </li><li class="folder"><span>
+      
+      <a href='https://blog.0pt.icu/about/'
+        tabindex="-33">  ABOUT
+      </a>
+    </span>
+
+    <ul>
+      <li class="file">
+        <span>└──
+          <a href='https://blog.0pt.icu/about/about2/'
+            tabindex="-34">  ABOUT2</a>
+        </span>
+      </li><li class="file">
+        <span>└──
+          <a href='https://blog.0pt.icu/about/about1/'
+            tabindex="-35">  ABOUT1</a>
+        </span>
+      </li>
+        
+    </ul>
+  </li><li class="folder"><span>
+      
+      <a href='https://blog.0pt.icu/links/'
+        tabindex="-36">  LINKS
+      </a>
+    </span>
+
+    <ul>
+      <li class="file">
+        <span>└──
+          <a href='https://blog.0pt.icu/links/link/'
+            tabindex="-37">  LINKS</a>
+        </span>
+      </li>
+        
+    </ul>
+  </li>
+</ul>
+</div>
+    <div class="viewer page" id="viewer" tabindex="0">
+      <div class="tab">
+<ul id="tabs">
+</ul>
+
+
+</div>
+      <div class="content" id="content"><h1 id="x79shang-pvehei-ping-guo">x79上pve黑苹果</h1>
+<p>2024-09-19</p>
+<h2 id="zhun-bei">准备</h2>
+<p>选用黑果魏叔上的mac 12 Monterey的虚拟机镜像，下载后使用<code>dmg2img</code>转为img镜像后上传到pve.<br />
+创建虚拟机<br />
+<img src="https://img.0pt.icu/learn/pve/pve-hackintosh/01.avif" alt="" /><br />
+选择黑苹果镜像<code>12.7.5.img</code><br />
+<img src="https://img.0pt.icu/learn/pve/pve-hackintosh/02.avif" alt="" /><br />
+<img src="https://img.0pt.icu/learn/pve/pve-hackintosh/03.avif" alt="" /><br />
+选用virtIO<br />
+<img src="https://img.0pt.icu/learn/pve/pve-hackintosh/04.avif" alt="" /><br />
+注意，这里的cpu核心改为<code>8核</code>，而不是<code>16核</code>，不然黑苹果识别不了cpu型号<br />
+<img src="https://img.0pt.icu/learn/pve/pve-hackintosh/05.avif" alt="" /><br />
+<img src="https://img.0pt.icu/learn/pve/pve-hackintosh/06.avif" alt="" /><br />
+<img src="https://img.0pt.icu/learn/pve/pve-hackintosh/07.avif" alt="" /><br />
+然后，编辑虚拟机配置文件，我的虚拟机编号是100</p>
+<pre style="background-color:#212733;color:#ccc9c2;"><code><span>nano /etc/pve/qemu-server/103.conf 
+</span></code></pre>
+<p><img src="https://img.0pt.icu/learn/pve/pve-hackintosh/08.avif" alt="" /><br />
+根据自己的 CPU 类别，在第 1 行添加如下配置：</p>
+<pre style="background-color:#212733;color:#ccc9c2;"><code><span>args: -device isa-applesmc,osk=&quot;ourhardworkbythesewordsguardedpleasedontsteal(c)AppleComputerInc&quot; -smbios type=2 -device usb-kbd,bus=ehci.0,port=2 -cpu host,kvm=on,vendor=GenuineIntel,+kvm_pv_unhalt,+kvm_pv_eoi,+hypervisor,+invtsc
+</span></code></pre>
+<p>再将CD 光盘配置(在ide2那个)，删掉<code>media=cdrom</code>换成 <code>cache=unsafe</code><br />
+<img src="https://img.0pt.icu/learn/pve/pve-hackintosh/09.avif" alt="" /><br />
+<img src="https://img.0pt.icu/learn/pve/pve-hackintosh/10.avif" alt="" /><br />
+接下来修改<code>引导顺序</code>，把镜像放在第一位<br />
+<img src="https://img.0pt.icu/learn/pve/pve-hackintosh/11.avif" alt="" /><br />
+然后开机</p>
+<h2 id="di-yi-bian-qi-dong">第一遍启动</h2>
+<p><img src="https://img.0pt.icu/learn/pve/pve-hackintosh/12.avif" alt="" /><br />
+选中间那个<code>Install macOS Monterey</code><br />
+等待跑码<br />
+<img src="https://img.0pt.icu/learn/pve/pve-hackintosh/13.avif" alt="" /><br />
+进来后选择磁盘工具<br />
+<img src="https://img.0pt.icu/learn/pve/pve-hackintosh/14.avif" alt="" />
+点击我们分配给苹果的硬盘，点击抹除<br />
+<img src="https://img.0pt.icu/learn/pve/pve-hackintosh/15.avif" alt="" />
+把磁盘命名一下，格式选择APFS,确认
+<img src="https://img.0pt.icu/learn/pve/pve-hackintosh/16.avif" alt="" />
+<img src="https://img.0pt.icu/learn/pve/pve-hackintosh/17.avif" alt="" />
+格式化完成后，选择第二个安装
+<img src="https://img.0pt.icu/learn/pve/pve-hackintosh/18.avif" alt="" />
+<img src="https://img.0pt.icu/learn/pve/pve-hackintosh/19.avif" alt="" />
+<img src="https://img.0pt.icu/learn/pve/pve-hackintosh/20.avif" alt="" />
+<img src="https://img.0pt.icu/learn/pve/pve-hackintosh/21.avif" alt="" />
+选择我们刚才格式化的那个磁盘
+<img src="https://img.0pt.icu/learn/pve/pve-hackintosh/22.avif" alt="" />
+等待进度条，跑完后会自动重启，进入第二遍
+<img src="https://img.0pt.icu/learn/pve/pve-hackintosh/23.avif" alt="" /></p>
+<h2 id="di-er-bian-qi-dong">第二遍启动</h2>
+<p>出现了一个<code>macOS Installer</code>，选择这个回车
+<img src="https://img.0pt.icu/learn/pve/pve-hackintosh/24.avif" alt="" />
+等待跑码
+<img src="https://img.0pt.icu/learn/pve/pve-hackintosh/25.avif" alt="" />
+出现以下情况跑码卡住，我直接强制关机后重启
+<img src="https://img.0pt.icu/learn/pve/pve-hackintosh/26.avif" alt="" />
+可能会重启几次,还选<code>macOS Installer</code>，直到看见了进度条，等待进度条跑完，跑完后自动重启，进入第三遍启动
+<img src="https://img.0pt.icu/learn/pve/pve-hackintosh/27.avif" alt="" /></p>
+<h2 id="di-san-bian-qi-dong">第三遍启动</h2>
+<p>目标是进入苹果初始化设置
+此时出现了一个我们之前设置的磁盘名称<code>montereyOS</code> 的选项,选择它回车
+<img src="https://img.0pt.icu/learn/pve/pve-hackintosh/28.avif" alt="" />
+等待跑码
+<img src="https://img.0pt.icu/learn/pve/pve-hackintosh/29.avif" alt="" />
+中间可能还会重启几次，或者跑码卡住(这种情况直接强制关机重启)，还选<code>montereyOS</code>
+<img src="https://img.0pt.icu/learn/pve/pve-hackintosh/30.avif" alt="" />
+下面是我自己跑码重启的记录
+<img src="https://img.0pt.icu/learn/pve/pve-hackintosh/31.avif" alt="" />
+卡住了，强制关机重启
+<img src="https://img.0pt.icu/learn/pve/pve-hackintosh/32.avif" alt="" />
+进到进度条了，但是进度条完还是重启
+<img src="https://img.0pt.icu/learn/pve/pve-hackintosh/33.avif" alt="" />
+<img src="https://img.0pt.icu/learn/pve/pve-hackintosh/34.avif" alt="" />
+<img src="https://img.0pt.icu/learn/pve/pve-hackintosh/35.avif" alt="" />
+终于这次进来了,进行简单的初始化设置
+<img src="https://img.0pt.icu/learn/pve/pve-hackintosh/36.avif" alt="" />
+<img src="https://img.0pt.icu/learn/pve/pve-hackintosh/37.avif" alt="" />
+<img src="https://img.0pt.icu/learn/pve/pve-hackintosh/38.avif" alt="" />
+<img src="https://img.0pt.icu/learn/pve/pve-hackintosh/39.avif" alt="" />
+<img src="https://img.0pt.icu/learn/pve/pve-hackintosh/40.avif" alt="" />
+<img src="https://img.0pt.icu/learn/pve/pve-hackintosh/41.avif" alt="" />
+<img src="https://img.0pt.icu/learn/pve/pve-hackintosh/42.avif" alt="" />
+<img src="https://img.0pt.icu/learn/pve/pve-hackintosh/43.avif" alt="" />
+<img src="https://img.0pt.icu/learn/pve/pve-hackintosh/44.avif" alt="" />
+<img src="https://img.0pt.icu/learn/pve/pve-hackintosh/45.avif" alt="" />
+<img src="https://img.0pt.icu/learn/pve/pve-hackintosh/46.avif" alt="" />
+<img src="https://img.0pt.icu/learn/pve/pve-hackintosh/47.avif" alt="" />
+<img src="https://img.0pt.icu/learn/pve/pve-hackintosh/48.avif" alt="" />
+<img src="https://img.0pt.icu/learn/pve/pve-hackintosh/49.avif" alt="" />
+<img src="https://img.0pt.icu/learn/pve/pve-hackintosh/50.avif" alt="" />
+这个可以不选，维持默认，因为选的话由于没有显卡驱动，会卡一会
+<img src="https://img.0pt.icu/learn/pve/pve-hackintosh/51.avif" alt="" />
+终于是看到mac桌面了
+<img src="https://img.0pt.icu/learn/pve/pve-hackintosh/52.avif" alt="" /></p>
+<h2 id="kao-bei-efiwen-jian-jia">拷贝EFI文件夹</h2>
+<p>下载<a href="https://mackie100projects.altervista.org/download-opencore-configurator/">OCC</a>后打开
+挂载efi分区，上面是这台虚拟机创建的efi分区，里面没有文件
+下面是黑苹果镜像的efi分区，里面放了efi文件
+<img src="https://img.0pt.icu/learn/pve/pve-hackintosh/53.avif" alt="" />
+<img src="https://img.0pt.icu/learn/pve/pve-hackintosh/54.avif" alt="" />
+<img src="https://img.0pt.icu/learn/pve/pve-hackintosh/55.avif" alt="" />
+我们把有efi文件夹的那个分区里的文件拷贝到那个空的里面去
+<img src="https://img.0pt.icu/learn/pve/pve-hackintosh/56.avif" alt="" />
+然后关机，在虚拟机设置里面把黑苹果镜像移除
+<img src="https://img.0pt.icu/learn/pve/pve-hackintosh/57.avif" alt="" />
+<img src="https://img.0pt.icu/learn/pve/pve-hackintosh/58.avif" alt="" />
+现在，不需要镜像也可以正常启动黑苹果了，记得把启动选项调整成虚拟磁盘为第一
+<img src="https://img.0pt.icu/learn/pve/pve-hackintosh/62.avif" alt="" /></p>
+<h2 id="tian-jia-usbzhi-tong">添加usb直通</h2>
+<p>虚拟机设置<code>添加USB设备</code>
+然后随便找个设备找个usb设备插到你要直通的usb口上面
+选使用USB端口，就看到了插上去的设备激活的那个usb口。我的设备是<code>Razer DeathAdder 2013</code>,添加后，相当于把usb口直通给虚拟机使用，随便插什么设备都行。
+<img src="https://img.0pt.icu/learn/pve/pve-hackintosh/59.avif" alt="" />
+<img src="https://img.0pt.icu/learn/pve/pve-hackintosh/60.avif" alt="" />
+我把另一个usb口也直通进去了,可以看到usb设备有2个
+<img src="https://img.0pt.icu/learn/pve/pve-hackintosh/61.avif" alt="" /></p>
+<h2 id="tian-jia-xian-qia-zhi-tong">添加显卡直通</h2>
+<p>先把虚拟机的显示设置调为无
+<img src="https://img.0pt.icu/learn/pve/pve-hackintosh/65.avif" alt="" />
+虚拟机设置<code>添加PCI设备</code>，选择你对于的显卡设备,其他如下设置
+<img src="https://img.0pt.icu/learn/pve/pve-hackintosh/66.avif" alt="" />
+有些显卡需要romfile才能启动
+在window下，使用gpu-z提取。
+把<code>.rom文件</code>（我的是R9-270.rom）放到pve的<code>/usr/share/kvm/</code>目录下面
+在虚拟机配置下添加pcie设备，选择显卡，勾选主<code>gpu</code>和<code>rombar</code>
+编辑虚拟机配置</p>
+<pre style="background-color:#212733;color:#ccc9c2;"><code><span>nano /etc/pve/qemu-server/100.conf
+</span></code></pre>
+<p>修改</p>
+<pre style="background-color:#212733;color:#ccc9c2;"><code><span># hostpci0: 01:00
+</span><span>hostpci0: 01:00,x-vga=1,romfile=R9-270.rom
+</span></code></pre>
+<p>然后显卡接上外接显示屏，启动虚拟机，会发现苹果的视频信号输出到外接显示屏上，配合上usb直通，无限接近物理机黑苹果。
+<img src="https://img.0pt.icu/learn/pve/pve-hackintosh/63.avif" alt="" />
+<img src="https://img.0pt.icu/learn/pve/pve-hackintosh/64.avif" alt="" />
+我的R9 270需要仿冒显卡才能免驱，使用opencore configuretor打开efi文件夹下面的config.plist,在<code>DeviceProperties</code>下的<code>PciRoot(0x0)/Pci(0x1b,0x0)</code>条目添加</p>
+<table><thead><tr><th>Key</th><th>Type</th><th>Value</th></tr></thead><tbody>
+<tr><td>device-id</td><td>Data</td><td>68100000</td></tr>
+</tbody></table>
+<p>即可免驱</p>
+
+      </div>
+    </div>
+    <div class="prompt" id="terminal"><input
+    type="text"
+    id="setter"
+    onkeydown="writeit(this, event);moveIt(this.value.length, event)"
+    onchange="writeit(this, event)"
+    onkeyup="writeit(this, event)"
+    onkeypress="writeit(this, event);"
+    >
+<label for="setter" id="writer"> </label><b class="cursor" id="cursor"></b></div>
+  </main>
+</body>
+</html>

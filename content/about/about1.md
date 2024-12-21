@@ -1,7 +1,9 @@
 +++
-title="ABOUT"
+title = "ABOUT1"
+date = 2024-02-23
 +++
-
+# ABOUT1
+2024-02-23
 ![](https://img.0pt.icu/learn/linux-trip/4/mydesktop.jpg)
 
 *This is my arch linux.*
@@ -48,6 +50,5 @@ BetterBird is my email client, an enhanced version of Thunderbird.
 
 Anytype is my note-taking and planning software. It uses blockchain technology for surprisingly fast sync speeds and is feature-packed. Anytype for everything.
 
-Bitwarden keeps my passwords safe.
+Keepassxc keeps my passwords safe.
 
-Btrfs-assistant for easier snapshot management.

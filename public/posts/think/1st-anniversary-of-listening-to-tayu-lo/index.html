@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATP</title>
+     <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js" integrity="sha256-WCzAhd2P6gRJF9Hv3oOOd+hFJi/QJbv+Azn4CGB8gfY=" crossorigin="anonymous"></script>
+     <script src="/js/index.js"></script>
+     <script src="/js/prompt.js"></script>
+     <script src="/js/keyboard.js"></script>
+     <script src="/js/tab.js"></script>
+     <script src="/js/commands.js"></script>
+     <script src="/js/config.js"></script><link rel="stylesheet" href="/css/base.css"><link rel="stylesheet" href="/css/page.css"></head>
+<body onkeydown='exec(event)'>
+  <header>
+      <h1>ATP</h1>
+  </header>
+  <main>
+    <div class="files" id="files" tabindex="0">
+<ul><li class="file">
+    <span><a href='https://blog.0pt.icu/readme/'
+      tabindex="-2">  README</a></span>
+  </li><li class="file">
+    <span><a href='https://blog.0pt.icu/rss/'
+      tabindex="-3">  RSS</a></span>
+  </li><li class="folder"><span>
+      
+      <a href='https://blog.0pt.icu/posts/'
+        tabindex="-4">  Posts
+      </a>
+    </span>
+
+    <ul>
+      
+        
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/think/'
+    tabindex="-5">  Think
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/think/unhappy-newyear/'
+        tabindex="-6">  祝你春节不快乐</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a class="selected"href='https://blog.0pt.icu/posts/think/1st-anniversary-of-listening-to-tayu-lo/'
+        tabindex="-7">  纪念听罗大佑一周年</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/think/music-history/'
+        tabindex="-8">  记我的听歌历程</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/think/my-first-post/'
+        tabindex="-9">  My first post</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/server/'
+    tabindex="-10">  server
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/traefik-simple-guide/'
+        tabindex="-11">  Docker/NixOS使用traefik实现简单反代</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/caddy-simple-guide/'
+        tabindex="-12">  Debian/NixOS使用caddy实现简单反代</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/use-tebi-build-nixos-cache-server/'
+        tabindex="-13">  使用tebi作为s3,搭建nix缓存服务器</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/cloudfront-cdn-acme/'
+        tabindex="-14">  cloudfront配置小鸡cdn并使用acme.sh自动获取证书</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/build-terraria-tshock/'
+        tabindex="-15">  搭建泰拉瑞亚Tshock服务器(强制开荒)</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/build-hugo/'
+        tabindex="-16">  基于Arch Linux搭建hugo博客</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/hackintosh/'
+    tabindex="-17">  Hackintosh
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/hackintosh/x79/'
+        tabindex="-18">  记录一次杂牌x79黑苹果</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/pve/'
+    tabindex="-19">  PVE
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/pve/pve-hackintosh/'
+        tabindex="-20">  x79上pve黑苹果</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/pve/build-pve/'
+        tabindex="-21">  x79搭建pve并开启硬件直通</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/k3s/'
+    tabindex="-22">  K3S
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/k3s/develop-rancher/'
+        tabindex="-23">  k3s部署rancher</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/k3s/kubevirt-manager/'
+        tabindex="-24">  k3s部署kubevirt-manager</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/linux-trip/'
+    tabindex="-25">  Linux Trip
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/7/'
+        tabindex="-26">  第七回，探FreeBSD路途远，坎坷荆棘勇前行</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/6/'
+        tabindex="-27">  第六回，弃Linux投FreeBSD，稳如磐石路更宽</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/5/'
+        tabindex="-28">  第五回，渐觉Arch无力持，转投NixOS获新生</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/4/'
+        tabindex="-29">  第四回，舍KDE抱Hyprland，新境界追求更添</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/3/'
+        tabindex="-30">  第三回，探幽寻秘APPS新，解CONFIG奇趣入眼前</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/2/'
+        tabindex="-31">  第二回，初入KDE虚界间，安装APPS耀目光</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/1/'
+        tabindex="-32">  第一回，弃window渐入轻盈境，装Arch走入坑深底</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+    </ul>
+  </li><li class="folder"><span>
+      
+      <a href='https://blog.0pt.icu/about/'
+        tabindex="-33">  ABOUT
+      </a>
+    </span>
+
+    <ul>
+      <li class="file">
+        <span>└──
+          <a href='https://blog.0pt.icu/about/about2/'
+            tabindex="-34">  ABOUT2</a>
+        </span>
+      </li><li class="file">
+        <span>└──
+          <a href='https://blog.0pt.icu/about/about1/'
+            tabindex="-35">  ABOUT1</a>
+        </span>
+      </li>
+        
+    </ul>
+  </li><li class="folder"><span>
+      
+      <a href='https://blog.0pt.icu/links/'
+        tabindex="-36">  LINKS
+      </a>
+    </span>
+
+    <ul>
+      <li class="file">
+        <span>└──
+          <a href='https://blog.0pt.icu/links/link/'
+            tabindex="-37">  LINKS</a>
+        </span>
+      </li>
+        
+    </ul>
+  </li>
+</ul>
+</div>
+    <div class="viewer page" id="viewer" tabindex="0">
+      <div class="tab">
+<ul id="tabs">
+</ul>
+
+
+</div>
+      <div class="content" id="content"><h1 id="ji-nian-ting-luo-da-you-yi-zhou-nian">纪念听罗大佑一周年</h1>
+<p>2024-02-02</p>
+<p>这天下午，我在操场上刷步数，突然，耳机里响起罗大佑的 错误。我意识到，我听罗大佑已经一周年了。</p>
+<p>在2023年1月，我第一次开始认真听罗大佑。那之前，疫情刚放开，高三所有学生强制住校，复习备考。在校经历了一段奇妙的时光，我也不幸感染新冠了，提前返回家中修养。</p>
+<p>感染新冠的前俩天，异常痛苦高烧39度以上，吃退烧药也不见效，眼睛像被炙烤，而且一看见发光的东西就难受。我躺在床上，窗帘拉上，电灯也关了，手机也不敢看。暗无天日地过了俩天。</p>
+<p>后面，开始退了一点烧，在37度到38度徘徊。我就拿起复习材料，坐在电脑前，边听歌边复习。</p>
+<p>平时的歌听的有点厌倦了，想整点其他歌听。我久仰罗大佑的大名，也想探究一下。我翻到罗大佑第一张专辑，<code>之乎者也</code>。点开了专辑同名歌，之乎者也。这是雷鬼摇滚，犀利的歌词，直戳我心。对比现在的洞察时代的乐队的音乐也毫不逊色。82年的罗大佑，在41年后，在我心中炸开。</p>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=109536&auto=0&height=66"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=109435&auto=0&height=66"></iframe>
+<blockquote>
+<p>知之为知之 在乎不在乎，<br />
+此人何其者 孔老夫子也，<br />
+知之为不知 在在不在乎，<br />
+此人何其者 寒山子是也，<br />
+不知为知之 不在乎在乎，<br />
+此人何其者 齐人是也，<br />
+很久以前我们的祖先都曾经这么说，<br />
+很久以前我们的祖先都曾经这么说，<br />
+现在看看我们的青年他们在讲什么，<br />
+但是要想想到底你要他们怎么做，<br />
+剪刀等待之 清汤挂面乎，<br />
+尊师重道者 莫过如此也，<br />
+风花雪月之 哗啦啦啦乎，<br />
+所谓民歌者 是否如此也，<br />
+之之之之之，<br />
+乎乎乎乎乎，<br />
+者者者者者，<br />
+也也也也也，<br />
+很久以前我们的祖先都曾经这么说，<br />
+很久以前我们的祖先都曾经这么说，<br />
+现在听听我们的青年他们在唱什么，<br />
+但是要想想到底你要他们怎么做，<br />
+眼睛睁一只 嘴巴呼一呼，<br />
+耳朵遮一遮 皆大欢喜也，<br />
+大家都知之 大家都在乎，<br />
+袖手旁观者 你我 是也。</p>
+</blockquote>
+<p>我觉得现，现在的娱乐圈，音乐圈依旧是一些风花雪月居多。</p>
+<p>那世界的青年呢，是袖手旁观的一代?</p>
+<p>那一代一代的青年，是没有改变过吗?人类是有局限的。</p>
+<p>我想，对于每代人来说，上一代的流行文化是腐朽的，下一代的流行文化是轻浮的，只有我们这代的流行文化才是永恒经典。</p>
+<p>早年间看喜欢看龙应台，印象比较深的是，龙应台在烧起<code>野火</code>的那段时间，曾经有一名学生偷偷交给她罗大佑的歌，并相信她和罗大佑一样在做同一件很重要的事。</p>
+<p><code>鹿港小镇</code>是早就听过，是伍佰，五月天，张震岳的现场合唱版本，那个现场，伍佰老师大哥造型，十分带感。但是，再听原版的还是有不一样的感觉。</p>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=109525&auto=0&height=66"></iframe>
+<blockquote>
+<p>假如你先生来自鹿港小镇，<br />
+请问你是否看见我的爹娘，<br />
+我家就住在妈祖庙的后面，<br />
+卖着香火的那家小杂货店，<br />
+假如你先生来自鹿港小镇，<br />
+请问你是否看见我的爱人，<br />
+想当年我离家时她一十八，<br />
+有一颗善良的心和一卷长发，<br />
+台北不是我的家，<br />
+我的家乡没有霓虹灯，<br />
+鹿港的街道 鹿港的渔村，<br />
+妈祖庙里烧香的人们，<br />
+台北不是我的家，<br />
+我的家乡没有霓虹灯，<br />
+鹿港的清晨 鹿港的黄昏，<br />
+徘徊在文明里的人们，<br />
+假如你先生回到鹿港小镇，<br />
+请问你是否告诉我的爹娘，<br />
+台北不是我想象的黄金天堂，<br />
+都市里没有当初我的梦想，<br />
+在梦里我再度回到鹿港小镇，<br />
+庙里膜拜的人们依然虔诚，<br />
+岁月掩不住爹娘淳朴的笑容，<br />
+梦中的姑娘依然长发盈空，<br />
+台北不是我的家，<br />
+我的家乡没有霓虹灯，<br />
+鹿港的街道 鹿港的渔村，<br />
+妈祖庙里烧香的人们，<br />
+台北不是我的家，<br />
+我的家乡没有霓虹灯，<br />
+鹿港的清晨 鹿港的黄昏，<br />
+徘徊在文明里的人们，<br />
+再度我唱起这首歌，<br />
+我的歌中和有风雨声，<br />
+归不到的家园 鹿港的小镇，<br />
+当年离家的年轻人，<br />
+台北不是我的家，<br />
+我的家乡没有霓虹灯，<br />
+繁荣的都市 过渡的小镇，<br />
+徘徊在文明里的人们，<br />
+听说他们挖走了家乡的红砖砌上了水泥墙，<br />
+家乡的人们得到他们想要的却又失去他们拥有的，<br />
+门上的一块斑驳的木板刻着这么几句话，<br />
+子子孙孙永宝用 世世代代传香火，<br />
+啊,鹿港的小镇。</p>
+</blockquote>
+<p>因为在城里面念书，平时很少回老家。</p>
+<p>小时候的老家生活非常美好，但随着时间的推移，玩伴也不再联络，亲人离世，我在成长，已经失去了做孩子的灵性，特别是几个表兄弟姐妹，都到了需要为中考，高考而烦恼的年纪，彼此玩笑的日子也过去了。</p>
+<p>每次等寒假回到老家时，总觉得老家会少了东西。</p>
+<p>老家的房子是土胚房，在岁月与风雨的侵蚀下早已破落。</p>
+<p>人们新盖了水泥厝，高大坚固，可以遮风挡雨。</p>
+<p>听完罗大佑首专后，我真的激动地说不出话。（大概也许是喉咙还有点痛。）</p>
+<p>我意识到我之前听歌错过了罗大佑，是非常可惜的。后面把他全部专辑都补上了。他的1983年的第二张专辑，<code>未来的主人翁</code>，里面的同名歌，也对我产生很大影响。</p>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=109502&auto=0&height=66"></iframe>
+<blockquote>
+<p>你走过林立的高楼大厦，<br />
+穿过那些拥挤的人，<br />
+望着一个现代化的都市，<br />
+泛起一片水银灯，<br />
+突然想起了遥远的过去，<br />
+未曾实现的梦，<br />
+曾经一度人们告诉你说，<br />
+你是未来的主人翁，<br />
+在人潮汹涌的十字路口，<br />
+每个人在痴痴地等，<br />
+每个人的眼睛都望着那，<br />
+象征命运的红绿灯，<br />
+在红橙黄绿的世界里，<br />
+你这未来的主人翁，<br />
+在每一张陌生的面孔里，<br />
+寻找儿时的光荣，<br />
+每一个今天来到世界的婴孩，<br />
+张大了眼睛摸索着一个，<br />
+真心的关怀，<br />
+每一个来到世界的生命在期待，<br />
+因为我们改变的世界，<br />
+将是他们的未来，<br />
+别以为我们的孩子们太小，<br />
+他们什么都不懂，<br />
+我听到无言的抗议在他们，<br />
+悄悄的睡梦中，<br />
+我们不要一个被科学游戏，<br />
+污染的天空，<br />
+我们不要被你们发明变成，<br />
+电脑儿童，<br />
+每一个今天来到世界的婴孩，<br />
+张大了眼睛摸索着一个，<br />
+真心的关怀，<br />
+每一个来到世界的生命在期待，<br />
+因为我们改变的世界，<br />
+将是他们的未来，<br />
+有一天孩子们会告诉，<br />
+他们后代你们要守规矩，<br />
+格言像玩具风筝，<br />
+在风里飘来飘去，<br />
+当未来的世界充满了，<br />
+一些陌生的旋律，<br />
+你或许会想起，<br />
+现在这首古老的歌曲，<br />
+飘来飘去，<br />
+就这么飘来飘去，<br />
+飘来飘去，<br />
+就这么飘来飘去，<br />
+飘来飘去，<br />
+就这么飘来飘去，<br />
+飘来飘去，<br />
+就这么飘来飘去，<br />
+飘来飘去，<br />
+就这么飘来飘去，<br />
+飘来飘去，<br />
+就这么飘来飘去，<br />
+飘来飘去，<br />
+就这么飘来飘去，<br />
+飘来飘去，<br />
+就这么飘来飘去，<br />
+飘来飘去，<br />
+就这么飘来飘去，<br />
+飘来飘去，<br />
+就这么飘来飘去，<br />
+飘来飘去，<br />
+就这么飘来飘去，<br />
+飘来飘去，<br />
+就这么飘来飘去，<br />
+我们不要一个被科学游戏，<br />
+污染的天空，<br />
+我们不要一个被现实生活，<br />
+超越的时空，<br />
+我们不要一个越来越远模糊，<br />
+的水平线，<br />
+我们不要一个越来越近沉默，<br />
+的春天，<br />
+我们不要被你们发明变成，<br />
+电脑儿童，<br />
+我们不要被你们忘怀变成，<br />
+钥匙儿童，<br />
+哦... 哦... 哦...<br />
+我们需要阳光青草泥土开阔的蓝天，<br />
+我们不要红色的污泥塑成红色的梦魇。</p>
+</blockquote>
+<p>我听着非常恍惚。</p>
+<p>我觉得，孩童是人一生中最美好的阶段。</p>
+<p>小时候的我想快快长大，现在的我不想长大。</p>
+<p>从小我就被告诉我是未来的栋梁，未来的发展就靠我们了。后来才知道，就业压力紧张，社会内卷严重，能好好生活就是对社会的最大贡献了。</p>
+<p>环境塑造人。</p>
+<p>希望所有孩子们都可以拥有一个美好的童年。</p>
+<p>还有一首非常有意思，<code>现象七十二变</code>。这里给出演唱会版本歌词。</p>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=109495&auto=0&height=66"></iframe>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=109429&auto=0&height=66"></iframe>
+<blockquote>
+<p>清清楚楚写在你的脸上 你是个道道地地聪明人，<br />
+慌慌张张迈开你的脚步 你是个匆匆忙忙的现代人，<br />
+岁岁年年风水都在改变 改变了你的悲哀你的笑脸，<br />
+在这个五千年的悠久历史里面 成功与失败多少都有一点，<br />
+有人慢慢抛开一些回忆 有人在慢慢接近一点真理，<br />
+有人在爱丽丝的仙境闲逛 有人学国王穿着新衣裳，<br />
+有人默默耕耘默默从事 有人在过着他的太平日子，<br />
+有人在大白天里彼此明争暗斗 有人在黑夜之中枪杀歌手，<br />
+一年过了又是新的一年 每一年现代都在传统边缘，<br />
+在每个新的一年三百六十五天 每天进步一点点，<br />
+眼看着高楼盖得越来越高 我们的人情味却越来越薄，<br />
+朋友之间越来越有礼貌 只因为大家见面越来越少，<br />
+苹果价钱卖得没以前高 或许现在味道变得不好，<br />
+就像彩色的电视变得更加花哨 能辨别黑白的人越来越少，<br />
+道貌岸然挂在你的脸上 满脸是装腔作势一表仁慈，<br />
+倚老卖老告诉大家你是 可敬的忠贞不二爱国份子，<br />
+嘴里说的永远都是一套 做的事天地良心自己知道，<br />
+假如你真的认为自己不可一世 为何不回家好好照照镜子，<br />
+一年过了又是新的一年 每一年现代都在传统边缘，<br />
+在每个新的一年三百六十五天 每天进步一点点，<br />
+现实生活不能等待奇迹 这是个非常简单的道理，<br />
+如果真要生存非常容易 只要你对人保持一点距离，<br />
+但是生活不能像在演戏 你戴着面具如何面对自己，<br />
+或许你将会真的发现一些奇迹 只要你抛开一些面子问题，<br />
+或许你将会真的发现一些奇迹，<br />
+只要你抛开一些面子问题。</p>
+</blockquote>
+<p>我觉得，这首在80年代讽刺台湾社会的歌，在今天的世界上仍不过时。</p>
+<p>生活中充斥着人情事故，就像是有人的地方就会有人情事故。</p>
+<p>在这张网中，我们像是渐渐被缠住，陷入人情社会。</p>
+<p>在我听工业金属(也可以说是伪金属)最癫狂的那段时间，我会觉得罗大佑没有力量，写一写简简单单的词，谱一谱轻轻柔柔的曲。只知道童年，光阴的故事是经典老歌得尊重一下。这个华语音乐教父之名，远比不如什么玛丽莲曼森，演唱会手撕圣经来的猛。</p>
+<p>现在步入中年，只觉得这简简单单的词，轻轻柔柔的曲，才是最有力量的。现代的摇滚，商业化起来了，独立乐队遍地开花，风格各式多样，多元化的发展让我眼花缭乱。这是好事，我也爱听。但有时听累了，比较茫然的时候，我很庆幸，可以有罗大佑作为我独特的音乐避风港。</p>
+<h1 id="fu-2015nian-luo-da-you-jie-shou-cai-fang-de-bu-fen-wen-zi-ji-lu">附2015年罗大佑接受采访的部分文字记录。</h1>
+<blockquote>
+<p>问:时代变迁，曾经的辉煌已逝，在这个科技快速发展的年代，经典再难觅。一个个偶像在被娱乐放大化的环境里失去神秘感，逐渐崩塌。面对改变，罗大佑审视着他所经历的每一个时代。也一针见血地提醒着，每一个年轻人，不做随波逐流的粉末。</p>
+</blockquote>
+<blockquote>
+<p><strong>答:我想在我们创作的那个年代，比如说从80年代，70年代，80年代，大概会比较人文一点。所谓的人文就是嗯...那时候身体用手跟脑筋，跟别人，别的音乐人中间的互动会多很多，机器跟电脑会用的蛮少的。我们那时候蛮明显感觉到...就比如说写文章好了，那个时代的笔，不管是铅笔还是原子笔，甚至钢笔跟纸张，应该都会多蛮多的吧。现在大家都是用，应该是用手机或者是电脑来写文章比较多吧。差别应该就是这样子，比如现在玩乐器应该也是电脑，或是电子琴录音的这方面的机器多很多。那当然都是音乐，不过我总觉得机器或是电脑介入到音乐界多很多这样子。电脑当然可以帮你做音乐，但是电脑帮你做音乐多了以后，我们人会变得懒惰。我们刚才还在聊，这个东西多了以后，你就:啊，现在下载很多，现在我们这个市场被下载的音乐侵犯了，我们现在好像活不下去了。我就讲，不对呀，狗屁。以前没有推销的时候，人家还不是照样在作曲，做的比我们还好，怎么会这样子。对，以前的音乐写的很好听啊，否则那些摇篮曲是怎么写出来的，传唱到现在勃拉姆斯的两百多年了，现在人怎么都写不出来。懒嘛，就因为靠机器靠惯了，然后靠销售，靠黑胶唱片靠什么靠惯了。要靠脑筋我觉得。一下载你就不行了，那基本上这样的人，都没有资格进到音乐圈的我觉得。</strong></p>
+</blockquote>
+<blockquote>
+<p>问:即使无数业内人高呼着，音乐已死，而这个行业，每天都有新人赴汤蹈火的进入，每天也有人无法适应游戏规则没淘汰。在罗大佑看来，在60岁的年纪，能够继续做热爱的音乐，每一天都像活在起跑线上，随时准备出发。</p>
+</blockquote>
+<blockquote>
+<p><strong>答:我觉得音乐是不会死的，有人在的地方就会有人唱歌，就会有人写歌，音乐是不会死的，是音乐网络市场已死，音乐的什么东西已死，我是觉得可能的。但是有人在的地方就会有音乐嘛。这个音乐是不是够活络，是不是被一些够健康的音乐人写出来。这个就要去观察。但音乐人的这种营养，他自己的这个创作力，是不是够坚强。他自己对做音乐这件事情，是不是够坚持，我觉得这个是最重要的。音乐人之间是不是能够更健康的互相支持，他自己是不是能够更坚定的守在自己的岗位上，彼此帮忙音乐人，这个我觉得是最重要的。倒也不是只有一个原因，我刚刚讲过，我们就不断地得给自己在不同的阶段一些不同的使命。二十多岁有二十多岁该写的歌，三十多岁有三十多岁该写的歌。我觉得你刚才讲说年轻人觉得音乐已死，那我现在六十多岁我告诉你，音乐还没死，是你们自己心已死，你自己根本就没志气。我罗大佑在这个年纪就告诉你们，音乐都还没死，我都还在写歌，现在还在起跑点，你都已经放弃的话，你们太没志气了。可以做的事情很多嘛。</strong></p>
+</blockquote>
+
+      </div>
+    </div>
+    <div class="prompt" id="terminal"><input
+    type="text"
+    id="setter"
+    onkeydown="writeit(this, event);moveIt(this.value.length, event)"
+    onchange="writeit(this, event)"
+    onkeyup="writeit(this, event)"
+    onkeypress="writeit(this, event);"
+    >
+<label for="setter" id="writer"> </label><b class="cursor" id="cursor"></b></div>
+  </main>
+</body>
+</html>

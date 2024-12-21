@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATP</title>
+     <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js" integrity="sha256-WCzAhd2P6gRJF9Hv3oOOd+hFJi/QJbv+Azn4CGB8gfY=" crossorigin="anonymous"></script>
+     <script src="/js/index.js"></script>
+     <script src="/js/prompt.js"></script>
+     <script src="/js/keyboard.js"></script>
+     <script src="/js/tab.js"></script>
+     <script src="/js/commands.js"></script>
+     <script src="/js/config.js"></script><link rel="stylesheet" href="/css/base.css"><link rel="stylesheet" href="/css/page.css"></head>
+<body onkeydown='exec(event)'>
+  <header>
+      <h1>ATP</h1>
+  </header>
+  <main>
+    <div class="files" id="files" tabindex="0">
+<ul><li class="file">
+    <span><a href='https://blog.0pt.icu/readme/'
+      tabindex="-2">  README</a></span>
+  </li><li class="file">
+    <span><a href='https://blog.0pt.icu/rss/'
+      tabindex="-3">  RSS</a></span>
+  </li><li class="folder"><span>
+      
+      <a href='https://blog.0pt.icu/posts/'
+        tabindex="-4">  Posts
+      </a>
+    </span>
+
+    <ul>
+      
+        
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/think/'
+    tabindex="-5">  Think
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/think/unhappy-newyear/'
+        tabindex="-6">  祝你春节不快乐</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/think/1st-anniversary-of-listening-to-tayu-lo/'
+        tabindex="-7">  纪念听罗大佑一周年</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/think/music-history/'
+        tabindex="-8">  记我的听歌历程</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/think/my-first-post/'
+        tabindex="-9">  My first post</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/server/'
+    tabindex="-10">  server
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/traefik-simple-guide/'
+        tabindex="-11">  Docker/NixOS使用traefik实现简单反代</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/caddy-simple-guide/'
+        tabindex="-12">  Debian/NixOS使用caddy实现简单反代</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/use-tebi-build-nixos-cache-server/'
+        tabindex="-13">  使用tebi作为s3,搭建nix缓存服务器</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/cloudfront-cdn-acme/'
+        tabindex="-14">  cloudfront配置小鸡cdn并使用acme.sh自动获取证书</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a class="selected"href='https://blog.0pt.icu/posts/server/build-terraria-tshock/'
+        tabindex="-15">  搭建泰拉瑞亚Tshock服务器(强制开荒)</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/build-hugo/'
+        tabindex="-16">  基于Arch Linux搭建hugo博客</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/hackintosh/'
+    tabindex="-17">  Hackintosh
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/hackintosh/x79/'
+        tabindex="-18">  记录一次杂牌x79黑苹果</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/pve/'
+    tabindex="-19">  PVE
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/pve/pve-hackintosh/'
+        tabindex="-20">  x79上pve黑苹果</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/pve/build-pve/'
+        tabindex="-21">  x79搭建pve并开启硬件直通</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/k3s/'
+    tabindex="-22">  K3S
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/k3s/develop-rancher/'
+        tabindex="-23">  k3s部署rancher</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/k3s/kubevirt-manager/'
+        tabindex="-24">  k3s部署kubevirt-manager</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/linux-trip/'
+    tabindex="-25">  Linux Trip
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/7/'
+        tabindex="-26">  第七回，探FreeBSD路途远，坎坷荆棘勇前行</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/6/'
+        tabindex="-27">  第六回，弃Linux投FreeBSD，稳如磐石路更宽</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/5/'
+        tabindex="-28">  第五回，渐觉Arch无力持，转投NixOS获新生</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/4/'
+        tabindex="-29">  第四回，舍KDE抱Hyprland，新境界追求更添</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/3/'
+        tabindex="-30">  第三回，探幽寻秘APPS新，解CONFIG奇趣入眼前</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/2/'
+        tabindex="-31">  第二回，初入KDE虚界间，安装APPS耀目光</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/1/'
+        tabindex="-32">  第一回，弃window渐入轻盈境，装Arch走入坑深底</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+    </ul>
+  </li><li class="folder"><span>
+      
+      <a href='https://blog.0pt.icu/about/'
+        tabindex="-33">  ABOUT
+      </a>
+    </span>
+
+    <ul>
+      <li class="file">
+        <span>└──
+          <a href='https://blog.0pt.icu/about/about2/'
+            tabindex="-34">  ABOUT2</a>
+        </span>
+      </li><li class="file">
+        <span>└──
+          <a href='https://blog.0pt.icu/about/about1/'
+            tabindex="-35">  ABOUT1</a>
+        </span>
+      </li>
+        
+    </ul>
+  </li><li class="folder"><span>
+      
+      <a href='https://blog.0pt.icu/links/'
+        tabindex="-36">  LINKS
+      </a>
+    </span>
+
+    <ul>
+      <li class="file">
+        <span>└──
+          <a href='https://blog.0pt.icu/links/link/'
+            tabindex="-37">  LINKS</a>
+        </span>
+      </li>
+        
+    </ul>
+  </li>
+</ul>
+</div>
+    <div class="viewer page" id="viewer" tabindex="0">
+      <div class="tab">
+<ul id="tabs">
+</ul>
+
+
+</div>
+      <div class="content" id="content"><h1 id="da-jian-tai-la-rui-ya-tshockfu-wu-qi-qiang-zhi-kai-huang">搭建泰拉瑞亚Tshock服务器(强制开荒)</h1>
+<p>2023-11-24</p>
+<h1 id="huan-jing">环境</h1>
+<p>Debian12</p>
+<h1 id="an-zhuang-docker">安装docker</h1>
+<p>官方安装教程 https://docs.docker.com/engine/install/</p>
+<pre data-lang="bash" style="background-color:#212733;color:#ccc9c2;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="font-style:italic;color:#5c6773;"># Add Docker&#39;s official GPG key:
+</span><span style="color:#ffd580;">sudo</span><span> apt-get update
+</span><span style="color:#ffd580;">sudo</span><span> apt-get install ca-certificates curl
+</span><span style="color:#ffd580;">sudo</span><span> install</span><span style="color:#ffcc66;"> -m</span><span> 0755</span><span style="color:#ffcc66;"> -d</span><span> /etc/apt/keyrings
+</span><span style="color:#ffd580;">sudo</span><span> curl</span><span style="color:#ffcc66;"> -fsSL</span><span> https://download.docker.com/linux/debian/gpg</span><span style="color:#ffcc66;"> -o</span><span> /etc/apt/keyrings/docker.asc
+</span><span style="color:#ffd580;">sudo</span><span> chmod a+r /etc/apt/keyrings/docker.asc
+</span><span>
+</span><span style="font-style:italic;color:#5c6773;"># Add the repository to Apt sources:
+</span><span style="color:#f28779;">echo </span><span style="color:#ccc9c2cc;">\
+</span><span>  </span><span style="color:#bae67e;">&quot;deb [arch=$</span><span>(</span><span style="color:#ffd580;">dpkg</span><span style="color:#ffcc66;"> --print-architecture</span><span>)</span><span style="color:#bae67e;"> signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/debian </span><span style="color:#95e6cb;">\
+</span><span style="color:#bae67e;">  $</span><span>(</span><span style="color:#f28779;">.</span><span style="color:#bae67e;"> /etc/os-release </span><span style="color:#f29e74;">&amp;&amp; </span><span style="color:#f28779;">echo </span><span style="color:#bae67e;">&quot;$</span><span>VERSION_CODENAME</span><span style="color:#bae67e;">&quot;</span><span>)</span><span style="color:#bae67e;"> stable&quot; </span><span style="color:#f29e74;">| </span><span style="color:#ccc9c2cc;">\
+</span><span>  </span><span style="color:#ffd580;">sudo</span><span> tee /etc/apt/sources.list.d/docker.list </span><span style="color:#f29e74;">&gt;</span><span> /dev/null
+</span><span style="color:#ffd580;">sudo</span><span> apt-get update
+</span></code></pre>
+<h1 id="bu-shu-jing-xiang">部署镜像</h1>
+<h2 id="la-qu-jing-xiang">拉取镜像</h2>
+<pre data-lang="bash" style="background-color:#212733;color:#ccc9c2;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffd580;">docker</span><span> pull ryshe/terraria
+</span></code></pre>
+<h2 id="yun-xing-rong-qi">运行容器</h2>
+<h3 id="chuang-jian-yi-ge-shi-jie">创建一个世界</h3>
+<pre data-lang="bash" style="background-color:#212733;color:#ccc9c2;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffd580;">docker</span><span> run</span><span style="color:#ffcc66;"> -it -p</span><span> 7777:7777</span><span style="color:#ffcc66;"> --rm -v </span><span>$HOME/terraria/world:/root/.local/share/Terraria/Worlds ryshe/terraria:latest
+</span></code></pre>
+<p>这里的 <code>$HOME</code> 指的是你当前所在目录。也可以指定一个想要存放游戏文件的目录。</p>
+<p>比如我的目录是/var/lib/docker/volumes/terraria/_data</p>
+<p>所以我的命令是</p>
+<pre data-lang="bash" style="background-color:#212733;color:#ccc9c2;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffd580;">docker</span><span> run</span><span style="color:#ffcc66;"> -it -p</span><span> 7777:7777</span><span style="color:#ffcc66;"> --rm -v</span><span> /var/lib/docker/volumes/terraria/_data/terraria/world:/root/.local/share/Terraria/Worlds ryshe/terraria:latest
+</span></code></pre>
+<p>执行后会出现服务器的界面</p>
+<p><img src="https://img.0pt.icu/game/built-tr/1-1.png" alt="" /></p>
+<p>接下来根据提示，创建一个世界。</p>
+<p><img src="https://img.0pt.icu/game/built-tr/1-2.png" alt="" /></p>
+<p>创建完了。</p>
+<p>这个时候先可以退出ssh。</p>
+<h3 id="pei-zhi-tshockqiang-zhi-kai-huang">配置Tshock强制开荒</h3>
+<p>在刚才的<code>$HOME/terraria/world</code>目录下，找到配置文件<code>config.json</code>和<code>sscconfig.json</code></p>
+<p><img src="https://img.0pt.icu/game/built-tr/1-3.png" alt="" /></p>
+<p>这是tshock的配置文件，可以参考下面我的配置文件进行更改。</p>
+<p>对于<code>config.json</code>。</p>
+<pre data-lang="config.json" style="background-color:#212733;color:#ccc9c2;" class="language-config.json "><code class="language-config.json" data-lang="config.json"><span>{
+</span><span>  &quot;Settings&quot;: {
+</span><span>    &quot;ServerPassword&quot;: &quot;&quot;,  // 服务器密码
+</span><span>    &quot;ServerPort&quot;: 7777,  // 服务器端口
+</span><span>    &quot;MaxSlots&quot;: 8,  // 最大玩家槽位
+</span><span>    &quot;ReservedSlots&quot;: 20,  // 预留槽位
+</span><span>    &quot;ServerName&quot;: &quot;&quot;,  // 服务器名称
+</span><span>    &quot;UseServerName&quot;: false,  // 使用服务器名称
+</span><span>    &quot;LogPath&quot;: &quot;tshock/logs&quot;,  // 日志路径
+</span><span>    &quot;DebugLogs&quot;: false,  // 调试日志
+</span><span>    &quot;DisableLoginBeforeJoin&quot;: false,  // 加入前禁止登录
+</span><span>    &quot;IgnoreChestStacksOnLoad&quot;: false,  // 加载时忽略储物箱叠放
+</span><span>    &quot;WorldTileProvider&quot;: &quot;default&quot;, 
+</span><span>    &quot;AutoSave&quot;: true,  // 自动保存
+</span><span>    &quot;AnnounceSave&quot;: true,  // 保存时公告
+</span><span>    &quot;ShowBackupAutosaveMessages&quot;: true,  // 显示备份和自动保存信息
+</span><span>    &quot;BackupInterval&quot;: 10,  // 备份间隔
+</span><span>    &quot;BackupKeepFor&quot;: 240,  // 保留备份时间
+</span><span>    &quot;SaveWorldOnCrash&quot;: true,  // 崩溃时保存世界
+</span><span>    &quot;SaveWorldOnLastPlayerExit&quot;: true,  // 最后一个玩家退出时保存世界
+</span><span>    &quot;InvasionMultiplier&quot;: 1,  // 入侵倍增器
+</span><span>    &quot;DefaultMaximumSpawns&quot;: 5,  // 默认最大生成数量
+</span><span>    &quot;DefaultSpawnRate&quot;: 600,  // 默认生成速率
+</span><span>    &quot;InfiniteInvasion&quot;: false,  // 无限入侵
+</span><span>    &quot;PvPMode&quot;: &quot;normal&quot;,  // PvP模式
+</span><span>    &quot;SpawnProtection&quot;: false,  // 出生点保护
+</span><span>    &quot;SpawnProtectionRadius&quot;: 10,  // 出生点保护半径
+</span><span>    &quot;RangeChecks&quot;: true,  // 范围检查
+</span><span>    &quot;HardcoreOnly&quot;: false,  // 仅极限模式
+</span><span>    &quot;MediumcoreOnly&quot;: false,  // 仅中核模式
+</span><span>    &quot;SoftcoreOnly&quot;: false,  // 仅软核模式
+</span><span>    &quot;DisableBuild&quot;: false,  // 禁止建筑
+</span><span>    &quot;DisableHardmode&quot;: false,  // 禁止极限模式
+</span><span>    &quot;DisableDungeonGuardian&quot;: false,  // 禁止地牢守卫者
+</span><span>    &quot;DisableClownBombs&quot;: false,  // 禁止小丑炸弹
+</span><span>    &quot;DisableSnowBalls&quot;: false,  // 禁止雪球
+</span><span>    &quot;DisableTombstones&quot;: false,  // 禁止墓碑
+</span><span>    &quot;DisablePrimeBombs&quot;: false,  // 禁止机械首领炸弹
+</span><span>    &quot;ForceTime&quot;: &quot;normal&quot;,  // 强制时间
+</span><span>    &quot;DisableInvisPvP&quot;: false,  // 禁止隐形PvP
+</span><span>    &quot;MaxRangeForDisabled&quot;: 10,  // 禁用的最大范围
+</span><span>    &quot;RegionProtectChests&quot;: false,  // 区域保护储物箱
+</span><span>    &quot;RegionProtectGemLocks&quot;: false,  // 区域保护宝石锁
+</span><span>    &quot;IgnoreProjUpdate&quot;: false,  // 忽略投射物更新
+</span><span>    &quot;IgnoreProjKill&quot;: false,  // 忽略投射物击杀
+</span><span>    &quot;AllowCutTilesAndBreakables&quot;: false,  
+</span><span>    &quot;AllowIce&quot;: false,  // 允许冰
+</span><span>    &quot;AllowCrimsonCreep&quot;: true,  // 允许猩红蔓延
+</span><span>    &quot;AllowCorruptionCreep&quot;: true,  // 允许腐化蔓延
+</span><span>    &quot;AllowHallowCreep&quot;: true,  // 允许神圣蔓延
+</span><span>    &quot;StatueSpawn200&quot;: 3, 
+</span><span>    &quot;StatueSpawn600&quot;: 6,  
+</span><span>    &quot;StatueSpawnWorld&quot;: 10,  
+</span><span>    &quot;PreventBannedItemSpawn&quot;: true,  // 防止被封禁物品生成
+</span><span>    &quot;PreventDeadModification&quot;: true,  // 防止死亡修改
+</span><span>    &quot;PreventInvalidPlaceStyle&quot;: true,  // 防止无效的放置样式
+</span><span>    &quot;ForceXmas&quot;: false,  // 强制圣诞节
+</span><span>    &quot;ForceHalloween&quot;: false,  // 强制万圣节
+</span><span>    &quot;AllowAllowedGroupsToSpawnBannedItems&quot;: false,  // 允许有权限的组生成被封禁物品
+</span><span>    &quot;RespawnSeconds&quot;: 15,  // 重生时间（秒）
+</span><span>    &quot;RespawnBossSeconds&quot;: 10,  // Boss战重生时间（秒）
+</span><span>    &quot;AnonymousBossInvasions&quot;: true,  // 匿名Boss入侵
+</span><span>    &quot;MaxHP&quot;: 500,  // 最大生命值
+</span><span>    &quot;MaxMP&quot;: 200,  // 最大魔力值
+</span><span>    &quot;BombExplosionRadius&quot;: 5,  // 炸弹爆炸半径
+</span><span>    &quot;GiveItemsDirectly&quot;: false,  // 直接给予物品
+</span><span>    &quot;DefaultRegistrationGroupName&quot;: &quot;default&quot;,  // 默认注册组名称
+</span><span>    &quot;DefaultGuestGroupName&quot;: &quot;guest&quot;,  // 默认访客组名称
+</span><span>    &quot;RememberLeavePos&quot;: true,  // 记住离开位置
+</span><span>    &quot;MaximumLoginAttempts&quot;: 10,  // 最大登录尝试次数
+</span><span>    &quot;KickOnMediumcoreDeath&quot;: false,  // 中核模式死亡踢出
+</span><span>    &quot;MediumcoreKickReason&quot;: &quot;死亡导致踢出&quot;,  // 中核模式踢出原因
+</span><span>    &quot;BanOnMediumcoreDeath&quot;: false,  // 中核模式死亡封禁
+</span><span>    &quot;MediumcoreBanReason&quot;: &quot;死亡导致封禁&quot;,  // 中核模式封禁原因
+</span><span>    &quot;DisableDefaultIPBan&quot;: false,  // 禁用默认IP封禁
+</span><span>    &quot;EnableWhitelist&quot;: false,  // 启用白名单
+</span><span>    &quot;WhitelistKickReason&quot;: &quot;您不在白名单中。&quot;,  // 白名单踢出原因
+</span><span>    &quot;ServerFullReason&quot;: &quot;服务器已满&quot;,  // 服务器已满原因
+</span><span>    &quot;ServerFullNoReservedReason&quot;: &quot;服务器已满。没有预留槽位。&quot;,  // 服务器已满没有预留槽位原因
+</span><span>    &quot;KickOnHardcoreDeath&quot;: false,  // 极限模式死亡踢出
+</span><span>    &quot;HardcoreKickReason&quot;: &quot;死亡导致踢出&quot;,  // 极限模式踢出原因
+</span><span>    &quot;BanOnHardcoreDeath&quot;: false,  // 极限模式死亡封禁
+</span><span>    &quot;HardcoreBanReason&quot;: &quot;死亡导致封禁&quot;,  // 极限模式封禁原因
+</span><span>    &quot;KickProxyUsers&quot;: true,  // 踢出代理用户
+</span><span>    &quot;RequireLogin&quot;: true,  // 需要登录
+</span><span>    &quot;AllowLoginAnyUsername&quot;: true,  // 允许任何用户名登录
+</span><span>    &quot;AllowRegisterAnyUsername&quot;: true,  // 允许注册任何用户名
+</span><span>    &quot;MinimumPasswordLength&quot;: 4,  // 最小密码长度
+</span><span>    &quot;BCryptWorkFactor&quot;: 7,  // BCrypt工作因子
+</span><span>    &quot;DisableUUIDLogin&quot;: false,  // 禁用UUID登录
+</span><span>    &quot;KickEmptyUUID&quot;: false,  // 踢出空UUID
+</span><span>    &quot;TilePaintThreshold&quot;: 15,  // 瓷砖绘制阈值
+</span><span>    &quot;KickOnTilePaintThresholdBroken&quot;: false,  // 瓷砖绘制阈值破坏踢出
+</span><span>    &quot;MaxDamage&quot;: 51175,  // 最大伤害
+</span><span>    &quot;MaxProjDamage&quot;: 51175,  // 最大投射物伤害
+</span><span>    &quot;KickOnDamageThresholdBroken&quot;: false,  // 伤害阈值破坏踢出
+</span><span>    &quot;TileKillThreshold&quot;: 1060,  // 瓷砖击杀阈值
+</span><span>    &quot;KickOnTileKillThresholdBroken&quot;: false,  // 瓷砖击杀阈值破坏踢出
+</span><span>    &quot;TilePlaceThreshold&quot;: 1032,  // 瓷砖放置阈值
+</span><span>    &quot;KickOnTilePlaceThresholdBroken&quot;: false,  // 瓷砖放置阈值破坏踢出
+</span><span>    &quot;TileLiquidThreshold&quot;: 1050,  // 瓷砖液体阈值
+</span><span>    &quot;KickOnTileLiquidThresholdBroken&quot;: false,  // 瓷砖液体阈值破坏踢出
+</span><span>    &quot;ProjIgnoreShrapnel&quot;: true,  // 投射物忽略破片
+</span><span>    &quot;ProjectileThreshold&quot;: 1050,  // 投射物阈值
+</span><span>    &quot;KickOnProjectileThresholdBroken&quot;: false,  // 投射物阈值破坏踢出
+</span><span>    &quot;HealOtherThreshold&quot;: 1050,  // 治愈他人阈值
+</span><span>    &quot;KickOnHealOtherThresholdBroken&quot;: false,  // 治愈他人阈值破坏踢出
+</span><span>    &quot;SuppressPermissionFailureNotices&quot;: false,  // 抑制权限失败通知
+</span><span>    &quot;DisableModifiedZenith&quot;: false,  // 禁用修改过的巅峰
+</span><span>    &quot;DisableCustomDeathMessages&quot;: true,  // 禁用自定义死亡消息
+</span><span>    &quot;CommandSpecifier&quot;: &quot;/&quot;,  // 命令指示符
+</span><span>    &quot;CommandSilentSpecifier&quot;: &quot;.&quot;,  // 静默命令指示符
+</span><span>    &quot;DisableSpewLogs&quot;: true,  // 禁用喷射日志
+</span><span>    &quot;DisableSecondUpdateLogs&quot;: false,  // 禁用第二次更新日志
+</span><span>    &quot;SuperAdminChatRGB&quot;: [
+</span><span>      255,
+</span><span>      255,
+</span><span>      255
+</span><span>    ],
+</span><span>    &quot;SuperAdminChatPrefix&quot;: &quot;(超级管理员) &quot;,
+</span><span>    &quot;SuperAdminChatSuffix&quot;: &quot;&quot;,  // 超级管理员聊天前缀和后缀
+</span><span>    &quot;EnableGeoIP&quot;: false,  // 启用地理IP
+</span><span>    &quot;DisplayIPToAdmins&quot;: false,  // 向管理员显示IP
+</span><span>    &quot;ChatFormat&quot;: &quot;{1}{2}{3}: {4}&quot;,  // 聊天格式
+</span><span>    &quot;ChatAboveHeadsFormat&quot;: &quot;{2}&quot;,  // 头顶聊天格式
+</span><span>    &quot;EnableChatAboveHeads&quot;: false,  // 启用头顶聊天
+</span><span>    &quot;BroadcastRGB&quot;: [
+</span><span>      127,
+</span><span>      255,
+</span><span>      212
+</span><span>    ],
+</span><span>    &quot;StorageType&quot;: &quot;sqlite&quot;,  // 存储类型
+</span><span>    &quot;SqliteDBPath&quot;: &quot;tshock.sqlite&quot;,  // SQLite数据库路径
+</span><span>    &quot;MySqlHost&quot;: &quot;localhost:3306&quot;,  // MySQL主机
+</span><span>    &quot;MySqlDbName&quot;: &quot;&quot;,  // MySQL数据库名称
+</span><span>    &quot;MySqlUsername&quot;: &quot;&quot;,  // MySQL用户名
+</span><span>    &quot;MySqlPassword&quot;: &quot;&quot;,  // MySQL密码
+</span><span>    &quot;UseSqlLogs&quot;: false,  // 使用SQL日志
+</span><span>    &quot;RevertToTextLogsOnSqlFailures&quot;: 10,  // SQL失败后返回文本日志
+</span><span>    &quot;RestApiEnabled&quot;: false,  // 启用REST API
+</span><span>    &quot;RestApiPort&quot;: 7878,  // REST API端口
+</span><span>    &quot;LogRest&quot;: false,  // 记录REST请求
+</span><span>    &quot;EnableTokenEndpointAuthentication&quot;: false,  // 启用令牌端点身份验证
+</span><span>    &quot;RESTMaximumRequestsPerInterval&quot;: 5,  // 每个间隔的最大REST请求
+</span><span>    &quot;RESTRequestBucketDecreaseIntervalMinutes&quot;: 1,  // REST请求桶减少间隔（分钟）
+</span><span>    &quot;ApplicationRestTokens&quot;: {}  // 应用REST令牌
+</span><span>  }
+</span><span>}
+</span></code></pre>
+<p>对于<code>sscconfig.json</code>。</p>
+<pre data-lang="sscconfig.json" style="background-color:#212733;color:#ccc9c2;" class="language-sscconfig.json "><code class="language-sscconfig.json" data-lang="sscconfig.json"><span>{
+</span><span>  &quot;Settings&quot;: {
+</span><span>    &quot;Enabled&quot;: true,  // 强制开荒启用
+</span><span>    &quot;ServerSideCharacterSave&quot;: 15,  // 服务器端角色保存
+</span><span>    &quot;LogonDiscardThreshold&quot;: 250,  // 登录丢弃阈值
+</span><span>    &quot;StartingHealth&quot;: 100,  // 初始生命值
+</span><span>    &quot;StartingMana&quot;: 20,  // 初始法力值
+</span><span>    &quot;StartingInventory&quot;: [  // 初始物品清单
+</span><span>      {
+</span><span>        &quot;netID&quot;: -15,  // 物品ID
+</span><span>        &quot;prefix&quot;: 0,  // 前缀
+</span><span>        &quot;stack&quot;: 1  // 堆叠数量
+</span><span>      },
+</span><span>      {
+</span><span>        &quot;netID&quot;: -13,  // 物品ID
+</span><span>        &quot;prefix&quot;: 0,  // 前缀
+</span><span>        &quot;stack&quot;: 1  // 堆叠数量
+</span><span>      },
+</span><span>      {
+</span><span>        &quot;netID&quot;: -16,  // 物品ID
+</span><span>        &quot;prefix&quot;: 0,  // 前缀
+</span><span>        &quot;stack&quot;: 1  // 堆叠数量
+</span><span>      }
+</span><span>    ],
+</span><span>    &quot;WarnPlayersAboutBypassPermission&quot;: true  // 警告玩家绕过权限
+</span><span>  }
+</span><span>}
+</span></code></pre>
+<h3 id="qi-dong-fu-wu-qi">启动服务器</h3>
+<pre data-lang="bash" style="background-color:#212733;color:#ccc9c2;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffd580;">docker</span><span> run</span><span style="color:#ffcc66;"> -it --rm -p</span><span> 7777:7777</span><span style="color:#ffcc66;"> -v </span><span>$HOME/terraria/world:/root/.local/share/Terraria/Worlds</span><span style="color:#ffcc66;"> --name</span><span> terraria ryshe/terraria:latest
+</span></code></pre>
+<p>对于我来说是</p>
+<pre data-lang="bash" style="background-color:#212733;color:#ccc9c2;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffd580;">docker</span><span> run</span><span style="color:#ffcc66;"> -it --rm -p</span><span> 7777:7777</span><span style="color:#ffcc66;"> -v</span><span> /var/lib/docker/volumes/terraria/_data/terraria/world:/root/.local/share/Terraria/Worlds</span><span style="color:#ffcc66;"> --name</span><span> terraria ryshe/terraria:latest
+</span></code></pre>
+<p>选择你作为服务器的世界。根据提示，开启泰拉瑞亚服务器。</p>
+<p><img src="https://img.0pt.icu/game/built-tr/1-4.png" alt="" /></p>
+<p>现在来到服务器后台了。</p>
+<h1 id="guan-li-ci-bu-fen-jiao-wei-jian-lou">管理（此部分较为简陋)</h1>
+<p>在服务器后台，先给default组加权限。（default组是登录后玩家默认所在的组。）</p>
+<pre style="background-color:#212733;color:#ccc9c2;"><code><span>/group addperm default * !tshock.ignore.ssc
+</span></code></pre>
+<p><img src="https://img.0pt.icu/game/built-tr/1-5.png" alt="" /></p>
+<p>然后可以在服务端开账号。</p>
+<pre style="background-color:#212733;color:#ccc9c2;"><code><span>/user add name passwd default
+</span></code></pre>
+<p>name是你的名字，也是你的账号。passwd是你的密码。default是你所在组。</p>
+<p>管理后关闭移除容器。</p>
+<h1 id="hou-tai-yun-xing">后台运行</h1>
+<p>配置权限后， 将terraria后台运行</p>
+<pre data-lang="bash" style="background-color:#212733;color:#ccc9c2;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffd580;">docker</span><span> run</span><span style="color:#ffcc66;"> -d -p</span><span> 7777:7777</span><span style="color:#ffcc66;"> -v </span><span>$HOME/terraria/world:/root/.local/share/Terraria/Worlds</span><span style="color:#ffcc66;"> --name</span><span> terraria</span><span style="color:#ffcc66;"> -e</span><span> WORLD_FILENAME=your.wld ryshe/terraria:latest
+</span></code></pre>
+<p>对于我来说，是</p>
+<pre data-lang="bash" style="background-color:#212733;color:#ccc9c2;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffd580;">docker</span><span> run</span><span style="color:#ffcc66;"> -d -p</span><span> 7777:7777</span><span style="color:#ffcc66;"> -v</span><span> /var/lib/docker/volumes/terraria/_data/terraria/world:/root/.local/share/Terraria/Worlds</span><span style="color:#ffcc66;"> --name</span><span> terraria</span><span style="color:#ffcc66;"> -e</span><span> WORLD_FILENAME=tuguige.wld ryshe/terraria:latest
+</span></code></pre>
+<h1 id="zhu-ce-deng-lu">注册登录</h1>
+<p>打开游戏，连接你的泰拉瑞亚服务器。如果是搭建在本地。ip是 <code>localhost</code> 端口 <code>7777</code></p>
+<p>如果搭建在服务器，ip是你的服务器ip，端口7777，记得给服务器放行7777端口。</p>
+<p>创建一个角色，角色名就是你的账号。</p>
+<p>连接上服务器时，打开聊天栏，输<code>/help</code>获得帮助。</p>
+<p>如果没有账号，先注册一个 ，输<code>/register passwd</code></p>
+<p>passwd是你的密码。你的账号是用户名。</p>
+<p>然后再<code>/login passwd</code>。</p>
+<p>完成。</p>
+<h1 id="hou-ji">后记</h1>
+<p>对管理部分的参考。</p>
+<p>https://www.taozi1.com/16620.html</p>
+<p>https://ikebukuro.tshock.co/</p>
+
+      </div>
+    </div>
+    <div class="prompt" id="terminal"><input
+    type="text"
+    id="setter"
+    onkeydown="writeit(this, event);moveIt(this.value.length, event)"
+    onchange="writeit(this, event)"
+    onkeyup="writeit(this, event)"
+    onkeypress="writeit(this, event);"
+    >
+<label for="setter" id="writer"> </label><b class="cursor" id="cursor"></b></div>
+  </main>
+</body>
+</html>

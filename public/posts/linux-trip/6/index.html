@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATP</title>
+     <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js" integrity="sha256-WCzAhd2P6gRJF9Hv3oOOd+hFJi/QJbv+Azn4CGB8gfY=" crossorigin="anonymous"></script>
+     <script src="/js/index.js"></script>
+     <script src="/js/prompt.js"></script>
+     <script src="/js/keyboard.js"></script>
+     <script src="/js/tab.js"></script>
+     <script src="/js/commands.js"></script>
+     <script src="/js/config.js"></script><link rel="stylesheet" href="/css/base.css"><link rel="stylesheet" href="/css/page.css"></head>
+<body onkeydown='exec(event)'>
+  <header>
+      <h1>ATP</h1>
+  </header>
+  <main>
+    <div class="files" id="files" tabindex="0">
+<ul><li class="file">
+    <span><a href='https://blog.0pt.icu/readme/'
+      tabindex="-2">  README</a></span>
+  </li><li class="file">
+    <span><a href='https://blog.0pt.icu/rss/'
+      tabindex="-3">  RSS</a></span>
+  </li><li class="folder"><span>
+      
+      <a href='https://blog.0pt.icu/posts/'
+        tabindex="-4">  Posts
+      </a>
+    </span>
+
+    <ul>
+      
+        
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/think/'
+    tabindex="-5">  Think
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/think/unhappy-newyear/'
+        tabindex="-6">  祝你春节不快乐</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/think/1st-anniversary-of-listening-to-tayu-lo/'
+        tabindex="-7">  纪念听罗大佑一周年</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/think/music-history/'
+        tabindex="-8">  记我的听歌历程</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/think/my-first-post/'
+        tabindex="-9">  My first post</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/server/'
+    tabindex="-10">  server
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/traefik-simple-guide/'
+        tabindex="-11">  Docker/NixOS使用traefik实现简单反代</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/caddy-simple-guide/'
+        tabindex="-12">  Debian/NixOS使用caddy实现简单反代</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/use-tebi-build-nixos-cache-server/'
+        tabindex="-13">  使用tebi作为s3,搭建nix缓存服务器</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/cloudfront-cdn-acme/'
+        tabindex="-14">  cloudfront配置小鸡cdn并使用acme.sh自动获取证书</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/build-terraria-tshock/'
+        tabindex="-15">  搭建泰拉瑞亚Tshock服务器(强制开荒)</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/build-hugo/'
+        tabindex="-16">  基于Arch Linux搭建hugo博客</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/hackintosh/'
+    tabindex="-17">  Hackintosh
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/hackintosh/x79/'
+        tabindex="-18">  记录一次杂牌x79黑苹果</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/pve/'
+    tabindex="-19">  PVE
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/pve/pve-hackintosh/'
+        tabindex="-20">  x79上pve黑苹果</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/pve/build-pve/'
+        tabindex="-21">  x79搭建pve并开启硬件直通</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/k3s/'
+    tabindex="-22">  K3S
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/k3s/develop-rancher/'
+        tabindex="-23">  k3s部署rancher</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/k3s/kubevirt-manager/'
+        tabindex="-24">  k3s部署kubevirt-manager</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/linux-trip/'
+    tabindex="-25">  Linux Trip
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/7/'
+        tabindex="-26">  第七回，探FreeBSD路途远，坎坷荆棘勇前行</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a class="selected"href='https://blog.0pt.icu/posts/linux-trip/6/'
+        tabindex="-27">  第六回，弃Linux投FreeBSD，稳如磐石路更宽</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/5/'
+        tabindex="-28">  第五回，渐觉Arch无力持，转投NixOS获新生</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/4/'
+        tabindex="-29">  第四回，舍KDE抱Hyprland，新境界追求更添</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/3/'
+        tabindex="-30">  第三回，探幽寻秘APPS新，解CONFIG奇趣入眼前</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/2/'
+        tabindex="-31">  第二回，初入KDE虚界间，安装APPS耀目光</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/1/'
+        tabindex="-32">  第一回，弃window渐入轻盈境，装Arch走入坑深底</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+    </ul>
+  </li><li class="folder"><span>
+      
+      <a href='https://blog.0pt.icu/about/'
+        tabindex="-33">  ABOUT
+      </a>
+    </span>
+
+    <ul>
+      <li class="file">
+        <span>└──
+          <a href='https://blog.0pt.icu/about/about2/'
+            tabindex="-34">  ABOUT2</a>
+        </span>
+      </li><li class="file">
+        <span>└──
+          <a href='https://blog.0pt.icu/about/about1/'
+            tabindex="-35">  ABOUT1</a>
+        </span>
+      </li>
+        
+    </ul>
+  </li><li class="folder"><span>
+      
+      <a href='https://blog.0pt.icu/links/'
+        tabindex="-36">  LINKS
+      </a>
+    </span>
+
+    <ul>
+      <li class="file">
+        <span>└──
+          <a href='https://blog.0pt.icu/links/link/'
+            tabindex="-37">  LINKS</a>
+        </span>
+      </li>
+        
+    </ul>
+  </li>
+</ul>
+</div>
+    <div class="viewer page" id="viewer" tabindex="0">
+      <div class="tab">
+<ul id="tabs">
+</ul>
+
+
+</div>
+      <div class="content" id="content"><h1 id="di-liu-hui-qi-linuxtou-freebsd-wen-ru-pan-shi-lu-geng-kuan">第六回，弃Linux投FreeBSD，稳如磐石路更宽</h1>
+<p>2024-10-20</p>
+<h1 id="an-zhuang-freebsd">安装freebsd</h1>
+<h2 id="zhun-bei-jing-xiang">准备镜像</h2>
+<p>访问<a href="https://www.freebsd.org/where/">官网下载地址</a>，根据自己的架构选择下载，我是<code>x64</code>，所以下载<code>amd64</code><br />
+<img src="https://img.0pt.icu/learn/freebsd/install-freebsd/01.png" alt="" /><br />
+下载<code>FreeBSD-14.1-RELEASE-amd64-disc1.iso</code><br />
+<img src="https://img.0pt.icu/learn/freebsd/install-freebsd/02.png" alt="" /><br />
+使用<code>balenaEtcher</code>进行烧录，选择下载好的镜像和要烧录的u盘，点击<code>现在烧录</code><br />
+<img src="https://img.0pt.icu/learn/freebsd/install-freebsd/03.png" alt="" /></p>
+<p><img src="https://img.0pt.icu/learn/freebsd/install-freebsd/04.png" alt="" /></p>
+<p><img src="https://img.0pt.icu/learn/freebsd/install-freebsd/05.png" alt="" /></p>
+<p><img src="https://img.0pt.icu/learn/freebsd/install-freebsd/06.png" alt="" /></p>
+<p>烧录完成后，关机重启，按快捷键进入启动项选择节目或者进bios选择启动项，选择进入刚才烧录的u盘，进入freebsd界面后，回车，等待跑码</p>
+<p><img src="https://img.0pt.icu/learn/freebsd/install-freebsd/07.png" alt="" /></p>
+<p>跑码后出现安装界面，使用左右方向键选中<code>Install</code>，回车</p>
+<p><img src="https://img.0pt.icu/learn/freebsd/install-freebsd/08.png" alt="" /></p>
+<p>使用上下方向键，根据自己的情况选择，我这直接默认，选好后回车</p>
+<p><img src="https://img.0pt.icu/learn/freebsd/install-freebsd/09.png" alt="" /></p>
+<p>输入主机名，然后回车</p>
+<p><img src="https://img.0pt.icu/learn/freebsd/install-freebsd/10.png" alt="" /></p>
+<p>使用上下方向键选中条目，使用空格键启用该条目/取消该条目，可根据下图快速选择，选好后回车</p>
+<p><img src="https://img.0pt.icu/learn/freebsd/install-freebsd/11.png" alt="" /></p>
+<p>使用上下方向键选中条目，这里使用ZFS自动分区，选<code>Auto (ZFS)</code>，选好后回车</p>
+<p><img src="https://img.0pt.icu/learn/freebsd/install-freebsd/12.png" alt="" /></p>
+<p><img src="https://img.0pt.icu/learn/freebsd/install-freebsd/13.png" alt="" /></p>
+<p>使用上下方向键选择条目，选择<code>Pool Type/Disks:</code>，然后回车</p>
+<p><img src="https://img.0pt.icu/learn/freebsd/install-freebsd/14.png" alt="" /></p>
+<p>使用上下方向键选择条目，选择<code>stripe</code>，然后回车</p>
+<p><img src="https://img.0pt.icu/learn/freebsd/install-freebsd/15.png" alt="" /></p>
+<p>如果有多个磁盘，这里会显示出来，不过演示只有一块磁盘。使用上下方向键选择条目，使用空格键启用该条目/取消该条目。这里移到要安装freebsd的那块磁盘，按空格键启用，然后回车</p>
+<p><img src="https://img.0pt.icu/learn/freebsd/install-freebsd/16.png" alt="" /></p>
+<p><img src="https://img.0pt.icu/learn/freebsd/install-freebsd/17.png" alt="" /></p>
+<p><img src="https://img.0pt.icu/learn/freebsd/install-freebsd/18.png" alt="" /></p>
+<p>使用上下方向键选择条目，选择<code>&gt;&gt;&gt; Install</code>，然后回车</p>
+<p><img src="https://img.0pt.icu/learn/freebsd/install-freebsd/19.png" alt="" /></p>
+<p>使用左右方向键选中<code>YES</code>，然后回车</p>
+<p><img src="https://img.0pt.icu/learn/freebsd/install-freebsd/20.png" alt="" /></p>
+<p>等待进度条跑完</p>
+<p><img src="https://img.0pt.icu/learn/freebsd/install-freebsd/21.png" alt="" /></p>
+<p><img src="https://img.0pt.icu/learn/freebsd/install-freebsd/22.png" alt="" /></p>
+<p><img src="https://img.0pt.icu/learn/freebsd/install-freebsd/23.png" alt="" /></p>
+<p><img src="https://img.0pt.icu/learn/freebsd/install-freebsd/24.png" alt="" /></p>
+<p>进度条跑完后，会来到下面的界面，设置root密码</p>
+<p><img src="https://img.0pt.icu/learn/freebsd/install-freebsd/25.png" alt="" /></p>
+<p><img src="https://img.0pt.icu/learn/freebsd/install-freebsd/26.png" alt="" /></p>
+<p>设置完root密码的时候选择网卡，有线网卡跟无线网卡都可以，无线网卡还需要选择wifi并输入wifi密码，这里只有一个有线网卡。使用上下方向键选择条目，选择你要配置的网卡，然后回车</p>
+<p><img src="https://img.0pt.icu/learn/freebsd/install-freebsd/27.png" alt="" /></p>
+<p>配置IPv4，使用左右方向键选中<code>YES</code>，然后回车</p>
+<p><img src="https://img.0pt.icu/learn/freebsd/install-freebsd/28.png" alt="" /></p>
+<p>使用DHCP，使用左右方向键选中<code>YES</code>，然后回车</p>
+<p><img src="https://img.0pt.icu/learn/freebsd/install-freebsd/29.png" alt="" /></p>
+<p><img src="https://img.0pt.icu/learn/freebsd/install-freebsd/30.png" alt="" /></p>
+<p>先不配置IPv6，使用左右方向键选中<code>No</code>，然后回车</p>
+<p><img src="https://img.0pt.icu/learn/freebsd/install-freebsd/31.png" alt="" /></p>
+<p>使用左右方向键选中<code>OK</code>，然后回车</p>
+<p><img src="https://img.0pt.icu/learn/freebsd/install-freebsd/32.png" alt="" /></p>
+<p>配置时区，根据自己的情况选，使用上下方向键选择时区，然后回车</p>
+<p><img src="https://img.0pt.icu/learn/freebsd/install-freebsd/33.png" alt="" /></p>
+<p><img src="https://img.0pt.icu/learn/freebsd/install-freebsd/34.png" alt="" /></p>
+<p>选择<code>Set Date</code>设置时间</p>
+<p><img src="https://img.0pt.icu/learn/freebsd/install-freebsd/35.png" alt="" /></p>
+<p><img src="https://img.0pt.icu/learn/freebsd/install-freebsd/36.png" alt="" /></p>
+<p>使用上下方向键选中条目，使用空格键启用该条目/取消该条目，根据情况启用相应的<code>services</code>，选好后回车</p>
+<p><img src="https://img.0pt.icu/learn/freebsd/install-freebsd/37.png" alt="" /></p>
+<p>使用上下方向键选中条目，使用空格键启用该条目/取消该条目，根据情况启用相应的系统安全策略，选好后回车</p>
+<p><img src="https://img.0pt.icu/learn/freebsd/install-freebsd/38.png" alt="" /></p>
+<p>添加用户，这里选择<code>Yes</code></p>
+<p><img src="https://img.0pt.icu/learn/freebsd/install-freebsd/39.png" alt="" /></p>
+<p><img src="https://img.0pt.icu/learn/freebsd/install-freebsd/40.png" alt="" /></p>
+<p>输入用户名，<code>Uid</code>和第一个<code>Login group</code>直接留空，回车即可</p>
+<p><img src="https://img.0pt.icu/learn/freebsd/install-freebsd/41.png" alt="" /></p>
+<p>第二个<code>Login group</code>，将该用户添加到其他组，填写<code>wheel</code> 后回车，接下来一路回车，保持默认设置，直到输入密码。输完密码后再一路回车</p>
+<p><img src="https://img.0pt.icu/learn/freebsd/install-freebsd/42.png" alt="" /></p>
+<p><img src="https://img.0pt.icu/learn/freebsd/install-freebsd/43.png" alt="" /></p>
+<p>到这里安装完成，选<code>Exit</code>回车</p>
+<p><img src="https://img.0pt.icu/learn/freebsd/install-freebsd/44.png" alt="" /></p>
+<p>选<code>Yes</code>回车</p>
+<p><img src="https://img.0pt.icu/learn/freebsd/install-freebsd/45.png" alt="" /></p>
+<p>输入<code>exit</code>回车</p>
+<p><img src="https://img.0pt.icu/learn/freebsd/install-freebsd/46.png" alt="" /></p>
+<p>选择<code>Reboot</code>回车，重启电脑</p>
+<p><img src="https://img.0pt.icu/learn/freebsd/install-freebsd/47.png" alt="" /></p>
+<p>进到tty输入用户名密码，就成功进入freebsd了</p>
+<p><img src="https://img.0pt.icu/learn/freebsd/install-freebsd/48.png" alt="" /></p>
+
+      </div>
+    </div>
+    <div class="prompt" id="terminal"><input
+    type="text"
+    id="setter"
+    onkeydown="writeit(this, event);moveIt(this.value.length, event)"
+    onchange="writeit(this, event)"
+    onkeyup="writeit(this, event)"
+    onkeypress="writeit(this, event);"
+    >
+<label for="setter" id="writer"> </label><b class="cursor" id="cursor"></b></div>
+  </main>
+</body>
+</html>

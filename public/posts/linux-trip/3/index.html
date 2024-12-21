@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATP</title>
+     <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js" integrity="sha256-WCzAhd2P6gRJF9Hv3oOOd+hFJi/QJbv+Azn4CGB8gfY=" crossorigin="anonymous"></script>
+     <script src="/js/index.js"></script>
+     <script src="/js/prompt.js"></script>
+     <script src="/js/keyboard.js"></script>
+     <script src="/js/tab.js"></script>
+     <script src="/js/commands.js"></script>
+     <script src="/js/config.js"></script><link rel="stylesheet" href="/css/base.css"><link rel="stylesheet" href="/css/page.css"></head>
+<body onkeydown='exec(event)'>
+  <header>
+      <h1>ATP</h1>
+  </header>
+  <main>
+    <div class="files" id="files" tabindex="0">
+<ul><li class="file">
+    <span><a href='https://blog.0pt.icu/readme/'
+      tabindex="-2">  README</a></span>
+  </li><li class="file">
+    <span><a href='https://blog.0pt.icu/rss/'
+      tabindex="-3">  RSS</a></span>
+  </li><li class="folder"><span>
+      
+      <a href='https://blog.0pt.icu/posts/'
+        tabindex="-4">  Posts
+      </a>
+    </span>
+
+    <ul>
+      
+        
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/think/'
+    tabindex="-5">  Think
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/think/unhappy-newyear/'
+        tabindex="-6">  祝你春节不快乐</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/think/1st-anniversary-of-listening-to-tayu-lo/'
+        tabindex="-7">  纪念听罗大佑一周年</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/think/music-history/'
+        tabindex="-8">  记我的听歌历程</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/think/my-first-post/'
+        tabindex="-9">  My first post</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/server/'
+    tabindex="-10">  server
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/traefik-simple-guide/'
+        tabindex="-11">  Docker/NixOS使用traefik实现简单反代</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/caddy-simple-guide/'
+        tabindex="-12">  Debian/NixOS使用caddy实现简单反代</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/use-tebi-build-nixos-cache-server/'
+        tabindex="-13">  使用tebi作为s3,搭建nix缓存服务器</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/cloudfront-cdn-acme/'
+        tabindex="-14">  cloudfront配置小鸡cdn并使用acme.sh自动获取证书</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/build-terraria-tshock/'
+        tabindex="-15">  搭建泰拉瑞亚Tshock服务器(强制开荒)</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/build-hugo/'
+        tabindex="-16">  基于Arch Linux搭建hugo博客</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/hackintosh/'
+    tabindex="-17">  Hackintosh
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/hackintosh/x79/'
+        tabindex="-18">  记录一次杂牌x79黑苹果</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/pve/'
+    tabindex="-19">  PVE
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/pve/pve-hackintosh/'
+        tabindex="-20">  x79上pve黑苹果</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/pve/build-pve/'
+        tabindex="-21">  x79搭建pve并开启硬件直通</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/k3s/'
+    tabindex="-22">  K3S
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/k3s/develop-rancher/'
+        tabindex="-23">  k3s部署rancher</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/k3s/kubevirt-manager/'
+        tabindex="-24">  k3s部署kubevirt-manager</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/linux-trip/'
+    tabindex="-25">  Linux Trip
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/7/'
+        tabindex="-26">  第七回，探FreeBSD路途远，坎坷荆棘勇前行</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/6/'
+        tabindex="-27">  第六回，弃Linux投FreeBSD，稳如磐石路更宽</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/5/'
+        tabindex="-28">  第五回，渐觉Arch无力持，转投NixOS获新生</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/4/'
+        tabindex="-29">  第四回，舍KDE抱Hyprland，新境界追求更添</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a class="selected"href='https://blog.0pt.icu/posts/linux-trip/3/'
+        tabindex="-30">  第三回，探幽寻秘APPS新，解CONFIG奇趣入眼前</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/2/'
+        tabindex="-31">  第二回，初入KDE虚界间，安装APPS耀目光</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/1/'
+        tabindex="-32">  第一回，弃window渐入轻盈境，装Arch走入坑深底</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+    </ul>
+  </li><li class="folder"><span>
+      
+      <a href='https://blog.0pt.icu/about/'
+        tabindex="-33">  ABOUT
+      </a>
+    </span>
+
+    <ul>
+      <li class="file">
+        <span>└──
+          <a href='https://blog.0pt.icu/about/about2/'
+            tabindex="-34">  ABOUT2</a>
+        </span>
+      </li><li class="file">
+        <span>└──
+          <a href='https://blog.0pt.icu/about/about1/'
+            tabindex="-35">  ABOUT1</a>
+        </span>
+      </li>
+        
+    </ul>
+  </li><li class="folder"><span>
+      
+      <a href='https://blog.0pt.icu/links/'
+        tabindex="-36">  LINKS
+      </a>
+    </span>
+
+    <ul>
+      <li class="file">
+        <span>└──
+          <a href='https://blog.0pt.icu/links/link/'
+            tabindex="-37">  LINKS</a>
+        </span>
+      </li>
+        
+    </ul>
+  </li>
+</ul>
+</div>
+    <div class="viewer page" id="viewer" tabindex="0">
+      <div class="tab">
+<ul id="tabs">
+</ul>
+
+
+</div>
+      <div class="content" id="content"><h1 id="di-san-hui-tan-you-xun-mi-appsxin-jie-configqi-qu-ru-yan-qian">第三回，探幽寻秘APPS新，解CONFIG奇趣入眼前</h1>
+<p>2024-02-08</p>
+<h1 id="1-an-zhuang-zi-ti">1.安装字体</h1>
+<p>包管理器安装字体</p>
+<p>或者解压到~/.local/share/fonts/用户目录下</p>
+<p>或者解压到/usr/share/fonts/系统目录下</p>
+<p>相关命令</p>
+<pre data-lang="bash" style="background-color:#212733;color:#ccc9c2;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffd580;">fc-cache</span><span style="color:#ffcc66;"> -fv
+</span><span style="color:#ffd580;">fc-list </span><span style="font-style:italic;color:#5c6773;"># 列出所有字体，搭配grep找字体
+</span><span style="color:#ffd580;">fc-list </span><span style="color:#f29e74;">| </span><span style="color:#ffd580;">grep </span><span style="color:#bae67e;">&quot;name&quot;
+</span><span style="color:#ffd580;">fc-list</span><span> : family </span><span style="color:#f29e74;">| </span><span style="color:#ffd580;">grep </span><span style="color:#bae67e;">&quot;name&quot;
+</span><span style="color:#ffd580;">fc-list</span><span> : family style </span><span style="color:#f29e74;">| </span><span style="color:#ffd580;">grep </span><span style="color:#bae67e;">&quot;name&quot;
+</span><span style="color:#ffd580;">fc-list</span><span> : file </span><span style="color:#f29e74;">| </span><span style="color:#ffd580;">grep </span><span style="color:#bae67e;">&quot;name&quot;
+</span><span style="color:#ffd580;">sudoedit</span><span> /etc/fonts/local.conf
+</span><span style="color:#ffd580;">paru</span><span style="color:#ffcc66;"> -S</span><span> imagemagick </span><span style="font-style:italic;color:#5c6773;"># 字体图片预览 
+</span><span style="color:#ffd580;">display</span><span> name.ttf 
+</span><span style="color:#ffd580;">paru</span><span style="color:#ffcc66;"> -S</span><span> fontpreview </span><span style="font-style:italic;color:#5c6773;"># 字体预览
+</span><span style="color:#ffd580;">fontpreview
+</span></code></pre>
+<h1 id="2-an-zhuang-zsh">2.安装zsh</h1>
+<pre data-lang="bash" style="background-color:#212733;color:#ccc9c2;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffd580;">paru</span><span style="color:#ffcc66;"> -S</span><span> zsh
+</span><span style="color:#ffd580;">chsh</span><span style="color:#ffcc66;"> -s</span><span> /usr/bin/zsh
+</span></code></pre>
+<p>然后重启一下。打开终端即可切换成功。</p>
+<p>刚进终端，因为本地没有<code>.zshrc</code>，会要求你选择生成配置<code>.zshrc</code>。</p>
+<p>输0即可。生成最小配置。</p>
+<h1 id="3-an-zhuang-zshde-cha-jian">3.安装zsh的插件</h1>
+<h2 id="0-wei-shen-me-bu-shi-yong-cha-jian-guan-li-qi">(0).为什么不使用插件管理器</h2>
+<p>1.人们将<code>Oh My Zsh</code>与<code>zsh</code>混为一谈，认为运行<code>Oh My Zsh</code>就是在运行<code>zsh</code>，又或是认为使用<code>zsh</code>离不开<code>Oh My Zsh</code>。</p>
+<p>2.<code>zsh</code>是一个纯粹的<code>shell</code>，不是别的东西的附庸。<code>Oh My Zsh</code>是一个插件管理器，一个框架。</p>
+<p>3.别人可能会为了方便而创建别名。比如将一个提供彩色显示文件名的脚本设置别名为<code>ls</code>，是俩个不同的东西，在某些情况下会造成紊乱。</p>
+<p>4.每个<code>zsh插件</code>本质都是<code>.zsh脚本</code>运行在<code>shell</code>当中，使用<code>Oh My Zsh</code>会误以为插件管理器做了一些额外的东西。</p>
+<p>5.zsh设置插件只需要把插件下载下来(git clone)，如何在.zshrc文件中添加<code>source /创建的位置</code>。</p>
+<p>6.与<code>vim</code>中插件的区别。<code>zsh插件</code>本质都是<code>.zsh脚本</code>，就简单，根本不需要更新，也就不需要包管理器去实现方便更新的功能。</p>
+<p>7.<code>Oh My Zsh</code>的配置逻辑有点复杂，不如直接在<code>zshrc</code>中用<code>shell语法</code>进行配置。</p>
+<h2 id="1-zhu-ti">(1).主题</h2>
+<p><a href="https://github.com/romkatv/powerlevel10k">https://github.com/romkatv/powerlevel10k</a></p>
+<pre data-lang="zsh" style="background-color:#212733;color:#ccc9c2;" class="language-zsh "><code class="language-zsh" data-lang="zsh"><span style="color:#ffd580;">paru</span><span style="color:#ffcc66;"> -S</span><span> zsh-theme-powerlevel10k
+</span></code></pre>
+<p>编辑<code>.zshrc</code> 文件。</p>
+<pre data-lang=".zshrc" style="background-color:#212733;color:#ccc9c2;" class="language-.zshrc "><code class="language-.zshrc" data-lang=".zshrc"><span style="font-style:italic;color:#5c6773;"># 延迟加载插件,一定放在1行
+</span><span style="color:#ffd580;">autoload</span><span style="color:#ffcc66;"> -U</span><span> compinit </span><span style="color:#f29e74;">&amp;&amp; </span><span style="color:#ffd580;">compinit
+</span><span style="color:#f28779;">source</span><span> /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
+</span></code></pre>
+<p>重启终端，进入主题的设置页面。按照提示一步一步设置成自己喜欢看的样子。</p>
+<h2 id="2-gao-liang">(2).高亮</h2>
+<p><a href="https://github.com/zsh-users/zsh-syntax-highlighting">https://github.com/zsh-users/zsh-syntax-highlighting</a></p>
+<pre data-lang="zsh" style="background-color:#212733;color:#ccc9c2;" class="language-zsh "><code class="language-zsh" data-lang="zsh"><span style="color:#ffd580;">paru</span><span style="color:#ffcc66;"> -S</span><span> zsh-syntax-highlighting
+</span></code></pre>
+<p>编辑<code>.zshrc</code> 文件。</p>
+<pre data-lang=".zshrc" style="background-color:#212733;color:#ccc9c2;" class="language-.zshrc "><code class="language-.zshrc" data-lang=".zshrc"><span style="color:#f28779;">source</span><span> /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+</span></code></pre>
+<p>重启终端，即可看到高亮效果。</p>
+<h2 id="3-zi-dong-jian-yi">(3).自动建议</h2>
+<p><a href="https://github.com/zsh-users/zsh-autosuggestions">GitHub - zsh-users/zsh-autosuggestions: Fish-like autosuggestions for zsh</a></p>
+<pre data-lang="zsh" style="background-color:#212733;color:#ccc9c2;" class="language-zsh "><code class="language-zsh" data-lang="zsh"><span style="color:#ffd580;">paru</span><span style="color:#ffcc66;"> -S</span><span> zsh-autosuggestions
+</span></code></pre>
+<p>在<code>.zshrc</code> 文件末尾添加。</p>
+<pre data-lang=".zshrc" style="background-color:#212733;color:#ccc9c2;" class="language-.zshrc "><code class="language-.zshrc" data-lang=".zshrc"><span style="color:#f28779;">source</span><span> /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+</span></code></pre>
+<h2 id="4-li-shi-zi-zi-fu-chuan-sou-suo">(4).历史子字符串搜索</h2>
+<p><a href="https://github.com/zsh-users/zsh-history-substring-search">GitHub - zsh-users/zsh-history-substring-search: 🐠 ZSH port of Fish history search (up arrow)</a></p>
+<pre data-lang="zsh" style="background-color:#212733;color:#ccc9c2;" class="language-zsh "><code class="language-zsh" data-lang="zsh"><span style="color:#ffd580;">paru</span><span style="color:#ffcc66;"> -S</span><span> zsh-history-substring-search
+</span></code></pre>
+<p>在<code>.zshrc</code> 文件末尾添加。</p>
+<pre data-lang=".zshrc" style="background-color:#212733;color:#ccc9c2;" class="language-.zshrc "><code class="language-.zshrc" data-lang=".zshrc"><span style="font-style:italic;color:#5c6773;"># If you want to use zsh-syntax-highlighting along with this script, then make sure that you load it before you load this script
+</span><span style="color:#f28779;">source</span><span> /usr/share/zsh/plugins/zsh-history-substring-search/zsh-history-substring-search.zsh
+</span><span>
+</span><span style="color:#ffd580;">bindkey </span><span style="color:#bae67e;">&#39;^[[A&#39;</span><span> history-substring-search-up
+</span><span style="color:#ffd580;">bindkey </span><span style="color:#bae67e;">&#39;^[[B&#39;</span><span> history-substring-search-down
+</span></code></pre>
+<h2 id="5-zi-dong-tong-zhi">(5).自动通知</h2>
+<p><a href="https://github.com/MichaelAquilina/zsh-auto-notify">GitHub - MichaelAquilina/zsh-auto-notify: ⏰ ZSH plugin that automatically sends out a notification when a long running task has completed.</a></p>
+<pre data-lang="zsh" style="background-color:#212733;color:#ccc9c2;" class="language-zsh "><code class="language-zsh" data-lang="zsh"><span style="color:#ffd580;">paru</span><span style="color:#ffcc66;"> -S</span><span> dunst
+</span><span style="font-style:italic;color:#5c6773;"># Linux X/Wayland (Requires notify-send to be installed)
+</span><span style="color:#ffd580;">paru</span><span style="color:#ffcc66;"> -S</span><span> notify-send-rs-bin
+</span><span style="color:#ffd580;">paru</span><span style="color:#ffcc66;"> -S</span><span> zsh-auto-notify
+</span></code></pre>
+<p>在<code>.zshrc</code> 文件末尾添加。</p>
+<pre data-lang=".zshrc" style="background-color:#212733;color:#ccc9c2;" class="language-.zshrc "><code class="language-.zshrc" data-lang=".zshrc"><span style="color:#f28779;">source</span><span> /usr/share/zsh/plugins/zsh-auto-notify/auto-notify.plugin.zsh
+</span><span style="font-style:italic;color:#5c6773;"># Set threshold to 10seconds
+</span><span style="color:#ffa759;">export </span><span>AUTO_NOTIFY_THRESHOLD</span><span style="color:#f29e74;">=</span><span style="color:#bae67e;">10
+</span><span style="color:#ffa759;">export </span><span>AUTO_NOTIFY_TITLE</span><span style="color:#f29e74;">=</span><span style="color:#bae67e;">&quot;Hey! %command has just finished&quot;
+</span><span style="color:#ffa759;">export </span><span>AUTO_NOTIFY_BODY</span><span style="color:#f29e74;">=</span><span style="color:#bae67e;">&quot;It completed in %elapsed seconds with exit code %exit_code&quot;
+</span><span style="font-style:italic;color:#5c6773;"># Set notification expiry to 10 seconds(10000ms)
+</span><span style="color:#ffa759;">export </span><span>AUTO_NOTIFY_EXPIRE_TIME</span><span style="color:#f29e74;">=</span><span style="color:#bae67e;">10000
+</span><span style="font-style:italic;color:#5c6773;"># redefine what is ignored by auto-notify
+</span><span style="color:#ffa759;">export </span><span>AUTO_NOTIFY_IGNORE</span><span style="color:#f29e74;">=</span><span>(
+</span><span>    </span><span style="color:#bae67e;">&quot;man&quot; &quot;sleep&quot; &quot;vim&quot; &quot;nvim&quot; &quot;less&quot; &quot; more&quot; &quot;nano&quot;
+</span><span>)
+</span></code></pre>
+<h2 id="6-ni-ying-gai-yong">(6).你应该用</h2>
+<p><a href="https://github.com/MichaelAquilina/zsh-you-should-use">GitHub - MichaelAquilina/zsh-you-should-use: 📎 ZSH plugin that reminds you to use existing aliases for commands you just typed</a></p>
+<pre data-lang="zsh" style="background-color:#212733;color:#ccc9c2;" class="language-zsh "><code class="language-zsh" data-lang="zsh"><span style="color:#ffd580;">paru</span><span style="color:#ffcc66;"> -S</span><span> zsh-you-should-use
+</span></code></pre>
+<p>在<code>.zshrc</code> 文件末尾添加。</p>
+<pre data-lang=".zshrc" style="background-color:#212733;color:#ccc9c2;" class="language-.zshrc "><code class="language-.zshrc" data-lang=".zshrc"><span style="color:#f28779;">source</span><span> /usr/share/zsh/plugins/zsh-you-should-use/you-should-use.plugin.zsh
+</span></code></pre>
+<h1 id="4-an-zhuang-alacrittyzhong-duan">4.安装alacritty终端</h1>
+<pre data-lang="bash" style="background-color:#212733;color:#ccc9c2;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffd580;">paru</span><span style="color:#ffcc66;"> -S</span><span> alacritty
+</span></code></pre>
+<h1 id="5-tian-jia-alacrittypei-zhi-wen-jian">5.添加alacritty配置文件</h1>
+<p>在~/.config/alacritty/下创建<code>alacritty.toml</code>和<code>catppuccin-mocha.toml</code></p>
+<p>选用<code>JetBrainsMono</code>字体，请下载压缩包 https://download.jetbrains.com/fonts/JetBrainsMono-2.304.zip ，并解压至<code>~/.local/share/fonts/Jetbrains</code>目录下</p>
+<pre data-lang="alacritty.toml" style="background-color:#212733;color:#ccc9c2;" class="language-alacritty.toml "><code class="language-alacritty.toml" data-lang="alacritty.toml"><span>import = [&quot;/home/opeth/.config/alacritty/catppuccin-mocha.toml&quot;]
+</span><span>
+</span><span>[colors]
+</span><span>draw_bold_text_with_bright_colors = true
+</span><span>
+</span><span>[font]
+</span><span>size = 7
+</span><span>
+</span><span>[font.bold]
+</span><span>family = &quot;JetBrainsMono Nerd Font&quot;
+</span><span>style = &quot;Bold&quot;
+</span><span>
+</span><span>[font.bold_italic]
+</span><span>family = &quot;JetBrainsMono Nerd Font&quot;
+</span><span>style = &quot;Bold Italic&quot;
+</span><span>
+</span><span>[font.italic]
+</span><span>family = &quot;JetBrainsMono Nerd Font&quot;
+</span><span>style = &quot;Italic&quot;
+</span><span>
+</span><span>[font.normal]
+</span><span>family = &quot;JetBrainsMono Nerd Font&quot;
+</span><span>style = &quot;Regular&quot;
+</span><span>
+</span><span>[[keyboard.bindings]]
+</span><span>action = &quot;SpawnNewInstance&quot;
+</span><span>key = &quot;Return&quot;
+</span><span>mods = &quot;Super|Shift&quot;
+</span><span>
+</span><span>[scrolling]
+</span><span>history = 10000
+</span><span>multiplier = 3
+</span><span>
+</span><span>[selection]
+</span><span>save_to_clipboard = false
+</span><span>
+</span><span>[shell]
+</span><span>program = &quot;/usr/bin/zsh&quot;
+</span><span>
+</span><span>[window]
+</span><span>opacity = 0.6
+</span><span>
+</span><span>[window.class]
+</span><span>general = &quot;Alacritty&quot;
+</span><span>instance = &quot;Alacritty&quot;
+</span><span>
+</span><span>[window.padding]
+</span><span>x = 10
+</span><span>y = 10
+</span></code></pre>
+<p>创建主题配置。</p>
+<pre data-lang="catppuccin-mocha.toml" style="background-color:#212733;color:#ccc9c2;" class="language-catppuccin-mocha.toml "><code class="language-catppuccin-mocha.toml" data-lang="catppuccin-mocha.toml"><span>[[colors.indexed_colors]]
+</span><span>color = &quot;#FAB387&quot;
+</span><span>index = 16
+</span><span>
+</span><span>[[colors.indexed_colors]]
+</span><span>color = &quot;#F5E0DC&quot;
+</span><span>index = 17
+</span><span>
+</span><span>[colors.bright]
+</span><span>black = &quot;#585B70&quot;
+</span><span>blue = &quot;#89B4FA&quot;
+</span><span>cyan = &quot;#94E2D5&quot;
+</span><span>green = &quot;#A6E3A1&quot;
+</span><span>magenta = &quot;#F5C2E7&quot;
+</span><span>red = &quot;#F38BA8&quot;
+</span><span>white = &quot;#A6ADC8&quot;
+</span><span>yellow = &quot;#F9E2AF&quot;
+</span><span>
+</span><span>[colors.cursor]
+</span><span>cursor = &quot;#F5E0DC&quot;
+</span><span>text = &quot;#1E1E2E&quot;
+</span><span>
+</span><span>[colors.dim]
+</span><span>black = &quot;#45475A&quot;
+</span><span>blue = &quot;#89B4FA&quot;
+</span><span>cyan = &quot;#94E2D5&quot;
+</span><span>green = &quot;#A6E3A1&quot;
+</span><span>magenta = &quot;#F5C2E7&quot;
+</span><span>red = &quot;#F38BA8&quot;
+</span><span>white = &quot;#BAC2DE&quot;
+</span><span>yellow = &quot;#F9E2AF&quot;
+</span><span>
+</span><span>[colors.hints.end]
+</span><span>background = &quot;#A6ADC8&quot;
+</span><span>foreground = &quot;#1E1E2E&quot;
+</span><span>
+</span><span>[colors.hints.start]
+</span><span>background = &quot;#F9E2AF&quot;
+</span><span>foreground = &quot;#1E1E2E&quot;
+</span><span>
+</span><span>[colors.normal]
+</span><span>black = &quot;#45475A&quot;
+</span><span>blue = &quot;#89B4FA&quot;
+</span><span>cyan = &quot;#94E2D5&quot;
+</span><span>green = &quot;#A6E3A1&quot;
+</span><span>magenta = &quot;#F5C2E7&quot;
+</span><span>red = &quot;#F38BA8&quot;
+</span><span>white = &quot;#BAC2DE&quot;
+</span><span>yellow = &quot;#F9E2AF&quot;
+</span><span>
+</span><span>[colors.primary]
+</span><span>background = &quot;#1E1E2E&quot;
+</span><span>bright_foreground = &quot;#CDD6F4&quot;
+</span><span>dim_foreground = &quot;#CDD6F4&quot;
+</span><span>foreground = &quot;#CDD6F4&quot;
+</span><span>
+</span><span>[colors.search.focused_match]
+</span><span>background = &quot;#A6E3A1&quot;
+</span><span>foreground = &quot;#1E1E2E&quot;
+</span><span>
+</span><span>[colors.search.matches]
+</span><span>background = &quot;#A6ADC8&quot;
+</span><span>foreground = &quot;#1E1E2E&quot;
+</span><span>
+</span><span>[colors.selection]
+</span><span>background = &quot;#F5E0DC&quot;
+</span><span>text = &quot;#1E1E2E&quot;
+</span><span>
+</span><span>[colors.vi_mode_cursor]
+</span><span>cursor = &quot;#B4BEFE&quot;
+</span><span>text = &quot;#1E1E2E&quot;
+</span></code></pre>
+<h1 id="6-an-zhuang-zhong-duan-wen-jian-guan-li-qi-yazi">6.安装终端文件管理器YAZI</h1>
+<p>For instance, if your terminal is Alacritty, which doesn't support displaying images itself, but you are running on an X11/Wayland environment, it will automatically use the "Window system protocol" to display images -- this requires you to have <a href="https://github.com/jstkdng/ueberzugpp">Überzug++</a> installed.</p>
+<p>来自<code>yazi</code>的GitHub。需要安装<code>ueberzugpp</code>用来显示图像。</p>
+<pre data-lang="zsh" style="background-color:#212733;color:#ccc9c2;" class="language-zsh "><code class="language-zsh" data-lang="zsh"><span style="color:#ffd580;">paru</span><span style="color:#ffcc66;"> -S</span><span> ueberzugpp
+</span><span style="color:#ffd580;">paru</span><span style="color:#ffcc66;"> -S</span><span> yazi ffmpegthumbnailer unarchiver jq poppler fd ripgrep fzf zoxide
+</span></code></pre>
+<h1 id="7-an-zhuang-ying-yong-qi-dong-qi-rofi">7.安装应用启动器rofi</h1>
+<pre data-lang="zsh" style="background-color:#212733;color:#ccc9c2;" class="language-zsh "><code class="language-zsh" data-lang="zsh"><span style="color:#ffd580;">paru</span><span style="color:#ffcc66;"> -S</span><span> rofi
+</span></code></pre>
+<h1 id="8-pei-zhi-rofi">8.配置rofi</h1>
+<p>在~/.config/rofi/目录下创建<code>config.rasi</code>文件。</p>
+<pre data-lang="config.rasi" style="background-color:#212733;color:#ccc9c2;" class="language-config.rasi "><code class="language-config.rasi" data-lang="config.rasi"><span>configuration {
+</span><span>  display-drun: &quot;Applications:&quot;;
+</span><span>  display-window: &quot;Windows:&quot;;
+</span><span>  drun-display-format: &quot;{name}&quot;;
+</span><span>  font: &quot;JetBrains Mono&quot;;
+</span><span>  // modi: &quot;window,run,drun,emoji,calc&quot;;
+</span><span>
+</span><span>  // enabling the icons
+</span><span>  show-icons: true;
+</span><span>  icon-theme: &quot;Papirus&quot;;
+</span><span>}
+</span><span>
+</span><span>@theme &quot;/dev/null&quot;
+</span><span>
+</span><span>* {
+</span><span>  bg: #1e1e2e66;
+</span><span>  bg-alt: #585b7066;
+</span><span>  bg-selected: #31324466;
+</span><span>
+</span><span>  fg: #cdd6f4;
+</span><span>  fg-alt: #7f849c;
+</span><span>
+</span><span>
+</span><span>  border: 0;
+</span><span>  margin: 0;
+</span><span>  padding: 0;
+</span><span>  spacing: 0;
+</span><span>}
+</span><span>
+</span><span>window {
+</span><span>  width: 30%;
+</span><span>  background-color: @bg;
+</span><span>}
+</span><span>
+</span><span>element {
+</span><span>  padding: 8 12;
+</span><span>  background-color: transparent;
+</span><span>  text-color: @fg-alt;
+</span><span>}
+</span><span>
+</span><span>element selected {
+</span><span>  text-color: @fg;
+</span><span>  background-color: @bg-selected;
+</span><span>}
+</span><span>
+</span><span>element-text {
+</span><span>  background-color: transparent;
+</span><span>  text-color: inherit;
+</span><span>  vertical-align: 0.5;
+</span><span>}
+</span><span>
+</span><span>element-icon {
+</span><span>  size: 14;
+</span><span>  padding: 0 10 0 0;
+</span><span>  background-color: transparent;
+</span><span>}
+</span><span>
+</span><span>entry {
+</span><span>  padding: 12;
+</span><span>  background-color: @bg-alt;
+</span><span>  text-color: @fg;
+</span><span>}
+</span><span>
+</span><span>inputbar {
+</span><span>  children: [prompt, entry];
+</span><span>  background-color: @bg;
+</span><span>}
+</span><span>
+</span><span>listview {
+</span><span>  background-color: @bg;
+</span><span>  columns: 1;
+</span><span>  lines: 10;
+</span><span>}
+</span><span>
+</span><span>mainbox {
+</span><span>  children: [inputbar, listview];
+</span><span>  background-color: @bg;
+</span><span>}
+</span><span>
+</span><span>prompt {
+</span><span>  enabled: true;
+</span><span>  padding: 12 0 0 12;
+</span><span>  background-color: @bg-alt;
+</span><span>  text-color: @fg;
+</span><span>}
+</span><span>
+</span><span>/* vim: ft=sass
+</span></code></pre>
+<p>我的配置比较简单，运行</p>
+<pre data-lang="zsh" style="background-color:#212733;color:#ccc9c2;" class="language-zsh "><code class="language-zsh" data-lang="zsh"><span style="color:#ffd580;">rofi</span><span style="color:#ffcc66;"> -show</span><span> drun
+</span></code></pre>
+<p>调出启动器。</p>
+<h1 id="9-zhuang-tai-lan-waybar">9.状态栏waybar</h1>
+<p>虽然KDE有提供状态栏，但是我更喜欢这种自己定义的，比较清爽。</p>
+<pre data-lang="zsh" style="background-color:#212733;color:#ccc9c2;" class="language-zsh "><code class="language-zsh" data-lang="zsh"><span style="color:#ffd580;">paru</span><span style="color:#ffcc66;"> -S</span><span> waybar
+</span></code></pre>
+<p>在<code>~/.config/waybar</code>目录下创建<code>config</code>文件。</p>
+<pre data-lang="config" style="background-color:#212733;color:#ccc9c2;" class="language-config "><code class="language-config" data-lang="config"><span>{
+</span><span>    </span><span style="color:#bae67e;">&quot;layer&quot;</span><span style="color:#f29e74;">: </span><span style="color:#bae67e;">&quot;top&quot;</span><span style="color:#f29e74;">,
+</span><span>    </span><span style="color:#bae67e;">&quot;height&quot;</span><span style="color:#f29e74;">: </span><span style="color:#ffcc66;">35</span><span style="color:#f29e74;">,
+</span><span>    </span><span style="color:#bae67e;">&quot;spacing&quot;</span><span style="color:#f29e74;">: </span><span style="color:#ffcc66;">5</span><span style="color:#f29e74;">,
+</span><span>    </span><span style="font-style:italic;color:#5c6773;">// Choose the order of the modules
+</span><span>    </span><span style="color:#bae67e;">&quot;modules-left&quot;</span><span style="color:#f29e74;">:</span><span> [
+</span><span>        </span><span style="color:#bae67e;">&quot;hyprland/workspaces&quot;
+</span><span>    ]</span><span style="color:#f29e74;">,
+</span><span>    </span><span style="color:#bae67e;">&quot;modules-center&quot;</span><span style="color:#f29e74;">:</span><span> [
+</span><span>        </span><span style="color:#bae67e;">&quot;clock&quot;</span><span style="color:#f29e74;">,
+</span><span>        </span><span style="color:#bae67e;">&quot;wlr/taskbar&quot;
+</span><span>    ]</span><span style="color:#f29e74;">,
+</span><span>    </span><span style="color:#bae67e;">&quot;modules-right&quot;</span><span style="color:#f29e74;">:</span><span> [
+</span><span>        </span><span style="color:#bae67e;">&quot;cpu&quot;</span><span style="color:#f29e74;">,
+</span><span>        </span><span style="color:#bae67e;">&quot;memory&quot;</span><span style="color:#f29e74;">,
+</span><span>        </span><span style="color:#bae67e;">&quot;disk&quot;</span><span style="color:#f29e74;">,
+</span><span>        </span><span style="color:#bae67e;">&quot;pulseaudio&quot;</span><span style="color:#f29e74;">,
+</span><span>        </span><span style="color:#bae67e;">&quot;network&quot;</span><span style="color:#f29e74;">,
+</span><span>        </span><span style="color:#bae67e;">&quot;battery&quot;</span><span style="color:#f29e74;">,
+</span><span>        </span><span style="color:#bae67e;">&quot;custom/power&quot;
+</span><span>    ]</span><span style="color:#f29e74;">,
+</span><span>    </span><span style="color:#bae67e;">&quot;hyprland/workspaces&quot;</span><span style="color:#f29e74;">:</span><span> {
+</span><span>        </span><span style="color:#bae67e;">&quot;disable-scroll&quot;</span><span style="color:#f29e74;">: </span><span style="color:#ffcc66;">true</span><span style="color:#f29e74;">,
+</span><span>        </span><span style="color:#bae67e;">&quot;all-outputs&quot;</span><span style="color:#f29e74;">: </span><span style="color:#ffcc66;">true</span><span style="color:#f29e74;">,
+</span><span>        </span><span style="color:#bae67e;">&quot;on-click&quot;</span><span style="color:#f29e74;">: </span><span style="color:#bae67e;">&quot;activate&quot;
+</span><span>    }</span><span style="color:#f29e74;">,
+</span><span>    </span><span style="color:#bae67e;">&quot;tray&quot;</span><span style="color:#f29e74;">:</span><span> {
+</span><span>        </span><span style="font-style:italic;color:#5c6773;">// &quot;icon-size&quot;: 21,
+</span><span>        </span><span style="color:#bae67e;">&quot;spacing&quot;</span><span style="color:#f29e74;">: </span><span style="color:#ffcc66;">12
+</span><span>    }</span><span style="color:#f29e74;">,
+</span><span>    </span><span style="color:#bae67e;">&quot;clock&quot;</span><span style="color:#f29e74;">:</span><span> {
+</span><span>        </span><span style="color:#bae67e;">&quot;tooltip-format&quot;</span><span style="color:#f29e74;">: </span><span style="color:#bae67e;">&quot;&lt;big&gt;{:%Y %B}&lt;/big&gt;\n&lt;tt&gt;&lt;small&gt;{calendar}&lt;/small&gt;&lt;/tt&gt;&quot;</span><span style="color:#f29e74;">,
+</span><span>        </span><span style="color:#bae67e;">&quot;format&quot;</span><span style="color:#f29e74;">: </span><span style="color:#bae67e;">&quot; {:%H:%M   %a %b%d}&quot;
+</span><span>    }</span><span style="color:#f29e74;">,
+</span><span>    </span><span style="color:#bae67e;">&quot;wlr/taskbar&quot;</span><span style="color:#f29e74;">:</span><span> {
+</span><span>    </span><span style="color:#bae67e;">&quot;format&quot;</span><span style="color:#f29e74;">: </span><span style="color:#bae67e;">&quot;{icon}&quot;</span><span style="color:#f29e74;">,
+</span><span>    </span><span style="color:#bae67e;">&quot;icon-size&quot;</span><span style="color:#f29e74;">: </span><span style="color:#ffcc66;">14</span><span style="color:#f29e74;">,
+</span><span>    </span><span style="color:#bae67e;">&quot;icon-theme&quot;</span><span style="color:#f29e74;">: </span><span style="color:#bae67e;">&quot;Numix-Circle&quot;</span><span style="color:#f29e74;">,
+</span><span>    </span><span style="color:#bae67e;">&quot;tooltip-format&quot;</span><span style="color:#f29e74;">: </span><span style="color:#bae67e;">&quot;{title}&quot;</span><span style="color:#f29e74;">,
+</span><span>    </span><span style="color:#bae67e;">&quot;on-click&quot;</span><span style="color:#f29e74;">: </span><span style="color:#bae67e;">&quot;activate&quot;</span><span style="color:#f29e74;">,
+</span><span>    </span><span style="color:#bae67e;">&quot;on-click-right&quot;</span><span style="color:#f29e74;">: </span><span style="color:#bae67e;">&quot;close&quot;</span><span style="color:#f29e74;">,
+</span><span>    </span><span style="color:#bae67e;">&quot;ignore-list&quot;</span><span style="color:#f29e74;">:</span><span> [
+</span><span>       </span><span style="color:#bae67e;">&quot;Alacritty&quot;</span><span style="color:#f29e74;">,
+</span><span>       </span><span style="color:#bae67e;">&quot;kitty&quot;
+</span><span>    ]
+</span><span>    }</span><span style="color:#f29e74;">,
+</span><span>    </span><span style="color:#bae67e;">&quot;battery&quot;</span><span style="color:#f29e74;">:</span><span> {
+</span><span>        </span><span style="color:#bae67e;">&quot;states&quot;</span><span style="color:#f29e74;">:</span><span> {
+</span><span>            </span><span style="font-style:italic;color:#5c6773;">// &quot;good&quot;: 95,
+</span><span>            </span><span style="color:#bae67e;">&quot;warning&quot;</span><span style="color:#f29e74;">: </span><span style="color:#ffcc66;">30
+</span><span>        }</span><span style="color:#f29e74;">,
+</span><span>        </span><span style="color:#bae67e;">&quot;format&quot;</span><span style="color:#f29e74;">: </span><span style="color:#bae67e;">&quot;{icon} {capacity}%&quot;</span><span style="color:#f29e74;">,
+</span><span>        </span><span style="color:#bae67e;">&quot;format-charging&quot;</span><span style="color:#f29e74;">: </span><span style="color:#bae67e;">&quot; {capacity}%&quot;</span><span style="color:#f29e74;">,
+</span><span>        </span><span style="color:#bae67e;">&quot;format-plugged&quot;</span><span style="color:#f29e74;">: </span><span style="color:#bae67e;">&quot;󰂄 {capacity}%&quot;</span><span style="color:#f29e74;">,
+</span><span>        </span><span style="font-style:italic;color:#5c6773;">// &quot;format-good&quot;: &quot;&quot;, // An empty format will hide the module
+</span><span>        </span><span style="font-style:italic;color:#5c6773;">// &quot;format-full&quot;: &quot;&quot;,
+</span><span>        </span><span style="color:#bae67e;">&quot;format-icons&quot;</span><span style="color:#f29e74;">:</span><span> [
+</span><span>            </span><span style="color:#bae67e;">&quot;&quot;</span><span style="color:#f29e74;">,
+</span><span>            </span><span style="color:#bae67e;">&quot;&quot;</span><span style="color:#f29e74;">,
+</span><span>            </span><span style="color:#bae67e;">&quot;&quot;</span><span style="color:#f29e74;">,
+</span><span>            </span><span style="color:#bae67e;">&quot;&quot;</span><span style="color:#f29e74;">,
+</span><span>            </span><span style="color:#bae67e;">&quot;&quot;</span><span style="color:#f29e74;">,
+</span><span>            </span><span style="color:#bae67e;">&quot;&quot;
+</span><span>        ]
+</span><span>    }</span><span style="color:#f29e74;">,
+</span><span>    </span><span style="color:#bae67e;">&quot;disk&quot;</span><span style="color:#f29e74;">:</span><span> {
+</span><span>        </span><span style="color:#bae67e;">&quot;interval&quot;</span><span style="color:#f29e74;">: </span><span style="color:#ffcc66;">300</span><span style="color:#f29e74;">,
+</span><span>        </span><span style="color:#bae67e;">&quot;format&quot;</span><span style="color:#f29e74;">: </span><span style="color:#bae67e;">&quot;󰋊 {free}&quot;</span><span style="color:#f29e74;">,
+</span><span>        </span><span style="color:#bae67e;">&quot;path&quot;</span><span style="color:#f29e74;">: </span><span style="color:#bae67e;">&quot;/&quot;
+</span><span>    }</span><span style="color:#f29e74;">,
+</span><span>    </span><span style="color:#bae67e;">&quot;memory&quot;</span><span style="color:#f29e74;">:</span><span> {
+</span><span>        </span><span style="color:#bae67e;">&quot;interval&quot;</span><span style="color:#f29e74;">: </span><span style="color:#ffcc66;">30</span><span style="color:#f29e74;">,
+</span><span>        </span><span style="color:#bae67e;">&quot;format&quot;</span><span style="color:#f29e74;">: </span><span style="color:#bae67e;">&quot; {}%&quot;</span><span style="color:#f29e74;">,
+</span><span>        </span><span style="color:#bae67e;">&quot;max-length&quot;</span><span style="color:#f29e74;">: </span><span style="color:#ffcc66;">10
+</span><span>    }</span><span style="color:#f29e74;">,
+</span><span>
+</span><span>    </span><span style="color:#bae67e;">&quot;cpu&quot;</span><span style="color:#f29e74;">:</span><span> {
+</span><span>        </span><span style="color:#bae67e;">&quot;interval&quot;</span><span style="color:#f29e74;">: </span><span style="color:#ffcc66;">1</span><span style="color:#f29e74;">,
+</span><span>        </span><span style="color:#bae67e;">&quot;format&quot;</span><span style="color:#f29e74;">: </span><span style="color:#bae67e;">&quot; {usage}%&quot; 
+</span><span>    }</span><span style="color:#f29e74;">,
+</span><span>    </span><span style="color:#bae67e;">&quot;network&quot;</span><span style="color:#f29e74;">:</span><span> {
+</span><span>        </span><span style="color:#bae67e;">&quot;tooltip&quot;</span><span style="color:#f29e74;">: </span><span style="color:#ffcc66;">false</span><span style="color:#f29e74;">,
+</span><span>        </span><span style="color:#bae67e;">&quot;format-wifi&quot;</span><span style="color:#f29e74;">: </span><span style="color:#bae67e;">&quot;󰖩 {essid}&quot;</span><span style="color:#f29e74;">,
+</span><span>        </span><span style="color:#bae67e;">&quot;format-disconnected&quot;</span><span style="color:#f29e74;">: </span><span style="color:#bae67e;">&quot;睊&quot;</span><span style="color:#f29e74;">,
+</span><span>        </span><span style="color:#bae67e;">&quot;format-ethernet&quot;</span><span style="color:#f29e74;">: </span><span style="color:#bae67e;">&quot;&quot;</span><span style="color:#f29e74;">,
+</span><span>        </span><span style="color:#bae67e;">&quot;on-click&quot;</span><span style="color:#f29e74;">: </span><span style="color:#bae67e;">&quot;rofi-wifi-menu&quot; 
+</span><span>    }</span><span style="color:#f29e74;">,
+</span><span>    </span><span style="color:#bae67e;">&quot;pulseaudio&quot;</span><span style="color:#f29e74;">:</span><span> {
+</span><span>        </span><span style="font-style:italic;color:#5c6773;">// &quot;scroll-step&quot;: 1, // %, can be a float
+</span><span>        </span><span style="color:#bae67e;">&quot;format&quot;</span><span style="color:#f29e74;">: </span><span style="color:#bae67e;">&quot;󰕾 {volume}%&quot;</span><span style="color:#f29e74;">,
+</span><span>        </span><span style="color:#bae67e;">&quot;format-muted&quot;</span><span style="color:#f29e74;">: </span><span style="color:#bae67e;">&quot;󰖁{volume}%&quot;</span><span style="color:#f29e74;">,
+</span><span>        </span><span style="color:#bae67e;">&quot;on-click&quot;</span><span style="color:#f29e74;">: </span><span style="color:#bae67e;">&quot;pavucontrol&quot;
+</span><span>    }</span><span style="color:#f29e74;">,
+</span><span>    </span><span style="color:#bae67e;">&quot;custom/power&quot;</span><span style="color:#f29e74;">:</span><span> {
+</span><span>        </span><span style="color:#bae67e;">&quot;format&quot;</span><span style="color:#f29e74;">: </span><span style="color:#bae67e;">&quot;󰤆&quot;</span><span style="color:#f29e74;">,
+</span><span>        </span><span style="color:#bae67e;">&quot;on-click&quot;</span><span style="color:#f29e74;">: </span><span style="color:#bae67e;">&quot;powermenu&quot;
+</span><span>    }</span><span style="color:#f29e74;">,
+</span><span>    </span><span style="color:#bae67e;">&quot;custom/media&quot;</span><span style="color:#f29e74;">:</span><span> {
+</span><span>        </span><span style="color:#bae67e;">&quot;format&quot;</span><span style="color:#f29e74;">: </span><span style="color:#bae67e;">&quot;{icon} {}&quot;</span><span style="color:#f29e74;">,
+</span><span>        </span><span style="color:#bae67e;">&quot;return-type&quot;</span><span style="color:#f29e74;">: </span><span style="color:#bae67e;">&quot;json&quot;</span><span style="color:#f29e74;">,
+</span><span>        </span><span style="color:#bae67e;">&quot;max-length&quot;</span><span style="color:#f29e74;">: </span><span style="color:#ffcc66;">40</span><span style="color:#f29e74;">,
+</span><span>        </span><span style="color:#bae67e;">&quot;format-icons&quot;</span><span style="color:#f29e74;">:</span><span> {
+</span><span>            </span><span style="color:#bae67e;">&quot;spotify&quot;</span><span style="color:#f29e74;">: </span><span style="color:#bae67e;">&quot;&quot;</span><span style="color:#f29e74;">,
+</span><span>            </span><span style="color:#bae67e;">&quot;default&quot;</span><span style="color:#f29e74;">: </span><span style="color:#bae67e;">&quot;🎜&quot;
+</span><span>        }</span><span style="color:#f29e74;">,
+</span><span>        </span><span style="color:#bae67e;">&quot;escape&quot;</span><span style="color:#f29e74;">: </span><span style="color:#ffcc66;">true</span><span style="color:#f29e74;">,
+</span><span>        </span><span style="color:#bae67e;">&quot;exec&quot;</span><span style="color:#f29e74;">: </span><span style="color:#bae67e;">&quot;$HOME/.config/waybar/mediaplayer.py 2&gt; /dev/null&quot; </span><span style="font-style:italic;color:#5c6773;">// Script in resources folder
+</span><span>        </span><span style="font-style:italic;color:#5c6773;">// &quot;exec&quot;: &quot;$HOME/.config/waybar/mediaplayer.py --player spotify 2&gt; /dev/null&quot; // Filter player based on name
+</span><span>    }
+</span><span>}
+</span><span style="font-style:italic;color:#5c6773;">// vim: ft=jsonc
+</span></code></pre>
+<p>在<code>~/.config/waybar</code>目录下创建<code>style.css</code>文件。定义状态栏的样式。</p>
+<pre data-lang="style.css" style="background-color:#212733;color:#ccc9c2;" class="language-style.css "><code class="language-style.css" data-lang="style.css"><span>@define-color base #1e1e2e;
+</span><span>@define-color mantle #181825;
+</span><span>@define-color crust #11111b;
+</span><span>
+</span><span>@define-color text #cdd6f4;
+</span><span>@define-color subtext0 #a6adc8;
+</span><span>@define-color subtext1 #bac2de;
+</span><span>
+</span><span>@define-color surface0 #313244;
+</span><span>@define-color surface1 #45475a;
+</span><span>@define-color surface2 #585b70;
+</span><span>
+</span><span>@define-color overlay0 #6c7086;
+</span><span>@define-color overlay1 #7f849c;
+</span><span>@define-color overlay2 #9399b2;
+</span><span>
+</span><span>@define-color blue #89b4fa;
+</span><span>@define-color lavender #b4befe;
+</span><span>@define-color sapphire #74c7ec;
+</span><span>@define-color sky #89dceb;
+</span><span>@define-color teal #94e2d5;
+</span><span>@define-color green #a6e3a1;
+</span><span>@define-color yellow #f9e2af;
+</span><span>@define-color peach #fab387;
+</span><span>@define-color maroon #eba0ac;
+</span><span>@define-color red #f38ba8;
+</span><span>@define-color mauve #cba6f7;
+</span><span>@define-color pink #f5c2e7;
+</span><span>@define-color flamingo #f2cdcd;
+</span><span>@define-color rosewater #f5e0dc;
+</span><span>
+</span><span>* {
+</span><span>  font-family: JetBrains Mono;
+</span><span>  font-size: 13px;
+</span><span>}
+</span><span>
+</span><span>window#waybar {
+</span><span>  background-color: @crust;
+</span><span>  color: @text;
+</span><span>  transition-property: background-color;
+</span><span>  transition-duration: .5s;
+</span><span>}
+</span><span>
+</span><span>window#waybar.hidden {
+</span><span>  opacity: 0.2;
+</span><span>}
+</span><span>
+</span><span>/*
+</span><span>window#waybar.empty {
+</span><span>    background-color: transparent;
+</span><span>}
+</span><span>window#waybar.solo {
+</span><span>    background-color: #FFFFFF;
+</span><span>}
+</span><span>*/
+</span><span>
+</span><span>window#waybar.termite {
+</span><span>  background-color: #3F3F3F;
+</span><span>}
+</span><span>
+</span><span>window#waybar.chromium {
+</span><span>  background-color: #000000;
+</span><span>  border: none;
+</span><span>}
+</span><span>
+</span><span>button {
+</span><span>  /* Use box-shadow instead of border so the text isn&#39;t offset */
+</span><span>  box-shadow: inset 0 -3px transparent;
+</span><span>  /* Avoid rounded borders under each button name */
+</span><span>  border: none;
+</span><span>  border-radius: 0;
+</span><span>}
+</span><span>
+</span><span>/* https://github.com/Alexays/Waybar/wiki/FAQ#the-workspace-buttons-have-a-strange-hover-effect */
+</span><span>
+</span><span>#workspaces button:hover {
+</span><span>  background: @surface0;
+</span><span>  border: @surface0;
+</span><span>}
+</span><span>
+</span><span>#workspaces button {
+</span><span>  padding: 0 8px;
+</span><span>  color: @text;
+</span><span>  border-radius: 15px;
+</span><span>  margin: 5px 0 5px 5px;
+</span><span>}
+</span><span>
+</span><span>#workspaces button.selected {
+</span><span>  background-color: @text;
+</span><span>}
+</span><span>
+</span><span>#workspaces button.active {
+</span><span>  background-color: @surface0;
+</span><span>}
+</span><span>
+</span><span>#workspaces button.urgent {
+</span><span>  background-color: @red;
+</span><span>  color: @crust;
+</span><span>}
+</span><span>
+</span><span>#clock,
+</span><span>#battery,
+</span><span>#cpu,
+</span><span>#memory,
+</span><span>#disk,
+</span><span>#temperature,
+</span><span>#backlight,
+</span><span>#network,
+</span><span>#pulseaudio,
+</span><span>#wireplumber,
+</span><span>#custom-power,
+</span><span>#custom-updates,
+</span><span>#tray,
+</span><span>#mode,
+</span><span>#idle_inhibitor,
+</span><span>#scratchpad,
+</span><span>#mpd {
+</span><span>  padding: 0 12px;
+</span><span>  background-color: @base;
+</span><span>  color: @crust;
+</span><span>  border-radius: 15px;
+</span><span>  margin: 5px 0;
+</span><span>}
+</span><span>
+</span><span>#window,
+</span><span>#workspaces {
+</span><span>  margin: 0 4px;
+</span><span>}
+</span><span>
+</span><span>/* If workspaces is the leftmost module, omit left margin */
+</span><span>.modules-left&gt;widget:first-child&gt;#workspaces {
+</span><span>  margin-left: 0;
+</span><span>}
+</span><span>
+</span><span>/* If workspaces is the rightmost module, omit right margin */
+</span><span>.modules-right&gt;widget:last-child&gt;#workspaces {
+</span><span>  margin-right: 0;
+</span><span>}
+</span><span>
+</span><span>label:focus {
+</span><span>  background-color: #000000;
+</span><span>}
+</span><span>
+</span><span>#clock {
+</span><span>  color: @text;
+</span><span>}
+</span><span>
+</span><span>#custom-updates {
+</span><span>  color: @red;
+</span><span>}
+</span><span>
+</span><span>#memory {
+</span><span>  color: @sky;
+</span><span>}
+</span><span>
+</span><span>#cpu {
+</span><span>  color: @teal;
+</span><span>}
+</span><span>
+</span><span>#disk {
+</span><span>  color: @peach;
+</span><span>}
+</span><span>
+</span><span>#pulseaudio {
+</span><span>  color: @yellow;
+</span><span>}
+</span><span>
+</span><span>#pulseaudio.muted {
+</span><span>  color: @overlay1;
+</span><span>}
+</span><span>
+</span><span>#network {
+</span><span>  color: @green;
+</span><span>}
+</span><span>
+</span><span>#network.disconnected {
+</span><span>  color: @overlay1;
+</span><span>}
+</span><span>
+</span><span>#battery {
+</span><span>  color: @blue;
+</span><span>}
+</span><span>
+</span><span>#battery.warning:not(.charging) {
+</span><span>  background-color: @red;
+</span><span>  color: @crust;
+</span><span>}
+</span><span>
+</span><span>#custom-power {
+</span><span>  color: @mauve;
+</span><span>}
+</span><span>
+</span><span>#keyboard-state&gt;label {
+</span><span>  padding: 0 5px;
+</span><span>}
+</span><span>
+</span><span>#keyboard-state&gt;label.locked {
+</span><span>  background: rgba(0, 0, 0, 0.2);
+</span><span>}
+</span><span>
+</span><span>#scratchpad {
+</span><span>  background: rgba(0, 0, 0, 0.2);
+</span><span>}
+</span><span>
+</span><span>#scratchpad.empty {
+</span><span>  background-color: transparent;
+</span><span>}
+</span><span>
+</span><span>/* vim: ft=sass
+</span><span>*/
+</span></code></pre>
+<p>在<code>config</code>文件中，我们还定义了一个<code>powermenu</code>和<code>rofi-wifi-menu</code>。</p>
+<p>这是我的自定义脚本。</p>
+<p>在/usr/bin/目录下，创建<code>powermenu</code>。</p>
+<pre data-lang="powermenu" style="background-color:#212733;color:#ccc9c2;" class="language-powermenu "><code class="language-powermenu" data-lang="powermenu"><span>#! /bin/sh
+</span><span>
+</span><span>chosen=$(printf &quot;  Power Off\n  Restart\n  Suspend\n  Hibernate\n  Log Out\n  Lock&quot; | rofi -dmenu -i -theme-str &#39;@import &quot;power.rasi&quot;&#39;)
+</span><span>
+</span><span>case &quot;$chosen&quot; in
+</span><span>    &quot;  Power Off&quot;) poweroff ;;
+</span><span>    &quot;  Restart&quot;) reboot ;;
+</span><span>    &quot;  Suspend&quot;) systemctl suspend-then-hibernate ;;
+</span><span>    &quot;  Hibernate&quot;) systemctl hibernate ;;
+</span><span>    &quot;  Log Out&quot;) bspc quit ;;
+</span><span>    &quot;  Lock&quot;) betterlockscreen -l ;;
+</span><span>    *) exit 1 ;;
+</span><span>esac
+</span></code></pre>
+<p>在~/.config/rofi/目录下，创建<code>power.rasi</code>文件。</p>
+<pre data-lang="power.rasi" style="background-color:#212733;color:#ccc9c2;" class="language-power.rasi "><code class="language-power.rasi" data-lang="power.rasi"><span>inputbar {
+</span><span>  children: [entry];
+</span><span>}
+</span><span>
+</span><span>listview {
+</span><span>    lines: 6;
+</span><span>}
+</span></code></pre>
+<p>在/usr/bin/目录下，创建<code>rofi-wifi-menu</code>。</p>
+<pre data-lang="rofi-wifi-menu" style="background-color:#212733;color:#ccc9c2;" class="language-rofi-wifi-menu "><code class="language-rofi-wifi-menu" data-lang="rofi-wifi-menu"><span>#!/usr/bin/env bash
+</span><span>
+</span><span>notify-send &quot;Getting list of available Wi-Fi networks...&quot;
+</span><span># Get a list of available wifi connections and morph it into a nice-looking list
+</span><span>wifi_list=$(nmcli --fields &quot;SECURITY,SSID&quot; device wifi list | sed 1d | sed &#39;s/  */ /g&#39; | sed -E &quot;s/WPA*.?\S/ /g&quot; | sed &quot;s/^--/ /g&quot; | sed &quot;s/  //g&quot; | sed &quot;/--/d&quot;)
+</span><span>
+</span><span>connected=$(nmcli -fields WIFI g)
+</span><span>if [[ &quot;$connected&quot; =~ &quot;enabled&quot; ]]; then
+</span><span>    toggle=&quot;󰖪  Disable Wi-Fi&quot;
+</span><span>elif [[ &quot;$connected&quot; =~ &quot;disabled&quot; ]]; then
+</span><span>    toggle=&quot;󰖩  Enable Wi-Fi&quot;
+</span><span>fi
+</span><span>
+</span><span># Use rofi to select wifi network
+</span><span>chosen_network=$(echo -e &quot;$toggle\n$wifi_list&quot; | uniq -u | rofi -dmenu -i -selected-row 1 -p &quot;Wi-Fi SSID: &quot; )
+</span><span># Get name of connection
+</span><span>read -r chosen_id &lt;&lt;&lt; &quot;${chosen_network:3}&quot;
+</span><span>
+</span><span>if [ &quot;$chosen_network&quot; = &quot;&quot; ]; then
+</span><span>    exit
+</span><span>elif [ &quot;$chosen_network&quot; = &quot;󰖩  Enable Wi-Fi&quot; ]; then
+</span><span>    nmcli radio wifi on
+</span><span>elif [ &quot;$chosen_network&quot; = &quot;󰖪  Disable Wi-Fi&quot; ]; then
+</span><span>    nmcli radio wifi off
+</span><span>else
+</span><span>    # Message to show when connection is activated successfully
+</span><span>      success_message=&quot;You are now connected to the Wi-Fi network \&quot;$chosen_id\&quot;.&quot;
+</span><span>    # Get saved connections
+</span><span>    saved_connections=$(nmcli -g NAME connection)
+</span><span>    if [[ $(echo &quot;$saved_connections&quot; | grep -w &quot;$chosen_id&quot;) = &quot;$chosen_id&quot; ]]; then
+</span><span>        nmcli connection up id &quot;$chosen_id&quot; | grep &quot;successfully&quot; &amp;&amp; notify-send &quot;Connection Established&quot; &quot;$success_message&quot;
+</span><span>    else
+</span><span>        if [[ &quot;$chosen_network&quot; =~ &quot;&quot; ]]; then
+</span><span>            wifi_password=$(rofi -dmenu -p &quot;Password: &quot; )
+</span><span>        fi
+</span><span>        nmcli device wifi connect &quot;$chosen_id&quot; password &quot;$wifi_password&quot; | grep &quot;successfully&quot; &amp;&amp; notify-send &quot;Connection Established&quot; &quot;$success_message&quot;
+</span><span>    fi
+</span><span>fi
+</span></code></pre>
+<p>waybar配置完成。</p>
+
+      </div>
+    </div>
+    <div class="prompt" id="terminal"><input
+    type="text"
+    id="setter"
+    onkeydown="writeit(this, event);moveIt(this.value.length, event)"
+    onchange="writeit(this, event)"
+    onkeyup="writeit(this, event)"
+    onkeypress="writeit(this, event);"
+    >
+<label for="setter" id="writer"> </label><b class="cursor" id="cursor"></b></div>
+  </main>
+</body>
+</html>

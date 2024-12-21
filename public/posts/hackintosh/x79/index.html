@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATP</title>
+     <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js" integrity="sha256-WCzAhd2P6gRJF9Hv3oOOd+hFJi/QJbv+Azn4CGB8gfY=" crossorigin="anonymous"></script>
+     <script src="/js/index.js"></script>
+     <script src="/js/prompt.js"></script>
+     <script src="/js/keyboard.js"></script>
+     <script src="/js/tab.js"></script>
+     <script src="/js/commands.js"></script>
+     <script src="/js/config.js"></script><link rel="stylesheet" href="/css/base.css"><link rel="stylesheet" href="/css/page.css"></head>
+<body onkeydown='exec(event)'>
+  <header>
+      <h1>ATP</h1>
+  </header>
+  <main>
+    <div class="files" id="files" tabindex="0">
+<ul><li class="file">
+    <span><a href='https://blog.0pt.icu/readme/'
+      tabindex="-2">  README</a></span>
+  </li><li class="file">
+    <span><a href='https://blog.0pt.icu/rss/'
+      tabindex="-3">  RSS</a></span>
+  </li><li class="folder"><span>
+      
+      <a href='https://blog.0pt.icu/posts/'
+        tabindex="-4">  Posts
+      </a>
+    </span>
+
+    <ul>
+      
+        
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/think/'
+    tabindex="-5">  Think
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/think/unhappy-newyear/'
+        tabindex="-6">  祝你春节不快乐</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/think/1st-anniversary-of-listening-to-tayu-lo/'
+        tabindex="-7">  纪念听罗大佑一周年</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/think/music-history/'
+        tabindex="-8">  记我的听歌历程</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/think/my-first-post/'
+        tabindex="-9">  My first post</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/server/'
+    tabindex="-10">  server
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/traefik-simple-guide/'
+        tabindex="-11">  Docker/NixOS使用traefik实现简单反代</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/caddy-simple-guide/'
+        tabindex="-12">  Debian/NixOS使用caddy实现简单反代</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/use-tebi-build-nixos-cache-server/'
+        tabindex="-13">  使用tebi作为s3,搭建nix缓存服务器</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/cloudfront-cdn-acme/'
+        tabindex="-14">  cloudfront配置小鸡cdn并使用acme.sh自动获取证书</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/build-terraria-tshock/'
+        tabindex="-15">  搭建泰拉瑞亚Tshock服务器(强制开荒)</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/build-hugo/'
+        tabindex="-16">  基于Arch Linux搭建hugo博客</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/hackintosh/'
+    tabindex="-17">  Hackintosh
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a class="selected"href='https://blog.0pt.icu/posts/hackintosh/x79/'
+        tabindex="-18">  记录一次杂牌x79黑苹果</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/pve/'
+    tabindex="-19">  PVE
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/pve/pve-hackintosh/'
+        tabindex="-20">  x79上pve黑苹果</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/pve/build-pve/'
+        tabindex="-21">  x79搭建pve并开启硬件直通</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/k3s/'
+    tabindex="-22">  K3S
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/k3s/develop-rancher/'
+        tabindex="-23">  k3s部署rancher</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/k3s/kubevirt-manager/'
+        tabindex="-24">  k3s部署kubevirt-manager</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/linux-trip/'
+    tabindex="-25">  Linux Trip
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/7/'
+        tabindex="-26">  第七回，探FreeBSD路途远，坎坷荆棘勇前行</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/6/'
+        tabindex="-27">  第六回，弃Linux投FreeBSD，稳如磐石路更宽</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/5/'
+        tabindex="-28">  第五回，渐觉Arch无力持，转投NixOS获新生</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/4/'
+        tabindex="-29">  第四回，舍KDE抱Hyprland，新境界追求更添</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/3/'
+        tabindex="-30">  第三回，探幽寻秘APPS新，解CONFIG奇趣入眼前</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/2/'
+        tabindex="-31">  第二回，初入KDE虚界间，安装APPS耀目光</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/1/'
+        tabindex="-32">  第一回，弃window渐入轻盈境，装Arch走入坑深底</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+    </ul>
+  </li><li class="folder"><span>
+      
+      <a href='https://blog.0pt.icu/about/'
+        tabindex="-33">  ABOUT
+      </a>
+    </span>
+
+    <ul>
+      <li class="file">
+        <span>└──
+          <a href='https://blog.0pt.icu/about/about2/'
+            tabindex="-34">  ABOUT2</a>
+        </span>
+      </li><li class="file">
+        <span>└──
+          <a href='https://blog.0pt.icu/about/about1/'
+            tabindex="-35">  ABOUT1</a>
+        </span>
+      </li>
+        
+    </ul>
+  </li><li class="folder"><span>
+      
+      <a href='https://blog.0pt.icu/links/'
+        tabindex="-36">  LINKS
+      </a>
+    </span>
+
+    <ul>
+      <li class="file">
+        <span>└──
+          <a href='https://blog.0pt.icu/links/link/'
+            tabindex="-37">  LINKS</a>
+        </span>
+      </li>
+        
+    </ul>
+  </li>
+</ul>
+</div>
+    <div class="viewer page" id="viewer" tabindex="0">
+      <div class="tab">
+<ul id="tabs">
+</ul>
+
+
+</div>
+      <div class="content" id="content"><h1 id="ji-lu-yi-ci-za-pai-x79-hei-ping-guo">记录一次杂牌x79 黑苹果</h1>
+<p>2024-10-04
+送同学的，拿来测试黑苹果，EFI链接如下
+https://github.com/antipeth/EFI-Motherboard-X79-OpenCore-Hackintosh</p>
+<h2 id="ying-jian-pei-zhi">硬件配置</h2>
+<table><thead><tr><th>Item</th><th>name</th><th>price</th></tr></thead><tbody>
+<tr><td>主板</td><td>x79魔改1356针,不知道什么牌的杂牌</td><td>板U 78￥</td></tr>
+<tr><td>cpu</td><td>至强e5-2450v2，非常小众的e5</td><td></td></tr>
+<tr><td>内存</td><td>1066Mhz三星16G ddr3服务器内存条带马甲</td><td>23￥</td></tr>
+<tr><td>散热器</td><td>杂牌塔式散热</td><td>28￥</td></tr>
+<tr><td>显卡</td><td>七彩虹HD7750(刷了个支持uefi的vbios)</td><td>60￥</td></tr>
+<tr><td>硬盘</td><td>之前的梵想ssd固态128G</td><td></td></tr>
+<tr><td>电源</td><td>之前的华为服务器电源750w+电源转接板+模组线</td><td></td></tr>
+<tr><td>机箱</td><td>鞋盒</td><td></td></tr>
+<tr><td>总计</td><td></td><td>189￥</td></tr>
+</tbody></table>
+<h2 id="zhu-ban-jie-shao">主板介绍</h2>
+<table><thead><tr><th>Item</th><th>name</th></tr></thead><tbody>
+<tr><td>主板尺寸</td><td>m-ATX 17cm x 21.5cm</td></tr>
+<tr><td>内存</td><td>2通道 2个ddr3</td></tr>
+<tr><td>sata</td><td>3个可能是sata3</td></tr>
+<tr><td>m2</td><td>一个m2口</td></tr>
+<tr><td>pcie</td><td>1个pci-e 16x 1个pci-e 1x</td></tr>
+<tr><td>usb</td><td>6个usb2</td></tr>
+<tr><td>vga</td><td>板载显卡，有1个vga口</td></tr>
+<tr><td>网口</td><td>1个网口(RealtekRTL8100系)</td></tr>
+<tr><td>其他</td><td>PS/2键鼠，音视频接口</td></tr>
+</tbody></table>
+<h2 id="zhu-yi-shi-xiang">注意事项</h2>
+<h3 id="san-re-qi">散热器</h3>
+<p>注意买标准的正方形2011针，不带固定底座。可以兼容这个1356针的平台。</p>
+<h3 id="m2jie-kou">m2接口</h3>
+<p>有点假，读取速度780MB/s,写入速度180MB/s,然后插了m2就识别不到硬盘了。</p>
+<h2 id="biosshe-zhi">BIOS设置</h2>
+<p>按<code>Del</code>进bios
+c ,改为<code>Disabled</code>
+<code>Advanced</code>-&gt;<code>USB Configuration</code>-&gt;<code>XHCI Hand-off</code> ,改为<code>Enabled</code>
+<code>Advanced</code>-&gt;<code>USB Configuration</code>-&gt;<code>EHCI Hand-off</code> ,改为<code>Disabled</code>
+<code>Advanced</code>-&gt;<code>Super IO Configuration</code>-&gt;<code>Serial Port 0 Configuration</code> -&gt;<code>Serial Port</code>,改为<code>Disabled</code>
+<code>Boot</code>-&gt;<code>Quiet Boot</code>,改为<code>Disabled</code>
+<code>Boot</code>-&gt;<code>Fast Boot</code>,改为<code>Disabled</code></p>
+<p>可能会弹出</p>
+<pre style="background-color:#212733;color:#ccc9c2;"><code><span>Warning!!!
+</span><span>Video is in Legacy mode. Select Video policy UEFI first, reboot and try again
+</span></code></pre>
+<p>这时候，需要先把<code>Boot</code>-&gt;<code>CSM parameters</code>-&gt;<code>Launch Video OpROM policy</code>改为<code>UEFI only</code>(你没看错，是<code>UEFI only</code>而不是警告让你改的<code>UEFI first</code>，如果改为<code>UEFI first</code>，警告还是会存在，不让你关掉<code>CSM parameters</code>)，然后重启进bios后，就可以关掉<code>Launch CSM</code>了</p>
+<h2 id="efi-oc-0-7-7">EFI OC 0.7.7</h2>
+<p>我的EFI文件如下
+有可能会遇到反复重启的情况，但是最后肯定还是可以进去的。
+解决方法</p>
+<p>Multible Reboot: Some times it takes multiple reboots to get into the system. It gets stuck in the following then follow the below given solution.
+<img src="https://img.0pt.icu/learn/hackintosh/x79/1.avif" alt="" /><br />
+Solution:</p>
+<ol>
+<li>
+<p>Open your DSDT in Rehabman's MacIasland remove SCK1, SCK2 and SCK3</p>
+</li>
+<li>
+<p>Also remove unused Cores. For Eg. If your CPU has 12 threads then only keep the first 12 CPU Cores and delete the rest like this. It depends on how much threads your CPU has and accordingly remove the rest. As my CPU has only 12 threads I have only kept the first 12 and will be removing the rest that I have shown in the image below.</p>
+</li>
+<li>
+<p>Save this file as DSDT.aml
+<img src="https://img.0pt.icu/learn/hackintosh/x79/2.avif" alt="" /></p>
+</li>
+<li>
+<p>Place this DSDT.aml in the ACPI Folder</p>
+</li>
+<li>
+<p>Reboot.</p>
+</li>
+</ol>
+<p>Now there will be no random reboots while rebooting.
+参考链接:
+https://www.hackintosh-forum.de/forum/thread/55510-install-monterey-big-sur-on-any-x79-motherboard-huananzhi-chinese-gigabyte-etc-a/</p>
+
+      </div>
+    </div>
+    <div class="prompt" id="terminal"><input
+    type="text"
+    id="setter"
+    onkeydown="writeit(this, event);moveIt(this.value.length, event)"
+    onchange="writeit(this, event)"
+    onkeyup="writeit(this, event)"
+    onkeypress="writeit(this, event);"
+    >
+<label for="setter" id="writer"> </label><b class="cursor" id="cursor"></b></div>
+  </main>
+</body>
+</html>

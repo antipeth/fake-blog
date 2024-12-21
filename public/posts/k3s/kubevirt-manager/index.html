@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATP</title>
+     <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js" integrity="sha256-WCzAhd2P6gRJF9Hv3oOOd+hFJi/QJbv+Azn4CGB8gfY=" crossorigin="anonymous"></script>
+     <script src="/js/index.js"></script>
+     <script src="/js/prompt.js"></script>
+     <script src="/js/keyboard.js"></script>
+     <script src="/js/tab.js"></script>
+     <script src="/js/commands.js"></script>
+     <script src="/js/config.js"></script><link rel="stylesheet" href="/css/base.css"><link rel="stylesheet" href="/css/page.css"></head>
+<body onkeydown='exec(event)'>
+  <header>
+      <h1>ATP</h1>
+  </header>
+  <main>
+    <div class="files" id="files" tabindex="0">
+<ul><li class="file">
+    <span><a href='https://blog.0pt.icu/readme/'
+      tabindex="-2">  README</a></span>
+  </li><li class="file">
+    <span><a href='https://blog.0pt.icu/rss/'
+      tabindex="-3">  RSS</a></span>
+  </li><li class="folder"><span>
+      
+      <a href='https://blog.0pt.icu/posts/'
+        tabindex="-4">  Posts
+      </a>
+    </span>
+
+    <ul>
+      
+        
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/think/'
+    tabindex="-5">  Think
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/think/unhappy-newyear/'
+        tabindex="-6">  祝你春节不快乐</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/think/1st-anniversary-of-listening-to-tayu-lo/'
+        tabindex="-7">  纪念听罗大佑一周年</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/think/music-history/'
+        tabindex="-8">  记我的听歌历程</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/think/my-first-post/'
+        tabindex="-9">  My first post</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/server/'
+    tabindex="-10">  server
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/traefik-simple-guide/'
+        tabindex="-11">  Docker/NixOS使用traefik实现简单反代</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/caddy-simple-guide/'
+        tabindex="-12">  Debian/NixOS使用caddy实现简单反代</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/use-tebi-build-nixos-cache-server/'
+        tabindex="-13">  使用tebi作为s3,搭建nix缓存服务器</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/cloudfront-cdn-acme/'
+        tabindex="-14">  cloudfront配置小鸡cdn并使用acme.sh自动获取证书</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/build-terraria-tshock/'
+        tabindex="-15">  搭建泰拉瑞亚Tshock服务器(强制开荒)</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/build-hugo/'
+        tabindex="-16">  基于Arch Linux搭建hugo博客</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/hackintosh/'
+    tabindex="-17">  Hackintosh
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/hackintosh/x79/'
+        tabindex="-18">  记录一次杂牌x79黑苹果</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/pve/'
+    tabindex="-19">  PVE
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/pve/pve-hackintosh/'
+        tabindex="-20">  x79上pve黑苹果</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/pve/build-pve/'
+        tabindex="-21">  x79搭建pve并开启硬件直通</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/k3s/'
+    tabindex="-22">  K3S
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/k3s/develop-rancher/'
+        tabindex="-23">  k3s部署rancher</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a class="selected"href='https://blog.0pt.icu/posts/k3s/kubevirt-manager/'
+        tabindex="-24">  k3s部署kubevirt-manager</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/linux-trip/'
+    tabindex="-25">  Linux Trip
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/7/'
+        tabindex="-26">  第七回，探FreeBSD路途远，坎坷荆棘勇前行</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/6/'
+        tabindex="-27">  第六回，弃Linux投FreeBSD，稳如磐石路更宽</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/5/'
+        tabindex="-28">  第五回，渐觉Arch无力持，转投NixOS获新生</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/4/'
+        tabindex="-29">  第四回，舍KDE抱Hyprland，新境界追求更添</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/3/'
+        tabindex="-30">  第三回，探幽寻秘APPS新，解CONFIG奇趣入眼前</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/2/'
+        tabindex="-31">  第二回，初入KDE虚界间，安装APPS耀目光</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/1/'
+        tabindex="-32">  第一回，弃window渐入轻盈境，装Arch走入坑深底</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+    </ul>
+  </li><li class="folder"><span>
+      
+      <a href='https://blog.0pt.icu/about/'
+        tabindex="-33">  ABOUT
+      </a>
+    </span>
+
+    <ul>
+      <li class="file">
+        <span>└──
+          <a href='https://blog.0pt.icu/about/about2/'
+            tabindex="-34">  ABOUT2</a>
+        </span>
+      </li><li class="file">
+        <span>└──
+          <a href='https://blog.0pt.icu/about/about1/'
+            tabindex="-35">  ABOUT1</a>
+        </span>
+      </li>
+        
+    </ul>
+  </li><li class="folder"><span>
+      
+      <a href='https://blog.0pt.icu/links/'
+        tabindex="-36">  LINKS
+      </a>
+    </span>
+
+    <ul>
+      <li class="file">
+        <span>└──
+          <a href='https://blog.0pt.icu/links/link/'
+            tabindex="-37">  LINKS</a>
+        </span>
+      </li>
+        
+    </ul>
+  </li>
+</ul>
+</div>
+    <div class="viewer page" id="viewer" tabindex="0">
+      <div class="tab">
+<ul id="tabs">
+</ul>
+
+
+</div>
+      <div class="content" id="content"><h1 id="k3sbu-shu-kubevirt-manager">k3s部署kubevirt-manager</h1>
+<p>2024-11-08</p>
+<p>参考</p>
+<ol>
+<li>https://kubevirt.io/user-guide/</li>
+<li>https://kubevirt-manager.io/get_started.html</li>
+</ol>
+<h1 id="an-zhuang-kubevirt">安装kubevirt</h1>
+<h2 id="an-zhuang-qemu-kvm-libvirt">安装qemu_kvm,libvirt</h2>
+<p>自行安装</p>
+<pre data-lang="bash" style="background-color:#212733;color:#ccc9c2;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffd580;">pass
+</span></code></pre>
+<h2 id="an-zhuang-kubectl">安装kubectl</h2>
+<p>自行安装</p>
+<pre data-lang="bash" style="background-color:#212733;color:#ccc9c2;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffd580;">pass
+</span></code></pre>
+<h2 id="an-zhuang-kind">安装kind</h2>
+<p>自行安装</p>
+<pre data-lang="bash" style="background-color:#212733;color:#ccc9c2;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffd580;">pass
+</span></code></pre>
+<h2 id="she-zhi-mo-ren-wen-jian">设置默认文件</h2>
+<pre data-lang="bash" style="background-color:#212733;color:#ccc9c2;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffd580;">mkdir</span><span style="color:#ffcc66;"> -p</span><span> /root/.kube
+</span><span style="color:#ffd580;">cp</span><span> /etc/rancher/k3s/k3s.yaml /root/.kube/config
+</span><span style="color:#ffd580;">kubectl</span><span> get nodes
+</span></code></pre>
+<h2 id="shi-yong-kubectlan-zhuang-kubevirt-operator">使用kubectl安装kubevirt operator</h2>
+<p>可以使用 KubeVirt Operator 安装 KubeVirt，该 Operator 管理所有 KubeVirt 核心组件的生命周期</p>
+<pre data-lang="bash" style="background-color:#212733;color:#ccc9c2;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffa759;">export </span><span>VERSION</span><span style="color:#f29e74;">=</span><span style="color:#bae67e;">$</span><span>(</span><span style="color:#ffd580;">curl</span><span style="color:#ffcc66;"> -s</span><span style="color:#bae67e;"> https://storage.googleapis.com/kubevirt-prow/release/kubevirt/kubevirt/stable.txt</span><span>)
+</span><span style="color:#f28779;">echo </span><span>$VERSION
+</span><span style="color:#ffd580;">kubectl</span><span> create</span><span style="color:#ffcc66;"> -f </span><span style="color:#bae67e;">&quot;https://github.com/kubevirt/kubevirt/releases/download/$</span><span>{VERSION}</span><span style="color:#bae67e;">/kubevirt-operator.yaml&quot;
+</span></code></pre>
+<h2 id="shi-yong-kubectl-bu-shu-kubevirt-zi-ding-yi-zi-yuan-ding-yi">使用 kubectl 部署 KubeVirt 自定义资源定义</h2>
+<pre data-lang="bash" style="background-color:#212733;color:#ccc9c2;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffd580;">kubectl</span><span> create</span><span style="color:#ffcc66;"> -f </span><span style="color:#bae67e;">&quot;https://github.com/kubevirt/kubevirt/releases/download/$</span><span>{VERSION}</span><span style="color:#bae67e;">/kubevirt-cr.yaml&quot;
+</span></code></pre>
+<h2 id="yan-zheng-bu-shu">验证部署</h2>
+<pre data-lang="bash" style="background-color:#212733;color:#ccc9c2;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffd580;">kubectl</span><span> get kubevirt.kubevirt.io/kubevirt</span><span style="color:#ffcc66;"> -n</span><span> kubevirt</span><span style="color:#ffcc66;"> -o</span><span style="color:#f29e74;">=</span><span>jsonpath=</span><span style="color:#bae67e;">&quot;{.status.phase}&quot;
+</span></code></pre>
+<p>需要等上一会</p>
+<pre data-lang="bash" style="background-color:#212733;color:#ccc9c2;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffd580;">kubectl</span><span> get all</span><span style="color:#ffcc66;"> -n</span><span> kubevirt
+</span></code></pre>
+<p>等到状态为<code>Deployed</code>即完成
+默认情况下，KubeVirt 将部署 7 个 Pod、3 个服务、1 个 daemonset、3 个部署应用、3 个副本集</p>
+<h2 id="an-zhuang-virt-optional">安装virt (optional)</h2>
+<pre data-lang="bash" style="background-color:#212733;color:#ccc9c2;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffd580;">kubectl</span><span> krew install virt
+</span></code></pre>
+<h1 id="an-zhuang-kubevirt-manager">安装kubevirt-manager</h1>
+<pre style="background-color:#212733;color:#ccc9c2;"><code><span>
+</span><span># 创建`storageclass.yaml`文件
+</span><span># 
+</span><span># ```storageclass.yaml
+</span><span># apiVersion: storage.k8s.io/v1
+</span><span># kind: StorageClass
+</span><span># metadata:
+</span><span>#   name: local-path
+</span><span># provisioner: rancher.io/local-path
+</span><span># allowVolumeExpansion: true
+</span><span># volumeBindingMode: WaitForFirstConsumer
+</span></code></pre>
+<p>使用默认配置</p>
+<pre data-lang="bash" style="background-color:#212733;color:#ccc9c2;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffd580;">kubectl</span><span> apply</span><span style="color:#ffcc66;"> -f</span><span> https://raw.githubusercontent.com/kubevirt-manager/kubevirt-manager/main/kubernetes/bundled.yaml
+</span></code></pre>
+<p>接下来，获取节点ip进行访问</p>
+<pre data-lang="bash" style="background-color:#212733;color:#ccc9c2;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffd580;">kubectl</span><span> get service kubevirt-manager</span><span style="color:#ffcc66;"> -n</span><span> kubevirt-manager
+</span></code></pre>
+<p>输出如下</p>
+<pre style="background-color:#212733;color:#ccc9c2;"><code><span>NAME               TYPE       CLUSTER-IP        EXTERNAL-IP   PORT(S)       AGE
+</span><span>kubevirt-manager   NodePort   your-cluster-ip   &lt;none&gt;        8080/TCP      11m
+</span></code></pre>
+<p>or</p>
+<pre data-lang="bash" style="background-color:#212733;color:#ccc9c2;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffd580;">git</span><span> clone https://github.com/kubevirt-manager/kubevirt-manager.git
+</span><span style="color:#f28779;">cd</span><span> kubevirt-manager
+</span><span style="color:#ffd580;">kubectl</span><span> apply</span><span style="color:#ffcc66;"> -f</span><span> kubernetes/ns.yaml
+</span><span style="color:#ffd580;">kubectl</span><span> apply</span><span style="color:#ffcc66;"> -f</span><span> kubernetes/crd.yaml
+</span><span style="color:#ffd580;">kubectl</span><span> apply</span><span style="color:#ffcc66;"> -f</span><span> kubernetes/rbac.yaml
+</span><span style="color:#ffd580;">kubectl</span><span> apply</span><span style="color:#ffcc66;"> -f</span><span> kubernetes/pc.yaml
+</span><span style="color:#ffd580;">kubectl</span><span> apply</span><span style="color:#ffcc66;"> -f</span><span> kubernetes/service.yaml
+</span></code></pre>
+<p>为了可以使用节点ip访问virt-manager</p>
+<p>将原<code>kubernetes/service.yaml</code></p>
+<pre data-lang="kubernetes/service.yaml" style="background-color:#212733;color:#ccc9c2;" class="language-kubernetes/service.yaml "><code class="language-kubernetes/service.yaml" data-lang="kubernetes/service.yaml"><span>apiVersion: v1
+</span><span>kind: Service
+</span><span>metadata:
+</span><span>  name: kubevirt-manager
+</span><span>  namespace: kubevirt-manager
+</span><span>  labels:
+</span><span>    app: kubevirt-manager
+</span><span>    kubevirt-manager.io/version: 1.4.1
+</span><span>spec:
+</span><span>  type: ClusterIP
+</span><span>  selector:
+</span><span>    app: kubevirt-manager
+</span><span>  ports:
+</span><span>    - protocol: TCP
+</span><span>      port: 8080
+</span><span>      targetPort: 8080
+</span></code></pre>
+<p>中的 <code>ClusterIP</code> 修改为<code>NodePort</code>,且可以添加映射出去的端口,修改后如下</p>
+<pre data-lang="kubernetes/service.yaml" style="background-color:#212733;color:#ccc9c2;" class="language-kubernetes/service.yaml "><code class="language-kubernetes/service.yaml" data-lang="kubernetes/service.yaml"><span>apiVersion: v1
+</span><span>kind: Service
+</span><span>metadata:
+</span><span>  name: kubevirt-manager
+</span><span>  namespace: kubevirt-manager
+</span><span>  labels:
+</span><span>    app: kubevirt-manager
+</span><span>    kubevirt-manager.io/version: 1.4.1
+</span><span>spec:
+</span><span>  type: NodePort
+</span><span>  selector:
+</span><span>    app: kubevirt-manager
+</span><span>  ports:
+</span><span>    - protocol: TCP
+</span><span>      port: 8080
+</span><span>      targetPort: 8080
+</span><span>      nodePort: 30080  # 如果使用 NodePort，可以指定端口号
+</span></code></pre>
+<p>再次应用<code>kubernetes/service.yaml</code></p>
+<pre data-lang="bash" style="background-color:#212733;color:#ccc9c2;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffd580;">kubectl</span><span> apply</span><span style="color:#ffcc66;"> -f</span><span> kubernetes/service.yaml
+</span></code></pre>
+<p>接下来，获取节点ip进行访问</p>
+<pre data-lang="bash" style="background-color:#212733;color:#ccc9c2;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffd580;">kubectl</span><span> get service kubevirt-manager</span><span style="color:#ffcc66;"> -n</span><span> kubevirt-manager
+</span></code></pre>
+<p>输出如下</p>
+<pre style="background-color:#212733;color:#ccc9c2;"><code><span>NAME               TYPE       CLUSTER-IP        EXTERNAL-IP   PORT(S)           AGE
+</span><span>kubevirt-manager   NodePort   your-cluster-ip   &lt;none&gt;        8080:30080/TCP    11m
+</span></code></pre>
+
+      </div>
+    </div>
+    <div class="prompt" id="terminal"><input
+    type="text"
+    id="setter"
+    onkeydown="writeit(this, event);moveIt(this.value.length, event)"
+    onchange="writeit(this, event)"
+    onkeyup="writeit(this, event)"
+    onkeypress="writeit(this, event);"
+    >
+<label for="setter" id="writer"> </label><b class="cursor" id="cursor"></b></div>
+  </main>
+</body>
+</html>

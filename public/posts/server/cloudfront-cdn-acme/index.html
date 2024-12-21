@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATP</title>
+     <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js" integrity="sha256-WCzAhd2P6gRJF9Hv3oOOd+hFJi/QJbv+Azn4CGB8gfY=" crossorigin="anonymous"></script>
+     <script src="/js/index.js"></script>
+     <script src="/js/prompt.js"></script>
+     <script src="/js/keyboard.js"></script>
+     <script src="/js/tab.js"></script>
+     <script src="/js/commands.js"></script>
+     <script src="/js/config.js"></script><link rel="stylesheet" href="/css/base.css"><link rel="stylesheet" href="/css/page.css"></head>
+<body onkeydown='exec(event)'>
+  <header>
+      <h1>ATP</h1>
+  </header>
+  <main>
+    <div class="files" id="files" tabindex="0">
+<ul><li class="file">
+    <span><a href='https://blog.0pt.icu/readme/'
+      tabindex="-2">  README</a></span>
+  </li><li class="file">
+    <span><a href='https://blog.0pt.icu/rss/'
+      tabindex="-3">  RSS</a></span>
+  </li><li class="folder"><span>
+      
+      <a href='https://blog.0pt.icu/posts/'
+        tabindex="-4">  Posts
+      </a>
+    </span>
+
+    <ul>
+      
+        
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/think/'
+    tabindex="-5">  Think
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/think/unhappy-newyear/'
+        tabindex="-6">  祝你春节不快乐</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/think/1st-anniversary-of-listening-to-tayu-lo/'
+        tabindex="-7">  纪念听罗大佑一周年</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/think/music-history/'
+        tabindex="-8">  记我的听歌历程</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/think/my-first-post/'
+        tabindex="-9">  My first post</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/server/'
+    tabindex="-10">  server
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/traefik-simple-guide/'
+        tabindex="-11">  Docker/NixOS使用traefik实现简单反代</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/caddy-simple-guide/'
+        tabindex="-12">  Debian/NixOS使用caddy实现简单反代</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/use-tebi-build-nixos-cache-server/'
+        tabindex="-13">  使用tebi作为s3,搭建nix缓存服务器</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a class="selected"href='https://blog.0pt.icu/posts/server/cloudfront-cdn-acme/'
+        tabindex="-14">  cloudfront配置小鸡cdn并使用acme.sh自动获取证书</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/build-terraria-tshock/'
+        tabindex="-15">  搭建泰拉瑞亚Tshock服务器(强制开荒)</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/build-hugo/'
+        tabindex="-16">  基于Arch Linux搭建hugo博客</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/hackintosh/'
+    tabindex="-17">  Hackintosh
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/hackintosh/x79/'
+        tabindex="-18">  记录一次杂牌x79黑苹果</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/pve/'
+    tabindex="-19">  PVE
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/pve/pve-hackintosh/'
+        tabindex="-20">  x79上pve黑苹果</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/pve/build-pve/'
+        tabindex="-21">  x79搭建pve并开启硬件直通</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/k3s/'
+    tabindex="-22">  K3S
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/k3s/develop-rancher/'
+        tabindex="-23">  k3s部署rancher</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/k3s/kubevirt-manager/'
+        tabindex="-24">  k3s部署kubevirt-manager</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/linux-trip/'
+    tabindex="-25">  Linux Trip
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/7/'
+        tabindex="-26">  第七回，探FreeBSD路途远，坎坷荆棘勇前行</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/6/'
+        tabindex="-27">  第六回，弃Linux投FreeBSD，稳如磐石路更宽</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/5/'
+        tabindex="-28">  第五回，渐觉Arch无力持，转投NixOS获新生</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/4/'
+        tabindex="-29">  第四回，舍KDE抱Hyprland，新境界追求更添</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/3/'
+        tabindex="-30">  第三回，探幽寻秘APPS新，解CONFIG奇趣入眼前</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/2/'
+        tabindex="-31">  第二回，初入KDE虚界间，安装APPS耀目光</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/1/'
+        tabindex="-32">  第一回，弃window渐入轻盈境，装Arch走入坑深底</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+    </ul>
+  </li><li class="folder"><span>
+      
+      <a href='https://blog.0pt.icu/about/'
+        tabindex="-33">  ABOUT
+      </a>
+    </span>
+
+    <ul>
+      <li class="file">
+        <span>└──
+          <a href='https://blog.0pt.icu/about/about2/'
+            tabindex="-34">  ABOUT2</a>
+        </span>
+      </li><li class="file">
+        <span>└──
+          <a href='https://blog.0pt.icu/about/about1/'
+            tabindex="-35">  ABOUT1</a>
+        </span>
+      </li>
+        
+    </ul>
+  </li><li class="folder"><span>
+      
+      <a href='https://blog.0pt.icu/links/'
+        tabindex="-36">  LINKS
+      </a>
+    </span>
+
+    <ul>
+      <li class="file">
+        <span>└──
+          <a href='https://blog.0pt.icu/links/link/'
+            tabindex="-37">  LINKS</a>
+        </span>
+      </li>
+        
+    </ul>
+  </li>
+</ul>
+</div>
+    <div class="viewer page" id="viewer" tabindex="0">
+      <div class="tab">
+<ul id="tabs">
+</ul>
+
+
+</div>
+      <div class="content" id="content"><h1 id="cloudfrontpei-zhi-xiao-ji-cdnbing-shi-yong-acme-shzi-dong-huo-qu-zheng-shu">cloudfront配置小鸡cdn并使用acme.sh自动获取证书</h1>
+<p>2024-02-26</p>
+<h1 id="1-cloudfrontpei-zhi">1.CloudFront配置</h1>
+<p>先创建一个<code>分配</code> 。</p>
+<p><img src="https://img.0pt.icu/learn/cloudfront-cdn-acme/1.png" alt="" /></p>
+<p>源域输入服务器的ip加上<code>.nip.io</code>。</p>
+<p>为什么是<code>.nip.io</code>请查看这个官网。</p>
+<p><a href="https://nip.io/">https://nip.io/</a></p>
+<p>如我的服务器ip是<code>1.234.34.64</code>，那么，我的源域是<code>1.234.34.64.nip.io</code>。</p>
+<p>其他根据自己的需求配置，如果</p>
+<p><img src="https://img.0pt.icu/learn/cloudfront-cdn-acme/2.png" alt="" /></p>
+<p>源请求策略可以设置成AllViewer，可以避免502错误。</p>
+<p><img src="https://img.0pt.icu/learn/cloudfront-cdn-acme/3.png" alt="" />这个SSL证书必须要选，点击<code>请求证书</code>可以申请一个免费证书。</p>
+<p><img src="https://img.0pt.icu/learn/cloudfront-cdn-acme/4.png" alt="" /></p>
+<p>选择<code>请求公有证书</code>，点击<code>下一步</code>。</p>
+<p><img src="https://img.0pt.icu/learn/cloudfront-cdn-acme/5.png" alt="" /></p>
+<p>点击<code>为此证书添加另一个名称</code>，添加你的域名与这个域名的泛域名。</p>
+<p>图中所例，域名是<code>abc.com</code></p>
+<p>泛域名是<code>*.abc.com</code></p>
+<p>验证方式选择<code>DNS验证</code>。密钥算法一般来说随意。点击<code>请求</code>。</p>
+<p><img src="https://img.0pt.icu/learn/cloudfront-cdn-acme/6.png" alt="" /></p>
+<p>点进去。</p>
+<p><img src="https://img.0pt.icu/learn/cloudfront-cdn-acme/7.png" alt="" /></p>
+<p>添加CNAME到你的域名的DNS记录中。</p>
+<p>等一会，<code>等待验证</code>变为<code>已颁发</code>后，CloudFront这边的证书即可申请完成。</p>
+<p>转到刚才创建<code>分配</code>，选择刚才申请的SSL证书，点击创建。</p>
+<p><img src="https://img.0pt.icu/learn/cloudfront-cdn-acme/8.png" alt="" /></p>
+<p>记住这个<code>分配域名</code>。</p>
+<p>这时候点击编辑。</p>
+<p><img src="https://img.0pt.icu/learn/cloudfront-cdn-acme/9.png" alt="" /></p>
+<p>图例的证书就当作选了。</p>
+<p>点击添加项目，将你需要DNS的子域名写上去。</p>
+<p><img src="https://img.0pt.icu/learn/cloudfront-cdn-acme/10.png" alt="" /></p>
+<p>点击保存更改。</p>
+<p>然后，需要在你的域名的dns处，添加CNAME记录。</p>
+<p>name是你的解析出来的域名，如图例就是test和ok，</p>
+<p>value是，刚才记住的分配域名。</p>
+<h1 id="2-acme-shpei-zhi">2.acme.sh配置</h1>
+<p>来到服务器处，需要给服务器这边也申请一个证书（不能使用自签名证书）。</p>
+<p>默认Nginx已经配置完成。</p>
+<p>我使用docker部署nginx。</p>
+<pre data-lang="bash" style="background-color:#212733;color:#ccc9c2;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffd580;">curl</span><span> https://get.acme.sh </span><span style="color:#f29e74;">| </span><span style="color:#ffd580;">sh</span><span style="color:#ffcc66;"> -s</span><span> email=youremail@example.com
+</span><span style="font-style:italic;color:#5c6773;"># youremail@example.com请替换为你自己的邮箱
+</span><span style="color:#f28779;">source</span><span> .bashrc
+</span><span style="color:#ffd580;">acme.sh</span><span style="color:#ffcc66;"> --set-default-ca --server</span><span> letsencrypt
+</span></code></pre>
+<p><a href="https://github.com/acmesh-official/acme.sh/wiki/dnsapi">https://github.com/acmesh-official/acme.sh/wiki/dnsapi</a></p>
+<p><a href="https://github.com/acmesh-official/acme.sh/wiki/dnsapi">https://github.com/acmesh-official/acme.sh/wiki/dnsapi2</a></p>
+<p>请再这俩个链接中找到i自己使用dns的提供商，并按照给出的步骤申请。</p>
+<p>我使用Cloudflare，根据链接里面给出的方法。</p>
+<p>您可以从 Cloudflare 个人资料页面的 API 令牌部分下获取您的全球 API 密钥。单击全局 API 密钥旁边的“查看”，验证您的 Cloudflare 密码，它将显示给您。它是一个 32 个字符的十六进制字符串，必须通过将环境变量 您可以从 Cloudflare 个人资料页面的 API 令牌部分下获取您的全球 API 密钥。单击全局 API 密钥旁边的“查看”，验证您的 Cloudflare 密码，它将显示给您。它是一个 32 个字符的十六进制字符串，必须通过将环境变量 <code>CF_Key</code> 设置为其值来提供给 acme.sh。您还必须将  设置为其值来提供给 acme.sh。您还必须将  设置为其值来提供给 acme.sh。您还必须将 <code>CF_Email</code> 设置为与您的 Cloudflare 帐户关联的电子邮件地址;这是您在登录 Cloudflare 时输入的电子邮件地址。 设置为与您的 Cloudflare 帐户关联的电子邮件地址;这是您在登录 Cloudflare 时输入的电子邮件地址。</p>
+<pre data-lang="bash" style="background-color:#212733;color:#ccc9c2;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffa759;">export </span><span>CF_Key</span><span style="color:#f29e74;">=</span><span style="color:#bae67e;">&quot;763eac4f1bcebd8b5c95e9fc50d010b4&quot;
+</span><span style="color:#ffa759;">export </span><span>CF_Email</span><span style="color:#f29e74;">=</span><span style="color:#bae67e;">&quot;youremail@example.com&quot;
+</span><span style="font-style:italic;color:#5c6773;"># 域名替换成自己的域名，这是申请域名极其泛域名的证书
+</span><span style="color:#ffd580;">https://img.0pt.icu/learn/cloudfront-cdn-acme/acme.sh</span><span style="color:#ffcc66;"> --issue --dns</span><span> dns_cf</span><span style="color:#ffcc66;"> -d</span><span> example.com</span><span style="color:#ffcc66;"> -d </span><span style="color:#bae67e;">&#39;*.example.com&#39;
+</span></code></pre>
+<p>等待证书申请完成。</p>
+<p>之后，安装证书到指定路径。</p>
+<pre data-lang="bash" style="background-color:#212733;color:#ccc9c2;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffd580;">acme.sh</span><span style="color:#ffcc66;"> --installcert -d</span><span> example.com </span><span style="color:#ccc9c2cc;">\
+</span><span style="color:#ffcc66;">--key-file</span><span>   /your/path/example.com.key </span><span style="color:#ccc9c2cc;">\
+</span><span style="color:#ffcc66;">--fullchain-file</span><span> /your/path/example.com.cer
+</span></code></pre>
+<p>请把/your/path/换成你指定的路径下面。</p>
+<p>这里我是将它放在nginx的映射目录下面，这样，证书文件可以映射进容器，供nginx使用。</p>
+<p>在nginx配置的server块添加选择证书的相关配置。</p>
+<pre style="background-color:#212733;color:#ccc9c2;"><code><span>ssl_certificate /your/docker/path/0pt.icu.cer;
+</span><span>ssl_certificate_key /your/docker/path/0pt.icu.key;
+</span></code></pre>
+<p>这里把/your/docker/path/替换成证书文件实际在docker里面的路径，注意跟上面那个宿主机的路径有差别。</p>
+<p>然后重载nginx。我的nginx容器名叫nginx</p>
+<pre style="background-color:#212733;color:#ccc9c2;"><code><span>docker exec nginx nginx -s reload
+</span></code></pre>
+<h1 id="3-nginxcong-cloudfrontshang-huo-qu-ke-hu-duan-zhen-shi-ipdi-zhi">3.nginx从CloudFront上获取客户端真实IP地址</h1>
+<p><img src="https://img.0pt.icu/learn/cloudfront-cdn-acme/11.png" alt="" /></p>
+<p>点击策略。</p>
+<p><img src="https://img.0pt.icu/learn/cloudfront-cdn-acme/12.png" alt="" /></p>
+<p>点击源请求。</p>
+<p><img src="https://img.0pt.icu/learn/cloudfront-cdn-acme/13.png" alt="" />点击创建源请求策略。</p>
+<p><img src="https://img.0pt.icu/learn/cloudfront-cdn-acme/14.png" alt="" /></p>
+<p>名称与描述随意。其他如图配置。</p>
+<p>若有需求，Add header可以再添加，但是一定要选图示的这个CloudFront-Viewer-Address。</p>
+<p>然后点击创建。</p>
+<p><img src="https://img.0pt.icu/learn/cloudfront-cdn-acme/15.png" alt="" /></p>
+<p>返回分配的这个页面，点击行为。</p>
+<p><img src="https://img.0pt.icu/learn/cloudfront-cdn-acme/16.png" alt="" /></p>
+<p>选中第一个，然后点击编辑。</p>
+<p><img src="https://img.0pt.icu/learn/cloudfront-cdn-acme/17.png" alt="" />、</p>
+<p>找到这个地方，将源请求策略换成刚才创建的那个。</p>
+<p><img src="https://img.0pt.icu/learn/cloudfront-cdn-acme/18.png" alt="" /></p>
+<p>保存更改。</p>
+<p>转到服务器上。</p>
+<p>在nginx配置的server块添加标头的相关配置。</p>
+<pre style="background-color:#212733;color:#ccc9c2;"><code><span>set_real_ip_from 0.0.0.0/0;
+</span><span>real_ip_header CloudFront-Viewer-Address;
+</span></code></pre>
+<p>如果使用其他CDN，想显示真实ip，可以参考下面。</p>
+<h2 id="cloudflare">Cloudflare</h2>
+<p>使用Cloudflare后，在Nginx配置中相应位置添加如下代码以获取用户真实IP</p>
+<pre style="background-color:#212733;color:#ccc9c2;"><code><span>set_real_ip_from 0.0.0.0/0;
+</span><span>real_ip_header CF-Connecting-IP;
+</span></code></pre>
+<h2 id="gcore-cdn">Gcore CDN</h2>
+<p>可参考Gcore官方博文<a href="https://lot.pm/go/?url=https://gcore.com/docs/web-security/get-an-actual-ip-addresses-of-visitors-from-the-x-forward-for-header">https://gcore.com/docs/web-security/get-an-actual-ip-addresses-of-visitors-from-the-x-forward-for-header</a>X-Real-Ip请求头似乎已经被Vercel弃用，或仅提供给付费用户。</p>
+<pre style="background-color:#212733;color:#ccc9c2;"><code><span>set_real_ip_from 0.0.0.0/0;
+</span><span>real_ip_header X-Forwarded-For;
+</span></code></pre>
+<h2 id="aws-cloudfront">AWS Cloudfront</h2>
+<p>需要利用到CloudFront-Viewer-Address请求头，但该请求头默认未启用，需手动前往Cloudfront控制面板开启。开启方法可参考<a href="https://lot.pm/go/?url=https://blog.bitipcman.com/get-client-ip-from-cloudfront-viewer-header/">如何从CloudFront上获取客户端真实IP地址</a>。开启后，使用以下代码获取访客真实IP。</p>
+<pre style="background-color:#212733;color:#ccc9c2;"><code><span>set_real_ip_from 0.0.0.0/0;
+</span><span>real_ip_header CloudFront-Viewer-Address;
+</span></code></pre>
+<h2 id="netlify">Netlify</h2>
+<p>Netlify不支持X-Forwarded-For请求头，获取访客真实IP需使用专属请求头X-Nf-Client-Connection-Ip。</p>
+<pre style="background-color:#212733;color:#ccc9c2;"><code><span>set_real_ip_from 0.0.0.0/0;
+</span><span>real_ip_header X-Nf-Client-Connection-Ip;
+</span></code></pre>
+<h2 id="vercel">Vercel</h2>
+<p>Vercel支持多个请求头转发用户IP，分别是X-Forwarded-For，X-Vercel-Forwarded-For和X-Real-Ip，其中X-Forwarded-For和X-Real-Ip内容相同，X-Vercel-Forwarded-For大部分情况下内容和X-Forwarded-For以及X-Real-Ip相同。</p>
+<p><strong>区别在于X-Forwarded-For和X-Real-Ip的值可以被覆盖，而X-Vercel-Forwarded-For不能。</strong></p>
+<p>假设Vercel的CDN节点是A，那么访客B（IP:1.2.3.4）请求A节点，一般情况下X-Forwarded-For，X-Vercel-Forwarded-For和X-Real-Ip的结果就都是1.2.3.4，但是假如访客B向Vercel CDN节点发送了一个值为8.8.8.8的X-Forwarded-For请求头，那么X-Forwarded-For和X-Real-Ip的值将会被改为8.8.8.8，而X-Vercel-Forwarded-For则仍然是1.2.3.4。这也就是说X-Forwarded-For和X-Real-Ip有一定几率被伪造，所以除非你在Vercel前还用了另一个CDN/代理服务器，否则一般情况下用X-Vercel-Forwarded-For获取访客真实IP更保险。</p>
+<h2 id="bunny-cdn">Bunny CDN</h2>
+<p>使用Bunny CDN获取访客真实IP，需要先在CDN面板关闭IP匿名化，关闭后使用以下代码获取访客真实IP。</p>
+<pre style="background-color:#212733;color:#ccc9c2;"><code><span>set_real_ip_from 0.0.0.0/0;
+</span><span>real_ip_header X-Forwarded-For;
+</span></code></pre>
+<h2 id="a-li-yun-cdn">阿里云CDN</h2>
+<pre style="background-color:#212733;color:#ccc9c2;"><code><span>set_real_ip_from 0.0.0.0/0;
+</span><span>real_ip_header Ali-CDN-Real-IP;
+</span></code></pre>
+<h2 id="qi-ta-cdn">其他CDN</h2>
+<p>除CDN厂商有特殊说明外，一般情况下使用X-Forwarded-For请求头获取访客IP。</p>
+<p><em><strong>from</strong></em>   <a href="https://lot.pm/nginx-and-cdn-real-ip-address.html"><em><strong>https://lot.pm/nginx-and-cdn-real-ip-address.html</strong></em></a></p>
+<pre data-lang="bash" style="background-color:#212733;color:#ccc9c2;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffd580;">acme.sh</span><span style="color:#ffcc66;"> --installcert -d</span><span> 0pt.icu </span><span style="color:#ccc9c2cc;">\
+</span><span style="color:#ffcc66;">--key-file</span><span>   /var/lib/docker/volumes/nginx/_data/nginx/cert/0pt.icu.key </span><span style="color:#ccc9c2cc;">\
+</span><span style="color:#ffcc66;">--fullchain-file</span><span> /var/lib/docker/volumes/nginx/_data/nginx/cert/0pt.icu.cer
+</span></code></pre>
+
+      </div>
+    </div>
+    <div class="prompt" id="terminal"><input
+    type="text"
+    id="setter"
+    onkeydown="writeit(this, event);moveIt(this.value.length, event)"
+    onchange="writeit(this, event)"
+    onkeyup="writeit(this, event)"
+    onkeypress="writeit(this, event);"
+    >
+<label for="setter" id="writer"> </label><b class="cursor" id="cursor"></b></div>
+  </main>
+</body>
+</html>

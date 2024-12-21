@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATP</title>
+     <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js" integrity="sha256-WCzAhd2P6gRJF9Hv3oOOd+hFJi/QJbv+Azn4CGB8gfY=" crossorigin="anonymous"></script>
+     <script src="/js/index.js"></script>
+     <script src="/js/prompt.js"></script>
+     <script src="/js/keyboard.js"></script>
+     <script src="/js/tab.js"></script>
+     <script src="/js/commands.js"></script>
+     <script src="/js/config.js"></script><link rel="stylesheet" href="/css/base.css"><link rel="stylesheet" href="/css/page.css"></head>
+<body onkeydown='exec(event)'>
+  <header>
+      <h1>ATP</h1>
+  </header>
+  <main>
+    <div class="files" id="files" tabindex="0">
+<ul><li class="file">
+    <span><a href='https://blog.0pt.icu/readme/'
+      tabindex="-2">  README</a></span>
+  </li><li class="file">
+    <span><a href='https://blog.0pt.icu/rss/'
+      tabindex="-3">  RSS</a></span>
+  </li><li class="folder"><span>
+      
+      <a href='https://blog.0pt.icu/posts/'
+        tabindex="-4">  Posts
+      </a>
+    </span>
+
+    <ul>
+      
+        
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/think/'
+    tabindex="-5">  Think
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/think/unhappy-newyear/'
+        tabindex="-6">  祝你春节不快乐</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/think/1st-anniversary-of-listening-to-tayu-lo/'
+        tabindex="-7">  纪念听罗大佑一周年</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/think/music-history/'
+        tabindex="-8">  记我的听歌历程</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/think/my-first-post/'
+        tabindex="-9">  My first post</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/server/'
+    tabindex="-10">  server
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/traefik-simple-guide/'
+        tabindex="-11">  Docker/NixOS使用traefik实现简单反代</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/caddy-simple-guide/'
+        tabindex="-12">  Debian/NixOS使用caddy实现简单反代</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/use-tebi-build-nixos-cache-server/'
+        tabindex="-13">  使用tebi作为s3,搭建nix缓存服务器</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/cloudfront-cdn-acme/'
+        tabindex="-14">  cloudfront配置小鸡cdn并使用acme.sh自动获取证书</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/build-terraria-tshock/'
+        tabindex="-15">  搭建泰拉瑞亚Tshock服务器(强制开荒)</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/build-hugo/'
+        tabindex="-16">  基于Arch Linux搭建hugo博客</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/hackintosh/'
+    tabindex="-17">  Hackintosh
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/hackintosh/x79/'
+        tabindex="-18">  记录一次杂牌x79黑苹果</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/pve/'
+    tabindex="-19">  PVE
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/pve/pve-hackintosh/'
+        tabindex="-20">  x79上pve黑苹果</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/pve/build-pve/'
+        tabindex="-21">  x79搭建pve并开启硬件直通</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/k3s/'
+    tabindex="-22">  K3S
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/k3s/develop-rancher/'
+        tabindex="-23">  k3s部署rancher</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/k3s/kubevirt-manager/'
+        tabindex="-24">  k3s部署kubevirt-manager</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/linux-trip/'
+    tabindex="-25">  Linux Trip
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/7/'
+        tabindex="-26">  第七回，探FreeBSD路途远，坎坷荆棘勇前行</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/6/'
+        tabindex="-27">  第六回，弃Linux投FreeBSD，稳如磐石路更宽</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/5/'
+        tabindex="-28">  第五回，渐觉Arch无力持，转投NixOS获新生</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/4/'
+        tabindex="-29">  第四回，舍KDE抱Hyprland，新境界追求更添</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/3/'
+        tabindex="-30">  第三回，探幽寻秘APPS新，解CONFIG奇趣入眼前</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/2/'
+        tabindex="-31">  第二回，初入KDE虚界间，安装APPS耀目光</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a class="selected"href='https://blog.0pt.icu/posts/linux-trip/1/'
+        tabindex="-32">  第一回，弃window渐入轻盈境，装Arch走入坑深底</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+    </ul>
+  </li><li class="folder"><span>
+      
+      <a href='https://blog.0pt.icu/about/'
+        tabindex="-33">  ABOUT
+      </a>
+    </span>
+
+    <ul>
+      <li class="file">
+        <span>└──
+          <a href='https://blog.0pt.icu/about/about2/'
+            tabindex="-34">  ABOUT2</a>
+        </span>
+      </li><li class="file">
+        <span>└──
+          <a href='https://blog.0pt.icu/about/about1/'
+            tabindex="-35">  ABOUT1</a>
+        </span>
+      </li>
+        
+    </ul>
+  </li><li class="folder"><span>
+      
+      <a href='https://blog.0pt.icu/links/'
+        tabindex="-36">  LINKS
+      </a>
+    </span>
+
+    <ul>
+      <li class="file">
+        <span>└──
+          <a href='https://blog.0pt.icu/links/link/'
+            tabindex="-37">  LINKS</a>
+        </span>
+      </li>
+        
+    </ul>
+  </li>
+</ul>
+</div>
+    <div class="viewer page" id="viewer" tabindex="0">
+      <div class="tab">
+<ul id="tabs">
+</ul>
+
+
+</div>
+      <div class="content" id="content"><h1 id="di-yi-hui-qi-windowjian-ru-qing-ying-jing-zhuang-archzou-ru-keng-shen-di">第一回，弃window渐入轻盈境，装Arch走入坑深底</h1>
+<p>2023-09-24</p>
+<h1 id="1-wei-shen-me-fang-qi-window">1.为什么放弃window</h1>
+<p>其一，不太喜欢电脑上的window11，更喜欢window7.</p>
+<p>其二，QQ删不净，春风吹又生。</p>
+<p>其三，笔记本电脑上的window11不太行。</p>
+<p>其四，朋友力推linux,没接触过linux，想试试。</p>
+<h1 id="2-huan-jing-jie-shao">2.环境介绍</h1>
+<h2 id="ying-jian-huan-jing-yu-zhu-yi-shi-xiang">硬件环境与注意事项。</h2>
+<p>本人使用天选4笔记本，预装<code>window11</code>，<code>intel</code>的<code>cpu</code>。</p>
+<p><code>window11</code>有<code>bitlocker</code>，需要先解密<code>bitlocker</code>再安装，不然硬盘会炸。</p>
+<p>intel采用了一种叫<code>intel VMD</code>技术的东西，需要在bios设置里关掉，不然会把分区表搞炸导致进不去系统。</p>
+<p>在bios关掉<code>intel VMD</code>后，原有的<code>window11</code>系统会进不去，需要特别注意先备份重要文件。</p>
+<h1 id="3-xuan-ze-linux">3.选择linux</h1>
+<p>经朋友推荐，使用<code>Arch Linux</code>。为了安装方便，选用<code>EndeavourOS</code>这个<code>Arch Linux</code>的发行版。</p>
+<h1 id="4-zhi-zuo-jing-xiang-qi-dong-pan">4.制作镜像启动盘</h1>
+<p>采用<code>ventoy</code>制作启动盘。</p>
+<p>先访问<code>ventoy</code>官网的下载页，<a href="https://www.ventoy.net/cn/download.html">点击跳转</a>。</p>
+<p><img src="https://img.0pt.icu/learn/linux-trip/1/1.png" alt="" /></p>
+<p>根据自己所在的系统选择版本，我还是<code>window</code>所以下载window版本的。</p>
+<p>这里下载连接会转跳到github，如果下载不了请用下面那些链接。</p>
+<p>下载完成后解压出来。</p>
+<p><img src="https://img.0pt.icu/learn/linux-trip/1/2.png" alt="" /></p>
+<p>点击进入程序。</p>
+<p><img src="https://img.0pt.icu/learn/linux-trip/1/3.png" alt="" /></p>
+<p>可以先更改一下语言为中文。</p>
+<p><img src="https://img.0pt.icu/learn/linux-trip/1/4.png" alt="" /></p>
+<p>接下来更改分区类型为GPT。</p>
+<p><img src="https://img.0pt.icu/learn/linux-trip/1/5.png" alt="" /></p>
+<p>进入分区设置，把文件系统改为<code>NTFS</code>。</p>
+<p><img src="https://img.0pt.icu/learn/linux-trip/1/6.png" alt="" /></p>
+<p><img src="https://img.0pt.icu/learn/linux-trip/1/7.png" alt="" /></p>
+<p>然后插上<code>u盘</code>，打开<code>ventoy</code>，点击安装。</p>
+<p><img src="https://img.0pt.icu/learn/linux-trip/1/9.png" alt="" /></p>
+<p>等待进度条跑完。</p>
+<p><img src="https://img.0pt.icu/learn/linux-trip/1/10.png" alt="" /></p>
+<p><img src="https://img.0pt.icu/learn/linux-trip/1/11.png" alt="" /></p>
+<p>在我们电脑上可以看到我们的u盘名字已经变成<code>ventoy</code>。</p>
+<p><img src="https://img.0pt.icu/learn/linux-trip/1/12.png" alt="" /></p>
+<p><img src="https://img.0pt.icu/learn/linux-trip/1/13.png" alt="" /></p>
+<p><code>ventoy</code>启动盘制作完成。</p>
+<h1 id="5-xia-zai-jing-xiang">5.下载镜像</h1>
+<p>进入<code>EndeavourOS</code>官网，<a href="https://endeavouros.com/#Download">点击转跳</a>。</p>
+<p>往下滑就可以看到镜像下载链接，可以选择中国地区的。</p>
+<p><img src="https://img.0pt.icu/learn/linux-trip/1/14.png" alt="" /></p>
+<p>下载完成后把镜像复制到<code>ventoy启动盘</code>里。</p>
+<p><img src="https://img.0pt.icu/learn/linux-trip/1/15.png" alt="" /></p>
+<p>我们后面可以从<code>ventoy启动盘</code>里启动<code>EndeavourOS安装镜像</code>。</p>
+<h1 id="6-qi-dong-an-zhuang-jing-xiang">6.启动安装镜像</h1>
+<p>电脑关机后，插上刚才制作的<code>ventoy启动盘</code>，开机，进BIOS。华硕主板是按<code>F2</code>。</p>
+<p>进来后点击启动菜单。</p>
+<p><img src="https://img.0pt.icu/learn/linux-trip/1/16.jpg" alt="" /></p>
+<p>会出现选择设备启动。这里演示的时候我的设备上有多个系统，所以选项比较多，选择<code>ventoy启动盘</code>即可。</p>
+<p><img src="https://img.0pt.icu/learn/linux-trip/1/17.jpg" alt="" /></p>
+<p>进入<code>ventoy启动盘</code>后，我们可以看到刚才拷进来的<code>EndeavourOS镜像</code>，直接回车。</p>
+<p><em>ventoy的强大之处在于，你可以拷进来多个镜像，都可以启动，如果安装其他系统，使用ventoy来启动镜像也是不错的。</em></p>
+<p><img src="https://img.0pt.icu/learn/linux-trip/1/18.jpg" alt="" /></p>
+<p>一般来说直接第一个<code>normal mode</code>即可。</p>
+<p><img src="https://img.0pt.icu/learn/linux-trip/1/19.jpg" alt="" /></p>
+<p>之后就进入到<code>EndeavourOS</code>的安装镜像里了。</p>
+<p><img src="https://img.0pt.icu/learn/linux-trip/1/20.jpg" alt="" />如果是Nvidia用户可以按方向键，选择第二个，它会在安装系统的时候一起把Nvidia显卡驱动(闭源)，一起装了。选好后回车进入。</p>
+<p><img src="https://img.0pt.icu/learn/linux-trip/1/21.jpg" alt="" /></p>
+<p>进来后，先点<code>Wi-Fi</code>连网。因为在线安装可以预装<code>KDE桌面环境</code>。我选择用<code>KDE</code>。</p>
+<p><img src="https://img.0pt.icu/learn/linux-trip/1/22.jpg" alt="" /></p>
+<p>完成后，跟着箭头点。</p>
+<p><img src="https://img.0pt.icu/learn/linux-trip/1/23.jpg" alt="" /></p>
+<p><img src="https://img.0pt.icu/learn/linux-trip/1/24.png" alt="" /></p>
+<p><img src="https://img.0pt.icu/learn/linux-trip/1/25.png" alt="" />https://img.0pt.icu/learn/linux-trip/1/</p>
+<p>这里选择在线安装。</p>
+<p><img src="https://img.0pt.icu/learn/linux-trip/1/26.png" alt="" /></p>
+<p>选择简体中文。</p>
+<p><img src="https://img.0pt.icu/learn/linux-trip/1/27.png" alt="" /></p>
+<p><img src="https://img.0pt.icu/learn/linux-trip/1/28.png" alt="" /></p>
+<p>注意键盘选英语。</p>
+<p><img src="https://img.0pt.icu/learn/linux-trip/1/29.png" alt="" /></p>
+<p>选KDE。</p>
+<p><img src="https://img.0pt.icu/learn/linux-trip/1/30.png" alt="" /></p>
+<p>根据情况勾选，不知道直接默认就行。</p>
+<p><img src="https://img.0pt.icu/learn/linux-trip/1/31.png" alt="" /></p>
+<p>电脑上是多系统的话选Grub，直接选Grub也行。</p>
+<p><img src="https://img.0pt.icu/learn/linux-trip/1/32.png" alt="" /></p>
+<p>这里我在笔记本上加装了一个固态硬盘专门给Linux。需要提前给固态分区，格式化固态。选择这个固态，并抹除磁盘，注意文件系统选<code>btrfs</code>。</p>
+<p>有需求加密系统可以加密一下。</p>
+<p><img src="https://img.0pt.icu/learn/linux-trip/1/33.png" alt="" /></p>
+<p>自己设置。</p>
+<p><img src="https://img.0pt.icu/learn/linux-trip/1/34.png" alt="" /></p>
+<p><img src="https://img.0pt.icu/learn/linux-trip/1/35.png" alt="" /></p>
+<p>之后就是等待安装了。安装完成后关机。</p>
+<p>拔掉ventoy启动盘，开机，按上面的方法进入bios找启动菜单，启动EndeavourOS。</p>
+<p>现在一个带有KDE桌面环境的Arch Linux就安装完成。</p>
+<p>KDE是十分好用的桌面环境，从window装换到linux不会特别不适应。可以自定义很多功能，使其更加强大。</p>
+
+      </div>
+    </div>
+    <div class="prompt" id="terminal"><input
+    type="text"
+    id="setter"
+    onkeydown="writeit(this, event);moveIt(this.value.length, event)"
+    onchange="writeit(this, event)"
+    onkeyup="writeit(this, event)"
+    onkeypress="writeit(this, event);"
+    >
+<label for="setter" id="writer"> </label><b class="cursor" id="cursor"></b></div>
+  </main>
+</body>
+</html>

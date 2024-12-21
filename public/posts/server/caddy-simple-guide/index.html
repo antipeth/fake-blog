@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATP</title>
+     <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js" integrity="sha256-WCzAhd2P6gRJF9Hv3oOOd+hFJi/QJbv+Azn4CGB8gfY=" crossorigin="anonymous"></script>
+     <script src="/js/index.js"></script>
+     <script src="/js/prompt.js"></script>
+     <script src="/js/keyboard.js"></script>
+     <script src="/js/tab.js"></script>
+     <script src="/js/commands.js"></script>
+     <script src="/js/config.js"></script><link rel="stylesheet" href="/css/base.css"><link rel="stylesheet" href="/css/page.css"></head>
+<body onkeydown='exec(event)'>
+  <header>
+      <h1>ATP</h1>
+  </header>
+  <main>
+    <div class="files" id="files" tabindex="0">
+<ul><li class="file">
+    <span><a href='https://blog.0pt.icu/readme/'
+      tabindex="-2">  README</a></span>
+  </li><li class="file">
+    <span><a href='https://blog.0pt.icu/rss/'
+      tabindex="-3">  RSS</a></span>
+  </li><li class="folder"><span>
+      
+      <a href='https://blog.0pt.icu/posts/'
+        tabindex="-4">  Posts
+      </a>
+    </span>
+
+    <ul>
+      
+        
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/think/'
+    tabindex="-5">  Think
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/think/unhappy-newyear/'
+        tabindex="-6">  祝你春节不快乐</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/think/1st-anniversary-of-listening-to-tayu-lo/'
+        tabindex="-7">  纪念听罗大佑一周年</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/think/music-history/'
+        tabindex="-8">  记我的听歌历程</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/think/my-first-post/'
+        tabindex="-9">  My first post</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/server/'
+    tabindex="-10">  server
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/traefik-simple-guide/'
+        tabindex="-11">  Docker/NixOS使用traefik实现简单反代</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a class="selected"href='https://blog.0pt.icu/posts/server/caddy-simple-guide/'
+        tabindex="-12">  Debian/NixOS使用caddy实现简单反代</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/use-tebi-build-nixos-cache-server/'
+        tabindex="-13">  使用tebi作为s3,搭建nix缓存服务器</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/cloudfront-cdn-acme/'
+        tabindex="-14">  cloudfront配置小鸡cdn并使用acme.sh自动获取证书</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/build-terraria-tshock/'
+        tabindex="-15">  搭建泰拉瑞亚Tshock服务器(强制开荒)</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/build-hugo/'
+        tabindex="-16">  基于Arch Linux搭建hugo博客</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/hackintosh/'
+    tabindex="-17">  Hackintosh
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/hackintosh/x79/'
+        tabindex="-18">  记录一次杂牌x79黑苹果</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/pve/'
+    tabindex="-19">  PVE
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/pve/pve-hackintosh/'
+        tabindex="-20">  x79上pve黑苹果</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/pve/build-pve/'
+        tabindex="-21">  x79搭建pve并开启硬件直通</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/k3s/'
+    tabindex="-22">  K3S
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/k3s/develop-rancher/'
+        tabindex="-23">  k3s部署rancher</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/k3s/kubevirt-manager/'
+        tabindex="-24">  k3s部署kubevirt-manager</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/linux-trip/'
+    tabindex="-25">  Linux Trip
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/7/'
+        tabindex="-26">  第七回，探FreeBSD路途远，坎坷荆棘勇前行</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/6/'
+        tabindex="-27">  第六回，弃Linux投FreeBSD，稳如磐石路更宽</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/5/'
+        tabindex="-28">  第五回，渐觉Arch无力持，转投NixOS获新生</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/4/'
+        tabindex="-29">  第四回，舍KDE抱Hyprland，新境界追求更添</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/3/'
+        tabindex="-30">  第三回，探幽寻秘APPS新，解CONFIG奇趣入眼前</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/2/'
+        tabindex="-31">  第二回，初入KDE虚界间，安装APPS耀目光</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/1/'
+        tabindex="-32">  第一回，弃window渐入轻盈境，装Arch走入坑深底</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+    </ul>
+  </li><li class="folder"><span>
+      
+      <a href='https://blog.0pt.icu/about/'
+        tabindex="-33">  ABOUT
+      </a>
+    </span>
+
+    <ul>
+      <li class="file">
+        <span>└──
+          <a href='https://blog.0pt.icu/about/about2/'
+            tabindex="-34">  ABOUT2</a>
+        </span>
+      </li><li class="file">
+        <span>└──
+          <a href='https://blog.0pt.icu/about/about1/'
+            tabindex="-35">  ABOUT1</a>
+        </span>
+      </li>
+        
+    </ul>
+  </li><li class="folder"><span>
+      
+      <a href='https://blog.0pt.icu/links/'
+        tabindex="-36">  LINKS
+      </a>
+    </span>
+
+    <ul>
+      <li class="file">
+        <span>└──
+          <a href='https://blog.0pt.icu/links/link/'
+            tabindex="-37">  LINKS</a>
+        </span>
+      </li>
+        
+    </ul>
+  </li>
+</ul>
+</div>
+    <div class="viewer page" id="viewer" tabindex="0">
+      <div class="tab">
+<ul id="tabs">
+</ul>
+
+
+</div>
+      <div class="content" id="content"><h1 id="debian-nixosshi-yong-caddyshi-xian-jian-dan-fan-dai">Debian/NixOS使用caddy实现简单反代</h1>
+<p>2024-12-19
+参考</p>
+<ol>
+<li>https://caddyserver.com/docs/quick-starts/reverse-proxy</li>
+<li>https://wiki.nixos.org/wiki/Caddy</li>
+</ol>
+<h2 id="debianan-zhuang-caddy">debian安装caddy</h2>
+<p>官方教程https://caddyserver.com/docs/install#debian-ubuntu-raspbian</p>
+<pre data-lang="bash" style="background-color:#212733;color:#ccc9c2;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffd580;">sudo</span><span> apt install</span><span style="color:#ffcc66;"> -y</span><span> debian-keyring debian-archive-keyring apt-transport-https curl
+</span><span style="color:#ffd580;">curl</span><span style="color:#ffcc66;"> -1sLf </span><span style="color:#bae67e;">&#39;https://dl.cloudsmith.io/public/caddy/stable/gpg.key&#39; </span><span style="color:#f29e74;">| </span><span style="color:#ffd580;">sudo</span><span> gpg</span><span style="color:#ffcc66;"> --dearmor -o</span><span> /usr/share/keyrings/caddy-stable-archive-keyring.gpg
+</span><span style="color:#ffd580;">curl</span><span style="color:#ffcc66;"> -1sLf </span><span style="color:#bae67e;">&#39;https://dl.cloudsmith.io/public/caddy/stable/debian.deb.txt&#39; </span><span style="color:#f29e74;">| </span><span style="color:#ffd580;">sudo</span><span> tee /etc/apt/sources.list.d/caddy-stable.list
+</span><span style="color:#ffd580;">sudo</span><span> apt update
+</span><span style="color:#ffd580;">sudo</span><span> apt install caddy
+</span></code></pre>
+<h2 id="shi-yong-caddyfile">使用Caddyfile</h2>
+<p>编辑<code>/etc/caddy/Caddyfile</code>
+删除原来的<code>:80</code>配置(全删了)，
+添加如下配置</p>
+<pre data-lang="Caddyfile" style="background-color:#212733;color:#ccc9c2;" class="language-Caddyfile "><code class="language-Caddyfile" data-lang="Caddyfile"><span>example1.com {
+</span><span>	log {
+</span><span>		output file /var/log/caddy/access-example1.com.log
+</span><span>	}
+</span><span>
+</span><span>	reverse_proxy localhost:9000 {
+</span><span>		header_up Host {upstream_hostport}
+</span><span>	}
+</span><span>}
+</span><span>
+</span><span>example2.com  {
+</span><span>	log {
+</span><span>		output file /var/log/caddy/access-example2.com.log
+</span><span>	}
+</span><span>
+</span><span>	reverse_proxy ip:port {
+</span><span>		header_up Host {upstream_hostport}
+</span><span>	}
+</span><span>}
+</span><span>
+</span></code></pre>
+<h2 id="shi-yong-ming-ling-xing-fan-dai">使用命令行反代</h2>
+<pre data-lang="bash" style="background-color:#212733;color:#ccc9c2;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffd580;">caddy</span><span> reverse-proxy </span><span style="color:#ccc9c2cc;">\
+</span><span style="color:#ffcc66;">	--from</span><span> example.com </span><span style="color:#ccc9c2cc;">\
+</span><span style="color:#ffcc66;">	--to</span><span> localhost:9000 </span><span style="color:#ccc9c2cc;">\
+</span><span style="color:#ffcc66;">	--change-host-header
+</span><span>
+</span></code></pre>
+<p>tls证书可以自动获取</p>
+<h1 id="nixosshi-yong-caddyfan-dai">nixos使用caddy反代</h1>
+<pre data-lang="caddy.nix" style="background-color:#212733;color:#ccc9c2;" class="language-caddy.nix "><code class="language-caddy.nix" data-lang="caddy.nix"><span>{
+</span><span>  config,
+</span><span>  pkgs,
+</span><span>  host,
+</span><span>  ...
+</span><span>}:
+</span><span>{
+</span><span>  services.caddy = {
+</span><span>    enable = true;
+</span><span>    virtualHosts.&quot;example1.com&quot;={
+</span><span>    extraConfig = &#39;&#39;
+</span><span>      reverse_proxy localhost:9000 {
+</span><span>          header_up Host {upstream_hostport}
+</span><span>      }
+</span><span>    &#39;&#39;;
+</span><span>    };
+</span><span>    virtualHosts.&quot;example2.com&quot;={
+</span><span>    extraConfig = &#39;&#39;
+</span><span>      reverse_proxy localhost:9001 {
+</span><span>          header_up Host {upstream_hostport}
+</span><span>      }
+</span><span>    &#39;&#39;;
+</span><span>    };
+</span><span>  };
+</span><span>
+</span><span>}
+</span></code></pre>
+<p>然后，在配置文件中引用<code>caddy.nix</code></p>
+<pre style="background-color:#212733;color:#ccc9c2;"><code><span>{
+</span><span>  config,
+</span><span>  pkgs,
+</span><span>  host,
+</span><span>  ...
+</span><span>}:
+</span><span>{
+</span><span>  ...
+</span><span>  imports = [
+</span><span>    caddy.nix
+</span><span>  ];
+</span><span>  ...
+</span><span>}
+</span></code></pre>
+<p>然后，重构系统</p>
+<pre data-lang="bash" style="background-color:#212733;color:#ccc9c2;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffd580;">sudo</span><span> nixos-rebuild switch
+</span></code></pre>
+<p>或者
+使用flake</p>
+<pre data-lang="bash" style="background-color:#212733;color:#ccc9c2;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffd580;">sudo</span><span> nixos-rebuild switch</span><span style="color:#ffcc66;"> --flake</span><span> .#</span><span style="color:#bae67e;">&quot;$</span><span>HOSTNAME</span><span style="color:#bae67e;">&quot;
+</span></code></pre>
+<p>访问域名，确认反代成功</p>
+
+      </div>
+    </div>
+    <div class="prompt" id="terminal"><input
+    type="text"
+    id="setter"
+    onkeydown="writeit(this, event);moveIt(this.value.length, event)"
+    onchange="writeit(this, event)"
+    onkeyup="writeit(this, event)"
+    onkeypress="writeit(this, event);"
+    >
+<label for="setter" id="writer"> </label><b class="cursor" id="cursor"></b></div>
+  </main>
+</body>
+</html>

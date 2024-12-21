@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATP</title>
+     <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js" integrity="sha256-WCzAhd2P6gRJF9Hv3oOOd+hFJi/QJbv+Azn4CGB8gfY=" crossorigin="anonymous"></script>
+     <script src="/js/index.js"></script>
+     <script src="/js/prompt.js"></script>
+     <script src="/js/keyboard.js"></script>
+     <script src="/js/tab.js"></script>
+     <script src="/js/commands.js"></script>
+     <script src="/js/config.js"></script><link rel="stylesheet" href="/css/base.css"><link rel="stylesheet" href="/css/page.css"></head>
+<body onkeydown='exec(event)'>
+  <header>
+      <h1>ATP</h1>
+  </header>
+  <main>
+    <div class="files" id="files" tabindex="0">
+<ul><li class="file">
+    <span><a href='https://blog.0pt.icu/readme/'
+      tabindex="-2">  README</a></span>
+  </li><li class="file">
+    <span><a href='https://blog.0pt.icu/rss/'
+      tabindex="-3">  RSS</a></span>
+  </li><li class="folder"><span>
+      
+      <a href='https://blog.0pt.icu/posts/'
+        tabindex="-4">  Posts
+      </a>
+    </span>
+
+    <ul>
+      
+        
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/think/'
+    tabindex="-5">  Think
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/think/unhappy-newyear/'
+        tabindex="-6">  祝你春节不快乐</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/think/1st-anniversary-of-listening-to-tayu-lo/'
+        tabindex="-7">  纪念听罗大佑一周年</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/think/music-history/'
+        tabindex="-8">  记我的听歌历程</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/think/my-first-post/'
+        tabindex="-9">  My first post</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/server/'
+    tabindex="-10">  server
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/traefik-simple-guide/'
+        tabindex="-11">  Docker/NixOS使用traefik实现简单反代</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/caddy-simple-guide/'
+        tabindex="-12">  Debian/NixOS使用caddy实现简单反代</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/use-tebi-build-nixos-cache-server/'
+        tabindex="-13">  使用tebi作为s3,搭建nix缓存服务器</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/cloudfront-cdn-acme/'
+        tabindex="-14">  cloudfront配置小鸡cdn并使用acme.sh自动获取证书</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/build-terraria-tshock/'
+        tabindex="-15">  搭建泰拉瑞亚Tshock服务器(强制开荒)</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/build-hugo/'
+        tabindex="-16">  基于Arch Linux搭建hugo博客</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/hackintosh/'
+    tabindex="-17">  Hackintosh
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/hackintosh/x79/'
+        tabindex="-18">  记录一次杂牌x79黑苹果</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/pve/'
+    tabindex="-19">  PVE
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/pve/pve-hackintosh/'
+        tabindex="-20">  x79上pve黑苹果</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/pve/build-pve/'
+        tabindex="-21">  x79搭建pve并开启硬件直通</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/k3s/'
+    tabindex="-22">  K3S
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/k3s/develop-rancher/'
+        tabindex="-23">  k3s部署rancher</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/k3s/kubevirt-manager/'
+        tabindex="-24">  k3s部署kubevirt-manager</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/linux-trip/'
+    tabindex="-25">  Linux Trip
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/7/'
+        tabindex="-26">  第七回，探FreeBSD路途远，坎坷荆棘勇前行</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/6/'
+        tabindex="-27">  第六回，弃Linux投FreeBSD，稳如磐石路更宽</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a class="selected"href='https://blog.0pt.icu/posts/linux-trip/5/'
+        tabindex="-28">  第五回，渐觉Arch无力持，转投NixOS获新生</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/4/'
+        tabindex="-29">  第四回，舍KDE抱Hyprland，新境界追求更添</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/3/'
+        tabindex="-30">  第三回，探幽寻秘APPS新，解CONFIG奇趣入眼前</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/2/'
+        tabindex="-31">  第二回，初入KDE虚界间，安装APPS耀目光</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/1/'
+        tabindex="-32">  第一回，弃window渐入轻盈境，装Arch走入坑深底</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+    </ul>
+  </li><li class="folder"><span>
+      
+      <a href='https://blog.0pt.icu/about/'
+        tabindex="-33">  ABOUT
+      </a>
+    </span>
+
+    <ul>
+      <li class="file">
+        <span>└──
+          <a href='https://blog.0pt.icu/about/about2/'
+            tabindex="-34">  ABOUT2</a>
+        </span>
+      </li><li class="file">
+        <span>└──
+          <a href='https://blog.0pt.icu/about/about1/'
+            tabindex="-35">  ABOUT1</a>
+        </span>
+      </li>
+        
+    </ul>
+  </li><li class="folder"><span>
+      
+      <a href='https://blog.0pt.icu/links/'
+        tabindex="-36">  LINKS
+      </a>
+    </span>
+
+    <ul>
+      <li class="file">
+        <span>└──
+          <a href='https://blog.0pt.icu/links/link/'
+            tabindex="-37">  LINKS</a>
+        </span>
+      </li>
+        
+    </ul>
+  </li>
+</ul>
+</div>
+    <div class="viewer page" id="viewer" tabindex="0">
+      <div class="tab">
+<ul id="tabs">
+</ul>
+
+
+</div>
+      <div class="content" id="content"><h1 id="di-wu-hui-jian-jue-archwu-li-chi-zhuan-tou-nixoshuo-xin-sheng">第五回，渐觉Arch无力持，转投NixOS获新生</h1>
+<p>2024-05-11
+<img src="https://images.unsplash.com/photo-1708115106914-65655e8414da" alt="" /></p>
+<h1 id="1wei-shen-me-wu-li-chi-arch">1为什么无力持Arch</h1>
+<h2 id="ruan-jian-shi-zui-xin-de">软件是最新的</h2>
+<p>由于滚动更新，所有的软件都是处于最新的状态，这看起来没什么问题。但是，对于我来说，我使用的软件，除非有重大更新，否则我不喜欢进行更新，这样让软件停在一个稳定的版本，且功能正常。并且，有时候进行更新会导致软件的不稳定已经一些新的潜在问题。</p>
+<h2 id="packagesruan-jian-bao-wen-ti">packages软件包问题</h2>
+<p>之前遇到的问题：</p>
+<p>某一个包的pgp密钥过期，导致整个arch都无法更新，需要手动导入，比较麻烦。</p>
+<p>之前使用某一个Arch发行版，更新内核的包出现异常，导致btrfs快照功能炸裂，当我回滚的时候，直接系统都进不去了。</p>
+<p>通常来说，我使用EndeavourOS这个Arch的发行版，我在安装的时候选择加密我的硬盘。但在之前的某次滚动更新中，似乎引导出了点问题，导致我默认进入EndeavourOS的时候，输入硬盘加密的密码，提示无法找到那个硬盘。我从bios的启动选项进行启动才能避免这个问题。</p>
+<p>一但遇到这样的问题，就必须花更多的时间与精力去解决，而且收获很少。这对于我来说是不能接受的。</p>
+<h2 id="aurbao-yu-long-hun-za">AUR包鱼龙混杂</h2>
+<p>AUR包非常多，包括许多过时的与无人维护的。并且这些包只能在Arch Linux上使用。虽然我平时用的AUR包不是过时的，但是我不是很喜欢低质的包，而且也遇见过AUR包用着用着就被标记为过时了。</p>
+<h2 id="ge-ren-de-hun-dun">个人的混沌</h2>
+<p>当我从别人那里了解软件，我总是直接安装到我的Arch上。久而久之，我的Arch就像就像一个黑盒一样。我之前在KDE上，要从x11转向wayland的时候，为了解决屏幕共享问题，在寻找攻略的时候，无法辨别哪些是有用的，有些是没用的，于是，一堆奇怪的东西被安装到我的系统上。后面，我想进行测试哪些包是有用的，结果发现根本测试不了，包太多了，加之后面有些包的名字也忘记了。后面就也没有去处理，就放在那边。</p>
+<p>后面，我在使用某个软件的时候，由于混沌的环境触发了一个奇怪的bug。我花了大量时间去尝试解决，但是没有用。最后我不得不重装了一个一模一样的新系统，直接在上面测试，却并没有发现之前的bug，有点小丑了🤡。</p>
+<h2 id="wang-luo-wen-ti">网络问题</h2>
+<p>我的Arch的网络有时候会毫无征兆的爆炸，遇见过几十次了。</p>
+<p>并且有时候系统更新中，某几个包的下载速度会奇慢无比，导致更新缓慢，甚至无法更新。</p>
+<h1 id="2-archxian-zhuang">2.Arch现状</h1>
+<p>我还是对Arch很有感情的，毕竟，Arch是我第一个接触的，作为我的主力系统的Linux，是我linux的入门系统。我享受之前无忧无虑拿着yay与paru乱勾aur包的快乐时光。我的许多学习都是在Arch上面进行的。我的朋友兼老师，在考量了ubuntu,fedora等一众linux后，推荐给我Arch，并教授了我许多arch的知识与生态。我非常感激他们，也感激Arch。</p>
+<p>现在，Arch对我来说就像是一位故人，我把它从电脑上的固态硬盘转移到移动的固态硬盘，想它的时候可以随时登上来看看，NixOS爆炸的时候也可以用它先顶着。</p>
+<h1 id="3-wei-shen-me-xuan-ze-nixos">3.为什么选择NixOS</h1>
+<h2 id="zi-ji-mei-shi-zhao-shi">自己没事找事</h2>
+<p>NixOS是有高门槛的。投入的时间与精力更多，值不值得，投入与收获什么的，对于我来说，都是自己骗自己的借口，但自己已经是斯德哥尔摩晚期了，就是想搞NixOS。又因为gentoo编译时间有点久，总是觉得自己的小小笔记本无法承受。</p>
+<h2 id="ke-fu-xian-xing">可复现性</h2>
+<p>安装系统变成了你配不配（文件）的问题，非常酷炫。后面在服务器上将大有作为。</p>
+<p>所有系统配置相关的文件都是只读，数据与配置是分开的，不怕下太多东西搞乱环境。而且通过flake可以锁定应用版本，不用担心Arch那种频繁的更新带来的隐患。</p>
+<h1 id="4-mu-qian-wo-de-nixosxian-zhuang">4.目前我的NixOS现状</h1>
+<p><img src="https://img.0pt.icu/learn/linux-trip/5/1.jpg" alt="" /></p>
+<p><img src="https://img.0pt.icu/learn/linux-trip/5/2.jpg" alt="" /></p>
+<p>目前是配置好了我的NixOS。并将自己的主力系统转到NixOS。</p>
+<p>我的配置在我的git 仓库里面。</p>
+<p><a href="https://github.com/antipeth/antipethos">https://github.com/antipeth/antipethos</a></p>
+<p>尝试了一些软件的方案，也遇到了NixOS的一些奇怪bug。</p>
+<p>在某次我用flake构建我的系统时，flake应该自动生成flake.lock。</p>
+<p>但是它生成了两个lock文件，一个叫做flake.lock，另一个叫做flack.lock。</p>
+<p>我还遇到了貌似是模块冲突的问题，使得系统无法构建，导致某些应用无法正常安装,但我手动清除所有模块重新构建时，却又恢复正常。</p>
+<p>其他内容正在研究中...</p>
+
+      </div>
+    </div>
+    <div class="prompt" id="terminal"><input
+    type="text"
+    id="setter"
+    onkeydown="writeit(this, event);moveIt(this.value.length, event)"
+    onchange="writeit(this, event)"
+    onkeyup="writeit(this, event)"
+    onkeypress="writeit(this, event);"
+    >
+<label for="setter" id="writer"> </label><b class="cursor" id="cursor"></b></div>
+  </main>
+</body>
+</html>

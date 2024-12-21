@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATP</title>
+     <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js" integrity="sha256-WCzAhd2P6gRJF9Hv3oOOd+hFJi/QJbv+Azn4CGB8gfY=" crossorigin="anonymous"></script>
+     <script src="/js/index.js"></script>
+     <script src="/js/prompt.js"></script>
+     <script src="/js/keyboard.js"></script>
+     <script src="/js/tab.js"></script>
+     <script src="/js/commands.js"></script>
+     <script src="/js/config.js"></script><link rel="stylesheet" href="/css/base.css"><link rel="stylesheet" href="/css/page.css"></head>
+<body onkeydown='exec(event)'>
+  <header>
+      <h1>ATP</h1>
+  </header>
+  <main>
+    <div class="files" id="files" tabindex="0">
+<ul><li class="file">
+    <span><a href='https://blog.0pt.icu/readme/'
+      tabindex="-2">  README</a></span>
+  </li><li class="file">
+    <span><a href='https://blog.0pt.icu/rss/'
+      tabindex="-3">  RSS</a></span>
+  </li><li class="folder"><span>
+      
+      <a href='https://blog.0pt.icu/posts/'
+        tabindex="-4">  Posts
+      </a>
+    </span>
+
+    <ul>
+      
+        
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/think/'
+    tabindex="-5">  Think
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/think/unhappy-newyear/'
+        tabindex="-6">  祝你春节不快乐</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/think/1st-anniversary-of-listening-to-tayu-lo/'
+        tabindex="-7">  纪念听罗大佑一周年</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/think/music-history/'
+        tabindex="-8">  记我的听歌历程</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/think/my-first-post/'
+        tabindex="-9">  My first post</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/server/'
+    tabindex="-10">  server
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a class="selected"href='https://blog.0pt.icu/posts/server/traefik-simple-guide/'
+        tabindex="-11">  Docker/NixOS使用traefik实现简单反代</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/caddy-simple-guide/'
+        tabindex="-12">  Debian/NixOS使用caddy实现简单反代</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/use-tebi-build-nixos-cache-server/'
+        tabindex="-13">  使用tebi作为s3,搭建nix缓存服务器</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/cloudfront-cdn-acme/'
+        tabindex="-14">  cloudfront配置小鸡cdn并使用acme.sh自动获取证书</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/build-terraria-tshock/'
+        tabindex="-15">  搭建泰拉瑞亚Tshock服务器(强制开荒)</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/build-hugo/'
+        tabindex="-16">  基于Arch Linux搭建hugo博客</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/hackintosh/'
+    tabindex="-17">  Hackintosh
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/hackintosh/x79/'
+        tabindex="-18">  记录一次杂牌x79黑苹果</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/pve/'
+    tabindex="-19">  PVE
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/pve/pve-hackintosh/'
+        tabindex="-20">  x79上pve黑苹果</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/pve/build-pve/'
+        tabindex="-21">  x79搭建pve并开启硬件直通</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/k3s/'
+    tabindex="-22">  K3S
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/k3s/develop-rancher/'
+        tabindex="-23">  k3s部署rancher</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/k3s/kubevirt-manager/'
+        tabindex="-24">  k3s部署kubevirt-manager</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/linux-trip/'
+    tabindex="-25">  Linux Trip
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/7/'
+        tabindex="-26">  第七回，探FreeBSD路途远，坎坷荆棘勇前行</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/6/'
+        tabindex="-27">  第六回，弃Linux投FreeBSD，稳如磐石路更宽</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/5/'
+        tabindex="-28">  第五回，渐觉Arch无力持，转投NixOS获新生</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/4/'
+        tabindex="-29">  第四回，舍KDE抱Hyprland，新境界追求更添</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/3/'
+        tabindex="-30">  第三回，探幽寻秘APPS新，解CONFIG奇趣入眼前</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/2/'
+        tabindex="-31">  第二回，初入KDE虚界间，安装APPS耀目光</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/1/'
+        tabindex="-32">  第一回，弃window渐入轻盈境，装Arch走入坑深底</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+    </ul>
+  </li><li class="folder"><span>
+      
+      <a href='https://blog.0pt.icu/about/'
+        tabindex="-33">  ABOUT
+      </a>
+    </span>
+
+    <ul>
+      <li class="file">
+        <span>└──
+          <a href='https://blog.0pt.icu/about/about2/'
+            tabindex="-34">  ABOUT2</a>
+        </span>
+      </li><li class="file">
+        <span>└──
+          <a href='https://blog.0pt.icu/about/about1/'
+            tabindex="-35">  ABOUT1</a>
+        </span>
+      </li>
+        
+    </ul>
+  </li><li class="folder"><span>
+      
+      <a href='https://blog.0pt.icu/links/'
+        tabindex="-36">  LINKS
+      </a>
+    </span>
+
+    <ul>
+      <li class="file">
+        <span>└──
+          <a href='https://blog.0pt.icu/links/link/'
+            tabindex="-37">  LINKS</a>
+        </span>
+      </li>
+        
+    </ul>
+  </li>
+</ul>
+</div>
+    <div class="viewer page" id="viewer" tabindex="0">
+      <div class="tab">
+<ul id="tabs">
+</ul>
+
+
+</div>
+      <div class="content" id="content"><h1 id="docker-nixosshi-yong-traefikshi-xian-jian-dan-fan-dai">Docker/NixOS使用traefik实现简单反代</h1>
+<p>2024-12-20
+参考</p>
+<ol>
+<li>https://doc.traefik.io/traefik/</li>
+<li>https://github.com/anandslab/docker-traefik</li>
+<li>https://blog.eleven-labs.com/en/using-traefik-as-a-reverse-proxy/</li>
+<li>https://github.com/korridor/reverse-proxy-docker-traefik</li>
+<li>https://wiki.nixos.org/wiki/Traefik</li>
+</ol>
+<h2 id="docker">Docker</h2>
+<h3 id="httpfan-dai">http反代</h3>
+<p>先是traefik</p>
+<p>基本结构是</p>
+<pre style="background-color:#212733;color:#ccc9c2;"><code><span>入口(entrypoints)-&gt;路由(routers)-&gt;服务(services)
+</span></code></pre>
+<p>先解释几条配置
+这个是docker启动traefik的基本配置,使用<code>command</code>传进去</p>
+<pre data-lang="docker-compose.yml" style="background-color:#212733;color:#ccc9c2;" class="language-docker-compose.yml "><code class="language-docker-compose.yml" data-lang="docker-compose.yml"><span>    command: 
+</span><span>      - --api.insecure=true # 开启8080端口的webui界面，可以看到traefik可视化面板
+</span><span>      - --providers.docker=true # 开启监控docker容器
+</span><span>      - --providers.docker.exposedbydefault=false # 默认不自动暴露容器,隐藏此容器
+</span></code></pre>
+<p>接下来是入口<code>entrypoints</code>,也使用<code>command</code>传进去,格式如下</p>
+<pre data-lang="docker-compose.yml" style="background-color:#212733;color:#ccc9c2;" class="language-docker-compose.yml "><code class="language-docker-compose.yml" data-lang="docker-compose.yml"><span>    command: 
+</span><span>      - --entrypoints.&lt;entrypoints-name-1&gt;.address=:80
+</span><span>      - --entrypoints.&lt;entrypoints-name-2&gt;.address=:443
+</span></code></pre>
+<p>定义监听的入口，对于反代来说，只需要监听<code>:80</code>和<code>:443</code>，也就是<code>http</code>和<code>https</code>的流量。将&lt;entrypoints-name-1/2&gt;自行替换成你想要的名字，如</p>
+<pre data-lang="docker-compose.yml" style="background-color:#212733;color:#ccc9c2;" class="language-docker-compose.yml "><code class="language-docker-compose.yml" data-lang="docker-compose.yml"><span>    command: 
+</span><span>      - --entrypoints.http.address=:80
+</span><span>      - --entrypoints.https.address=:443
+</span></code></pre>
+<p>或者</p>
+<pre data-lang="docker-compose.yml" style="background-color:#212733;color:#ccc9c2;" class="language-docker-compose.yml "><code class="language-docker-compose.yml" data-lang="docker-compose.yml"><span>    command: 
+</span><span>      - --entrypoints.web.address=:80
+</span><span>      - --entrypoints.websecure.address=:443
+</span></code></pre>
+<p>所以，我们先得到一个<code>traefik</code>容器的编排文件</p>
+<p>docker的<code>traefik</code>网络需要提前创建好</p>
+<pre data-lang="bash" style="background-color:#212733;color:#ccc9c2;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffd580;">docker</span><span> network create</span><span style="color:#ffcc66;"> --driver</span><span> bridge traefik
+</span></code></pre>
+<p>traefik的docker-compose.yml</p>
+<pre data-lang="yaml" style="background-color:#212733;color:#ccc9c2;" class="language-yaml "><code class="language-yaml" data-lang="yaml"><span style="color:#73d0ff;">version</span><span style="color:#ccc9c2cc;">: </span><span style="color:#bae67e;">&#39;3&#39;
+</span><span>
+</span><span style="color:#73d0ff;">services</span><span style="color:#ccc9c2cc;">:
+</span><span>  </span><span style="color:#73d0ff;">reverse-proxy</span><span style="color:#ccc9c2cc;">:
+</span><span>    </span><span style="font-style:italic;color:#5c6773;"># The official v3 Traefik docker image
+</span><span>    </span><span style="color:#73d0ff;">image</span><span style="color:#ccc9c2cc;">: </span><span style="color:#bae67e;">traefik:v3.2
+</span><span>    </span><span style="font-style:italic;color:#5c6773;"># Enables the web UI and tells Traefik to listen to docker
+</span><span>    </span><span style="color:#73d0ff;">command</span><span style="color:#ccc9c2cc;">: 
+</span><span>      - </span><span style="color:#bae67e;">--api.insecure=true
+</span><span>      - </span><span style="color:#bae67e;">--providers.docker=true
+</span><span>      - </span><span style="color:#bae67e;">--providers.docker.exposedbydefault=false </span><span style="font-style:italic;color:#5c6773;"># 默认不自动暴露容器,隐藏此容器
+</span><span>      - </span><span style="color:#bae67e;">--entrypoints.web.address=:80            </span><span style="font-style:italic;color:#5c6773;"># HTTP 入口点
+</span><span>      - </span><span style="color:#bae67e;">--entrypoints.websecure.address=:443           </span><span style="font-style:italic;color:#5c6773;"># HTTPS 入口点
+</span><span>    </span><span style="color:#73d0ff;">ports</span><span style="color:#ccc9c2cc;">:
+</span><span>      </span><span style="font-style:italic;color:#5c6773;"># The HTTP port
+</span><span>      - </span><span style="color:#bae67e;">&quot;80:80&quot;
+</span><span>      - </span><span style="color:#bae67e;">&quot;443:443&quot;
+</span><span>      </span><span style="font-style:italic;color:#5c6773;"># The Web UI (enabled by --api.insecure=true)
+</span><span>      - </span><span style="color:#bae67e;">&quot;8080:8080&quot;
+</span><span>    </span><span style="color:#73d0ff;">volumes</span><span style="color:#ccc9c2cc;">:
+</span><span>      </span><span style="font-style:italic;color:#5c6773;"># So that Traefik can listen to the Docker events
+</span><span>      - </span><span style="color:#bae67e;">/var/run/docker.sock:/var/run/docker.sock
+</span><span>    </span><span style="color:#73d0ff;">networks</span><span style="color:#ccc9c2cc;">:
+</span><span>      - </span><span style="color:#bae67e;">traefik
+</span><span style="color:#73d0ff;">networks</span><span style="color:#ccc9c2cc;">:
+</span><span>  </span><span style="color:#73d0ff;">traefik</span><span style="color:#ccc9c2cc;">:
+</span><span>    </span><span style="color:#73d0ff;">external</span><span style="color:#ccc9c2cc;">: </span><span style="color:#ffcc66;">true
+</span></code></pre>
+<p>下面启动示例syncthing
+接下来，在需要启动的容器,使用labels将需要的参数传入
+首先，需要启用traefik</p>
+<pre data-lang="docker-compose.yml" style="background-color:#212733;color:#ccc9c2;" class="language-docker-compose.yml "><code class="language-docker-compose.yml" data-lang="docker-compose.yml"><span>    labels:
+</span><span>      - &quot;traefik.enable=true&quot;
+</span></code></pre>
+<p>然后，定义路由(routers)</p>
+<pre data-lang="docker-compose.yml" style="background-color:#212733;color:#ccc9c2;" class="language-docker-compose.yml "><code class="language-docker-compose.yml" data-lang="docker-compose.yml"><span>    labels:
+</span><span>      - &quot;traefik.http.routers.&lt;routers-name-1&gt;.xxxxxxx&quot;
+</span><span>      - &quot;traefik.tcp.routers.&lt;routers-name-2&gt;.xxxXXXX&quot;
+</span></code></pre>
+<p>有不同协议，因为我只反代网页界面，仅使用<code>http</code>协议即可
+将&lt;routers-name-1/2&gt;替换为你想要的路由名字，比如这里直接以<code>syncthing</code>命名
+下面是http详细配置</p>
+<pre data-lang="docker-compose.yml" style="background-color:#212733;color:#ccc9c2;" class="language-docker-compose.yml "><code class="language-docker-compose.yml" data-lang="docker-compose.yml"><span>    labels:
+</span><span>      - &quot;traefik.http.routers.syncthing.rule=Host(`sync.example.com`)&quot;
+</span><span>      - &quot;traefik.http.routers.syncthing.entrypoints=web&quot; # 设置入口为web,也就是80
+</span></code></pre>
+<p>rule=Host(<code>sync.example.com</code>)匹配域名
+entrypoints=web匹配刚才定义的监听的入口,这里先使用http,所以使用web,监听:80端口
+最后，定义服务(services),由于traefik自动监控容器，会自动把容器作为服务与路由关联起来，所以什么都不需要配置，除非容器暴露了多个端口
+当容器只有一个端口的时候，traefik默认把流量传给这个端口,不需要额外指定端口
+但容器有多个端口映射时，traefik不知道要把流量传给哪一个端口,所以需要额外配置来指定一个端口</p>
+<pre data-lang="docker-compose.yml" style="background-color:#212733;color:#ccc9c2;" class="language-docker-compose.yml "><code class="language-docker-compose.yml" data-lang="docker-compose.yml"><span>    labels:
+</span><span>      - &quot;traefik.http.services.&lt;service-name&gt;.loadbalancer.server.port=8384&quot; # 如果暴露了多个端口，需要指定端口
+</span></code></pre>
+<p><service-name>替换为容器名字，<service-name>与<routers-name>可以重名
+记得添加syncthing容器与traefik容器同属一个网络，也就是<code>traefik</code>这个网络之中。</p>
+<pre data-lang="docker-compose.yml" style="background-color:#212733;color:#ccc9c2;" class="language-docker-compose.yml "><code class="language-docker-compose.yml" data-lang="docker-compose.yml"><span>version: &#39;3&#39;
+</span><span>services:
+</span><span>  syncthing:
+</span><span>    image: syncthing/syncthing
+</span><span>    container_name: syncthing
+</span><span>    restart: unless-stopped
+</span><span>    ulimits:
+</span><span>      nproc: 65535
+</span><span>      nofile:
+</span><span>        soft: 65535
+</span><span>        hard: 65535
+</span><span>    volumes:
+</span><span>      - /var/syncthing:/var/syncthing
+</span><span>    environment:
+</span><span>      - PUID=1000
+</span><span>      - PGID=1000
+</span><span>    ports:
+</span><span>      - 8384:8384 # Web UI
+</span><span>      - 22000:22000/tcp # TCP file transfers
+</span><span>      - 22000:22000/udp # QUIC file transfers
+</span><span>      - 21027:21027/udp # Receive local discovery broadcasts
+</span><span>    labels:
+</span><span>      - &quot;traefik.enable=true&quot; # 启动traefik
+</span><span>      - &quot;traefik.http.routers.syncthing.rule=Host(`sync.example.com`)&quot; # 匹配域名
+</span><span>      - &quot;traefik.http.routers.syncthing.entrypoints=web&quot; # 设置入口为web,也就是80
+</span><span>      - &quot;traefik.http.services.syncthing.loadbalancer.server.port=8384&quot; # 如果暴露了多个端口，需要指定端口
+</span><span>      # 下面不需要，留着仅供参考
+</span><span>      # - &quot;traefik.http.services.syncthing.loadbalancer.server.scheme=http&quot; # 明确指定 HTTP
+</span><span>      # - &quot;traefik.docker.network=traefik&quot; # 指定docker容器网络
+</span><span>    networks:
+</span><span>      - traefik
+</span><span>networks:
+</span><span>  traefik:
+</span><span>    external: true
+</span><span>
+</span></code></pre>
+<h1 id="tian-jia-tlszheng-shu">添加tls证书</h1>
+<p>traefik部分
+在保留刚才的基础上
+在<code>command</code>里面添加</p>
+<pre data-lang="docker-compose.yml" style="background-color:#212733;color:#ccc9c2;" class="language-docker-compose.yml "><code class="language-docker-compose.yml" data-lang="docker-compose.yml"><span>      - &quot;--certificatesresolvers.&lt;resolver-name&gt;.acme.tlschallenge=true&quot; # 开启证书申请
+</span><span>      - &quot;--certificatesresolvers.&lt;resolver-name&gt;.acme.email=yourmail@domain.com&quot; # 你的邮箱
+</span><span>      - &quot;--certificatesresolvers.&lt;resolver-name&gt;.acme.storage=/letsencrypt/acme.json&quot; # 自动生成的证书配置存在这个地方
+</span></code></pre>
+<p>将<resolver-name>替换为你想要的名字，这里替换为<code>myresolver</code>
+注意，需要添加一个储存卷来存放证书配置，以及可以把http关掉，及docker关闭:80端口,取消<code>entrypoints</code>的web设置
+示例如下</p>
+<pre data-lang="docker-compose.yml" style="background-color:#212733;color:#ccc9c2;" class="language-docker-compose.yml "><code class="language-docker-compose.yml" data-lang="docker-compose.yml"><span>version: &#39;3&#39;
+</span><span>
+</span><span>services:
+</span><span>  reverse-proxy:
+</span><span>    # The official v3 Traefik docker image
+</span><span>    image: traefik:v3.2
+</span><span>    # Enables the web UI and tells Traefik to listen to docker
+</span><span>    command: 
+</span><span>      - &quot;--api.insecure=true&quot;
+</span><span>      - &quot;--providers.docker=true&quot;
+</span><span>      - &quot;--providers.docker.exposedbydefault=false&quot; # 默认不自动暴露容器,隐藏此容器
+</span><span>      - &quot;--entrypoints.websecure.address=:443&quot;           # HTTPS 入口点
+</span><span>      - &quot;--certificatesresolvers.myresolver.acme.tlschallenge=true&quot; # 开启证书申请
+</span><span>      - &quot;--certificatesresolvers.myresolver.acme.email=0pt@disroot.org&quot; # 你的邮箱
+</span><span>      - &quot;--certificatesresolvers.myresolver.acme.storage=/letsencrypt/acme.json&quot; # 自动生成的证书配置存在这个地方
+</span><span>    ports:
+</span><span>      - &quot;443:443&quot;
+</span><span>      # The Web UI (enabled by --api.insecure=true)
+</span><span>      - &quot;8080:8080&quot;
+</span><span>    volumes:
+</span><span>      # So that Traefik can listen to the Docker events
+</span><span>      - /var/run/docker.sock:/var/run/docker.sock
+</span><span>      - /root/letsencrypt:/letsencrypt # 储存证书配置
+</span><span>    networks:
+</span><span>      - traefik
+</span><span>    # - 下面是指定默认申请的证书，一般来说不需要这些配置，traefik会自动检测并申请tls证书
+</span><span>      # labels:
+</span><span>      # - &quot;traefik.tls.stores.default.defaultgeneratedcert.resolver=myresolver&quot; # 指定默认申请的resolver
+</span><span>      # - &quot;traefik.tls.stores.default.defaultgeneratedcert.domain.main=0pt.us.kg&quot; # 指定主域名
+</span><span>      # - &quot;traefik.tls.stores.default.defaultgeneratedcert.domain.sans=example.org&quot; # 指定证书申请的子域名
+</span><span>      # - &quot;traefik.tls.stores.default.defaultgeneratedcert.domain.sans=foo.example.org, bar.example.org&quot;
+</span><span>networks:
+</span><span>  traefik:
+</span><span>    external: true
+</span></code></pre>
+<p>然后是syncthing
+在路由配置把<code>entrypoints</code>改为websecure,即使用https
+再在路由配置添加一个指定使用的证书resolver</p>
+<pre data-lang="docker-compose.yml" style="background-color:#212733;color:#ccc9c2;" class="language-docker-compose.yml "><code class="language-docker-compose.yml" data-lang="docker-compose.yml"><span>    labels:
+</span><span>      - &quot;traefik.http.routers.syncthing.entrypoints=websecure&quot; # 设定入口为websecure也就是443
+</span><span>      - &quot;traefik.http.routers.syncthing.tls.certresolver=myresolver&quot; # 指定证书申请的resolver
+</span></code></pre>
+<p>最终配置如下</p>
+<pre data-lang="docker-compose.yml" style="background-color:#212733;color:#ccc9c2;" class="language-docker-compose.yml "><code class="language-docker-compose.yml" data-lang="docker-compose.yml"><span>version: &#39;3&#39;
+</span><span>services:
+</span><span>  syncthing:
+</span><span>    image: syncthing/syncthing
+</span><span>    container_name: syncthing
+</span><span>    restart: unless-stopped
+</span><span>    ulimits:
+</span><span>      nproc: 65535
+</span><span>      nofile:
+</span><span>        soft: 65535
+</span><span>        hard: 65535
+</span><span>    volumes:
+</span><span>      - /var/syncthing:/var/syncthing
+</span><span>    environment:
+</span><span>      - PUID=1000
+</span><span>      - PGID=1000
+</span><span>    ports:
+</span><span>      - 8384:8384 # Web UI
+</span><span>      - 22000:22000/tcp # TCP file transfers
+</span><span>      - 22000:22000/udp # QUIC file transfers
+</span><span>      - 21027:21027/udp # Receive local discovery broadcasts
+</span><span>    labels:
+</span><span>      - &quot;traefik.enable=true&quot;
+</span><span>      - &quot;traefik.docker.network=traefik&quot;
+</span><span>      # 当容器只有一个端口的时候，traefik默认把流量传给这个端口,不需要额外指定端口
+</span><span>      # 但容器有多个端口映射时，traefik不知道要把流量传给哪一个端口,所以需要额外指定一个端口
+</span><span>      - &quot;traefik.http.services.syncthing.loadbalancer.server.port=8384&quot;
+</span><span>      - &quot;traefik.http.routers.syncthing.rule=Host(`sync.example.com`)&quot;
+</span><span>      - &quot;traefik.http.routers.syncthing.entrypoints=websecure&quot; # 设定入口为websecure也就是443
+</span><span>      - &quot;traefik.http.routers.syncthing.tls.certresolver=myresolver&quot; # 指定证书申请的resolver
+</span><span>      # - 下面配置不需要，留着仅供参考
+</span><span>      # - &quot;traefik.http.routers.syncthing.tls=true&quot; # 开启tls
+</span><span>      # - &quot;traefik.http.services.syncthing.loadbalancer.server.scheme=http&quot; # 明确指定 HTTP
+</span><span>    networks:
+</span><span>      - traefik
+</span><span>networks:
+</span><span>  traefik:
+</span><span>    external: true
+</span></code></pre>
+<p>然后就有tls证书了，且强制使用https</p>
+<p>下面是官方示例配置</p>
+<pre data-lang="docker-compose.yml" style="background-color:#212733;color:#ccc9c2;" class="language-docker-compose.yml "><code class="language-docker-compose.yml" data-lang="docker-compose.yml"><span>version: &quot;3.3&quot;
+</span><span>
+</span><span>services:
+</span><span>
+</span><span>  traefik:
+</span><span>    image: &quot;traefik:v3.2&quot;
+</span><span>    container_name: &quot;traefik&quot;
+</span><span>    command:
+</span><span>      #- &quot;--log.level=DEBUG&quot;
+</span><span>      - &quot;--api.insecure=true&quot;
+</span><span>      - &quot;--providers.docker=true&quot;
+</span><span>      - &quot;--providers.docker.exposedbydefault=false&quot;
+</span><span>      - &quot;--entryPoints.websecure.address=:443&quot;
+</span><span>      - &quot;--certificatesresolvers.myresolver.acme.tlschallenge=true&quot;
+</span><span>      #- &quot;--certificatesresolvers.myresolver.acme.caserver=https://acme-staging-v02.api.letsencrypt.org/directory&quot;
+</span><span>      - &quot;--certificatesresolvers.myresolver.acme.email=postmaster@example.com&quot;
+</span><span>      - &quot;--certificatesresolvers.myresolver.acme.storage=/letsencrypt/acme.json&quot;
+</span><span>    ports:
+</span><span>      - &quot;443:443&quot;
+</span><span>      - &quot;8080:8080&quot;
+</span><span>    volumes:
+</span><span>      - &quot;./letsencrypt:/letsencrypt&quot;
+</span><span>      - &quot;/var/run/docker.sock:/var/run/docker.sock:ro&quot;
+</span><span>
+</span><span>  whoami:
+</span><span>    image: &quot;traefik/whoami&quot;
+</span><span>    container_name: &quot;simple-service&quot;
+</span><span>    labels:
+</span><span>      - &quot;traefik.enable=true&quot;
+</span><span>      # 因为这个容器只暴露一个80端口，所以不需要特别指定端口
+</span><span>      - &quot;traefik.http.routers.whoami.rule=Host(`whoami.example.com`)&quot;
+</span><span>      - &quot;traefik.http.routers.whoami.entrypoints=websecure&quot;
+</span><span>      - &quot;traefik.http.routers.whoami.tls.certresolver=myresolver&quot;
+</span></code></pre>
+<h2 id="nixos">NixOS</h2>
+<p>有了docker的基础，配置较为简单，易于理解，基本是把docker的相关配置变成json的形式，直接使用nix语言进行配置
+示例<code>traefik.nix</code></p>
+<pre data-lang="traefik.nix" style="background-color:#212733;color:#ccc9c2;" class="language-traefik.nix "><code class="language-traefik.nix" data-lang="traefik.nix"><span>{
+</span><span>  config,
+</span><span>  pkgs,
+</span><span>  host,
+</span><span>  ...
+</span><span>}:
+</span><span>{
+</span><span>  # 开启syncthing和netdata
+</span><span>  services = {
+</span><span>      syncthing = {
+</span><span>          enable = true;
+</span><span>      };
+</span><span>  };
+</span><span>  services.netdata = {
+</span><span>    enable = true;
+</span><span>  };
+</span><span>  # 开启 traefik
+</span><span>  services.traefik = {
+</span><span>    enable = true;
+</span><span>
+</span><span>    # 静态配置
+</span><span>    staticConfigOptions = {
+</span><span>      # 需要日志可以添加下面的配置
+</span><span>      # log = {
+</span><span>        # level = &quot;INFO&quot;;
+</span><span>        # filePath = &quot;${config.services.traefik.dataDir}/traefik.log&quot;;
+</span><span>        # format = &quot;json&quot;;
+</span><span>      # };
+</span><span>
+</span><span>      # 定义入口，名字是websecure,仅设置:443 
+</span><span>      entryPoints = {
+</span><span>        # web = {
+</span><span>        #   address = &quot;:80&quot;;
+</span><span>        # };
+</span><span>        websecure= {
+</span><span>          address = &quot;:443&quot;;
+</span><span>        # 在下面动态配置已经指定过了
+</span><span>	      # http.tls.certResolver = &quot;myresolver&quot;;
+</span><span>        };
+</span><span>      };
+</span><span>
+</span><span>      # 定义证书申请器,myresolver是我定义的证书申请器的名字，名字可以随便起
+</span><span>      certificatesResolvers.myresolver.acme = {
+</span><span>	      tlschallenge = true;
+</span><span>        email = &quot;0pt@disroot.org&quot;;
+</span><span>        storage = &quot;${config.services.traefik.dataDir}/acme.json&quot;;
+</span><span>      #   httpChallenge.entryPoint = &quot;web&quot;;
+</span><span>      };
+</span><span>
+</span><span>      # 开启面板
+</span><span>      api.dashboard = true;
+</span><span>      # Access the Traefik dashboard on &lt;Traefik IP&gt;:8080 of your server
+</span><span>      api.insecure = true;
+</span><span>    };
+</span><span>
+</span><span>    # 动态配置
+</span><span>    dynamicConfigOptions = {
+</span><span>      # 使用http协议
+</span><span>      http = {
+</span><span>        routers = {
+</span><span>          # 定义2个路由名字，一个是syncthing，一个是netdata,名字可以随便起
+</span><span>          syncthing= {
+</span><span>            # 定义入口为websecure,也就是443
+</span><span>	          entryPoints = [ &quot;websecure&quot; ];
+</span><span>            # 设置规则为匹配域名
+</span><span>            rule = &quot;Host(`sync.example.com`)&quot;;
+</span><span>            # 指定跟路由相关联的服务(service)
+</span><span>            service = &quot;syncthing&quot;;
+</span><span>            # 指定路由使用的证书申请器
+</span><span>	          tls.certresolver = &quot;myresolver&quot;;
+</span><span>          };
+</span><span>          # 第二个路由，跟第一个同理
+</span><span>          netdata= {
+</span><span>	          entryPoints = [ &quot;websecure&quot; ];
+</span><span>            rule = &quot;Host(`data.example.com`)&quot;;
+</span><span>            service = &quot;netdata&quot;;
+</span><span>	          tls.certresolver = &quot;myresolver&quot;;
+</span><span>          };
+</span><span>        };
+</span><span>        # 定义服务
+</span><span>        services = {
+</span><span>          # 定义2个服务名字，一个叫syncthing,一个叫netdata，名字可以随便起，可以与入口，路由的名字重名
+</span><span>          syncthing = {
+</span><span>            loadBalancer = {
+</span><span>              # server里面配置webui界面监听的地址即可
+</span><span>              servers = [
+</span><span>                {
+</span><span>                  url = &quot;http://localhost:8384&quot;;
+</span><span>                }
+</span><span>              ];
+</span><span>            };
+</span><span>          };
+</span><span>          netdata = {
+</span><span>            loadBalancer = {
+</span><span>              servers = [
+</span><span>                {
+</span><span>                  url = &quot;http://localhost:19999&quot;;
+</span><span>                }
+</span><span>              ];
+</span><span>            };
+</span><span>          };
+</span><span>        };
+</span><span>     };   
+</span><span>    };
+</span><span>  };
+</span><span>}
+</span><span>
+</span></code></pre>
+<p>然后，在配置文件中引用<code>traefik.nix</code></p>
+<pre style="background-color:#212733;color:#ccc9c2;"><code><span>{
+</span><span>  config,
+</span><span>  pkgs,
+</span><span>  host,
+</span><span>  ...
+</span><span>}:
+</span><span>{
+</span><span>  ...
+</span><span>  imports = [
+</span><span>    caddy.nix
+</span><span>  ];
+</span><span>  ...
+</span><span>}
+</span></code></pre>
+<p>然后，重构系统</p>
+<pre data-lang="bash" style="background-color:#212733;color:#ccc9c2;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffd580;">sudo</span><span> nixos-rebuild switch
+</span></code></pre>
+<p>或者
+使用flake</p>
+<pre data-lang="bash" style="background-color:#212733;color:#ccc9c2;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffd580;">sudo</span><span> nixos-rebuild switch</span><span style="color:#ffcc66;"> --flake</span><span> .#</span><span style="color:#bae67e;">&quot;$</span><span>HOSTNAME</span><span style="color:#bae67e;">&quot;
+</span></code></pre>
+<p>访问域名，确认反代成功</p>
+
+      </div>
+    </div>
+    <div class="prompt" id="terminal"><input
+    type="text"
+    id="setter"
+    onkeydown="writeit(this, event);moveIt(this.value.length, event)"
+    onchange="writeit(this, event)"
+    onkeyup="writeit(this, event)"
+    onkeypress="writeit(this, event);"
+    >
+<label for="setter" id="writer"> </label><b class="cursor" id="cursor"></b></div>
+  </main>
+</body>
+</html>

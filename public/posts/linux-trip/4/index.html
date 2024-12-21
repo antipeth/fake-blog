@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATP</title>
+     <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js" integrity="sha256-WCzAhd2P6gRJF9Hv3oOOd+hFJi/QJbv+Azn4CGB8gfY=" crossorigin="anonymous"></script>
+     <script src="/js/index.js"></script>
+     <script src="/js/prompt.js"></script>
+     <script src="/js/keyboard.js"></script>
+     <script src="/js/tab.js"></script>
+     <script src="/js/commands.js"></script>
+     <script src="/js/config.js"></script><link rel="stylesheet" href="/css/base.css"><link rel="stylesheet" href="/css/page.css"></head>
+<body onkeydown='exec(event)'>
+  <header>
+      <h1>ATP</h1>
+  </header>
+  <main>
+    <div class="files" id="files" tabindex="0">
+<ul><li class="file">
+    <span><a href='https://blog.0pt.icu/readme/'
+      tabindex="-2">  README</a></span>
+  </li><li class="file">
+    <span><a href='https://blog.0pt.icu/rss/'
+      tabindex="-3">  RSS</a></span>
+  </li><li class="folder"><span>
+      
+      <a href='https://blog.0pt.icu/posts/'
+        tabindex="-4">  Posts
+      </a>
+    </span>
+
+    <ul>
+      
+        
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/think/'
+    tabindex="-5">  Think
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/think/unhappy-newyear/'
+        tabindex="-6">  祝你春节不快乐</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/think/1st-anniversary-of-listening-to-tayu-lo/'
+        tabindex="-7">  纪念听罗大佑一周年</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/think/music-history/'
+        tabindex="-8">  记我的听歌历程</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/think/my-first-post/'
+        tabindex="-9">  My first post</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/server/'
+    tabindex="-10">  server
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/traefik-simple-guide/'
+        tabindex="-11">  Docker/NixOS使用traefik实现简单反代</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/caddy-simple-guide/'
+        tabindex="-12">  Debian/NixOS使用caddy实现简单反代</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/use-tebi-build-nixos-cache-server/'
+        tabindex="-13">  使用tebi作为s3,搭建nix缓存服务器</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/cloudfront-cdn-acme/'
+        tabindex="-14">  cloudfront配置小鸡cdn并使用acme.sh自动获取证书</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/build-terraria-tshock/'
+        tabindex="-15">  搭建泰拉瑞亚Tshock服务器(强制开荒)</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/build-hugo/'
+        tabindex="-16">  基于Arch Linux搭建hugo博客</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/hackintosh/'
+    tabindex="-17">  Hackintosh
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/hackintosh/x79/'
+        tabindex="-18">  记录一次杂牌x79黑苹果</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/pve/'
+    tabindex="-19">  PVE
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/pve/pve-hackintosh/'
+        tabindex="-20">  x79上pve黑苹果</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/pve/build-pve/'
+        tabindex="-21">  x79搭建pve并开启硬件直通</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/k3s/'
+    tabindex="-22">  K3S
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/k3s/develop-rancher/'
+        tabindex="-23">  k3s部署rancher</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/k3s/kubevirt-manager/'
+        tabindex="-24">  k3s部署kubevirt-manager</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/linux-trip/'
+    tabindex="-25">  Linux Trip
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/7/'
+        tabindex="-26">  第七回，探FreeBSD路途远，坎坷荆棘勇前行</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/6/'
+        tabindex="-27">  第六回，弃Linux投FreeBSD，稳如磐石路更宽</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/5/'
+        tabindex="-28">  第五回，渐觉Arch无力持，转投NixOS获新生</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a class="selected"href='https://blog.0pt.icu/posts/linux-trip/4/'
+        tabindex="-29">  第四回，舍KDE抱Hyprland，新境界追求更添</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/3/'
+        tabindex="-30">  第三回，探幽寻秘APPS新，解CONFIG奇趣入眼前</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/2/'
+        tabindex="-31">  第二回，初入KDE虚界间，安装APPS耀目光</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/1/'
+        tabindex="-32">  第一回，弃window渐入轻盈境，装Arch走入坑深底</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+    </ul>
+  </li><li class="folder"><span>
+      
+      <a href='https://blog.0pt.icu/about/'
+        tabindex="-33">  ABOUT
+      </a>
+    </span>
+
+    <ul>
+      <li class="file">
+        <span>└──
+          <a href='https://blog.0pt.icu/about/about2/'
+            tabindex="-34">  ABOUT2</a>
+        </span>
+      </li><li class="file">
+        <span>└──
+          <a href='https://blog.0pt.icu/about/about1/'
+            tabindex="-35">  ABOUT1</a>
+        </span>
+      </li>
+        
+    </ul>
+  </li><li class="folder"><span>
+      
+      <a href='https://blog.0pt.icu/links/'
+        tabindex="-36">  LINKS
+      </a>
+    </span>
+
+    <ul>
+      <li class="file">
+        <span>└──
+          <a href='https://blog.0pt.icu/links/link/'
+            tabindex="-37">  LINKS</a>
+        </span>
+      </li>
+        
+    </ul>
+  </li>
+</ul>
+</div>
+    <div class="viewer page" id="viewer" tabindex="0">
+      <div class="tab">
+<ul id="tabs">
+</ul>
+
+
+</div>
+      <div class="content" id="content"><h1 id="di-si-hui-she-kdebao-hyprland-xin-jing-jie-zhui-qiu-geng-tian">第四回，舍KDE抱Hyprland，新境界追求更添</h1>
+<p>2024-03-01
+<img src="https://img.0pt.icu/learn/linux-trip/4/mydesktop.jpg" alt="" /></p>
+<p>我目前的桌面效果。</p>
+<h1 id="0-wei-shen-me-bu-yong-kde">0.为什么不用KDE</h1>
+<p>1.没有理由的不喜欢<code>KDE</code>。</p>
+<p>2.感觉<code>KDE</code>的很多功能我根本没有用到，有点臃肿。</p>
+<p>经过考量，选择<code>Hyprland</code>这个窗口管理器。</p>
+<h1 id="1-an-zhuang">1.安装</h1>
+<p>先安装一些应用。</p>
+<pre data-lang="bash" style="background-color:#212733;color:#ccc9c2;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffd580;">eos-update </span><span style="font-style:italic;color:#5c6773;"># EndeavourOS的更新命令
+</span><span style="color:#ffd580;">sudo</span><span> pacman</span><span style="color:#ffcc66;"> -S</span><span> paru 
+</span><span style="color:#ffd580;">paru</span><span style="color:#ffcc66;"> -S</span><span> wayland hyprland dunst sddm rofi waybar kitty brave zsh 
+</span><span style="font-style:italic;color:#5c6773;"># 理论上只要这么多应用就够，有其他需求自行安装
+</span><span style="color:#ffd580;">paru</span><span style="color:#ffcc66;"> -S</span><span> yazi ffmpegthumbnailer unarchiver jq poppler fd ripgrep fzf zoxide 
+</span><span style="font-style:italic;color:#5c6773;"># yazi 后面的包都是给yazi增强文件支持
+</span></code></pre>
+<p>需要的应用配置都在第三回了，需要的回去看。</p>
+<h1 id="2-pei-zhi">2.配置</h1>
+<p>基本配置，创建~/ .config/hypr/hyprland.conf</p>
+<pre data-lang="hyprland.conf" style="background-color:#212733;color:#ccc9c2;" class="language-hyprland.conf "><code class="language-hyprland.conf" data-lang="hyprland.conf"><span>########################################################################################
+</span><span>AUTOGENERATED HYPR CONFIG.
+</span><span>PLEASE USE THE CONFIG PROVIDED IN THE GIT REPO /examples/hypr.conf AND EDIT IT,
+</span><span>OR EDIT THIS ONE ACCORDING TO THE WIKI INSTRUCTIONS.
+</span><span>########################################################################################
+</span><span>
+</span><span>autogenerated = 1 # remove this line to remove the warning
+</span><span>
+</span><span># See https://wiki.hyprland.org/Configuring/Monitors/
+</span><span>monitor=,preferred,auto,auto
+</span><span>
+</span><span>
+</span><span># See https://wiki.hyprland.org/Configuring/Keywords/ for more
+</span><span>
+</span><span># Execute your favorite apps at launch
+</span><span>exec-once = waybar &amp; hyprpaper 
+</span><span>
+</span><span># Source a file (multi-file configs)
+</span><span># source = ~/.config/hypr/myColors.conf
+</span><span>
+</span><span>
+</span><span># Some default env vars.
+</span><span>env = XCURSOR_SIZE,24
+</span><span>env = QT_QPA_PLATFORMTHEME,wayland
+</span><span>
+</span><span># For all categories, see https://wiki.hyprland.org/Configuring/Variables/
+</span><span>input {
+</span><span>    kb_layout = us
+</span><span>    kb_variant =
+</span><span>    kb_model =
+</span><span>    kb_options =
+</span><span>    kb_rules =
+</span><span>
+</span><span>    follow_mouse = 1
+</span><span>
+</span><span>    touchpad {
+</span><span>        natural_scroll = no
+</span><span>    }
+</span><span>
+</span><span>    sensitivity = 0 # -1.0 - 1.0, 0 means no modification.
+</span><span>}
+</span><span>
+</span><span>general {
+</span><span>    # See https://wiki.hyprland.org/Configuring/Variables/ for more
+</span><span>
+</span><span>    gaps_in = 5
+</span><span>    gaps_out = 20
+</span><span>    border_size = 2
+</span><span>    col.active_border = rgba(33ccffee) rgba(00ff99ee) 45deg
+</span><span>    col.inactive_border = rgba(595959aa)
+</span><span>
+</span><span>    layout = dwindle
+</span><span>
+</span><span>    # Please see https://wiki.hyprland.org/Configuring/Tearing/ before you turn this on
+</span><span>    allow_tearing = false
+</span><span>}
+</span><span>
+</span><span>decoration {
+</span><span>    # See https://wiki.hyprland.org/Configuring/Variables/ for more
+</span><span>
+</span><span>    active_opacity = 1
+</span><span>    inactive_opacity = 0.9
+</span><span>    fullscreen_opacity = 1
+</span><span>
+</span><span>    rounding = 10
+</span><span>    # blur = false
+</span><span>    drop_shadow = false
+</span><span>    # blur_size = 7
+</span><span>    # blur_passes = 2
+</span><span>    # blur_new_optimizations = on
+</span><span>}
+</span><span>
+</span><span>animations {
+</span><span>    enabled = yes
+</span><span>    # Some default animations, see https://wiki.hyprland.org/Configuring/Animations/ for more
+</span><span>
+</span><span>    bezier = md3_decel, 0.05, 0.7, 0.1, 1
+</span><span>    animation = windowsIn, 1, 6, md3_decel, slide
+</span><span>    animation = windowsOut, 1,6, md3_decel, slide
+</span><span>    animation = windowsMove, 1,6, md3_decel, slide
+</span><span>    animation = fade, 1, 10, md3_decel
+</span><span>    animation = workspaces, 1, 7, md3_decel,slide
+</span><span>    animation = specialWorkspace, 1, 8, md3_decel, slide
+</span><span>}
+</span><span>
+</span><span>dwindle {
+</span><span>    # See https://wiki.hyprland.org/Configuring/Dwindle-Layout/ for more
+</span><span>    pseudotile = yes # master switch for pseudotiling. Enabling is bound to mainMod + P in the keybinds section below
+</span><span>    preserve_split = yes # you probably want this
+</span><span>}
+</span><span>
+</span><span>master {
+</span><span>    # See https://wiki.hyprland.org/Configuring/Master-Layout/ for more
+</span><span>    new_is_master = true
+</span><span>}
+</span><span>
+</span><span>gestures {
+</span><span>    # See https://wiki.hyprland.org/Configuring/Variables/ for more
+</span><span>    workspace_swipe = off
+</span><span>}
+</span><span>
+</span><span>misc {
+</span><span>    # See https://wiki.hyprland.org/Configuring/Variables/ for more
+</span><span>    vfr = true
+</span><span>}
+</span><span>
+</span><span># Example per-device config
+</span><span># See https://wiki.hyprland.org/Configuring/Keywords/#executing for more
+</span><span>device:epic-mouse-v1 {
+</span><span>    sensitivity = -0.5
+</span><span>}
+</span><span>
+</span><span># Example windowrule v1
+</span><span># windowrule = float, ^(kitty)$
+</span><span># Example windowrule v2
+</span><span># windowrulev2 = float,class:^(kitty)$,title:^(kitty)$
+</span><span># See https://wiki.hyprland.org/Configuring/Window-Rules/ for more
+</span><span>windowrulev2 = nomaximizerequest, class:.* # You&#39;ll probably like this.
+</span><span>
+</span><span>
+</span><span># See https://wiki.hyprland.org/Configuring/Keywords/ for more
+</span><span># Set programs that you use
+</span><span>$terminal = kitty
+</span><span>$fileManager = yazi
+</span><span>$menu = rofi --show drun
+</span><span>$browser = brave
+</span><span>$mainMod = SUPER
+</span><span>
+</span><span># Example binds, see https://wiki.hyprland.org/Configuring/Binds/ for more
+</span><span>bind = $mainMod, Q, exec, $terminal
+</span><span>bind = $mainMod, C, killactive, 
+</span><span>bind = $mainMod, M, exit, 
+</span><span>bind = $mainMod, W, exec, $browser
+</span><span>bind = $mainMod, E, exec, $fileManager
+</span><span>bind = $mainMod, V, togglefloating, 
+</span><span>bind = $mainMod, R, exec, $menu
+</span><span>bind = $mainMod, P, pseudo, # dwindle
+</span><span>bind = $mainMod, J, togglesplit, # dwindle
+</span><span>
+</span><span>bind = , XF86MonBrightnessUp, exec, changebrightness up
+</span><span>bind = , XF86MonBrightnessDown, exec, changebrightness down
+</span><span>bind = , XF86AudioPrev, exec, playerctl prev
+</span><span>bind = , XF86AudioNext, exec, playerctl next
+</span><span>bind = , XF86AudioPlay, exec, playerctl play-pause
+</span><span>bind = , XF86AudioRaiseVolume, exec, changevolume up
+</span><span>bind = , XF86AudioLowerVolume, exec, changevolume down
+</span><span>bind = , XF86AudioMute, exec, changevolume mute
+</span><span>
+</span><span># Move focus with mainMod + arrow keys
+</span><span>bind = $mainMod, h, movefocus, l
+</span><span>bind = $mainMod, l, movefocus, r
+</span><span>bind = $mainMod, k, movefocus, u
+</span><span>bind = $mainMod, j, movefocus, d
+</span><span>
+</span><span># Switch workspaces with mainMod + [0-9]
+</span><span>bind = $mainMod, 1, workspace, 1
+</span><span>bind = $mainMod, 2, workspace, 2
+</span><span>bind = $mainMod, 3, workspace, 3
+</span><span>bind = $mainMod, 4, workspace, 4
+</span><span>bind = $mainMod, 5, workspace, 5
+</span><span>bind = $mainMod, 6, workspace, 6
+</span><span>bind = $mainMod, 7, workspace, 7
+</span><span>bind = $mainMod, 8, workspace, 8
+</span><span>bind = $mainMod, 9, workspace, 9
+</span><span>bind = $mainMod, 0, workspace, 10
+</span><span>
+</span><span># Switch between most recent workspace
+</span><span>bind = $mainMod, TAB, workspace, previous
+</span><span>
+</span><span># Move active window to a workspace with mainMod + SHIFT + [0-9]
+</span><span>bind = $mainMod SHIFT, 1, movetoworkspace, 1
+</span><span>bind = $mainMod SHIFT, 2, movetoworkspace, 2
+</span><span>bind = $mainMod SHIFT, 3, movetoworkspace, 3
+</span><span>bind = $mainMod SHIFT, 4, movetoworkspace, 4
+</span><span>bind = $mainMod SHIFT, 5, movetoworkspace, 5
+</span><span>bind = $mainMod SHIFT, 6, movetoworkspace, 6
+</span><span>bind = $mainMod SHIFT, 7, movetoworkspace, 7
+</span><span>bind = $mainMod SHIFT, 8, movetoworkspace, 8
+</span><span>bind = $mainMod SHIFT, 9, movetoworkspace, 9
+</span><span>bind = $mainMod SHIFT, 0, movetoworkspace, 10
+</span><span>
+</span><span># Scroll through existing workspaces with mainMod + scroll
+</span><span>bind = $mainMod, mouse_down, workspace, e+1
+</span><span>bind = $mainMod, mouse_up, workspace, e-1
+</span><span>
+</span><span># Move/resize windows with mainMod + LMB/RMB and dragging
+</span><span>bindm = $mainMod, mouse:272, movewindow
+</span><span>bindm = $mainMod, mouse:273, resizewindow
+</span></code></pre>
+<p>重启后，在登录界面sddm中的会话，选hyprland而不是plasma。</p>
+<p>按<code>WIN</code>+<code>ENTER</code>键，开启<code>kitty</code>终端。</p>
+<h2 id="xie-zai-kdezhuo-mian-huan-jing-ke-xuan">卸载KDE桌面环境(可选)</h2>
+<p>如果想卸载KDE，可以执行以下命令。</p>
+<pre data-lang="bash" style="background-color:#212733;color:#ccc9c2;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffd580;">paru</span><span style="color:#ffcc66;"> -Rns</span><span> plasma
+</span><span style="color:#ffd580;">paru</span><span style="color:#ffcc66;"> -Rns</span><span> eos-plasma-sddm-config eos-sddm-theme 
+</span></code></pre>
+<h1 id="3-gua-pei-ping-mu">3.适配屏幕</h1>
+<pre data-lang="bash" style="background-color:#212733;color:#ccc9c2;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffd580;">hyprctl</span><span> monitors all
+</span></code></pre>
+<p>列出可用屏幕。</p>
+<p>我的输出示例。</p>
+<pre data-lang="bash" style="background-color:#212733;color:#ccc9c2;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffd580;">hyprctl</span><span> monitors all        
+</span><span>
+</span><span style="color:#ffd580;">Monitor</span><span> eDP-2 (ID 0)</span><span style="color:#f28779;">:
+</span><span>    </span><span style="color:#ffd580;">2560x1440@165.00000</span><span> at 0x0
+</span><span>    </span><span style="color:#ffd580;">description:</span><span> (null) (</span><span style="color:#ffd580;">null</span><span>) (eDP-2)
+</span><span>    </span><span style="color:#ffd580;">make: 
+</span><span>    </span><span style="color:#ffd580;">model: 
+</span><span>    </span><span style="color:#ffd580;">serial: 
+</span><span>    </span><span style="color:#ffd580;">active</span><span> workspace: 2 (2)
+</span><span>    </span><span style="color:#ffd580;">special</span><span> workspace: 0 ()
+</span><span>    </span><span style="color:#ffd580;">reserved:</span><span> 0 35 0 0
+</span><span>    </span><span style="color:#ffd580;">scale:</span><span> 1.00
+</span><span>    </span><span style="color:#ffd580;">transform:</span><span> 0
+</span><span>    </span><span style="color:#ffd580;">focused:</span><span> yes
+</span><span>    </span><span style="color:#ffd580;">dpmsStatus:</span><span> 1
+</span><span>    </span><span style="color:#ffd580;">vrr:</span><span> 0
+</span><span>    </span><span style="color:#ffd580;">activelyTearing:</span><span> false
+</span></code></pre>
+<p>在<code>~/.config/hypr/hyprland.conf</code>下添加下面配置：</p>
+<pre data-lang="hyprland.conf" style="background-color:#212733;color:#ccc9c2;" class="language-hyprland.conf "><code class="language-hyprland.conf" data-lang="hyprland.conf"><span># See https://wiki.hyprland.org/Configuring/Monitors/
+</span><span>monitor=eDP-2,2560x1440@165,0x0
+</span></code></pre>
+<h1 id="4-nvidiazhi-chi">4.NVIDIA支持</h1>
+<p>在<code>~/.config/hypr/hyprland.conf</code>下添加下面配置：</p>
+<pre data-lang="hyprland.conf" style="background-color:#212733;color:#ccc9c2;" class="language-hyprland.conf "><code class="language-hyprland.conf" data-lang="hyprland.conf"><span># See https://wiki.hyprland.org/Nvidia/ for more
+</span><span>env = LIBVA_DRIVER_NAME,nvidia
+</span><span>env = XDG_SESSION_TYPE,wayland
+</span><span>env = GBM_BACKEND,nvidia-drm
+</span><span>env = __GLX_VENDOR_LIBRARY_NAME,nvidia
+</span><span>env = WLR_NO_HARDWARE_CURSORS,1
+</span></code></pre>
+<h1 id="5-ping-mu-gong-xiang-zhi-chi">5.屏幕共享支持</h1>
+<pre data-lang="bash" style="background-color:#212733;color:#ccc9c2;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffd580;">paru</span><span style="color:#ffcc66;"> -S</span><span> xdg-desktop-portal-hyprland pipewire wireplumber
+</span></code></pre>
+<p>安装完成后，在<code>~/.config/hypr/hyprland.conf</code>下添加下面配置：</p>
+<pre data-lang="hyprland.conf" style="background-color:#212733;color:#ccc9c2;" class="language-hyprland.conf "><code class="language-hyprland.conf" data-lang="hyprland.conf"><span># See https://wiki.hyprland.org/Useful-Utilities/Screen-Sharing/
+</span><span>exec-once=dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP
+</span></code></pre>
+<h1 id="6-she-zhi-bi-zhi">6.设置壁纸</h1>
+<pre data-lang="bash" style="background-color:#212733;color:#ccc9c2;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#ffd580;">paru</span><span style="color:#ffcc66;"> -S</span><span> hyprpaper
+</span></code></pre>
+<p>我使用<code>hyprpaper</code>工具来设置壁纸。</p>
+<p>安装完成后，创建<code>~/.config/hypr/hyprpaper.conf</code>添加下面配置：</p>
+<pre data-lang="hyprland.conf" style="background-color:#212733;color:#ccc9c2;" class="language-hyprland.conf "><code class="language-hyprland.conf" data-lang="hyprland.conf"><span># See https://wiki.hyprland.org/Useful-Utilities/Wallpapers/ for more
+</span><span>preload = ~/.config/hypr/wallpaper.jpg
+</span><span>wallpaper = eDP-2,~/.config/hypr/wallpaper.jpg 
+</span><span># eDP-2改为你显示器的参数，在配置显示器适配有提
+</span><span>
+</span><span># enable splash text rendering over the wallpaper
+</span><span>splash = true
+</span><span>
+</span><span># fully disable ipc
+</span><span>ipc = off 
+</span></code></pre>
+<p><code>preload</code>改成图片路径，<code>wallpaper</code>改成显示器,图片路径。（我的显示器是eDP-2,我的图片路径是~/.config/hypr/wallpaper.jpg）</p>
+<h1 id="7-jie-tu">7.截图</h1>
+<pre data-lang="zsh" style="background-color:#212733;color:#ccc9c2;" class="language-zsh "><code class="language-zsh" data-lang="zsh"><span style="color:#ffd580;">paru</span><span style="color:#ffcc66;"> -S</span><span> hyprshot
+</span></code></pre>
+<p>然后在<code>hyprland.conf</code>添加快捷键。</p>
+<pre data-lang="hyprland.conf" style="background-color:#212733;color:#ccc9c2;" class="language-hyprland.conf "><code class="language-hyprland.conf" data-lang="hyprland.conf"><span>bind = $mainMod SHIFT, s, exec, hyprshot -m region
+</span></code></pre>
+<h1 id="8-jian-tie-ban">8.剪贴板</h1>
+<p>使用copyQ。</p>
+<pre data-lang="zsh" style="background-color:#212733;color:#ccc9c2;" class="language-zsh "><code class="language-zsh" data-lang="zsh"><span style="color:#ffd580;">paru</span><span style="color:#ffcc66;"> -S</span><span> copyQ
+</span></code></pre>
+<p>然后在<code>hyprland.conf</code>添加开机启动。</p>
+<pre data-lang="hyprland.conf" style="background-color:#212733;color:#ccc9c2;" class="language-hyprland.conf "><code class="language-hyprland.conf" data-lang="hyprland.conf"><span>exec-once = waybar &amp; fcitx5 &amp; hyprpaper &amp; copyq --start-server
+</span></code></pre>
+<h1 id="9-qi-ta">9.其他</h1>
+<p><a href="https://wiki.hyprland.org/">https://wiki.hyprland.org/</a></p>
+<p>需要更多配置请参考官方文档</p>
+
+      </div>
+    </div>
+    <div class="prompt" id="terminal"><input
+    type="text"
+    id="setter"
+    onkeydown="writeit(this, event);moveIt(this.value.length, event)"
+    onchange="writeit(this, event)"
+    onkeyup="writeit(this, event)"
+    onkeypress="writeit(this, event);"
+    >
+<label for="setter" id="writer"> </label><b class="cursor" id="cursor"></b></div>
+  </main>
+</body>
+</html>
