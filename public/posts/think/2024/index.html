@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ATP</title>
+     <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js" integrity="sha256-WCzAhd2P6gRJF9Hv3oOOd+hFJi/QJbv+Azn4CGB8gfY=" crossorigin="anonymous"></script>
+     <script src="/js/index.js"></script>
+     <script src="/js/prompt.js"></script>
+     <script src="/js/keyboard.js"></script>
+     <script src="/js/tab.js"></script>
+     <script src="/js/commands.js"></script>
+     <script src="/js/config.js"></script><link rel="stylesheet" href="/css/base.css"><link rel="stylesheet" href="/css/page.css"></head>
+<body onkeydown='exec(event)'>
+  <header>
+      <h1>ATP</h1>
+  </header>
+  <main>
+    <div class="files" id="files" tabindex="0">
+<ul><li class="file">
+    <span><a href='https://blog.0pt.icu/readme/'
+      tabindex="-2">  README</a></span>
+  </li><li class="file">
+    <span><a href='https://blog.0pt.icu/rss/'
+      tabindex="-3">  RSS</a></span>
+  </li><li class="folder"><span>
+      
+      <a href='https://blog.0pt.icu/posts/'
+        tabindex="-4">  Posts
+      </a>
+    </span>
+
+    <ul>
+      
+        
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/hackintosh/'
+    tabindex="-5">  Hackintosh
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/hackintosh/x79/'
+        tabindex="-6">  记录一次杂牌x79黑苹果</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/linux-trip/'
+    tabindex="-7">  Linux Trip
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/7/'
+        tabindex="-8">  第七回，探FreeBSD路途远，坎坷荆棘勇前行</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/6/'
+        tabindex="-9">  第六回，弃Linux投FreeBSD，稳如磐石路更宽</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/5/'
+        tabindex="-10">  第五回，渐觉Arch无力持，转投NixOS获新生</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/4/'
+        tabindex="-11">  第四回，舍KDE抱Hyprland，新境界追求更添</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/3/'
+        tabindex="-12">  第三回，探幽寻秘APPS新，解CONFIG奇趣入眼前</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/2/'
+        tabindex="-13">  第二回，初入KDE虚界间，安装APPS耀目光</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/linux-trip/1/'
+        tabindex="-14">  第一回，弃window渐入轻盈境，装Arch走入坑深底</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/k3s/'
+    tabindex="-15">  K3S
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/k3s/develop-rancher/'
+        tabindex="-16">  k3s部署rancher</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/k3s/kubevirt-manager/'
+        tabindex="-17">  k3s部署kubevirt-manager</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/pve/'
+    tabindex="-18">  PVE
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/pve/pve-hackintosh/'
+        tabindex="-19">  x79上pve黑苹果</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/pve/build-pve/'
+        tabindex="-20">  x79搭建pve并开启硬件直通</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/think/'
+    tabindex="-21">  Think
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a class="selected"href='https://blog.0pt.icu/posts/think/2024/'
+        tabindex="-22">  2024</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/think/unhappy-newyear/'
+        tabindex="-23">  祝你春节不快乐</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/think/1st-anniversary-of-listening-to-tayu-lo/'
+        tabindex="-24">  纪念听罗大佑一周年</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/think/music-history/'
+        tabindex="-25">  记我的听歌历程</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/think/my-first-post/'
+        tabindex="-26">  My first post</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+          
+          
+<li>
+<span>└──
+  
+  <a href='https://blog.0pt.icu/posts/server/'
+    tabindex="-27">  server
+  </a>
+</span>
+
+
+  <ul>
+  <li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/traefik-simple-guide/'
+        tabindex="-28">  Docker/NixOS使用traefik实现简单反代</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/caddy-simple-guide/'
+        tabindex="-29">  Debian/NixOS使用caddy实现简单反代</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/use-tebi-build-nixos-cache-server/'
+        tabindex="-30">  使用tebi作为s3,搭建nix缓存服务器</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/cloudfront-cdn-acme/'
+        tabindex="-31">  cloudfront配置小鸡cdn并使用acme.sh自动获取证书</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/build-terraria-tshock/'
+        tabindex="-32">  搭建泰拉瑞亚Tshock服务器(强制开荒)</a>
+    </span>
+  </li><li class="file">
+    <span>└──
+      <a href='https://blog.0pt.icu/posts/server/build-hugo/'
+        tabindex="-33">  基于Arch Linux搭建hugo博客</a>
+    </span>
+  </li></ul>
+</li>
+
+        
+    </ul>
+  </li><li class="folder"><span>
+      
+      <a href='https://blog.0pt.icu/about/'
+        tabindex="-34">  ABOUT
+      </a>
+    </span>
+
+    <ul>
+      <li class="file">
+        <span>└──
+          <a href='https://blog.0pt.icu/about/about2/'
+            tabindex="-35">  ABOUT2</a>
+        </span>
+      </li><li class="file">
+        <span>└──
+          <a href='https://blog.0pt.icu/about/about1/'
+            tabindex="-36">  ABOUT1</a>
+        </span>
+      </li>
+        
+    </ul>
+  </li><li class="folder"><span>
+      
+      <a href='https://blog.0pt.icu/links/'
+        tabindex="-37">  LINKS
+      </a>
+    </span>
+
+    <ul>
+      <li class="file">
+        <span>└──
+          <a href='https://blog.0pt.icu/links/link/'
+            tabindex="-38">  LINKS</a>
+        </span>
+      </li>
+        
+    </ul>
+  </li>
+</ul>
+</div>
+    <div class="viewer page" id="viewer" tabindex="0">
+      <div class="tab">
+<ul id="tabs">
+</ul>
+
+
+</div>
+      <div class="content" id="content"><h1 id="2024">2024</h1>
+<h3 id="1yue">1月</h3>
+<p>可能是考试考的无聊了,我对窗口管理器产生兴趣，因为我觉得，桌面环境是冗杂的，强塞给我了许多我用不到的东西。
+之前第一次听说窗口管理器这个概念,还是我从一个朋友那边听说的<code>dwm</code>，他将其作为c语言源码读物，并且跟我畅想自己如何在原来的基础上进行改进，比如集成ai交互功能。
+在那之后,我一直使用的是<code>Endeavour OS</code>与<code>Garuda</code>这俩个<code>Arch Linux</code> 发行版自带的<code>KDE</code>桌面环境，这俩个发行版提供了一个美化过的<code>KDE</code>桌面，尤其是<code>Garuda</code>，自带的美化<code>KDE</code>看起来非常帅气。
+<code>KDE</code>是令人尊敬的,好用的桌面环境，但正如之前我批判<code>Windows</code>的桌面比较臃肿一样，我渐渐觉得<code>KDE</code>也出现这种问题。当我下载<code>KDE</code>的时候，他总是会把<code>KDE</code>生态的一些软件一起捆绑安装了。
+我在一次网络冲浪中偶然得知了窗口管理器,之前那位朋友说的<code>dwm</code>的时候，我其实压根没记住窗口管理器。当我发现这个东西利用几个快捷键，可以实现令人惊叹的窗口管理效率。
+在传统桌面环境中,不仅是桌面整体冗杂，而且开一个软件，将其调整为合适的窗口，都需要鼠标去点击。而窗口管理器，能直接通过几个简单快捷键的去实现这个功能。
+于是,我决定尝试一下窗口管理器。我考量了许多的窗口管理器，最后决定选用<code>Hyprland</code>。
+后面发现使用窗口管理器,还需要与其他组件相配合，比如状态栏(<code>waybar</code>)，比如菜单(<code>rofi</code>)，顺便把一直以来的shell从<code>fish</code>换成<code>zsh</code>。而且，这些全部都是高度自定义的。自然而然的滚去写配置文件了。
+配置文件配的令我痛苦,参考很多别人的配置，阅读官方文档，终于是配出了一个差强人意的Hyprland窗口管理器生态。直接在我的<code>Endeavour OS</code>上面把<code>KDE</code>卸载，安装上了<code>Hyprland</code>。
+同时,我的建站差不多也是这个时候完成。我使用<code>debian12</code>作为我的服务器系统，<code>1panel</code>作为管理面板，<code>nginx</code>作为反向代理方案，建了一些有意思的东西，并用上了<code>cloudfront</code>的cdn。
+在我另一位朋友的建议下,我进行了去<code>Google</code>化的工作，把所有的用<code>Google</code>注册的账号进行焚烧，换成<code>disroot</code>与<code>murena</code>邮箱，同时，也逃离<code>cloudflare</code>，把我的域名DNS迁移到<code>Netlify</code>上面。</p>
+<h3 id="2yue">2月</h3>
+<p>在家憋<code>neovim</code>的配置,非常魔怔。
+我对<code>NixOS</code>感兴趣,也是偶然听说的，秉承着每一个著名Linux的发行版，都要过去品鉴一下的想法，去了解了一下<code>NixOS</code>。感觉函数声明式配置整个系统是我的梦想中的安装系统的方式，果断入坑。反思了一下之前<code>Arch Linux</code>的使用经历，安装软件多，导致自己都不知道装了哪些东西，问题偶发，重装更是家常便饭。如果系统直接由配置文件进行设置，而且是原子性的，那我的系统会十分的安全透明，而且也是高度自定义。
+经过之前配置<code>Hyprland</code>的痛苦经历,这次直接学聪明了，直接抄了一个别人非常完善的配置，在此基础上进行修改。</p>
+<h3 id="3yue">3月</h3>
+<p>先购置了一台二手手机,进行了一波刷机。再在<code>Virtual Box</code>上面测试我的nixos配置。测试的差不多之后，直接把<code>Arch Linux</code>卸载了，换装<code>NixOS</code>。经过事后来看，<code>NixOS</code>稳定性极佳，在2024年剩下的时间里，除了某些不可抗拒的天灾人怨，<code>NixOS</code>一直运行良好。
+从此,我的硬盘结构为一个512G的m2固态专门装一个<code>NixOS</code>，一个2t的m2固体拿来做<code>Ventoy</code>战斗盘，我的<code>Windows</code>封装为虚拟磁盘和linux镜像文件，都由<code>Ventoy</code>进行引导。</p>
+<h3 id="4yue">4月</h3>
+<p>开始研究分体键盘,之前偶然从某个up主的技术视频里面，看到了他所使用的，符合人体工程学的分体键盘，在购物平台搜索无法找到，后面发现这种键盘是自己制作的。资料全部开源。我选择了最简单的<code>Corne</code>分体键盘作为我的入门之作。根据<code>corne</code>官方和别人教学视频给出的物料单，我购置了键盘的pcb板，二极管，led灯，微动开关，耳机孔，主控板，屏幕，还有电烙铁与一系列的焊接工具，自己尝试焊接制作分体键盘。
+这是我第一次焊接,我预料到了我会问题频发，又买了一些练习用的pcb板和电阻以供练习。在练习的差不多后，我惊讶的发现，我的主控板的针脚多出来一对，我当时完全不知道怎么处理，只是想着确定一下针脚信号的，把多出来的一对针脚剪掉，但是我尝试了我所有的工具，无法剪断针脚，于是我把针脚用力掰弯，勉强可以焊接。但是，当我把物料都焊接到键盘pcb板的时候才发现，主控在我的摧残之下，已经坏掉了。不仅是失败了，还直接损失了百来块。
+了解其他的终端编辑器,特别是<code>Helix</code>，我提出了这样一个观点:"现代的工具应该提供开箱即用和简单化的配置，<code>vscode</code>就是这样一个典范"</p>
+<h3 id="5yue">5月</h3>
+<p>由于想尝试不同的<code>Linux</code>发行版,又不想在虚拟机上面体验(我觉得虚拟机有点延迟和卡顿，当时还没用上<code>qemu</code>，如果用上了就不会这么认为了)，我想起了<code>Ventoy</code>可以引导linux的虚拟磁盘。便开始制作各种linux的虚拟磁盘，这个叫做<code>vtoy</code>，我先后制作了:
+<code>UOS</code>(刚开始很看好,大名鼎鼎，后面发现正常用需要激活，得花钱购买)
+<code>Deepin</code>(<code>DEE</code>桌面环境非常好,基本是<code>UOS</code>的免费版，linux内核有点旧，我安装nvidia驱动的时候还遇到非常多的问题但后面全部制服了，应用商店看起来国产生态很不错，有些软件还是会有问题，不过都在慢慢改进，作为一个办公系统还是不错的，我后面把他当作我的b站播放器了)
+<code>Kali Linux</code>(大名鼎鼎,但是最新镜像制作出来的<code>vtoy</code>用引导，进入系统会非常卡顿，会卡在加载logo大概2分钟，用旧版本的感觉又少了点什么东西，不舒服)
+<code>Fedora</code>(我不装Nvidia闭源驱动,就能正常驱动我的显卡，感觉非常强大，这在之前无法想象)。
+<code>Ubuntu</code>(这是我第一次用<code>Ubuntu</code>,没什么感觉，接外接屏幕会偶尔出现屏幕撕裂)
+<code>Debian12</code>(这个直接跟你说<code>Debian12</code>不支持)
+<code>Athena OS</code>(另一个网络安全的系统,是基于<code>Black Arch</code>的软件源，装的是arch的版本，这个直接无法引导)
+<code>CachyOS</code>(一切正常)</p>
+<h3 id="6-7yue">6,7月</h3>
+<p>我的另一个朋友对硬件比较专业,我叫上他再战分体键盘。经过他的指导，还有他帮助我打印pcb板，3D打印分体键盘外壳。我这回买对了主控板，直接成功做出来2副分体键盘，1副自用，1副送朋友了。
+用了分体键盘,感觉非常好用。只是比较遗憾这种东西没有键盘厂家去做这样的小众产品。
+继续研究Unix文化,发现了<code>FreeBSD</code>，大大扩展了我的眼界。我发现我笔记本无法正常安装<code>FreeBSD</code>桌面(xorg有问题，连带着wayland也有问题，以后面的视角来看，是自己太年轻了，其实是可以解决的)，于是在虚拟机和从同学那里借来的老式笔记本上面安装测试。</p>
+<h3 id="8yue">8月</h3>
+<p>研究了一下ctf相关的东西。</p>
+<h3 id="9yue">9月</h3>
+<p>在我的x79平台上面安装<code>PVE</code>,进行研究硬件直通，以此，我成功的把虚拟机里的显示信号通过显卡输出到我的显示器上面。非常高兴，我直接安装<code>FreeBSD</code>，参考我之前研究的配置，配好了<code>Hyprland</code>,<code>waybar</code>,<code>rofi</code>,<code>neovim</code>等工具，用了一段时间发现，鼠标会有拖影，<code>Hyprland</code>会闪退。
+然后,在<code>PVE</code>虚拟机里面安装黑苹果，特地买了显卡，结果发现无法直通视频信号，原来是虚拟借机必须启用<code>UEFI</code>，我x79是<code>Legacy Bios</code>，显卡也不支持<code>UEFI</code>，于是给显卡刷了支持<code>UEFI</code>的<code>vbios</code>，结果发现显卡有点问题，本来应该是免驱卡无法免驱，于是又买了一个另外型号的免驱卡，结果依然不支持<code>UEFI</code>。</p>
+<h3 id="10yue">10月</h3>
+<p>送了同学一个x79板u,送前成功安装了一个黑苹果，结果体验发现，有些软件无法安装，推测cpu缺少指令集了。
+被黑苹果和<code>FreeBSD</code>整红温了,一气之下组了一个3.4L的核显itx。然后，成功制服了我的笔记本<code>FreeBSD</code>的xorg和wayland的问题。后面，给itx安装<code>Ventoy</code>,<code>黑苹果</code>和<code>NixOS</code>,十分喜爱。
+深入了解<code>FreeBSD</code>,发现之前自己被<code>Linux</code>下的苦难哲学所束缚，从之前的开源小将开始转变，用我的话说就是"差不多得了"。
+认识到<code>Linux</code>社区有局限性。后面放弃除<code>NixOS</code>外的linux,转向<code>FreeBSD</code>作为主力系统使用。
+<code>FreeBSD</code>非常完美,我几乎是无缝从<code>Linux</code>迁移到<code>FreeBSD</code>，比<code>Ubuntu</code>软件源多，比<code>Arch Linux</code>稳定，摒弃了systemd，甚至有高效的linux兼容层。</p>
+<h3 id="11-12yue">11,12月</h3>
+<p>之前的<code>Astro</code>博客爆炸了,迁移为<code>zola</code>博客。
+将我的服务器从<code>Debian12</code>全部迁移为<code>NixOS</code>,使用配置文件来管理我的服务器，十分高效。反代也从<code>nginx</code>换成更加现代的<code>traefik</code>，工作的十分正常和成功。
+申请并配置了一手<code>DN42</code>。</p>
+
+      </div>
+    </div>
+    <div class="prompt" id="terminal"><input
+    type="text"
+    id="setter"
+    onkeydown="writeit(this, event);moveIt(this.value.length, event)"
+    onchange="writeit(this, event)"
+    onkeyup="writeit(this, event)"
+    onkeypress="writeit(this, event);"
+    >
+<label for="setter" id="writer"> </label><b class="cursor" id="cursor"></b></div>
+  </main>
+</body>
+</html>

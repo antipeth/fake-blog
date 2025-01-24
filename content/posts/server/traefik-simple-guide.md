@@ -25,26 +25,26 @@ date = 2024-12-20
 先解释几条配置
 这个是docker启动traefik的基本配置,使用`command`传进去
 ```docker-compose.yml
-    command: 
+    command:
       - --api.insecure=true # 开启8080端口的webui界面，可以看到traefik可视化面板
       - --providers.docker=true # 开启监控docker容器
       - --providers.docker.exposedbydefault=false # 默认不自动暴露容器,隐藏此容器
 ```
 接下来是入口`entrypoints`,也使用`command`传进去,格式如下
 ```docker-compose.yml
-    command: 
+    command:
       - --entrypoints.<entrypoints-name-1>.address=:80
       - --entrypoints.<entrypoints-name-2>.address=:443
 ```
 定义监听的入口，对于反代来说，只需要监听`:80`和`:443`，也就是`http`和`https`的流量。将<entrypoints-name-1/2>自行替换成你想要的名字，如
 ```docker-compose.yml
-    command: 
+    command:
       - --entrypoints.http.address=:80
       - --entrypoints.https.address=:443
 ```
 或者
 ```docker-compose.yml
-    command: 
+    command:
       - --entrypoints.web.address=:80
       - --entrypoints.websecure.address=:443
 ```
@@ -63,7 +63,7 @@ services:
     # The official v3 Traefik docker image
     image: traefik:v3.2
     # Enables the web UI and tells Traefik to listen to docker
-    command: 
+    command:
       - --api.insecure=true
       - --providers.docker=true
       - --providers.docker.exposedbydefault=false # 默认不自动暴露容器,隐藏此容器
@@ -177,13 +177,13 @@ services:
     # The official v3 Traefik docker image
     image: traefik:v3.2
     # Enables the web UI and tells Traefik to listen to docker
-    command: 
+    command:
       - "--api.insecure=true"
       - "--providers.docker=true"
       - "--providers.docker.exposedbydefault=false" # 默认不自动暴露容器,隐藏此容器
       - "--entrypoints.websecure.address=:443"           # HTTPS 入口点
       - "--certificatesresolvers.myresolver.acme.tlschallenge=true" # 开启证书申请
-      - "--certificatesresolvers.myresolver.acme.email=0pt@disroot.org" # 你的邮箱
+      - "--certificatesresolvers.myresolver.acme.email=your@mail.com" # 你的邮箱
       - "--certificatesresolvers.myresolver.acme.storage=/letsencrypt/acme.json" # 自动生成的证书配置存在这个地方
     ports:
       - "443:443"
@@ -198,8 +198,7 @@ services:
     # - 下面是指定默认申请的证书，一般来说不需要这些配置，traefik会自动检测并申请tls证书
       # labels:
       # - "traefik.tls.stores.default.defaultgeneratedcert.resolver=myresolver" # 指定默认申请的resolver
-      # - "traefik.tls.stores.default.defaultgeneratedcert.domain.main=0pt.us.kg" # 指定主域名
-      # - "traefik.tls.stores.default.defaultgeneratedcert.domain.sans=example.org" # 指定证书申请的子域名
+      # - "traefik.tls.stores.default.defaultgeneratedcert.domain.main=example.org" # 指定主域名
       # - "traefik.tls.stores.default.defaultgeneratedcert.domain.sans=foo.example.org, bar.example.org"
 networks:
   traefik:
@@ -326,7 +325,7 @@ services:
         # format = "json";
       # };
 
-      # 定义入口，名字是websecure,仅设置:443 
+      # 定义入口，名字是websecure,仅设置:443
       entryPoints = {
         # web = {
         #   address = ":80";
@@ -340,8 +339,8 @@ services:
 
       # 定义证书申请器,myresolver是我定义的证书申请器的名字，名字可以随便起
       certificatesResolvers.myresolver.acme = {
-	      tlschallenge = true;
-        email = "0pt@disroot.org";
+	    tlschallenge = true;
+        email = "example@email.com";
         storage = "${config.services.traefik.dataDir}/acme.json";
       #   httpChallenge.entryPoint = "web";
       };
@@ -387,6 +386,8 @@ services:
                   url = "http://localhost:8384";
                 }
               ];
+              # syncthing不加下面这行配置无法正常访问,其他请略过这个
+              passHostHeader = false;
             };
           };
           netdata = {
@@ -399,7 +400,7 @@ services:
             };
           };
         };
-     };   
+     };
     };
   };
 }
@@ -417,7 +418,7 @@ services:
 {
   ...
   imports = [
-    caddy.nix
+    traefik.nix
   ];
   ...
 }

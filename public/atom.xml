@@ -4,8 +4,80 @@
     <link rel="self" type="application/atom+xml" href="https://blog.0pt.icu/atom.xml"/>
     <link rel="alternate" type="text/html" href="https://blog.0pt.icu"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
-    <updated>2024-12-20T00:00:00+00:00</updated>
+    <updated>2025-01-17T00:00:00+00:00</updated>
     <id>https://blog.0pt.icu/atom.xml</id>
+    <entry xml:lang="en">
+        <title>2024</title>
+        <published>2025-01-17T00:00:00+00:00</published>
+        <updated>2025-01-17T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.0pt.icu/posts/think/2024/"/>
+        <id>https://blog.0pt.icu/posts/think/2024/</id>
+        
+        <content type="html" xml:base="https://blog.0pt.icu/posts/think/2024/">&lt;h1 id=&quot;2024&quot;&gt;2024&lt;&#x2F;h1&gt;
+&lt;h3 id=&quot;1yue&quot;&gt;1月&lt;&#x2F;h3&gt;
+&lt;p&gt;可能是考试考的无聊了,我对窗口管理器产生兴趣，因为我觉得，桌面环境是冗杂的，强塞给我了许多我用不到的东西。
+之前第一次听说窗口管理器这个概念,还是我从一个朋友那边听说的&lt;code&gt;dwm&lt;&#x2F;code&gt;，他将其作为c语言源码读物，并且跟我畅想自己如何在原来的基础上进行改进，比如集成ai交互功能。
+在那之后,我一直使用的是&lt;code&gt;Endeavour OS&lt;&#x2F;code&gt;与&lt;code&gt;Garuda&lt;&#x2F;code&gt;这俩个&lt;code&gt;Arch Linux&lt;&#x2F;code&gt; 发行版自带的&lt;code&gt;KDE&lt;&#x2F;code&gt;桌面环境，这俩个发行版提供了一个美化过的&lt;code&gt;KDE&lt;&#x2F;code&gt;桌面，尤其是&lt;code&gt;Garuda&lt;&#x2F;code&gt;，自带的美化&lt;code&gt;KDE&lt;&#x2F;code&gt;看起来非常帅气。
+&lt;code&gt;KDE&lt;&#x2F;code&gt;是令人尊敬的,好用的桌面环境，但正如之前我批判&lt;code&gt;Windows&lt;&#x2F;code&gt;的桌面比较臃肿一样，我渐渐觉得&lt;code&gt;KDE&lt;&#x2F;code&gt;也出现这种问题。当我下载&lt;code&gt;KDE&lt;&#x2F;code&gt;的时候，他总是会把&lt;code&gt;KDE&lt;&#x2F;code&gt;生态的一些软件一起捆绑安装了。
+我在一次网络冲浪中偶然得知了窗口管理器,之前那位朋友说的&lt;code&gt;dwm&lt;&#x2F;code&gt;的时候，我其实压根没记住窗口管理器。当我发现这个东西利用几个快捷键，可以实现令人惊叹的窗口管理效率。
+在传统桌面环境中,不仅是桌面整体冗杂，而且开一个软件，将其调整为合适的窗口，都需要鼠标去点击。而窗口管理器，能直接通过几个简单快捷键的去实现这个功能。
+于是,我决定尝试一下窗口管理器。我考量了许多的窗口管理器，最后决定选用&lt;code&gt;Hyprland&lt;&#x2F;code&gt;。
+后面发现使用窗口管理器,还需要与其他组件相配合，比如状态栏(&lt;code&gt;waybar&lt;&#x2F;code&gt;)，比如菜单(&lt;code&gt;rofi&lt;&#x2F;code&gt;)，顺便把一直以来的shell从&lt;code&gt;fish&lt;&#x2F;code&gt;换成&lt;code&gt;zsh&lt;&#x2F;code&gt;。而且，这些全部都是高度自定义的。自然而然的滚去写配置文件了。
+配置文件配的令我痛苦,参考很多别人的配置，阅读官方文档，终于是配出了一个差强人意的Hyprland窗口管理器生态。直接在我的&lt;code&gt;Endeavour OS&lt;&#x2F;code&gt;上面把&lt;code&gt;KDE&lt;&#x2F;code&gt;卸载，安装上了&lt;code&gt;Hyprland&lt;&#x2F;code&gt;。
+同时,我的建站差不多也是这个时候完成。我使用&lt;code&gt;debian12&lt;&#x2F;code&gt;作为我的服务器系统，&lt;code&gt;1panel&lt;&#x2F;code&gt;作为管理面板，&lt;code&gt;nginx&lt;&#x2F;code&gt;作为反向代理方案，建了一些有意思的东西，并用上了&lt;code&gt;cloudfront&lt;&#x2F;code&gt;的cdn。
+在我另一位朋友的建议下,我进行了去&lt;code&gt;Google&lt;&#x2F;code&gt;化的工作，把所有的用&lt;code&gt;Google&lt;&#x2F;code&gt;注册的账号进行焚烧，换成&lt;code&gt;disroot&lt;&#x2F;code&gt;与&lt;code&gt;murena&lt;&#x2F;code&gt;邮箱，同时，也逃离&lt;code&gt;cloudflare&lt;&#x2F;code&gt;，把我的域名DNS迁移到&lt;code&gt;Netlify&lt;&#x2F;code&gt;上面。&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;2yue&quot;&gt;2月&lt;&#x2F;h3&gt;
+&lt;p&gt;在家憋&lt;code&gt;neovim&lt;&#x2F;code&gt;的配置,非常魔怔。
+我对&lt;code&gt;NixOS&lt;&#x2F;code&gt;感兴趣,也是偶然听说的，秉承着每一个著名Linux的发行版，都要过去品鉴一下的想法，去了解了一下&lt;code&gt;NixOS&lt;&#x2F;code&gt;。感觉函数声明式配置整个系统是我的梦想中的安装系统的方式，果断入坑。反思了一下之前&lt;code&gt;Arch Linux&lt;&#x2F;code&gt;的使用经历，安装软件多，导致自己都不知道装了哪些东西，问题偶发，重装更是家常便饭。如果系统直接由配置文件进行设置，而且是原子性的，那我的系统会十分的安全透明，而且也是高度自定义。
+经过之前配置&lt;code&gt;Hyprland&lt;&#x2F;code&gt;的痛苦经历,这次直接学聪明了，直接抄了一个别人非常完善的配置，在此基础上进行修改。&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;3yue&quot;&gt;3月&lt;&#x2F;h3&gt;
+&lt;p&gt;先购置了一台二手手机,进行了一波刷机。再在&lt;code&gt;Virtual Box&lt;&#x2F;code&gt;上面测试我的nixos配置。测试的差不多之后，直接把&lt;code&gt;Arch Linux&lt;&#x2F;code&gt;卸载了，换装&lt;code&gt;NixOS&lt;&#x2F;code&gt;。经过事后来看，&lt;code&gt;NixOS&lt;&#x2F;code&gt;稳定性极佳，在2024年剩下的时间里，除了某些不可抗拒的天灾人怨，&lt;code&gt;NixOS&lt;&#x2F;code&gt;一直运行良好。
+从此,我的硬盘结构为一个512G的m2固态专门装一个&lt;code&gt;NixOS&lt;&#x2F;code&gt;，一个2t的m2固体拿来做&lt;code&gt;Ventoy&lt;&#x2F;code&gt;战斗盘，我的&lt;code&gt;Windows&lt;&#x2F;code&gt;封装为虚拟磁盘和linux镜像文件，都由&lt;code&gt;Ventoy&lt;&#x2F;code&gt;进行引导。&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;4yue&quot;&gt;4月&lt;&#x2F;h3&gt;
+&lt;p&gt;开始研究分体键盘,之前偶然从某个up主的技术视频里面，看到了他所使用的，符合人体工程学的分体键盘，在购物平台搜索无法找到，后面发现这种键盘是自己制作的。资料全部开源。我选择了最简单的&lt;code&gt;Corne&lt;&#x2F;code&gt;分体键盘作为我的入门之作。根据&lt;code&gt;corne&lt;&#x2F;code&gt;官方和别人教学视频给出的物料单，我购置了键盘的pcb板，二极管，led灯，微动开关，耳机孔，主控板，屏幕，还有电烙铁与一系列的焊接工具，自己尝试焊接制作分体键盘。
+这是我第一次焊接,我预料到了我会问题频发，又买了一些练习用的pcb板和电阻以供练习。在练习的差不多后，我惊讶的发现，我的主控板的针脚多出来一对，我当时完全不知道怎么处理，只是想着确定一下针脚信号的，把多出来的一对针脚剪掉，但是我尝试了我所有的工具，无法剪断针脚，于是我把针脚用力掰弯，勉强可以焊接。但是，当我把物料都焊接到键盘pcb板的时候才发现，主控在我的摧残之下，已经坏掉了。不仅是失败了，还直接损失了百来块。
+了解其他的终端编辑器,特别是&lt;code&gt;Helix&lt;&#x2F;code&gt;，我提出了这样一个观点:&quot;现代的工具应该提供开箱即用和简单化的配置，&lt;code&gt;vscode&lt;&#x2F;code&gt;就是这样一个典范&quot;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;5yue&quot;&gt;5月&lt;&#x2F;h3&gt;
+&lt;p&gt;由于想尝试不同的&lt;code&gt;Linux&lt;&#x2F;code&gt;发行版,又不想在虚拟机上面体验(我觉得虚拟机有点延迟和卡顿，当时还没用上&lt;code&gt;qemu&lt;&#x2F;code&gt;，如果用上了就不会这么认为了)，我想起了&lt;code&gt;Ventoy&lt;&#x2F;code&gt;可以引导linux的虚拟磁盘。便开始制作各种linux的虚拟磁盘，这个叫做&lt;code&gt;vtoy&lt;&#x2F;code&gt;，我先后制作了:
+&lt;code&gt;UOS&lt;&#x2F;code&gt;(刚开始很看好,大名鼎鼎，后面发现正常用需要激活，得花钱购买)
+&lt;code&gt;Deepin&lt;&#x2F;code&gt;(&lt;code&gt;DEE&lt;&#x2F;code&gt;桌面环境非常好,基本是&lt;code&gt;UOS&lt;&#x2F;code&gt;的免费版，linux内核有点旧，我安装nvidia驱动的时候还遇到非常多的问题但后面全部制服了，应用商店看起来国产生态很不错，有些软件还是会有问题，不过都在慢慢改进，作为一个办公系统还是不错的，我后面把他当作我的b站播放器了)
+&lt;code&gt;Kali Linux&lt;&#x2F;code&gt;(大名鼎鼎,但是最新镜像制作出来的&lt;code&gt;vtoy&lt;&#x2F;code&gt;用引导，进入系统会非常卡顿，会卡在加载logo大概2分钟，用旧版本的感觉又少了点什么东西，不舒服)
+&lt;code&gt;Fedora&lt;&#x2F;code&gt;(我不装Nvidia闭源驱动,就能正常驱动我的显卡，感觉非常强大，这在之前无法想象)。
+&lt;code&gt;Ubuntu&lt;&#x2F;code&gt;(这是我第一次用&lt;code&gt;Ubuntu&lt;&#x2F;code&gt;,没什么感觉，接外接屏幕会偶尔出现屏幕撕裂)
+&lt;code&gt;Debian12&lt;&#x2F;code&gt;(这个直接跟你说&lt;code&gt;Debian12&lt;&#x2F;code&gt;不支持)
+&lt;code&gt;Athena OS&lt;&#x2F;code&gt;(另一个网络安全的系统,是基于&lt;code&gt;Black Arch&lt;&#x2F;code&gt;的软件源，装的是arch的版本，这个直接无法引导)
+&lt;code&gt;CachyOS&lt;&#x2F;code&gt;(一切正常)&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;6-7yue&quot;&gt;6,7月&lt;&#x2F;h3&gt;
+&lt;p&gt;我的另一个朋友对硬件比较专业,我叫上他再战分体键盘。经过他的指导，还有他帮助我打印pcb板，3D打印分体键盘外壳。我这回买对了主控板，直接成功做出来2副分体键盘，1副自用，1副送朋友了。
+用了分体键盘,感觉非常好用。只是比较遗憾这种东西没有键盘厂家去做这样的小众产品。
+继续研究Unix文化,发现了&lt;code&gt;FreeBSD&lt;&#x2F;code&gt;，大大扩展了我的眼界。我发现我笔记本无法正常安装&lt;code&gt;FreeBSD&lt;&#x2F;code&gt;桌面(xorg有问题，连带着wayland也有问题，以后面的视角来看，是自己太年轻了，其实是可以解决的)，于是在虚拟机和从同学那里借来的老式笔记本上面安装测试。&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;8yue&quot;&gt;8月&lt;&#x2F;h3&gt;
+&lt;p&gt;研究了一下ctf相关的东西。&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;9yue&quot;&gt;9月&lt;&#x2F;h3&gt;
+&lt;p&gt;在我的x79平台上面安装&lt;code&gt;PVE&lt;&#x2F;code&gt;,进行研究硬件直通，以此，我成功的把虚拟机里的显示信号通过显卡输出到我的显示器上面。非常高兴，我直接安装&lt;code&gt;FreeBSD&lt;&#x2F;code&gt;，参考我之前研究的配置，配好了&lt;code&gt;Hyprland&lt;&#x2F;code&gt;,&lt;code&gt;waybar&lt;&#x2F;code&gt;,&lt;code&gt;rofi&lt;&#x2F;code&gt;,&lt;code&gt;neovim&lt;&#x2F;code&gt;等工具，用了一段时间发现，鼠标会有拖影，&lt;code&gt;Hyprland&lt;&#x2F;code&gt;会闪退。
+然后,在&lt;code&gt;PVE&lt;&#x2F;code&gt;虚拟机里面安装黑苹果，特地买了显卡，结果发现无法直通视频信号，原来是虚拟借机必须启用&lt;code&gt;UEFI&lt;&#x2F;code&gt;，我x79是&lt;code&gt;Legacy Bios&lt;&#x2F;code&gt;，显卡也不支持&lt;code&gt;UEFI&lt;&#x2F;code&gt;，于是给显卡刷了支持&lt;code&gt;UEFI&lt;&#x2F;code&gt;的&lt;code&gt;vbios&lt;&#x2F;code&gt;，结果发现显卡有点问题，本来应该是免驱卡无法免驱，于是又买了一个另外型号的免驱卡，结果依然不支持&lt;code&gt;UEFI&lt;&#x2F;code&gt;。&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;10yue&quot;&gt;10月&lt;&#x2F;h3&gt;
+&lt;p&gt;送了同学一个x79板u,送前成功安装了一个黑苹果，结果体验发现，有些软件无法安装，推测cpu缺少指令集了。
+被黑苹果和&lt;code&gt;FreeBSD&lt;&#x2F;code&gt;整红温了,一气之下组了一个3.4L的核显itx。然后，成功制服了我的笔记本&lt;code&gt;FreeBSD&lt;&#x2F;code&gt;的xorg和wayland的问题。后面，给itx安装&lt;code&gt;Ventoy&lt;&#x2F;code&gt;,&lt;code&gt;黑苹果&lt;&#x2F;code&gt;和&lt;code&gt;NixOS&lt;&#x2F;code&gt;,十分喜爱。
+深入了解&lt;code&gt;FreeBSD&lt;&#x2F;code&gt;,发现之前自己被&lt;code&gt;Linux&lt;&#x2F;code&gt;下的苦难哲学所束缚，从之前的开源小将开始转变，用我的话说就是&quot;差不多得了&quot;。
+认识到&lt;code&gt;Linux&lt;&#x2F;code&gt;社区有局限性。后面放弃除&lt;code&gt;NixOS&lt;&#x2F;code&gt;外的linux,转向&lt;code&gt;FreeBSD&lt;&#x2F;code&gt;作为主力系统使用。
+&lt;code&gt;FreeBSD&lt;&#x2F;code&gt;非常完美,我几乎是无缝从&lt;code&gt;Linux&lt;&#x2F;code&gt;迁移到&lt;code&gt;FreeBSD&lt;&#x2F;code&gt;，比&lt;code&gt;Ubuntu&lt;&#x2F;code&gt;软件源多，比&lt;code&gt;Arch Linux&lt;&#x2F;code&gt;稳定，摒弃了systemd，甚至有高效的linux兼容层。&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;11-12yue&quot;&gt;11,12月&lt;&#x2F;h3&gt;
+&lt;p&gt;之前的&lt;code&gt;Astro&lt;&#x2F;code&gt;博客爆炸了,迁移为&lt;code&gt;zola&lt;&#x2F;code&gt;博客。
+将我的服务器从&lt;code&gt;Debian12&lt;&#x2F;code&gt;全部迁移为&lt;code&gt;NixOS&lt;&#x2F;code&gt;,使用配置文件来管理我的服务器，十分高效。反代也从&lt;code&gt;nginx&lt;&#x2F;code&gt;换成更加现代的&lt;code&gt;traefik&lt;&#x2F;code&gt;，工作的十分正常和成功。
+申请并配置了一手&lt;code&gt;DN42&lt;&#x2F;code&gt;。&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
     <entry xml:lang="en">
         <title>ABOUT2</title>
         <published>2024-12-20T00:00:00+00:00</published>
@@ -81,23 +153,23 @@
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;先解释几条配置
 这个是docker启动traefik的基本配置,使用&lt;code&gt;command&lt;&#x2F;code&gt;传进去&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;docker-compose.yml&quot; style=&quot;background-color:#212733;color:#ccc9c2;&quot; class=&quot;language-docker-compose.yml &quot;&gt;&lt;code class=&quot;language-docker-compose.yml&quot; data-lang=&quot;docker-compose.yml&quot;&gt;&lt;span&gt;    command: 
+&lt;pre data-lang=&quot;docker-compose.yml&quot; style=&quot;background-color:#212733;color:#ccc9c2;&quot; class=&quot;language-docker-compose.yml &quot;&gt;&lt;code class=&quot;language-docker-compose.yml&quot; data-lang=&quot;docker-compose.yml&quot;&gt;&lt;span&gt;    command:
 &lt;&#x2F;span&gt;&lt;span&gt;      - --api.insecure=true # 开启8080端口的webui界面，可以看到traefik可视化面板
 &lt;&#x2F;span&gt;&lt;span&gt;      - --providers.docker=true # 开启监控docker容器
 &lt;&#x2F;span&gt;&lt;span&gt;      - --providers.docker.exposedbydefault=false # 默认不自动暴露容器,隐藏此容器
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;接下来是入口&lt;code&gt;entrypoints&lt;&#x2F;code&gt;,也使用&lt;code&gt;command&lt;&#x2F;code&gt;传进去,格式如下&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;docker-compose.yml&quot; style=&quot;background-color:#212733;color:#ccc9c2;&quot; class=&quot;language-docker-compose.yml &quot;&gt;&lt;code class=&quot;language-docker-compose.yml&quot; data-lang=&quot;docker-compose.yml&quot;&gt;&lt;span&gt;    command: 
+&lt;pre data-lang=&quot;docker-compose.yml&quot; style=&quot;background-color:#212733;color:#ccc9c2;&quot; class=&quot;language-docker-compose.yml &quot;&gt;&lt;code class=&quot;language-docker-compose.yml&quot; data-lang=&quot;docker-compose.yml&quot;&gt;&lt;span&gt;    command:
 &lt;&#x2F;span&gt;&lt;span&gt;      - --entrypoints.&amp;lt;entrypoints-name-1&amp;gt;.address=:80
 &lt;&#x2F;span&gt;&lt;span&gt;      - --entrypoints.&amp;lt;entrypoints-name-2&amp;gt;.address=:443
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;定义监听的入口，对于反代来说，只需要监听&lt;code&gt;:80&lt;&#x2F;code&gt;和&lt;code&gt;:443&lt;&#x2F;code&gt;，也就是&lt;code&gt;http&lt;&#x2F;code&gt;和&lt;code&gt;https&lt;&#x2F;code&gt;的流量。将&amp;lt;entrypoints-name-1&#x2F;2&amp;gt;自行替换成你想要的名字，如&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;docker-compose.yml&quot; style=&quot;background-color:#212733;color:#ccc9c2;&quot; class=&quot;language-docker-compose.yml &quot;&gt;&lt;code class=&quot;language-docker-compose.yml&quot; data-lang=&quot;docker-compose.yml&quot;&gt;&lt;span&gt;    command: 
+&lt;pre data-lang=&quot;docker-compose.yml&quot; style=&quot;background-color:#212733;color:#ccc9c2;&quot; class=&quot;language-docker-compose.yml &quot;&gt;&lt;code class=&quot;language-docker-compose.yml&quot; data-lang=&quot;docker-compose.yml&quot;&gt;&lt;span&gt;    command:
 &lt;&#x2F;span&gt;&lt;span&gt;      - --entrypoints.http.address=:80
 &lt;&#x2F;span&gt;&lt;span&gt;      - --entrypoints.https.address=:443
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;或者&lt;&#x2F;p&gt;
-&lt;pre data-lang=&quot;docker-compose.yml&quot; style=&quot;background-color:#212733;color:#ccc9c2;&quot; class=&quot;language-docker-compose.yml &quot;&gt;&lt;code class=&quot;language-docker-compose.yml&quot; data-lang=&quot;docker-compose.yml&quot;&gt;&lt;span&gt;    command: 
+&lt;pre data-lang=&quot;docker-compose.yml&quot; style=&quot;background-color:#212733;color:#ccc9c2;&quot; class=&quot;language-docker-compose.yml &quot;&gt;&lt;code class=&quot;language-docker-compose.yml&quot; data-lang=&quot;docker-compose.yml&quot;&gt;&lt;span&gt;    command:
 &lt;&#x2F;span&gt;&lt;span&gt;      - --entrypoints.web.address=:80
 &lt;&#x2F;span&gt;&lt;span&gt;      - --entrypoints.websecure.address=:443
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
@@ -113,7 +185,7 @@
 &lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#5c6773;&quot;&gt;# The official v3 Traefik docker image
 &lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#73d0ff;&quot;&gt;image&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ccc9c2cc;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bae67e;&quot;&gt;traefik:v3.2
 &lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#5c6773;&quot;&gt;# Enables the web UI and tells Traefik to listen to docker
-&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#73d0ff;&quot;&gt;command&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ccc9c2cc;&quot;&gt;: 
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#73d0ff;&quot;&gt;command&lt;&#x2F;span&gt;&lt;span style=&quot;color:#ccc9c2cc;&quot;&gt;:
 &lt;&#x2F;span&gt;&lt;span&gt;      - &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bae67e;&quot;&gt;--api.insecure=true
 &lt;&#x2F;span&gt;&lt;span&gt;      - &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bae67e;&quot;&gt;--providers.docker=true
 &lt;&#x2F;span&gt;&lt;span&gt;      - &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bae67e;&quot;&gt;--providers.docker.exposedbydefault=false &lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#5c6773;&quot;&gt;# 默认不自动暴露容器,隐藏此容器
@@ -216,13 +288,13 @@ entrypoints=web匹配刚才定义的监听的入口,这里先使用http,所以�
 &lt;&#x2F;span&gt;&lt;span&gt;    # The official v3 Traefik docker image
 &lt;&#x2F;span&gt;&lt;span&gt;    image: traefik:v3.2
 &lt;&#x2F;span&gt;&lt;span&gt;    # Enables the web UI and tells Traefik to listen to docker
-&lt;&#x2F;span&gt;&lt;span&gt;    command: 
+&lt;&#x2F;span&gt;&lt;span&gt;    command:
 &lt;&#x2F;span&gt;&lt;span&gt;      - &amp;quot;--api.insecure=true&amp;quot;
 &lt;&#x2F;span&gt;&lt;span&gt;      - &amp;quot;--providers.docker=true&amp;quot;
 &lt;&#x2F;span&gt;&lt;span&gt;      - &amp;quot;--providers.docker.exposedbydefault=false&amp;quot; # 默认不自动暴露容器,隐藏此容器
 &lt;&#x2F;span&gt;&lt;span&gt;      - &amp;quot;--entrypoints.websecure.address=:443&amp;quot;           # HTTPS 入口点
 &lt;&#x2F;span&gt;&lt;span&gt;      - &amp;quot;--certificatesresolvers.myresolver.acme.tlschallenge=true&amp;quot; # 开启证书申请
-&lt;&#x2F;span&gt;&lt;span&gt;      - &amp;quot;--certificatesresolvers.myresolver.acme.email=0pt@disroot.org&amp;quot; # 你的邮箱
+&lt;&#x2F;span&gt;&lt;span&gt;      - &amp;quot;--certificatesresolvers.myresolver.acme.email=your@mail.com&amp;quot; # 你的邮箱
 &lt;&#x2F;span&gt;&lt;span&gt;      - &amp;quot;--certificatesresolvers.myresolver.acme.storage=&#x2F;letsencrypt&#x2F;acme.json&amp;quot; # 自动生成的证书配置存在这个地方
 &lt;&#x2F;span&gt;&lt;span&gt;    ports:
 &lt;&#x2F;span&gt;&lt;span&gt;      - &amp;quot;443:443&amp;quot;
@@ -237,8 +309,7 @@ entrypoints=web匹配刚才定义的监听的入口,这里先使用http,所以�
 &lt;&#x2F;span&gt;&lt;span&gt;    # - 下面是指定默认申请的证书，一般来说不需要这些配置，traefik会自动检测并申请tls证书
 &lt;&#x2F;span&gt;&lt;span&gt;      # labels:
 &lt;&#x2F;span&gt;&lt;span&gt;      # - &amp;quot;traefik.tls.stores.default.defaultgeneratedcert.resolver=myresolver&amp;quot; # 指定默认申请的resolver
-&lt;&#x2F;span&gt;&lt;span&gt;      # - &amp;quot;traefik.tls.stores.default.defaultgeneratedcert.domain.main=0pt.us.kg&amp;quot; # 指定主域名
-&lt;&#x2F;span&gt;&lt;span&gt;      # - &amp;quot;traefik.tls.stores.default.defaultgeneratedcert.domain.sans=example.org&amp;quot; # 指定证书申请的子域名
+&lt;&#x2F;span&gt;&lt;span&gt;      # - &amp;quot;traefik.tls.stores.default.defaultgeneratedcert.domain.main=example.org&amp;quot; # 指定主域名
 &lt;&#x2F;span&gt;&lt;span&gt;      # - &amp;quot;traefik.tls.stores.default.defaultgeneratedcert.domain.sans=foo.example.org, bar.example.org&amp;quot;
 &lt;&#x2F;span&gt;&lt;span&gt;networks:
 &lt;&#x2F;span&gt;&lt;span&gt;  traefik:
@@ -359,7 +430,7 @@ entrypoints=web匹配刚才定义的监听的入口,这里先使用http,所以�
 &lt;&#x2F;span&gt;&lt;span&gt;        # format = &amp;quot;json&amp;quot;;
 &lt;&#x2F;span&gt;&lt;span&gt;      # };
 &lt;&#x2F;span&gt;&lt;span&gt;
-&lt;&#x2F;span&gt;&lt;span&gt;      # 定义入口，名字是websecure,仅设置:443 
+&lt;&#x2F;span&gt;&lt;span&gt;      # 定义入口，名字是websecure,仅设置:443
 &lt;&#x2F;span&gt;&lt;span&gt;      entryPoints = {
 &lt;&#x2F;span&gt;&lt;span&gt;        # web = {
 &lt;&#x2F;span&gt;&lt;span&gt;        #   address = &amp;quot;:80&amp;quot;;
@@ -373,8 +444,8 @@ entrypoints=web匹配刚才定义的监听的入口,这里先使用http,所以�
 &lt;&#x2F;span&gt;&lt;span&gt;
 &lt;&#x2F;span&gt;&lt;span&gt;      # 定义证书申请器,myresolver是我定义的证书申请器的名字，名字可以随便起
 &lt;&#x2F;span&gt;&lt;span&gt;      certificatesResolvers.myresolver.acme = {
-&lt;&#x2F;span&gt;&lt;span&gt;	      tlschallenge = true;
-&lt;&#x2F;span&gt;&lt;span&gt;        email = &amp;quot;0pt@disroot.org&amp;quot;;
+&lt;&#x2F;span&gt;&lt;span&gt;	    tlschallenge = true;
+&lt;&#x2F;span&gt;&lt;span&gt;        email = &amp;quot;example@email.com&amp;quot;;
 &lt;&#x2F;span&gt;&lt;span&gt;        storage = &amp;quot;${config.services.traefik.dataDir}&#x2F;acme.json&amp;quot;;
 &lt;&#x2F;span&gt;&lt;span&gt;      #   httpChallenge.entryPoint = &amp;quot;web&amp;quot;;
 &lt;&#x2F;span&gt;&lt;span&gt;      };
@@ -420,6 +491,8 @@ entrypoints=web匹配刚才定义的监听的入口,这里先使用http,所以�
 &lt;&#x2F;span&gt;&lt;span&gt;                  url = &amp;quot;http:&#x2F;&#x2F;localhost:8384&amp;quot;;
 &lt;&#x2F;span&gt;&lt;span&gt;                }
 &lt;&#x2F;span&gt;&lt;span&gt;              ];
+&lt;&#x2F;span&gt;&lt;span&gt;              # syncthing不加下面这行配置无法正常访问,其他请略过这个
+&lt;&#x2F;span&gt;&lt;span&gt;              passHostHeader = false;
 &lt;&#x2F;span&gt;&lt;span&gt;            };
 &lt;&#x2F;span&gt;&lt;span&gt;          };
 &lt;&#x2F;span&gt;&lt;span&gt;          netdata = {
@@ -432,7 +505,7 @@ entrypoints=web匹配刚才定义的监听的入口,这里先使用http,所以�
 &lt;&#x2F;span&gt;&lt;span&gt;            };
 &lt;&#x2F;span&gt;&lt;span&gt;          };
 &lt;&#x2F;span&gt;&lt;span&gt;        };
-&lt;&#x2F;span&gt;&lt;span&gt;     };   
+&lt;&#x2F;span&gt;&lt;span&gt;     };
 &lt;&#x2F;span&gt;&lt;span&gt;    };
 &lt;&#x2F;span&gt;&lt;span&gt;  };
 &lt;&#x2F;span&gt;&lt;span&gt;}
@@ -448,7 +521,7 @@ entrypoints=web匹配刚才定义的监听的入口,这里先使用http,所以�
 &lt;&#x2F;span&gt;&lt;span&gt;{
 &lt;&#x2F;span&gt;&lt;span&gt;  ...
 &lt;&#x2F;span&gt;&lt;span&gt;  imports = [
-&lt;&#x2F;span&gt;&lt;span&gt;    caddy.nix
+&lt;&#x2F;span&gt;&lt;span&gt;    traefik.nix
 &lt;&#x2F;span&gt;&lt;span&gt;  ];
 &lt;&#x2F;span&gt;&lt;span&gt;  ...
 &lt;&#x2F;span&gt;&lt;span&gt;}
