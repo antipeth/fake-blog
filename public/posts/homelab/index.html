@@ -10,7 +10,7 @@
      <script src="/js/keyboard.js"></script>
      <script src="/js/tab.js"></script>
      <script src="/js/commands.js"></script>
-     <script src="/js/config.js"></script><link rel="stylesheet" href="/css/base.css"><link rel="stylesheet" href="/css/page.css"></head>
+     <script src="/js/config.js"></script><link rel="stylesheet" href="/css/base.css"></head>
 <body onkeydown='exec(event)'>
   <header>
       <h1>ATP</h1>
@@ -80,7 +80,7 @@
 <li>
 <span>└──
   
-  <a href='https://blog.0pt.icu/posts/homelab/'
+  <a class="selected"href='https://blog.0pt.icu/posts/homelab/'
     tabindex="-11">  homelab
   </a>
 </span>
@@ -282,7 +282,7 @@
         </span>
       </li><li class="file">
         <span>└──
-          <a class="selected"href='https://blog.0pt.icu/about/about1/'
+          <a href='https://blog.0pt.icu/about/about1/'
             tabindex="-38">  ABOUT1</a>
         </span>
       </li>
@@ -307,40 +307,20 @@
   </li>
 </ul>
 </div>
-    <div class="viewer page" id="viewer" tabindex="0">
+    <div class="viewer " id="viewer" tabindex="0">
       <div class="tab">
 <ul id="tabs">
 </ul>
 
 
 </div>
-      <div class="content" id="content"><h1 id="about1">ABOUT1</h1>
-<p>2024-02-23
-<img src="https://img.0pt.icu/learn/linux-trip/4/mydesktop.jpg" alt="" /></p>
-<p><em>This is my arch linux.</em></p>
-<p><img src="https://img.0pt.icu/learn/linux-trip/5/1.jpg" alt="" /></p>
-<p><em>This is my NixOS</em></p>
-<h1 id="about-me">About Me</h1>
-<p>Hey there, I'm a computer science student. I dig rock music, Linux, and all things intriguing.</p>
-<h1 id="my-philosophy">My Philosophy</h1>
-<p>Go with the flow and do what I love. Typically, I'm into efficient stuff; they keep everything running smoothly. However, sometimes I enjoy things that don't appear efficient at all. It's a whole different vibe, my quirky way of life.</p>
-<h1 id="foundations">Foundations</h1>
-<p><code>Arch Linux</code> is my go-to system on my personal computer, and I absolutely love it. It performs like a champ. Just a heads up, I roll with <code>EndeavourOS</code> for more convenient NVIDIA GPU support.</p>
-<p><code>Hyprland</code> is my window manager. I used <code>KDE</code> before, also a top-notch desktop environment with loads of ecosystem support, but I prefer <code>Hyprland</code> for its simplicity and customization.</p>
-<p><code>Waybar</code> sits atop my screen, keeping me informed.</p>
-<p><code>Zsh</code> is my shell, paired with plugins for an enhanced experience.</p>
-<p><code>Kitty</code> is my terminal. Chose it for better image support. Also, I might throw Alacritty on my machine too.</p>
-<p><code>Paru</code> is my AUR helper, written in Rust, and it rocks.</p>
-<h1 id="my-apps">My Apps</h1>
-<p><code>Yazi</code> is my terminal file manager, crafted in Rust.</p>
-<p><code>Rofi</code> is my app launcher.</p>
-<p><code>Brave</code> is my browser, while Firefox is my backup browser.</p>
-<p><code>Neovim</code> is my text editor. Learning it and trying to make it my go-to for everything.</p>
-<p><code>Code-OSS</code> assists me with larger projects. Opted for it over VSCodium for no reason other than I just prefer it.</p>
-<p>BetterBird is my email client, an enhanced version of Thunderbird.</p>
-<p>Anytype is my note-taking and planning software. It uses blockchain technology for surprisingly fast sync speeds and is feature-packed. Anytype for everything.</p>
-<p>Keepassxc keeps my passwords safe.</p>
+      <div class="content" id="content"><ul class="section">
+  
 
+  <li class="section"><a href='../' tabindex="-1">../</a></li>
+  
+  <li class="section"><a class="selected" href='./' tabindex="-2">./</a></li>
+  <li class="post"><a href='https://blog.0pt.icu/posts/homelab/nixos-nas/' tabindex="-3">My NixOS NAS🧊</a></li></ul>
       </div>
     </div>
     <div class="prompt" id="terminal"><input

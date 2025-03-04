@@ -4,8 +4,94 @@
     <link rel="self" type="application/atom+xml" href="https://blog.0pt.icu/atom.xml"/>
     <link rel="alternate" type="text/html" href="https://blog.0pt.icu"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
-    <updated>2025-01-17T00:00:00+00:00</updated>
+    <updated>2025-03-04T00:00:00+00:00</updated>
     <id>https://blog.0pt.icu/atom.xml</id>
+    <entry xml:lang="en">
+        <title>My NixOS NAS🧊</title>
+        <published>2025-03-04T00:00:00+00:00</published>
+        <updated>2025-03-04T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://blog.0pt.icu/posts/homelab/nixos-nas/"/>
+        <id>https://blog.0pt.icu/posts/homelab/nixos-nas/</id>
+        
+        <content type="html" xml:base="https://blog.0pt.icu/posts/homelab/nixos-nas/">&lt;h1 id=&quot;introducing-my-nixos-nasice-cube&quot;&gt;Introducing My NixOS NAS🧊&lt;&#x2F;h1&gt;
+&lt;p&gt;2025-03-04&lt;&#x2F;p&gt;
+&lt;p&gt;You can find my config &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;antipeth&#x2F;my-clan&quot;&gt;here&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;a-few-words-before&quot;&gt;A Few Words Before&lt;&#x2F;h2&gt;
+&lt;p&gt;Building this NixOS NAS has been a journey of both discovery and satisfaction.
+My passion for NixOS began 1 year ago when I realized that its declarative configuration model could simplify even the most complex system setups.
+I decided to channel that passion into creating a robust, secure, and highly reproducible NAS solution that not only meets my storage needs but also serves as a playground for experimenting with modern technologies.&lt;&#x2F;p&gt;
+&lt;p&gt;Every aspect of this system, from the carefully( maybe 🙃) chosen hardware components to the selection of software tools, was driven by a desire for reliability and ease of management.
+The declarative approach allowed me to automate almost every task.
+The sense of control and precision has made managing my NAS an enjoyable and continuously rewarding experience.&lt;&#x2F;p&gt;
+&lt;p&gt;It’s incredibly satisfying to see the system handle tasks flawlessly, ensuring that data is secure and always available.
+The entire project is a reflection of my commitment to reproducible and declarative configurations, and it stands as a personal milestone in my ongoing exploration of NixOS.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;hardware-specifications&quot;&gt;Hardware Specifications&lt;&#x2F;h2&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;name&lt;&#x2F;th&gt;&lt;th&gt;content&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;Motherboard&lt;&#x2F;td&gt;&lt;td&gt;GIGABYTE A520i Dash&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;CPU&lt;&#x2F;td&gt;&lt;td&gt;R5 5600G&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;Memory&lt;&#x2F;td&gt;&lt;td&gt;16GB&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;SSD&lt;&#x2F;td&gt;&lt;td&gt;512GB&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;HDD&lt;&#x2F;td&gt;&lt;td&gt;2 x 1 TB&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;h2 id=&quot;key-featuressparkles&quot;&gt;Key Features✨&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Declarative configuration of nas systems, ❤️love from ❄️nixos&lt;&#x2F;li&gt;
+&lt;li&gt;Supports essential applications including Immich, Syncthing, Alist, SMB, and more.&lt;&#x2F;li&gt;
+&lt;li&gt;Declarative configuration of hard disk partitions&lt;&#x2F;li&gt;
+&lt;li&gt;Remote deployment capability&lt;&#x2F;li&gt;
+&lt;li&gt;Critical data is securely encrypted&lt;&#x2F;li&gt;
+&lt;li&gt;Standardized NixOS configuration management with Clan&lt;&#x2F;li&gt;
+&lt;li&gt;Robust ZFS file systems, powerful💪&lt;&#x2F;li&gt;
+&lt;li&gt;Automated backup routines&lt;&#x2F;li&gt;
+&lt;li&gt;Optimized power consumption&lt;&#x2F;li&gt;
+&lt;li&gt;Basic monitoring and backup notifications.&lt;&#x2F;li&gt;
+&lt;li&gt;Automatic TLS certificate provisioning&lt;&#x2F;li&gt;
+&lt;li&gt;Highly reproducible configuration, at least for me, ❤️love from ❄️nixos again&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;technology-stack&quot;&gt;Technology Stack&lt;&#x2F;h2&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;name&lt;&#x2F;th&gt;&lt;th&gt;description&lt;&#x2F;th&gt;&lt;&#x2F;tr&gt;&lt;&#x2F;thead&gt;&lt;tbody&gt;
+&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;https:&#x2F;&#x2F;nixos.org&#x2F;&quot;&gt;nixos&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td&gt;Operating system&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;https:&#x2F;&#x2F;openzfs.github.io&#x2F;openzfs-docs&#x2F;index.html&quot;&gt;zfs&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td&gt;File system&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;nix-community&#x2F;disko&quot;&gt;disko&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td&gt;Declarative managed filesystems&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Mic92&#x2F;sops-nix&quot;&gt;nix-sops&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td&gt;Critical information encryption&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;https:&#x2F;&#x2F;docs.clan.lol&#x2F;&quot;&gt;clan&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td&gt;Peer-to-peer computer management framework, powered by nix❄️&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;https:&#x2F;&#x2F;nginx.org&#x2F;&quot;&gt;nginx&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td&gt;Reverse proxy&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;https:&#x2F;&#x2F;go-acme.github.io&#x2F;lego&#x2F;&quot;&gt;go-acme&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td&gt;Automatic tls certificate request&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;https:&#x2F;&#x2F;restic.net&#x2F;&quot;&gt;restic&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td&gt;Automatic backups&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;https:&#x2F;&#x2F;gotify.net&#x2F;docs&#x2F;&quot;&gt;gotify&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td&gt;Automatic send notifications&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;https:&#x2F;&#x2F;dashy.to&#x2F;&quot;&gt;dashy&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td&gt;Homepage&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;https:&#x2F;&#x2F;nicolargo.github.io&#x2F;glances&#x2F;&quot;&gt;glances&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td&gt;System monitoring integrated with Dashy&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;https:&#x2F;&#x2F;syncthing.net&#x2F;&quot;&gt;synching&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td&gt;Synchronizes important data for real-time backups&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;https:&#x2F;&#x2F;immich.app&#x2F;&quot;&gt;immich&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td&gt;Family digital camera management&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;https:&#x2F;&#x2F;cockpit-project.org&#x2F;&quot;&gt;cockpit&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td&gt;System panel&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;https:&#x2F;&#x2F;forgejo.org&#x2F;&quot;&gt;forgejo&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td&gt;Self-hosted git server&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;https:&#x2F;&#x2F;alist.nn.ci&#x2F;&quot;&gt;alist&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td&gt;Web document client&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;tr&gt;&lt;td&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;muety&#x2F;wakapi&quot;&gt;wakapi&lt;&#x2F;a&gt;&lt;&#x2F;td&gt;&lt;td&gt;Code statistics tracking&lt;&#x2F;td&gt;&lt;&#x2F;tr&gt;
+&lt;&#x2F;tbody&gt;&lt;&#x2F;table&gt;
+&lt;h2 id=&quot;overview&quot;&gt;overview&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;dashy-homepage&quot;&gt;Dashy(homepage)&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;img.0pt.icu&#x2F;learn&#x2F;homelab&#x2F;introducing-my-nixos-nas&#x2F;1.avif&quot; alt=&quot;&quot; &#x2F;&gt;
+&lt;img src=&quot;https:&#x2F;&#x2F;img.0pt.icu&#x2F;learn&#x2F;homelab&#x2F;introducing-my-nixos-nas&#x2F;2.avif&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;system-fastfetch&quot;&gt;System fastfetch&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;img.0pt.icu&#x2F;learn&#x2F;homelab&#x2F;introducing-my-nixos-nas&#x2F;3.avif&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;restic-gotify-backup-message&quot;&gt;Restic + Gotify(Backup message)&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;img.0pt.icu&#x2F;learn&#x2F;homelab&#x2F;introducing-my-nixos-nas&#x2F;4.avif&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;deploying&quot;&gt;Deploying&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;img.0pt.icu&#x2F;learn&#x2F;homelab&#x2F;introducing-my-nixos-nas&#x2F;5.avif&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;zfs-this-is-my-ice-cube-muscle&quot;&gt;ZFS(this is my 🧊💪)&lt;&#x2F;h3&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;img.0pt.icu&#x2F;learn&#x2F;homelab&#x2F;introducing-my-nixos-nas&#x2F;6.avif&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
     <entry xml:lang="en">
         <title>2024</title>
         <published>2025-01-17T00:00:00+00:00</published>

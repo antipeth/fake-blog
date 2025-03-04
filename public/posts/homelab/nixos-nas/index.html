@@ -89,7 +89,7 @@
   <ul>
   <li class="file">
     <span>└──
-      <a href='https://blog.0pt.icu/posts/homelab/nixos-nas/'
+      <a class="selected"href='https://blog.0pt.icu/posts/homelab/nixos-nas/'
         tabindex="-12">  My NixOS NAS🧊</a>
     </span>
   </li></ul>
@@ -282,7 +282,7 @@
         </span>
       </li><li class="file">
         <span>└──
-          <a class="selected"href='https://blog.0pt.icu/about/about1/'
+          <a href='https://blog.0pt.icu/about/about1/'
             tabindex="-38">  ABOUT1</a>
         </span>
       </li>
@@ -314,32 +314,73 @@
 
 
 </div>
-      <div class="content" id="content"><h1 id="about1">ABOUT1</h1>
-<p>2024-02-23
-<img src="https://img.0pt.icu/learn/linux-trip/4/mydesktop.jpg" alt="" /></p>
-<p><em>This is my arch linux.</em></p>
-<p><img src="https://img.0pt.icu/learn/linux-trip/5/1.jpg" alt="" /></p>
-<p><em>This is my NixOS</em></p>
-<h1 id="about-me">About Me</h1>
-<p>Hey there, I'm a computer science student. I dig rock music, Linux, and all things intriguing.</p>
-<h1 id="my-philosophy">My Philosophy</h1>
-<p>Go with the flow and do what I love. Typically, I'm into efficient stuff; they keep everything running smoothly. However, sometimes I enjoy things that don't appear efficient at all. It's a whole different vibe, my quirky way of life.</p>
-<h1 id="foundations">Foundations</h1>
-<p><code>Arch Linux</code> is my go-to system on my personal computer, and I absolutely love it. It performs like a champ. Just a heads up, I roll with <code>EndeavourOS</code> for more convenient NVIDIA GPU support.</p>
-<p><code>Hyprland</code> is my window manager. I used <code>KDE</code> before, also a top-notch desktop environment with loads of ecosystem support, but I prefer <code>Hyprland</code> for its simplicity and customization.</p>
-<p><code>Waybar</code> sits atop my screen, keeping me informed.</p>
-<p><code>Zsh</code> is my shell, paired with plugins for an enhanced experience.</p>
-<p><code>Kitty</code> is my terminal. Chose it for better image support. Also, I might throw Alacritty on my machine too.</p>
-<p><code>Paru</code> is my AUR helper, written in Rust, and it rocks.</p>
-<h1 id="my-apps">My Apps</h1>
-<p><code>Yazi</code> is my terminal file manager, crafted in Rust.</p>
-<p><code>Rofi</code> is my app launcher.</p>
-<p><code>Brave</code> is my browser, while Firefox is my backup browser.</p>
-<p><code>Neovim</code> is my text editor. Learning it and trying to make it my go-to for everything.</p>
-<p><code>Code-OSS</code> assists me with larger projects. Opted for it over VSCodium for no reason other than I just prefer it.</p>
-<p>BetterBird is my email client, an enhanced version of Thunderbird.</p>
-<p>Anytype is my note-taking and planning software. It uses blockchain technology for surprisingly fast sync speeds and is feature-packed. Anytype for everything.</p>
-<p>Keepassxc keeps my passwords safe.</p>
+      <div class="content" id="content"><h1 id="introducing-my-nixos-nasice-cube">Introducing My NixOS NAS🧊</h1>
+<p>2025-03-04</p>
+<p>You can find my config <a href="https://github.com/antipeth/my-clan">here</a></p>
+<h2 id="a-few-words-before">A Few Words Before</h2>
+<p>Building this NixOS NAS has been a journey of both discovery and satisfaction.
+My passion for NixOS began 1 year ago when I realized that its declarative configuration model could simplify even the most complex system setups.
+I decided to channel that passion into creating a robust, secure, and highly reproducible NAS solution that not only meets my storage needs but also serves as a playground for experimenting with modern technologies.</p>
+<p>Every aspect of this system, from the carefully( maybe 🙃) chosen hardware components to the selection of software tools, was driven by a desire for reliability and ease of management.
+The declarative approach allowed me to automate almost every task.
+The sense of control and precision has made managing my NAS an enjoyable and continuously rewarding experience.</p>
+<p>It’s incredibly satisfying to see the system handle tasks flawlessly, ensuring that data is secure and always available.
+The entire project is a reflection of my commitment to reproducible and declarative configurations, and it stands as a personal milestone in my ongoing exploration of NixOS.</p>
+<h2 id="hardware-specifications">Hardware Specifications</h2>
+<table><thead><tr><th>name</th><th>content</th></tr></thead><tbody>
+<tr><td>Motherboard</td><td>GIGABYTE A520i Dash</td></tr>
+<tr><td>CPU</td><td>R5 5600G</td></tr>
+<tr><td>Memory</td><td>16GB</td></tr>
+<tr><td>SSD</td><td>512GB</td></tr>
+<tr><td>HDD</td><td>2 x 1 TB</td></tr>
+</tbody></table>
+<h2 id="key-featuressparkles">Key Features✨</h2>
+<ul>
+<li>Declarative configuration of nas systems, ❤️love from ❄️nixos</li>
+<li>Supports essential applications including Immich, Syncthing, Alist, SMB, and more.</li>
+<li>Declarative configuration of hard disk partitions</li>
+<li>Remote deployment capability</li>
+<li>Critical data is securely encrypted</li>
+<li>Standardized NixOS configuration management with Clan</li>
+<li>Robust ZFS file systems, powerful💪</li>
+<li>Automated backup routines</li>
+<li>Optimized power consumption</li>
+<li>Basic monitoring and backup notifications.</li>
+<li>Automatic TLS certificate provisioning</li>
+<li>Highly reproducible configuration, at least for me, ❤️love from ❄️nixos again</li>
+</ul>
+<h2 id="technology-stack">Technology Stack</h2>
+<table><thead><tr><th>name</th><th>description</th></tr></thead><tbody>
+<tr><td><a href="https://nixos.org/">nixos</a></td><td>Operating system</td></tr>
+<tr><td><a href="https://openzfs.github.io/openzfs-docs/index.html">zfs</a></td><td>File system</td></tr>
+<tr><td><a href="https://github.com/nix-community/disko">disko</a></td><td>Declarative managed filesystems</td></tr>
+<tr><td><a href="https://github.com/Mic92/sops-nix">nix-sops</a></td><td>Critical information encryption</td></tr>
+<tr><td><a href="https://docs.clan.lol/">clan</a></td><td>Peer-to-peer computer management framework, powered by nix❄️</td></tr>
+<tr><td><a href="https://nginx.org/">nginx</a></td><td>Reverse proxy</td></tr>
+<tr><td><a href="https://go-acme.github.io/lego/">go-acme</a></td><td>Automatic tls certificate request</td></tr>
+<tr><td><a href="https://restic.net/">restic</a></td><td>Automatic backups</td></tr>
+<tr><td><a href="https://gotify.net/docs/">gotify</a></td><td>Automatic send notifications</td></tr>
+<tr><td><a href="https://dashy.to/">dashy</a></td><td>Homepage</td></tr>
+<tr><td><a href="https://nicolargo.github.io/glances/">glances</a></td><td>System monitoring integrated with Dashy</td></tr>
+<tr><td><a href="https://syncthing.net/">synching</a></td><td>Synchronizes important data for real-time backups</td></tr>
+<tr><td><a href="https://immich.app/">immich</a></td><td>Family digital camera management</td></tr>
+<tr><td><a href="https://cockpit-project.org/">cockpit</a></td><td>System panel</td></tr>
+<tr><td><a href="https://forgejo.org/">forgejo</a></td><td>Self-hosted git server</td></tr>
+<tr><td><a href="https://alist.nn.ci/">alist</a></td><td>Web document client</td></tr>
+<tr><td><a href="https://github.com/muety/wakapi">wakapi</a></td><td>Code statistics tracking</td></tr>
+</tbody></table>
+<h2 id="overview">overview</h2>
+<h3 id="dashy-homepage">Dashy(homepage)</h3>
+<p><img src="https://img.0pt.icu/learn/homelab/introducing-my-nixos-nas/1.avif" alt="" />
+<img src="https://img.0pt.icu/learn/homelab/introducing-my-nixos-nas/2.avif" alt="" /></p>
+<h3 id="system-fastfetch">System fastfetch</h3>
+<p><img src="https://img.0pt.icu/learn/homelab/introducing-my-nixos-nas/3.avif" alt="" /></p>
+<h3 id="restic-gotify-backup-message">Restic + Gotify(Backup message)</h3>
+<p><img src="https://img.0pt.icu/learn/homelab/introducing-my-nixos-nas/4.avif" alt="" /></p>
+<h3 id="deploying">Deploying</h3>
+<p><img src="https://img.0pt.icu/learn/homelab/introducing-my-nixos-nas/5.avif" alt="" /></p>
+<h3 id="zfs-this-is-my-ice-cube-muscle">ZFS(this is my 🧊💪)</h3>
+<p><img src="https://img.0pt.icu/learn/homelab/introducing-my-nixos-nas/6.avif" alt="" /></p>
 
       </div>
     </div>
